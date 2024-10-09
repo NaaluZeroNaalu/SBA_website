@@ -1,0 +1,232 @@
+.video-container{
+
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text{
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    columns: white;
+    text-align: center;
+    z-index: 14;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.overlay-text h1{
+
+    font-size: 2.5 rem;
+    margin: 0;
+    color: white;
+   
+}
+
+
+.section1 {
+    position: relative; 
+    padding: 20px; 
+    display: inline-block; 
+    z-index: 1; 
+    color: black; 
+    border: 10px solid transparent;
+    animation: border_animation 3s linear infinite; 
+}
+
+@keyframes border_animation {
+    0% {
+        border-left-color: pink;
+    }
+    25% {
+        border-left-color: transparent; 
+        border-top-color: pink; 
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: pink;
+    }
+    75% {
+        border-right-color: transparent; 
+        border-bottom-color: pink; 
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: pink; 
+    }
+}
+
+.intelligent_solutions {
+    background-image: url("../images/intelligent_solutions.jpg");
+    text-align: center; 
+    padding: 20px; 
+    background-color: #1a1a1a; 
+}
+
+.solutions {
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* Create 4 equal columns */
+    gap: 20px; /* Increased gap for better spacing */
+    justify-items: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.problem {
+    background-image: url("../images/intelligent_solutions.jpg");
+    height: 300px;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    color: white; /* Set text color to white for better visibility */
+    padding: 20px; /* Optional: add some padding */
+    background-size: cover;
+}
+
+.our_mission {
+    background-image: url("../images/intelligent_solutions.jpg");
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    color: rgb(255, 255, 255); 
+    background-size: cover;
+}
+
+
+
+
+
+.problem h1{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.solutions div{
+
+    width: 300px;
+}
+
+.solution-icon {
+    font-size: 150px; /* Increase icon size */
+    color: rgb(0, 0, 0); /* Set icon color to white */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.solutions div{
+
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.services{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.services div{
+
+    height: 200px;
+    background-color: red;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Increased gap for better spacing */
+    justify-items: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    text-align: center; /* Center text within each column */
+}
+
+.numbers div {
+    border: 3px solid black;
+    border-image: linear-gradient(45deg, blue, red) 1;
+    height: 200px;
+    width: 200px;
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    transition: transform 0.3s; /* Transition effect */
+}
+
+.services h3{
+
+    font-weight: bold;
+}
+
+.numbers h1,p{
+
+    font-weight: bold;
+}
+
+.inputs{
+
+    background-color: black;
+}
+
+.numbers div:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.numbers h1 {
+    font-size: 2.5rem; /* Increase font size */
+    margin: 0; /* Remove default margin */
+}
+
+.numbers p {
+    margin: 0; /* Remove default margin */
+}
+@media (max-width: 320px) {
+    
+    
+    .solutions{
+        
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 10px;
+        
+    }
+    
+    .services{
+
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    
+    .numbers{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+}
+
+

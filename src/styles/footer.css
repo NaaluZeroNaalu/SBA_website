@@ -1,0 +1,20 @@
+.footers{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    
+}
+
+.footers a{
+    color: black;
+}
+
+@media (max-width: 320px){
+
+    .footers{
+
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+}
