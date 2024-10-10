@@ -1,0 +1,50 @@
+.video-container {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 14;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; 
+}
+
+.overlay-text h1 {
+    font-size: 100px;
+    margin: 0;
+    color: white; /* Keep text white */
+    font-weight: bold;
+}
+
+.stay p{
+
+    font-family: "glacial indifference";
+    font-size: 25px;
+    font-weight:lighter;
+    text-align: center;
+}
+
+.post1 h3{
+
+    /* font-family: "spartan league"; */
+}

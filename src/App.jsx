@@ -5,6 +5,7 @@ import './App.css'
 import Header from './header'
 import DataAi from './DataAi'
 import Home from './Home'
+import Blog from './blog/blog'
 
 function App() {
   

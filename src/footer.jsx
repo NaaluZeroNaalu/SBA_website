@@ -89,6 +89,10 @@ function Footer(){
                     </li>
                 </ul></div>       
         </div>
+
+        <div style={{textAlign:"center"}}>
+            <p>© 1996 - 2024, SBA Info Solutions.</p>
+        </div>
         </>
     )
 }

@@ -87,82 +87,150 @@ img{
     width: 300px;
 }
 
+@keyframes border_animations {
+    0% {
+        border-left-color: rgb(90, 7, 245);
+    }
+    25% {
+        border-left-color: transparent; 
+        border-top-color: rgb(90, 7, 245); 
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: rgb(90, 7, 245);
+    }
+    75% {
+        border-right-color: transparent; 
+        border-bottom-color: rgb(90, 7, 245); 
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: rgb(90, 7, 245); 
+    }
+}
+
+#watsonassistant{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: url("../images/watsonassistant.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#watsondiscovery{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/watsondiscovery.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#instana{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/watsondiscovery.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#cognos{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/cognos.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#turbonomic{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: url("../images/turbonomic.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
 
 
 .dataaisection11{
 
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 300px auto auto auto 300px;
     gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
 }
 
-#manufacturing p{
+
+/* Default hidden state */
+#manufacturing p,
+#bfsi p,
+#callcenter p,
+#media p,
+#it p {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
     height: 300px;
-    font-size: 20px;
+    background-color: #3f649a ;
+    font-size: 17px;
     color: white;
-    text-align: center;
+    text-align:center;
+    margin-left: 0px;
+    /* padding-top: 0%;  */
+    z-index: 1;
 }
 
+.title{
 
-#manufacturing:hover p{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Parent div must be relative and should hide overflow */
+#manufacturing,
+#bfsi,
+#callcenter,
+#media,
+#it {
+    position: relative;
+    height: 300px; /* Set height of the container */
+    width: 100%; /* Ensure full width */
+    overflow: hidden; 
+    border: 1px solid #ddd; /* Optional: visual boundary */
+}
+
+/* Hover effect to display the p tag */
+#manufacturing:hover p,
+#bfsi:hover p,
+#callcenter:hover p,
+#media:hover p,
+#it:hover p {
     display: block;
-    background-color: rgba(0, 0, 255, 0.126);
 }
 
-#bfsi p{
-    display: none;
-    height: 300px;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-
-#bfsi:hover p{
-    display: block;
-    background-color: rgba(0, 0, 255, 0.126);
-}
-
-#media p{
-    display: none;
-    height: 300px;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-
-#media:hover p{
-    display: block;
-    background-color: rgba(0, 0, 255, 0.126);
-}
-
-#it:hover p{
-    display: block;
-    background-color: rgba(0, 0, 255, 0.126);
-    
-}
-
-#it p{
-    display: none;
-    height: 300px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-}
-
-
-#callcenter:hover p{
-    display: block;
-    background-color: rgba(0, 0, 255, 0.322);
-}
-
-#callcenter p{
-    display: none;
-    text-align: center;
-    height: 300px;
-    font-size: 20px;
-    color: white;
-}
 
 .dataaisection10 div{
     
@@ -188,6 +256,12 @@ img{
     background-size: cover;
 }
 
+#watsonxai a{
+    
+    color: black;
+    text-decoration: none;
+}
+
 #watsaonxdata{
     
     background-image: url("../images/watsonx.png");
@@ -196,11 +270,23 @@ img{
 }
 
 
+#watsaonxdata a{
+    
+    color: black;
+    text-decoration: none;
+}
+
 #watsaonxgovernance{
     
     background-image: url("../images/watsonx.png");
     width: 300px;
     background-size: cover;
+}
+
+#watsaonxgovernance a{
+    
+    color: black;
+    text-decoration: none;
 }
 
 #redhat{
@@ -209,6 +295,14 @@ img{
     background-image: url("../images/redhat.png");
     width: 300px;
     background-size: cover;
+}
+
+#redhat a{
+    
+    color: black;
+    text-decoration: none;
+    
+    
 }
 
 .dataaisection3 img:hover, 

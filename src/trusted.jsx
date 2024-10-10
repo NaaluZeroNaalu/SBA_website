@@ -2,89 +2,114 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "./styles/trusted.css"
+// Importing images
+import accesshealth from "./images/trustedby/accesshealth.png";
+import bakes from "./images/trustedby/bakes.png";
+import check from "./images/trustedby/checkmarx.png";
+import cholams from "./images/trustedby/cholams.png";
+import csbbank from "./images/trustedby/csbbank.png";
+import csscorp from "./images/trustedby/csscorp.png";
+import cub from "./images/trustedby/cub.png";
+import delphi from "./images/trustedby/delphi.jpg";
+import dhanbank from "./images/trustedby/dhanalaxmibank.jpg";
+import dvara from "./images/trustedby/dvara.png";
+import equitas from "./images/trustedby/equitas.jpg";
+import fis from "./images/trustedby/fis.png";
+import govs from "./images/trustedby/govs.jpg";
+import hyundai from "./images/trustedby/hyundai.png";
+import hyundaimobs from "./images/trustedby/hyundaimobs.png";
+import indianbank from "./images/trustedby/indianbank.jpg";
+import iob from "./images/trustedby/iob.jpg";
+import karurbank from "./images/trustedby/karurbank.png";
+import iandt from "./images/trustedby/L&t.png";
+import latentview from "./images/trustedby/latentview.png";
+import it from "./images/trustedby/it.jpg";
+import repco from "./images/trustedby/repco.jpg";
+import royal from "./images/trustedby/royal.png";
+import shriramhousing from "./images/trustedby/shriram_housing.png";
+import shriram from "./images/trustedby/shriram.png";
+import star from "./images/trustedby/star.png";
+import taab from "./images/trustedby/taab.png";
+import tafe from "./images/trustedby/tafe.png";
+import tvs from "./images/trustedby/tvs.png";
+import wheelsindia from "./images/trustedby/wheelsindia.jpg";
 
-function Trusted(){
-
+function Trusted() {
     const settings = {
-        dots: true, // Enables the dots navigation
-        infinite: true, // Infinite looping
-        speed: 500, // Transition speed
-        slidesToShow: 3, // Number of slides visible
-        slidesToScroll: 1, // Number of slides to scroll at once
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 2000, // Autoplay speed in ms
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
-          {
-            breakpoint: 1024, // Screen width for tablet and large screens
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 600, // Screen width for mobile devices
-            settings: {
-              slidesToShow: 2,
-            }
-          },
-          {
-            breakpoint: 480, // Small mobile screens
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      };
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
 
-   
-      const pics = [
-        { path:"./images/trustedby/accesshealth.png" },
-        { path: "./images/trustedby/bakes.png" },
-        { path: "./images/trustedby/checkmarx.png" }, 
-        { path: "./images/trustedby/cholams.png" }, 
-        { path: "./images/trustedby/csbbank.png" }, 
-        { path: "./images/trustedby/csscorp.png" },
-        { path: "./images/trustedby/cub.png" },
-        { path: "./images/trustedby/delphi.jpg" },
-        { path: "./images/trustedby/dhanalaxmibank.jpg" },
-        { path: "./images/trustedby/dvara.png" },
-        { path: "./images/trustedby/equitas.jpg" },
-        { path: "./images/trustedby/fis.png" },
-        { path: "./images/trustedby/govs.jpg" },
-        { path: "./images/trustedby/hyundai.png" },
-        { path: "./images/trustedby/hyundaimobs.png" },
-        { path: "./images/trustedby/indianbank.jpg" },
-        { path: "./images/trustedby/iob.jpg" },
-        { path: "./images/trustedby/karurbank.png" },
-        { path: "./images/trustedby/i&t.png" },
-        { path: "./images/trustedby/latentview.png" },
-        { path: "./images/trustedby/it.jpg" },
-        { path: "./images/trustedby/repco.jpg" },
-        { path: "./images/trustedby/royal.png" },
-        { path: "./images/trustedby/shriram_housing.png" },
-        { path: "./images/trustedby/shriram.png" },
-        { path: "./images/trustedby/star.png" },
-        { path: "./images/trustedby/taab.png" },
-        { path: "./images/trustedby/tafe.png" },
-        { path: "./images/trustedby/tvs.png" },
-        { path: "./images/trustedby/wheelsindia.png" },
-        // Continue adding more image paths up to 30
-      ];
+    const pics = [
+        { path: accesshealth },
+        { path: bakes },
+        { path: check },
+        { path: cholams },
+        { path: csbbank },
+        { path: csscorp },
+        { path: cub },
+        { path: delphi },
+        { path: dhanbank },
+        { path: dvara },
+        { path: equitas },
+        { path: fis },
+        { path: govs },
+        { path: hyundai },
+        { path: hyundaimobs },
+        { path: indianbank },
+        { path: iob },
+        { path: karurbank },
+        { path: iandt },
+        { path: latentview },
+        { path: it },
+        { path: repco },
+        { path: royal },
+        { path: shriramhousing },
+        { path: shriram },
+        { path: star },
+        { path: taab },
+        { path: tafe },
+        { path: tvs },
+        { path: wheelsindia },
+    ];
 
-
-    return(
-        <>
-         <div className="carousel-container">
-      <Slider {...settings}>
-        {pics.map((pic, index) => (
-          <div key={index} className="carousel-image">
-            <img src={pic.path} alt={`carousel-img-${index}`} style={{ width: "100%", height: "auto" }} />
-          </div>
-        ))}
-      </Slider>
-    </div>
-        </>
-    )
+    return (
+        <div className="carousel-container">
+            <Slider {...settings}>
+                {pics.map((pic, index) => (
+                    <div key={index} className="carousel-image">
+                        <img src={pic.path} alt={`carousel-img-${index}`}  />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
 }
 
-
-export default Trusted
+export default Trusted;

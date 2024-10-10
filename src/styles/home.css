@@ -1,5 +1,4 @@
-.video-container{
-
+.video-container {
     z-index: -1;
     position: relative;
     width: 100%;
@@ -7,11 +6,10 @@
     overflow: hidden;
 }
 
-video{
-
+video {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -19,26 +17,23 @@ video{
     transform: translate(-50%, -50%);
 }
 
-.overlay-text{
-
+.overlay-text {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    columns: white;
     text-align: center;
     z-index: 14;
     padding: 20px;
     border-radius: 10px;
-    
+    background-color: transparent; 
 }
 
-.overlay-text h1{
-
-    font-size: 2.5 rem;
+.overlay-text h1 {
+    font-size: 100px;
     margin: 0;
-    color: white;
-   
+    color: rgb(255, 255, 255); /* Keep text white */
+    font-weight: bold;
 }
 
 
@@ -170,17 +165,18 @@ video{
     border-image: linear-gradient(45deg, blue, red) 1;
     height: 200px;
     width: 200px;
-    display: flex; /* Enable flexbox for centering */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    transition: transform 0.3s; /* Transition effect */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    transition: transform 0.3s;
 }
 
 .services h3{
 
     font-weight: bold;
 }
+
 
 .numbers h1,p{
 
@@ -227,6 +223,26 @@ video{
         grid-template-columns: auto;
         gap: 10px;
     }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 14;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent; 
+    }
+    
+    .overlay-text h1 {
+        font-size: 10px;
+        margin: 0;
+        color: rgb(255, 255, 255); /* Keep text white */
+        font-weight: bold;
+    }
+    
 }
 
 

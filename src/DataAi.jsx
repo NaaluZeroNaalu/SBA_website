@@ -12,62 +12,26 @@ import wd from "./images/watsondiscovery.svg"
 import instana from "./images/instana.svg"
 import cognos from "./images/cognos.svg"
 import turbonomic from "./images/turbonomic.svg"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+
+
+import CertificationsWatson from "./certifications"
+
 
 
 function DataAi(){
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    };
-
-    const certifications = [
-        { title: "watsonx Assistant", level: "Practitioner Advanced", category: "IBM Data and AI" },
-        { title: "watsonx.ai", level: "Technical Sales Advanced", category: "IBM Data and AI" },
-        { title: "watsonx.governance", level: "Technical Sales Intermediate", category: "IBM Data and AI" },
-        { title: "Generative AI for Code with watsonx Code Assistant", level: "Technical Sales Intermediate", category: "IBM Data and AI" },
-        { title: "OEM Databases", level: "Sales Foundation", category: "IBM Data and AI" }
-    ];
+   
     return(
         <>
-        <div className="video-container">
-            <video  autoPlay loop muted>
+         <div className="video-container">
+            <video autoPlay loop muted>
                 <source src={ai} type='video/mp4' />
             </video>
 
-            <div className="overlbuisnessay-text">
-                <h1>hello</h1>
+            <div className="overlay-text">
+                <h1 style={{paddingLeft:"150px"}}>Automate the mundane<br /><span style={{backgroundColor:"red"}}>Mundane</span></h1>
             </div>
         </div>
         <br /><br />
@@ -107,7 +71,7 @@ function DataAi(){
 
 
         <br /><br />
-        <h1 style={{textAlign:"center"}}>Solutions & Services</h1>
+        <h1 style={{textAlign:"center",fontFamily:"league spartan"}} id="sands">Solutions & Services</h1>
         <br /><br />
         <div className="dataaisection3 row" >
             
@@ -151,7 +115,7 @@ function DataAi(){
             </div>
             <div className="col-lg-6">
                 <br />
-                <h1>Intelligent IT Automation</h1>
+                <h1 >Intelligent IT Automation</h1>
                 <ul>
                     <li>Enterprise Observability for application performance and Infrastructure quality management</li>
                     <li>AI powered Cloud and Finops</li>
@@ -164,8 +128,8 @@ function DataAi(){
         <br />
         <div className="dataaisection6 row" >
             <div className="col-lg-6">
-                <h1>Enterprise ML and Generative AI</h1>
-                <ul>
+                <h1 style={{marginLeft:"70px"}}>Enterprise ML and Generative AI</h1>
+                <ul style={{marginLeft:"70px"}}>
                     <li>Customer care and call center modernizationt</li>
                     <li>Retrieval Augmented generation for knowledge self-service</li>
                     <li>Conversational AI and virtual assistant development</li>
@@ -181,88 +145,74 @@ function DataAi(){
             </div>
         </div>
 
-<h3 style={{textAlign:"center"}}>Industries</h3>
+<h3 style={{textAlign:"center"}}>Industries we serve</h3>
 
 <div className="dataaisection11">
     <div className="" id="manufacturing">
-        
         <p>
             <span>Manufacturing</span>
-            <br />
-            Predictive maintenance
-            Supply chain optimization
-            Cloudera workload optimization
-            SAP observability
-            High performance Analytics
-            AI assistants</p>
+            <br /><br /><br />
+           <span>
+            AI forecasts equipment failures, minimizing 
+            downtime by 43%, automates supply chains, and enhances
+             quality control by identifying defects instantly.
+           </span>
+        </p>
     </div>
     <div className="" id="bfsi">
-    <p>
+        <p>
             <span>BFSI</span>
-            <br />
-            
-
-Customer Care
-Virtual Agent, conversational search
-App Modernisation
-Code, AIops, Finops
-Digital Labor
-Fraud, Risk, Wealth management</p>
+            <br /><br /><br />
+          
+           AI streamlines 90% of customer inquiries, enhancing 
+           efficiency and cutting costs while detecting fraud in real-time.
+        
+        </p>
     </div>
     <div className="" id="callcenter">
-    <p>
-            <span>Call Center Upgrade</span>
-            <br />
-            
-
-CSpeech transcription
-Voice agent - speech synthesis
-Agent assist - productivity
-Sentiment analytics</p>
+        <p>
+            <span>Healthcare</span>
+            <br /><br /><br />
+            <div style={{marginLeft:"10px"}}>
+            AI speeds up drug discovery and reduces research expenses, 
+            improves diagnostics through image analysis, 
+            and supports patient care with virtual assistants.
+            </div>
+        </p>
     </div>
     <div className="" id="media">
-
-    <p>
+        <p>
             <span>Media</span>
-            <br />
-            Generative AI language tasks
-Content creation
-Summarization
-Entity Extraction
-Productivity & Efficiency gains</p>
+            <br /><br /><br />
+            AI enhances content creation by auto-generating articles, 
+            video summaries, and personalized recommendations. 
+            It improves media workflows 
+            by automating captioning and metadata tagging.
+        </p>
     </div>
     <div className="" id="it">
-        
-    <p>
+        <p>
             <span>IT/ITES</span>
-            <br />
-            Managed Security services
-Data center and Cloud Solutions
-Vendor Management
-</p>
+            <br /><br /><br />
+            AI decreases IT support tickets by 70%, 
+            automates monitoring and resolution,
+             and generates 60% of code, accelerating development.
+        </p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div className="title">
+            <div style={{textAlign:"center"}}>
+                <h3 style={{color:"white"}}>IT/ITES</h3>
+            </div>
+            <div style={{textAlign:"right"}}>
+                  <span style={{fontWeight:"bold"}}><FaLongArrowAltRight /></span>
+            </div>
+        </div>
     </div>
 </div>
 <br /><br />
 <h1 style={{textAlign:"center"}}>Our Proficiency and Certifications</h1>
 
-<div>
-           
-<Slider {...settings}>
-                {certifications.map((cert, index) => (
-                    <div
-                        key={index}
-                        className="card text-center"
-                        style={{
-                         backgroundColor:"red"
-                        }}
-                    >
-                        <h3 style={{ marginBottom: "10px" }}>{cert.title}</h3>
-                        <p>{cert.category}</p>
-                        <p>{cert.level}</p>
-                    </div>
-                ))}
-            </Slider>
-        </div>
+<CertificationsWatson />
 
 <br /><br />
 <h3 style={{textAlign:"center"}}>Powered by watsonX</h3>
@@ -275,13 +225,17 @@ Vendor Management
                <p>IBM Watson Assistant is a conversation AI platform that helps you provide customers fast, straightforward, and accurate answers to their questions, across any application, device, or channel.</p>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <img src={wa} className="img-fluid" alt="" style={{ width:"300px", height: 'auto' }} />
+                <div id="watsonassistant">
+
+                </div>
             </div>
         </div> 
         <br />
         <div className="dataaisection8 row">
         <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <img src={wd} className="img-fluid" alt="" style={{ width:"300px", height: 'auto' }} />
+                <div id="watsondiscovery">
+
+                </div>
             </div>
             <div className="col-lg-6">
                 <h3>watson Discovery</h3>
@@ -295,13 +249,18 @@ Vendor Management
                <p>Instana Observability is a fully-automated application performance management solution designed for the challenges of managing microservice and cloud-native applications. It makes your applications visible and enables intelligent actions based on observed information.</p>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <img src={instana} className="img-fluid" alt="" style={{ width:"300px", height: 'auto' }} />
+                <div id="instana">
+
+                </div>
             </div>
         </div> 
         <br />
         <div className="dataaisection9 row">
         <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <img src={cognos} className="img-fluid" alt="" style={{ width:"300px", height: 'auto' }} />
+
+               <div id="cognos">
+
+                </div>
             </div>
             <div className="col-lg-6">
                 <h3>Cognos</h3>
@@ -315,7 +274,9 @@ Vendor Management
                <p>Turbonomic is a software platform that helps organizations optimize the performance and cost of their IT infrastructure, including public, private, and hybrid cloud environments, by automating optimization actions in real-time</p>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                <img src={turbonomic} className="img-fluid" alt="" style={{ width:"300px", height: 'auto' }} />
+                <div id="turbonomic">
+
+                </div>
             </div>
         </div>
         </div> 

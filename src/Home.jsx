@@ -7,6 +7,7 @@ import { FaRobot, FaHandsHelping  } from "react-icons/fa";
 import run from "./images/run.gif"
 import { useEffect, useState } from "react";
 import Trusted from "./trusted";
+import resources from "./videos/resources.mp4"
 
 function Home(){
 
@@ -41,17 +42,20 @@ function Home(){
 
     return(
         <>
+
        <div className="video-container">
             <video autoPlay loop muted>
                 <source src={ai} type='video/mp4' />
             </video>
 
             <div className="overlay-text"> {/* Corrected class name */}
-                <h1>Eliminate the Mundane</h1>
+                <h1>Automate the mundane elevate human potentital</h1>
             </div>
         </div>
 
         <br /><br />
+
+
 
       <div className="">
       <div className="row">
@@ -293,7 +297,15 @@ function Home(){
 
         <br /><br />
         <section className="resouces">
-            video
+        <div className="video-container">
+            <video autoPlay loop muted>
+                <source src={ai} type='video/mp4' />
+            </video>
+
+            <div className="overlay-text"> {/* Corrected class name */}
+                <h1>Eliminate the Mundane</h1>
+            </div>
+        </div>
         </section>
         <br /><br />
         <section className="contact_us">
