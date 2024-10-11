@@ -1,0 +1,118 @@
+.section1 {
+    position: relative; 
+    padding: 20px; 
+    display: inline-block; 
+    z-index: 1; 
+    color: black; 
+    border: 10px solid transparent;
+    animation: border_animation 3s linear infinite; 
+}
+
+@keyframes border_animation {
+    0% {
+        border-left-color: pink;
+    }
+    25% {
+        border-left-color: transparent; 
+        border-top-color: pink; 
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: pink;
+    }
+    75% {
+        border-right-color: transparent; 
+        border-bottom-color: pink; 
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: pink; 
+    }
+}
+
+
+
+
+
+
+
+.our_mission {
+    background-image: url("../images/ourmission.gif");
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    color: rgb(255, 255, 255); 
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Increased gap for better spacing */
+    justify-items: center; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    text-align: center; /* Center text within each column */
+}
+
+.numbers div {
+    border: 3px solid black;
+    border-image: linear-gradient(45deg, blue, red) 1;
+    height: 200px;
+    width: 200px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    transition: transform 0.3s;
+}
+
+
+
+
+.numbers h1,p{
+
+    font-weight: bold;
+}
+
+.inputs{
+
+    background-color: black;
+}
+
+
+
+.resources-video{
+
+    
+}
+
+@media (max-width: 320px) {
+    
+    
+    
+    
+    .numbers{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    
+}
+
+

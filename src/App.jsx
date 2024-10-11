@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './header'
-import DataAi from './DataAi'
-import Home from './Home'
+import Home from './Home/Home'
 import Blog from './blog/blog'
+import DataAi from './dataai/DataAi'
 
 function App() {
   

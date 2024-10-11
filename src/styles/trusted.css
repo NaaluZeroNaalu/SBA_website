@@ -1,6 +1,5 @@
 .carousel-image img {
-    width: 100%; /* Ensures the image takes full width of its container */
+    width: 300px; /* Ensures the image takes full width of its container */
     height: 100px; /* You can adjust this to any height you prefer */
-    object-fit: cover; /* Maintains aspect ratio while ensuring the image covers the entire container */
     border-radius: 10px; /* Optional: adds rounded corners */
 }

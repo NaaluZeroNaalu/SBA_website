@@ -1,0 +1,12 @@
+.numbers div:hover {
+    transform: scale(1.05); 
+}
+
+.numbers h1 {
+    font-size: 2.5rem; 
+    margin: 0; 
+}
+
+.numbers p {
+    margin: 0;
+}
