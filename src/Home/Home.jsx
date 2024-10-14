@@ -3,7 +3,6 @@ import "./styles/home.css"
 
 import inteeligentsolution from "./images/intelligent_solutions.jpg"
 import Trusted from "../trusted";
-import Displayvideo from "./video";
 import ai from "../videos/dataai.mp4"
 import juggle from "./images/juggle.gif"
 import ourmission from "./ourmission.mp4"
@@ -14,6 +13,7 @@ import Section4 from "./section4";
 import Section5 from "./section5";
 import Section6 from "./section6";
 import Section7 from "./section7";
+import Displayvideohome from "./Homevideo";
 
 
 
@@ -24,7 +24,7 @@ function Home(){
     return(
         <>
 
-        <Displayvideo />
+        <Displayvideohome />
 
 
       <Sectionone />

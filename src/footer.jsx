@@ -4,6 +4,8 @@ function Footer(){
 
     return(
         <>
+
+        <div className="bg-dark">
         <div className="footers">
             <div >
                 <h4>About Us</h4>
@@ -88,11 +90,13 @@ function Footer(){
                         <a href="#" className="nav-link">Careers</a>
                     </li>
                 </ul></div>       
+        
+       
+        </div>
+        <br />
+        <p style={{color:"white",textAlign:"center"}}>© 1996 - 2024, SBA Info Solutions.</p>
         </div>
 
-        <div style={{textAlign:"center"}}>
-            <p>© 1996 - 2024, SBA Info Solutions.</p>
-        </div>
         </>
     )
 }

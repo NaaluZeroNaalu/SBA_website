@@ -24,6 +24,8 @@
     color: black;
 }
 
+
+
 .dropdown {
     position: relative;
 }
@@ -49,9 +51,12 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    /* background-color: #d3281f92; */
+    color: #3f649a ;
     
 }
+
+
 
 .navbar #navbtn{
     display: none;

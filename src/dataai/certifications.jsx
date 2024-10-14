@@ -108,7 +108,7 @@ function CertificationsWatson(){
                            {certifications.map((cert, index) => (
                                <div
                                    key={index}
-                                   className="card text-center"
+                                   className="card text-center ms-5"
                                    style={{
                                     
                                    }}

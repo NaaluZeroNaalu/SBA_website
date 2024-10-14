@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles//header.css'; // Assuming you will create a CSS file for styling
 import { IoReorderThreeSharp } from "react-icons/io5";
+import logo from "./images/trustedby/logo.jpg"
 
 function Header() {
     
@@ -8,20 +9,32 @@ function Header() {
     return (
         <> 
             <header className="navbar">
-                <h1>SBA</h1>
+                <img src={logo} alt="" style={{height:"100px",width:"100px",marginLeft:"50px"}}  />
                 <nav>
                     <ul className="nav-links">
-                        <li><a href="#">Carrires</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Industries</a></li>
+                    <li className="dropdown">
+                            <a href="#">About</a>
+                            <div className="dropdown-content">
+                                <a href="/About-us">About us</a>
+                                <a href="/Casestudies">Careers</a>
+                            </div>
+                        </li>
+                        <li className="dropdown">
+                            <a href="#">Solutions</a>
+                            <div className="dropdown-content">
+                                <a href="Data-AI">Data and AI</a>
+                                <a href="#">IT and Business Automation</a>
+                                <a href="/Open-Hybrid-Cloud">Open Hybrid Cloud</a>
+                                <a href="/Secure-and-sustainability">Security and Sustainability </a>
+                            </div>
+                        </li>
+                        <li><a href="/Industries">Industries</a></li>
                         <li><a href="#">Client stories</a></li>
                         <li className="dropdown">
                             <a href="#">Resources</a>
                             <div className="dropdown-content">
-                                <a href="#service1">Carrers</a>
-                                <a href="#service2">Blog</a>
-                                <a href="#service3">Case Studies</a>
+                                <a href="/blog">Blog</a>
+                                <a href="/Casestudies">Case Studies</a>
                             </div>
                         </li>
                         <li><button className='btn btn-danger' style={{borderRadius:"30px"}}>Request a demo</button></li>

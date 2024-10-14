@@ -7,44 +7,11 @@
     overflow: hidden;
 }
 
-video{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-}
-
-.overlay-text{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    columns: white;
-    text-align: center;
-    z-index: 10;
-    padding: 20px;
-    background: rgb(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.overlay-text h1{
-
-    font-size: 100px;
-    margin: 0;
-   
-}
-
 #manufacturing{
 
     height: 300px;
     /* background-color: blue; */
-    background-image: url("../images/manufacturing.jpg");
+    background-image: url("../images/ind_1.png");
     width: 300px;
     background-size: cover;
 }
@@ -52,7 +19,7 @@ video{
 
     height: 300px;
     /* background-color: blue; */
-    background-image: url("../images/manufacturing.jpg");
+    background-image: url("../images/ind_2.png");
     width: 300px;
     background-size: cover;
 }
@@ -60,7 +27,7 @@ video{
     
     height: 300px;
     /* background-color: blue; */
-    background-image: url("../images/manufacturing.jpg");
+    background-image: url("../images/ind_3.png");
     width: 300px;
     background-size: cover;
 }
@@ -68,7 +35,7 @@ video{
 
     height: 300px;
     /* background-color: blue; */
-    background-image: url("../images/manufacturing.jpg");
+    background-image: url("../images/ind_4.png");
     width: 300px;
     background-size: cover;
 }
@@ -76,7 +43,7 @@ video{
     
     height: 300px;
     /* background-color: blue; */
-    background-image: url("../images/manufacturing.jpg");
+    background-image: url("../images/ind_5.png");
     width: 300px;
     background-size: cover;
 }
@@ -87,87 +54,6 @@ img{
     width: 300px;
 }
 
-@keyframes border_animations {
-    0% {
-        border-left-color: rgb(90, 7, 245);
-    }
-    25% {
-        border-left-color: transparent; 
-        border-top-color: rgb(90, 7, 245); 
-    }
-    50% {
-        border-top-color: transparent;
-        border-right-color: rgb(90, 7, 245);
-    }
-    75% {
-        border-right-color: transparent; 
-        border-bottom-color: rgb(90, 7, 245); 
-    }
-    100% {
-        border-bottom-color: transparent;
-        border-left-color: rgb(90, 7, 245); 
-    }
-}
-
-#watsonassistant{
-
-    border:6px solid rgb(241, 8, 8);
-    height: 400px;
-    width: 350px;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-image: url("../images/watsonassistant.svg");
-    background-size: cover;
-    animation: border_animations 3s linear infinite; 
-}
-
-#watsondiscovery{
-
-    border:6px solid rgb(241, 8, 8);
-    height: 400px;
-    width: 350px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    background-image: url("../images/watsondiscovery.svg");
-    background-size: cover;
-    animation: border_animations 3s linear infinite; 
-}
-
-#instana{
-
-    border:6px solid rgb(241, 8, 8);
-    height: 400px;
-    width: 350px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    background-image: url("../images/watsondiscovery.svg");
-    background-size: cover;
-    animation: border_animations 3s linear infinite; 
-}
-
-#cognos{
-
-    border:6px solid rgb(241, 8, 8);
-    height: 400px;
-    width: 350px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    background-image: url("../images/cognos.svg");
-    background-size: cover;
-    animation: border_animations 3s linear infinite; 
-}
-
-#turbonomic{
-
-    border:6px solid rgb(241, 8, 8);
-    height: 400px;
-    width: 350px;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-image: url("../images/turbonomic.svg");
-    background-size: cover;
-    animation: border_animations 3s linear infinite; 
-}
 
 
 .dataaisection11{
@@ -295,9 +181,15 @@ img{
 #redhat{
     
     
-    background-image: url("../images/redhat.png");
+    background-image: url("../images/red_hat.svg");
     width: 300px;
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.about_watson h3{
+
+    font-family: League sparten ;
 }
 
 #redhat a{
@@ -382,7 +274,7 @@ img{
         font-size: 20px;
     }
 
-   
+  
     
 }
 

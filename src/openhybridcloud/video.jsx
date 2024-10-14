@@ -1,4 +1,3 @@
-import home from "./home.mp4"
 import "./styles/video.css"
 
 function Displayvideo(){
@@ -7,7 +6,8 @@ function Displayvideo(){
         <>
         <br />
         <div className="videocontainer">
-            <h1>Eliminate the mundane automate the repetitive Elevate Human patential</h1>
+            <h1 className="ms-5">Open Hybrid Cloud</h1>
+            <h3 className="ms-5" style={{backgroundColor:"red",width:"600px",color:"white",textAlign:"center"}}>Integrated Cloud Services</h3>
         </div>
 
         <br /><br />

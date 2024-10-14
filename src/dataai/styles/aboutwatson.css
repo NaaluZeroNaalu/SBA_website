@@ -1,0 +1,91 @@
+@keyframes border_animations {
+    0% {
+        border-left-color: rgb(90, 7, 245);
+    }
+    25% {
+        border-left-color: transparent; 
+        border-top-color: rgb(90, 7, 245); 
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: rgb(90, 7, 245);
+    }
+    75% {
+        border-right-color: transparent; 
+        border-bottom-color: rgb(90, 7, 245); 
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: rgb(90, 7, 245); 
+    }
+}
+
+#watsonassistant{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: url("../images/watsonassistant.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#watsondiscovery{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/watsondiscovery.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#instana{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/watsondiscovery.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#cognos{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("../images/cognos.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+#turbonomic{
+
+    border:6px solid rgb(241, 8, 8);
+    height: 400px;
+    width: 350px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: url("../images/turbonomic.svg");
+    background-size: cover;
+    animation: border_animations 3s linear infinite; 
+}
+
+.about_watson h3{
+     font-family: League sparten;
+}
+
+.about_watson p{
+     font-family: Glacial Indifference ;
+     font-weight: lighter;
+     font-size: 24px;
+}

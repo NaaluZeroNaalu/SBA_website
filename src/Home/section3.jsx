@@ -12,7 +12,7 @@ function Section3(){
         <section className="about_services">
             <div className="row">
                 <div className="col-lg-3">
-                    <img src={run} alt="" />
+                    <img src={run} alt="" style={{width:"300px"}} />
                 </div>
                 <div className="col-lg-9">
                     <h3 style={{color:"red"}}>For core applications and domains of banking, insurance, and institutions</h3>
