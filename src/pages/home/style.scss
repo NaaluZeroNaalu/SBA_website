@@ -1,0 +1,95 @@
+.ai-green-Home {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.init-ai-Home {
+    position: absolute;
+    top: 46%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+}
+
+/* Default font size for larger screens */
+.init-ai-Home:nth-child(1) {
+    font-size: 3rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .init-ai-Home:nth-child(1) {
+        font-size: 1rem; /* Adjust this value as needed */
+    }
+}
+
+.init-red-bg {
+    background: red;
+}
+
+.init-red-bg1 {
+    color: red;
+}
+
+
+.numbers div:hover {
+    transform: scale(1.05); 
+}
+
+.numbers h1 {
+    font-size: 2.5rem; 
+    margin: 0; 
+}
+
+.numbers p {
+    margin: 0;
+}
+
+
+.gradient-border-square {
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-image: linear-gradient(white, white), linear-gradient(to bottom right, blue, red);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 12rem;  /* Adjust the width as necessary to maintain squareness */
+    height: 12rem; /* Ensure the height matches the width */
+}
+
+#ani{
+
+    animation-name: border_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes border_animation {
+    0% {
+        border-left-color: pink;
+    }
+    25% {
+        border-left-color: transparent; 
+        border-top-color: pink; 
+    }
+    50% {
+        border-top-color: transparent;
+        border-right-color: pink;
+    }
+    75% {
+        border-right-color: transparent; 
+        border-bottom-color: pink; 
+    }
+    100% {
+        border-bottom-color: transparent;
+        border-left-color: pink; 
+    }
+}
+
+
