@@ -4,6 +4,9 @@ import Resorces from "../../assets/videos/Resources.mp4";
 import Resorce1 from "../../assets/images/resource1.jpg";
 import Resorce2 from "../../assets/images/resource2.jpg";
 import Resorce3 from "../../assets/images/resource3.jpg";
+import Contactus from '../common/contact';
+import Certifications from '../common/certifications';
+import Industriesweserve from '../common/industries';
 
 function Resources(){
 
@@ -88,6 +91,9 @@ function Resources(){
 
         </div>
       </section>
+      <Industriesweserve />
+      <Certifications />
+      <Contactus />
         </>
     )
 }

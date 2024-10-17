@@ -32,11 +32,7 @@ function Counter() {
 
     return (
         <>
-            <h1 className="text-center">Our partner ecosystem</h1>
-            <p className="text-center">
-                Empowering our success through the collective strength and expertise of our partner network
-            </p>
-            <br /><br />
+        
             <h1 className="text-center font-bold">Why work with us?</h1>
             <section className="work ms-5">
                 <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-screen-lg mx-auto">

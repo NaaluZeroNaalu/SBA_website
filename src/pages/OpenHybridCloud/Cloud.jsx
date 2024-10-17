@@ -4,6 +4,20 @@ import HyperClouds from "../../assets/videos/HybridCloud.mp4";
 import hyper1 from "../../assets/images/hyper1.jpg";
 import hyper2 from "../../assets/images/hyper2.jpg";
 import hyper3 from "../../assets/images/hyper3.jpg";
+import Contactus from '../common/contact';
+import Certifications from '../common/certifications';
+import Industriesweserve from '../common/industries';
+import aili from "../../assets/images/ai-li.svg";
+import aiOrnamentImage from "../../assets/images/image.png";
+import aiSectionImage from "../../assets/images/ai-section.svg";
+import ind1 from "../../assets/images/ind_1.png";
+import ind2 from "../../assets/images/ind_2.png";
+import ind3 from "../../assets/images/ind_3.png";
+import ind4 from "../../assets/images/ind_4.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import rhel from "../../assets/images/rhel.png"
+import ansi from "../../assets/images/ansi.jpg"
+import open from "../../assets/images/openshift.png"
 
 function Openhybridcloud(){
 
@@ -50,6 +64,15 @@ function Openhybridcloud(){
     },
 ];
 
+const featuresforcloud = [
+  "Flexibility to select the optimal environment for each workload.",
+  "Scalability to adjust applications and infrastructure according to demand.",
+  "Simplified management across different environments.",
+  "Enhanced security to protect applications and data through best practices.",
+  "Innovation by leveraging optimal technologies for every workload",
+  "Increased efficiency through streamlined automated deployments.",
+];
+
 // const [openIndex, setOpenIndex] = useState(null);
 
 // const toggleAccordion = (index) => {
@@ -66,6 +89,36 @@ const [activeIndex, setActiveIndex] = useState(null);
         }
       };
 
+
+      const industriesforcloud = [
+        {
+          title: "Finance",
+          img: ind1,
+          description: " Automation streamlines IT automation through agentless management, allowing system configuration without installing software on target devices and facilitating the shift from monolithic to microservices architecture.",
+        },
+        {
+          title: "BFSI",
+          img: ind2,
+          description: "Streamlines configuration management and deploying applications across regions, ensuring business continuity and disaster recovery.",
+        },
+        {
+          title: "Healthcare",
+          img: ind3,
+          description: "Streamline application deployment with Container orchestration ensuring a uniform user experience across environments, which accelerates workflows and enhances security through improved default configurations.",
+        },
+        {
+          title: "IT/ITES",
+          img: ind4,
+          description: "Automating and boost performance, allowing organizations to take a proactive stance in managing their IT infrastructure and enhancing uptime. ",
+        },
+        {
+          title: "Media",
+          img: ind4,
+          description: "Develop adaptable infrastructures that support various digital content platforms and automation tools, simplifying the management of hybrid cloud environments for seamless task automation across public, private, and on-premise systems.",
+        },
+      ];
+
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return(
         <>
@@ -114,139 +167,187 @@ const [activeIndex, setActiveIndex] = useState(null);
         </ul>
       </div>
     
+
+
   </div> */}
 
+  <br /><br />
 
-<section>
-  <div className="p-4 space-y-6">
-    {/* Red Hat OpenShift Section */}
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-5xl font-semibold text-gray-800 mb-4 text-left">Our Solutions:</h2>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-left">Infrastructure Management & security</h2>
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal">
-          <li className='text-2xl'>Automates security practices and compliance checks to reduce risks.</li>
-          <li className='text-2xl'>Enhances the efficiency of provisioning, configuration, and management of infrastructure through the implementation of Ansible.</li>
-          <li className='text-2xl'>Operates without the need for agents on target systems, simplifying deployment and reducing overhead.</li>
-        </ul>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper1}
-          alt="Cloud illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
+  <section className="relative my-20">
+        <div className="container mx-auto max-w-[1600px] px-16">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-8/12">
+              <p className="text-[41px] font-light md:w-10/12 w-full">
+                For data driven enterprises looking to create exceptional
+                customer and employee experience,
+              </p>
+              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+                SBA provides{" "}
+                <span className="text-red-600 font-semibold">
+                  modular and sustainable AI solutions
+                </span>{" "}
+                that are
+              </p>
+            </div>
+            <div className="w-full md:w-4/12">
+              <img
+                src={aiSectionImage}
+                loading="lazy"
+                alt="AI"
+                className="h-[28rem] w-[22rem] object-contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-0 right-0 hidden md:block z-[-1]">
+          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+        </div>
+      </section>
+  <section className="custom-container ai-section">
+        <div className="relative px-12 md:px-25">
+          <div className="flex flex-wrap justify-between mt-10">
+            {featuresforcloud.map((text, index) => (
+              <div
+                key={index}
+                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
+              >
+                <div>
+                  <img
+                    className="ai-m"
+                    src={aili}
+                    loading="lazy"
+                    alt="ornament"
+                  />
+                </div>
+                <div className="ai-li-text">{text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section>
+
+
+
+      </section>
+
+      <section>
+        <div className="relative bg-white py-20">
+          <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+            <img
+              src={aiOrnamentImage}
+              loading="lazy"
+              alt="ornament"
+              className="h-full object-cover transform scale-x-[-1]"
+            />
+          </div>
+          <div className="relative px-5 max-w-screen-xl mx-auto">
+            <h1 className="text-center text-3xl md:text-5xl font-bold">
+              Solutions & Services
+            </h1>
+          </div>
+        </div>
+      </section>
+
+<section id="solutions">
+<div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper1}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Infrastructure Management & security
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Automates security practices and compliance checks to reduce risks.</li>
+                <li>
+                Enhances the efficiency of provisioning, configuration, and management of infrastructure through
+                the implementation of Ansible.
+                </li>
+                <li>
+                Operates without the need for agents on target systems, simplifying deployment and reducing
+                overhead.
+                </li>
+              </ul>
+            </div>
+          </div>
     </div>
 
-    {/* Red Hat Ansible Section */}
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper2}
-          alt="Data center illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartan"}}>Application Development and delivery:</h2>
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-2xl'>Facilitates the development, deployment, and management of applications in a containerized environment.</li>
-          <li className='text-2xl'>Facilitates the migration of outdated applications to contemporary architectures utilizing OpenShift</li>
-          <li className='text-2xl'>Enables deployment and management of applications at the edge, closer to data sources.</li>
-          <li className='text-2xl'>Provides capabilities for virtualizing resources and optimizing infrastructure usage.</li>
-        </ul>
-      </div>
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Application Development and delivery
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>
+                Facilitates the development, deployment, and management of applications in a containerized
+                environment.
+                </li>
+                <li>
+                Facilitates the migration of outdated applications to contemporary architectures utilizing OpenShift
+                </li>
+                <li>
+                Enables deployment and management of applications at the edge, closer to data sources.
+                </li>
+                <li>
+                Provides capabilities for virtualizing resources and optimizing infrastructure usage.
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper2}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Business Intelligence & Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper1}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              OS management & Security
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Streamlines system administration and management tasks.
+                </li>
+                <li>
+                RHEL Provides tools and features for enhancing security and ensuring compliance with standards.
+                </li>
+                <li>
+                Delivers stable and reliable performance across various workloads
+                </li>
+              </ul>
+            </div>
+          </div>
     </div>
 
-    {/* Red Hat Enterprise Linux (RHEL) Section */}
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold  mb-4 text-left" style={{fontFamily:"league spartan"}}>OS management & Security</h2>
-        <ul className="list-disc list-inside space-y-2 text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-2xl'>Streamlines system administration and management tasks.</li>
-          <li className='text-2xl'>RHEL Provides tools and features for enhancing security and ensuring compliance with standards.</li>
-          <li className='text-2xl'>Delivers stable and reliable performance across various workloads.</li>
-        </ul>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper3}
-          alt="Security and technology illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-  </div>
-
-  <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper2}
-          alt="Data center illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartan"}}>Products:</h2>
-        <ul style={{fontFamily:"glacial indifference"}}>
-          <li className='text-2xl'><strong>RHEL:</strong>Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise
-          environments, offering robust performance and comprehensive support It includes features like SELinux
-          for enhanced security, regular updates for vulnerability management, and extensive documentation to aid
-          system administrators in maintaining their infrastructure 
-          </li>
-          <li className='text-2xl'><strong>Redhat Ansible automation platform :</strong>Ansible is an open-source automation tool that simplifies IT
-               processes such as configuration management, application deployment, and orchestration by using
-              human-readable YAML playbooks, eliminating the need for agents on target systems.
-          </li>
-          <li className='text-2xl'><strong>Redhat Openshift:</strong>: OpenShift is a Kubernetes-based container platform developed by Red Hat that
-facilitates the deployment, scaling, and management of containerized applications. It provides a unified
-development and operational experience, enabling teams to build, deploy, and manage applications
-consistently across hybrid cloud environments
-          </li>
-        </ul>
-      </div>
-</div>
-
-<div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left"  style={{fontFamily:"league spartan"}}>Redhat Ansible automation platform:</h2>
-        <p className='text-2xl' style={{fontFamily:"glacial indifference"}}>
-        Ansible is an open-source automation tool that simplifies
-         IT processes such as configuration management, application deployment, and orchestration
-         by using human-readable YAML playbooks, eliminating the need for agents on target systems.
-        </p>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper3}
-          alt="Security and technology illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-  </div>
-    
-
-  <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper2}
-          alt="Data center illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left"  style={{fontFamily:"league spartan"}}>Redhat Openshift:</h2>
-        <p className='text-2xl'   style={{fontFamily:"glacial indifference"}}>
-        OpenShift is a Kubernetes-based container platform developed by Red Hat that 
-        facilitates the deployment, scaling, and management of containerized applications.
-         It provides a unified development and operational experience, enabling teams to build, deploy, 
-        and manage applications consistently across hybrid cloud environments.
-        </p>
-      </div>
-</div>
-
-
-</div>
 </section>
 
 {/* <section className="mt-10">
@@ -269,9 +370,114 @@ consistently across hybrid cloud environments
                 ))}
 
 </section> */}
-<br /><br />
 
-<section className="bg-[#F5F9FD] flex items-center justify-center min-h-screen">
+<section className="py-5 bg-light">
+  <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
+    Industries we serve
+  </h1>
+
+  <div className="container">
+    <div className="flex flex-wrap -mx-2"> {/* Negative margin to offset padding */}
+      {industriesforcloud.map((industry, index) => (
+        <div
+          key={index}
+          className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          <div className="card overflow-hidden">
+            <img src={industry.img} className="card-img-top" alt={industry.title} />
+            <div className="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 className="card-title text-white">{industry.title}</h5>
+              <FaLongArrowAltRight className="text-white" />
+            </div>
+            <div
+              className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
+              style={{ backgroundColor: "#3f649a" }}
+            >
+              <h5 className="card-title">{industry.title}</h5>
+              <p style={{ textAlign: "center" }}>{industry.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+<Certifications />
+<br /><br />
+<section className="py-8">
+        <div className="container mx-auto max-w-7xl px-4" id='products'>
+          <h1 className="text-5xl font-bold text-center mb-12">
+            {/* Powered by <span className="text-red-600">watsonX</span> */}
+            Products
+          </h1>
+
+          {/* Watson Assistant */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">RHEL</h2>
+              <p className="text-lg">
+              Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise
+              environments, offering robust performance and comprehensive support It includes features like SELinux
+              for enhanced security, regular updates for vulnerability management, and extensive documentation to aid
+              system administrators in maintaining their infrastructure 
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={rhel}
+                alt="Watson Assistant"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+              />
+            </div>
+          </div>
+
+          {/* Watson Discovery */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={ansi}
+                alt="Watson Discovery"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
+              />
+            </div>
+            <div className="md:w-1/2 w-full md:pl-10">
+              <h2 className="text-2xl font-bold mb-4">Redhat Ansible automation platform</h2>
+              <br />
+              <p className="text-lg">
+              Ansible is an open-source automation tool that simplifies IT
+processes such as configuration management, application deployment, and orchestration by using
+human-readable YAML playbooks, eliminating the need for agents on target systems
+              </p>
+            </div>
+          </div>
+
+          {/* Instana */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">Redhat Openshift</h2>
+              <p className="text-lg">
+              OpenShift is a Kubernetes-based container platform developed by Red Hat that
+facilitates the deployment, scaling, and management of containerized applications. It provides a unified
+development and operational experience, enabling teams to build, deploy, and manage applications
+consistently across hybrid cloud environments
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={open}
+                alt="Instana"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+              />
+            </div>
+          </div>
+
+      </div>
+      </section>
+
+
+<section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-8">
             Frequently Asked Questions
@@ -282,9 +488,10 @@ consistently across hybrid cloud environments
                 <h2>
                   <button
                     className={`w-full text-left py-4 px-6 text-black font-semibold focus:outline-none flex justify-between items-center ${
-                      activeIndex === index ? "border border-blue-200" : ""
+                      activeIndex === index ? "" : ""
                     }`}
                     onClick={() => toggleAccordion(index)}
+                    style={{fontSize:"20px"}}
                   >
                     {item.title}
                     <span className="text-blue-600">
@@ -323,13 +530,16 @@ consistently across hybrid cloud environments
                   </button>
                 </h2>
                 {activeIndex === index && (
-                  <div className="px-6 py-4 text-gray-700">{item.content}</div>
+                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
                 )}
               </div>
             ))}
           </div>
         </div>
       </section>
+      
+     
+      <Contactus />
         </>
     )
 }

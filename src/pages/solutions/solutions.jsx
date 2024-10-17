@@ -6,6 +6,9 @@ import solutions4 from "../../assets/images/solution4.jpg";
 import solutions5 from "../../assets/images/solution5.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import "./styles.scss"
+import Contactus from "../common/contact";
+import Certifications from "../common/certifications";
+import Industriesweserve from "../common/industries";
 
 
 function Solutions(){
@@ -139,6 +142,10 @@ function Solutions(){
         </div>
       </section>
 
+      <Industriesweserve />
+      <Certifications />
+      <Contactus />
+
       <section className="flex flex-col items-center justify-center py-16 bg-white">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
           Ready to Unlock the Power of Industry Solutions?
@@ -151,7 +158,6 @@ function Solutions(){
           Get a Call Back
         </a>
       </section>
-
         </>
     )
 }

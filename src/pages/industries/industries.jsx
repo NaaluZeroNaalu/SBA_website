@@ -7,6 +7,8 @@ import Industries3 from "../../assets/images/Industries3.jpg";
 import Industries4 from "../../assets/images/Industries4.jpg";
 import Industries5 from "../../assets/images/Industries5.jpg";
 import Industries6 from "../../assets/images/Industries6.jpg";
+import Contactus from "../common/contact";
+import Certifications from "../common/certifications";
 
 
 function Industries(){
@@ -261,6 +263,8 @@ function Industries(){
         </div>
       </section>
 
+      <Certifications />
+      <Contactus />
 
       <section className="flex flex-col items-center justify-center py-16 bg-white">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
@@ -274,7 +278,7 @@ function Industries(){
           Get a Call Back
         </a>
       </section>
-
+      
         </>
     )
 }

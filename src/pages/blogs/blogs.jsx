@@ -1,4 +1,5 @@
 import Blog from "../../assets/videos/Blogs.mp4";
+import Contactus from "../common/contact";
 import "./style.scss"
 
 function Blogs(){
@@ -141,6 +142,7 @@ function Blogs(){
         </div>
       </section>
 
+      <Contactus />
         </>
     )
 }

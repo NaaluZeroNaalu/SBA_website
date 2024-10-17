@@ -21,6 +21,9 @@ import Infra17 from "../../assets/images/Infra17.jpg";
 import Infra18 from "../../assets/images/Infra18.jpg";
 import Infra19 from "../../assets/images/Infra19.jpg";
 import { useState } from "react";
+import Contactus from "../common/contact";
+import Certifications from "../common/certifications";
+import Industriesweserve from "../common/industries";
 
 function Infrastructureandapplication(){
 
@@ -700,8 +703,9 @@ function Infrastructureandapplication(){
         </div>
       </div>
     </section>
-
-
+    <Industriesweserve />
+      <Certifications />
+      <Contactus />
       <section className="flex flex-col items-center justify-center py-16 bg-white">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
         Is Your Infrastructure Ready for a Modern Makeover?
@@ -713,11 +717,9 @@ function Infrastructureandapplication(){
           Get a Call Back
         </a>
       </section>
-
     </>
    )
 }
-
 
 export default Infrastructureandapplication
 

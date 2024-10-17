@@ -7,7 +7,7 @@ function Footer(){
 
         <div className="bg-dark">
         <div className="footers">
-            <div >
+            <div>
                 <h4>About Us</h4>
                 <ul className="nav flex-column">
                     <li className="nav-item">
@@ -50,46 +50,25 @@ function Footer(){
             <h4>Solutions</h4>
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Data and Analytics</a>
+                        <a href="#" className="nav-link">Data and AI</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">IT Modernization</a>
+                        <a href="#" className="nav-link">IT Automation</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">ML and Generation AI</a>
+                        <a href="#" className="nav-link">Open Hybrid Cloud</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Managed Services</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Buisness Consulting</a>
+                        <a href="#" className="nav-link">Security and Sustainability</a>
                     </li>
                 </ul>
             </div>
+          <ul>
+            <li>social medias</li>
+          </ul>
             <div>
-            <h4>Services</h4>
-                <ul className="nav flex-column">
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Mailing and collaboration</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Managed Services</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Cloud Services</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-            <h4>About Us</h4>
-                <ul className="nav flex-column">
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">SBA info Solution</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Careers</a>
-                    </li>
-                </ul></div>       
+          
+             </div>       
         
        
         </div>

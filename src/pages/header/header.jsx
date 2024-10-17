@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.jpg';
 import "./style.scss";
 import { IoReorderThreeSharp } from "react-icons/io5";
+import { Link, Outlet } from 'react-router-dom';
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
             <li className="dropdown">
               <a href="#">About</a>
               <div className="dropdown-content">
-                <a href="/Aboutus">About us</a>
+              <a href="/Aboutus">About us</a>
                 <a href="/Casestudies">Careers</a>
               </div>
             </li>
@@ -42,6 +43,7 @@ function Header() {
               <h1 className="offcanvas-title"></h1>
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
             </div>
+            <Outlet />
             <div className="offcanvas-body">
               <ul className="nav flex-column">
                 <li className="nav-item">

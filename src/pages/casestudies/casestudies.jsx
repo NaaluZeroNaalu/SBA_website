@@ -1,5 +1,6 @@
 import "./style.scss"
 import CaseStudys from "../../assets/videos/CaseStudy.mp4";
+import Contactus from "../common/contact";
 
 
 function Casestudies(){
@@ -119,6 +120,8 @@ These detailed accounts provide actionable insights into how our solutions can b
           </div>
         </div>
       </section>
+
+      <Contactus />
         </>
     )
 }

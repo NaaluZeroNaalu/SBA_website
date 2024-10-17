@@ -2,6 +2,22 @@ import React, { useState } from 'react';
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
 import "./style.scss";
 import hyper3 from "../../assets/images/hyper3.jpg";
+import Contactus from '../common/contact';
+import Certifications from '../common/certifications';
+import sands from "../../assets/images/sands.jpg"
+import Industriesweserve from '../common/industries';
+import aili from "../../assets/images/ai-li.svg";
+import aiOrnamentImage from "../../assets/images/image.png";
+import aiSectionImage from "../../assets/images/ai-section.svg";
+import ind1 from "../../assets/images/ind_1.png";
+import ind2 from "../../assets/images/ind_2.png";
+import ind3 from "../../assets/images/ind_3.png";
+import ind4 from "../../assets/images/ind_4.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import l1 from "../../assets/images/linuxone.png"
+import wat5 from "../../assets/images/wat_5.svg";
+import wat2 from "../../assets/images/wat_2.svg";
+import seven1 from "../../assets/images/sevone.png"
 
 function Securityandsus() {
     const securityAccordionData = [
@@ -47,11 +63,58 @@ function Securityandsus() {
         },
     ];
 
-    const [openIndex, setOpenIndex] = useState(null);
-
+    const [activeIndex, setActiveIndex] = useState(null);
+    
+    // Function to toggle the active accordion item
     const toggleAccordion = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+      if (activeIndex === index) {
+        setActiveIndex(null); // Collapse if the same item is clicked
+      } else {
+        setActiveIndex(index); // Set active if a different item is clicked
+      }
     };
+
+
+    const featuresforsands = [
+      "Security Advanced encryption and secure partitioning protect data.",
+      "Performance Handles large workloads efficiently for demanding industries.",
+      "Scalability Easily expands resources without performance loss.",
+      "Reliability Ensures continuous availability with minimal downtime.",
+      "Cost Efficiency Reduces energy use and operational costs through consolidation",
+      "Sustainability Lowers CO2 emissions with efficient resource use.",
+    ];
+
+
+    const industriesforsands = [
+      {
+        title: "Manufacturing",
+        img: ind1,
+        description: "Real-time monitoring and quality control with scalable, efficient data processing.",
+      },
+      {
+        title: "BFSI",
+        img: ind2,
+        description: "Scalable infrastructure for fraud detection and regulatory compliance.",
+      },
+      {
+        title: "Healthcare",
+        img: ind3,
+        description: " Secure data management and high-performance computing for improved patient care and operational efficiency.",
+      },
+      {
+        title: "IT/ITES",
+        img: ind4,
+        description: "Provides a secure cloud environment with high-performance computing for enhanced service management",
+      },
+      {
+        title: "Telecommunications",
+        img: ind4,
+        description: "Delivers scalable, secure infrastructure for handling high data volumes and ensuring compliance.",
+      },
+    ];
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
 
     return (
         <>
@@ -69,132 +132,388 @@ function Securityandsus() {
                 </div>
             </section>
 
-            <section>
-                <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-                    <div className="p-6 md:w-2/3">
-                        <h2 className="text-5xl font-bold mb-4 text-left">Secure Mainframe Solutions</h2>
-                        <ul className="list-disc list-inside space-y-2 text-left text-base font-normal">
-                            <li className='text-3xl'>Enhanced Security: IBM Z offers encryption and access controls to protect data.</li>
-                            <li className='text-3xl'>Compliance Tools for auditing and monitoring help meet regulatory requirements.</li>
-                            <li className='text-3xl'>High Availability: Designed for resilience, minimizing downtime.</li>
-                        </ul>
-                    </div>
-                    <div className="flex md:w-1/2">
-                        <img
-                            src={hyper3}
-                            alt="Security and technology illustration"
-                            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                        />
-                    </div>
-                </div>
+    <section className="relative my-20">
+        <div className="container mx-auto max-w-[1600px] px-16">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-8/12">
+              <p className="text-[41px] font-light md:w-10/12 w-full">
+                For data driven enterprises looking to create exceptional
+                customer and employee experience,
+              </p>
+              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+                SBA provides{" "}
+                <span className="text-red-600 font-semibold">
+                  modular and sustainable AI solutions
+                </span>{" "}
+                that are
+              </p>
+            </div>
+            <div className="w-full md:w-4/12">
+              <img
+                src={sands}
+                loading="lazy"
+                alt="AI"
+                className=""
+                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"5px solid grey"}}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-0 right-0 hidden md:block z-[-1]">
+          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+        </div>
+      </section>
 
-                <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-                    <div className="flex md:w-1/2">
-                        <img
-                            src={hyper3}
-                            alt="Data center illustration"
-                            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6 md:w-2/3">
-                        <h2 className="text-5xl font-bold text-gray-800 mb-4 text-left">Efficient Linux Workloads</h2>
-                        <ul className="list-disc list-inside space-y-2 text-left text-base font-normal">
-                            <li>Workload Isolation: Secure environments protect data integrity.</li>
-                            <li>Energy Efficiency: Consolidation reduces energy consumption and costs.</li>
-                            <li>Scalability: High-performance capabilities support efficient workload scaling.</li>
-                        </ul>
-                    </div>
+    <section className="custom-container ai-section">
+        <div className="relative px-12 md:px-25">
+          <div className="flex flex-wrap justify-between mt-10">
+            {featuresforsands.map((text, index) => (
+              <div
+                key={index}
+                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
+              >
+                <div>
+                  <img
+                    className="ai-m"
+                    src={aili}
+                    loading="lazy"
+                    alt="ornament"
+                  />
                 </div>
+                <div className="ai-li-text">{text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-                    <div className="p-6 md:w-2/3">
-                        <h2 className="text-5xl font-bold mb-4 text-left">Sustainability Goals</h2>
-                        <ul className="list-disc list-inside space-y-2 text-left text-base font-normal">
-                            <li className='text-2xl'>Reduced Carbon Footprint: Energy-efficient practices lower emissions.</li>
-                            <li className='text-2xl'>Cost Savings: Reduces operational costs through efficiency.</li>
-                            <li className='text-2xl'>Brand Reputation: Enhances reputation and supports compliance with sustainability goals.</li>
-                        </ul>
-                    </div>
-                    <div className="flex md:w-1/2">
-                        <img
-                            src={hyper3}
-                            alt="Security and technology illustration"
-                            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                        />
-                    </div>
-                </div>
-            </section>
+      <section>
+        <div className="relative bg-white py-20">
+          <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+            <img
+              src={aiOrnamentImage}
+              loading="lazy"
+              alt="ornament"
+              className="h-full object-cover transform scale-x-[-1]"
+            />
+          </div>
+          <div className="relative px-5 max-w-screen-xl mx-auto">
+            <h1 className="text-center text-3xl md:text-5xl font-bold">
+              Solutions & Services
+            </h1>
+          </div>
+        </div>
+      </section>
 
-            <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-                    <div className="flex md:w-1/2">
-                        <img
-                            src={hyper3}
-                            alt="Data center illustration"
-                            className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6 md:w-2/3">
-                        <h2 className="text-5xl font-bold text-gray-800 mb-4 text-left">Industries use case</h2>
-                        <ul className="list-disc list-inside space-y-2 text-left text-base font-normal">
-                            <li>
-                            <strong>Banking & Financial Services:</strong> 
-                            Scalable infrastructure for fraud detection 
-                            and regulatory
-                            compliance.
+      <section id="solutions">
 
-                            </li>
-                            <li>
-                            <strong>Healthcare:</strong> 
-                            Secure data management and high-performance 
-                            computing for improved patient care
-                            and operational efficiency.
-                            </li>
-                            <li>
-                            <strong>Manufacturing:</strong> 
-                            Rreal-time monitoring and quality 
-                            control with scalable, efficient data processing.
-                            </li>
-                            <li>
-                            <strong>IT/ITES:</strong> 
-                            Provides a secure cloud environment 
-                            with high-performance computing for enhanced
-                            service management.
-                            </li>
-                            
-                            <li>
-                            <strong>Telecommunications:</strong> 
-                            Delivers scalable, secure infrastructure 
-                            for handling high data volumes and
-                            ensuring compliance
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
+      <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper3}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Secure Mainframe Solutions
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
+                <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
+                <li>High Availability Designed for resilience, minimizing downtime.
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Efficient Linux Workloads
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>
+                Workload Isolation Secure environments protect data integrity.
+                </li>
+                <li>
+                Energy Efficiency Consolidation reduces energy consumption and costs.
+                </li>
+                <li>Scalability High-performance capabilities support efficient workload scaling.
+                </li>
+                
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper3}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Business Intelligence & Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper3}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Application Modernization
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Flexibility Integrates cloud services with legacy systems for agility.</li>
+                <li>Cost Optimization Allocates resources based on needs, preventing waste</li>
+                <li>Innovation Drives growth and operational efficiency.
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Sustainability Goals
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>
+                Reduced Carbon Footprint Energy-efficient practices lower emissions.
+                </li>
+                <li>
+                Cost Savings Reduces operational costs through efficiency.
+                </li>
+                <li>Brand Reputation Enhances reputation and supports compliance with sustainability goals.
+                </li>
+                
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper3}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Business Intelligence & Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-5 bg-light">
+  <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
+    Industries we serve
+  </h1>
+
+  <div className="container">
+    <div className="flex flex-wrap -mx-2"> {/* Negative margin to offset padding */}
+      {industriesforsands.map((industry, index) => (
+        <div
+          key={index}
+          className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          <div className="card overflow-hidden">
+            <img src={industry.img} className="card-img-top" alt={industry.title} />
+            <div className="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 className="card-title text-white">{industry.title}</h5>
+              <FaLongArrowAltRight className="text-white" />
+            </div>
+            <div
+              className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
+              style={{ backgroundColor: "#3f649a" }}
+            >
+              <h5 className="card-title">{industry.title}</h5>
+              <p style={{ textAlign: "center" }}>{industry.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+                <Certifications />
+
+                <section className="py-8">
+        <div className="container mx-auto max-w-7xl px-4">
+          <h1 className="text-5xl font-bold text-center mb-12">
+            {/* Powered by <span className="text-red-600">watsonX</span> */}
+            Products
+          </h1>
+
+          {/* Watson Assistant */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
+              <p className="text-lg">
+              LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
+environment. It is optimized for running more transactions faster and with more security and reliability,
+specifically for the open-source community
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={l1}
+                alt="Watson Assistant"
+                className="rounded-lg    animation-border2"
+                style={{width:"300px",height:"340px"}}
+              />
+            </div>
+          </div>
+
+          {/* Watson Discovery */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={wat5}
+                alt="Watson Discovery"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+              />
+            </div>
+            <div className="md:w-1/2 w-full md:pl-10">
+              <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
+              <p className="text-lg">
+              offers visibility into application performance and resource utilization, allowing
+organizations to optimize their infrastructure based on real-time data.
+
+              </p>
+            </div>
+          </div>
+
+          {/* Instana */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">Watson AIOps</h2>
+              <p className="text-lg">
+              leverages AI to analyze operational data, providing insights that help teams
+understand system performance and proactively resolve issues.
+
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={wat2}
+                alt="Instana"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
+              />
+            </div>
+          </div>
+
+          {/* Cognos */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full flex justify-center ">
+            <div className='animation-border'>
+                 <br /><br />
+                <img src={seven1} alt="" style={{
+                  width:"330px"
+                }} />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-10">
+              <h2 className="text-3xl font-bold mb-4">SevOne</h2>
+              <p className="text-lg">
+              delivers automated network observability, enabling deep insights into network performance
+              across multivendor environments, ensuring continuous monitoring and proactive management.
+              </p>
+            </div>
+          </div>
+
+        
+        </div>
+      </section>
 
             {/* FAQ Accordion */}
-            <section className="mt-10">
-                <h3 className="text-xl font-bold">Frequently Asked Questions</h3>
-                {securityAccordionData.map((item, index) => (
-                    <div key={index} className="border border-gray-300 rounded-md mb-2">
-                        <button
-                            onClick={() => toggleAccordion(index)}
-                            className="flex justify-between items-center w-full p-4 text-left bg-gray-100 hover:bg-gray-200 focus:outline-none"
+            <section className=" flex items-center justify-center min-h-screen">
+        <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-center mb-8">
+            Frequently Asked Questions
+          </h1>
+          <div className="space-y-4">
+            {securityAccordionData.map((item, index) => (
+              <div key={index} className="border-b">
+                <h2>
+                  <button
+                    className={`w-full text-left py-4 px-6 text-black  focus:outline-none flex justify-between items-center ${
+                      activeIndex === index ? "" : ""
+                    }`}
+                    onClick={() => toggleAccordion(index)}
+                    style={{fontSize:"20px"}}
+                  >
+                    {item.title}
+                    <span className="text-blue-600">
+                      {activeIndex === index ? (
+                        <svg
+                          className="w-4 h-4 transform rotate-180"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                            <span className="font-semibold">{item.title}</span>
-                            <span className="ml-2">{openIndex === index ? '-' : '+'}</span>
-                        </button>
-                        {openIndex === index && (
-                            <div className="p-4 bg-white border-t border-gray-300">
-                                <p>{item.content}</p>
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </section>
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          ></path>
+                        </svg>
+                      ) : (
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          ></path>
+                        </svg>
+                      )}
+                    </span>
+                  </button>
+                </h2>
+                {activeIndex === index && (
+                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            
-        
+       
+        <Contactus />
         </>
     );
 }

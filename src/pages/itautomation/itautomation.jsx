@@ -5,9 +5,36 @@ import HyperClouds from "../../assets/videos/HybridCloud.mp4";
 import hyper1 from "../../assets/images/hyper1.jpg";
 import hyper2 from "../../assets/images/hyper2.jpg";
 import hyper3 from "../../assets/images/hyper3.jpg";
+import Contactus from '../common/contact';
+import Certifications from '../common/certifications';
+import aili from "../../assets/images/ai-li.svg";
+import Industriesweserve from '../common/industries';
+import aiSectionImage from "../../assets/images/ai-section.svg";
+import aiOrnamentImage from "../../assets/images/image.png";
+import ind1 from "../../assets/images/ind_1.png";
+import ind2 from "../../assets/images/ind_2.png";
+import ind3 from "../../assets/images/ind_3.png";
+import ind4 from "../../assets/images/ind_4.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import its from "../../assets/images/itautomation.jpg"
+import wat3 from "../../assets/images/wat_3.svg";
+import wat5 from "../../assets/images/wat_5.svg";
+import wat2 from "../../assets/images/wat_2.svg";
+import seven1 from "../../assets/images/sevone.png"
+
 
 
 function Itautomation() {
+
+  const benifits = [
+    "Increased Efficiency Streamlines tasks, boosting productivity",
+    "Cost Reduction Cuts labor costs and errors, saving money.",
+    "Improved Accuracy Reduces errors, improving data integrity.",
+    "Faster Response Quick issue resolution, improving service.",
+    "Enhanced Compliance Ensures policy consistency and regulatory adherence.",
+    "Proactive Resolution Detects and fixes problems early."
+  ];
+
     const accordionData = [
         {
             title: "What is IT Automation?",
@@ -67,6 +94,32 @@ function Itautomation() {
       }
     };
 
+    const industriesforitautomation = [
+      {
+        title: "Manufacturing",
+        img: ind1,
+        description: "Implement automated quality control and monitoring using sensors and IoT devices to detect defects in real-time, minimize waste, and ensure high-quality products.",
+      },
+      {
+        title: "BFSI",
+        img: ind2,
+        description: "Utilize automated fraud detection systems to analyze transaction patterns, flag anomalies, and trigger alerts and preventive measures, reducing financial losses and boosting customer trust.",
+      },
+      {
+        title: "Healthcare",
+        img: ind3,
+        description: "Implement automated patient management systems to streamline appointment scheduling, reduce wait times, and improve patient communication, leading to enhanced operational efficiency and patient satisfaction. ",
+      },
+      {
+        title: "IT/ITES",
+        img: ind4,
+        description: "Streamline IT service management by automating ticket categorization, prioritization, and responses to enhance resolution times and improve customer satisfaction.",
+      },
+    ];
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+
     
 
     return (
@@ -86,9 +139,41 @@ function Itautomation() {
             </section>
 
             <section>
-                
+
+         <section className="relative my-20">
+        <div className="container mx-auto max-w-[1600px] px-16">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-8/12">
+              <p className="text-[41px] font-light md:w-10/12 w-full">
+                For data driven enterprises looking to create exceptional
+                customer and employee experience,
+              </p>
+              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+                SBA provides{" "}
+                <span className="text-red-600 font-semibold">
+                  modular and sustainable AI solutions
+                </span>{" "}
+                that are
+              </p>
+            </div>
+            <div className="w-full md:w-4/12">
+            <img
+                src={its}
+                loading="lazy"
+                alt="AI"
+                className=""
+                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"5px solid grey"}}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-0 right-0 hidden md:block z-[-1]">
+          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+        </div>
+      </section>
+       
                
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
+    {/* <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
       <div className="p-6 md:w-2/3">
       <h3>Benefits of IT automation:</h3>
       <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
@@ -102,121 +187,340 @@ function Itautomation() {
       </ul>
     </div>
      
-    </div>
+    </div> */}
+    <br /><br />
+
+<section className="custom-container ai-section">
+        <div className="relative px-12 md:px-25">
+          <div className="flex flex-wrap justify-between mt-10">
+            {benifits.map((text, index) => (
+              <div
+                key={index}
+                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
+              >
+                <div>
+                  <img
+                    className="ai-m"
+                    src={aili}
+                    loading="lazy"
+                    alt="ornament"
+                  />
+                </div>
+                <div className="ai-li-text">{text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+</section>
             </section>
 
+
+      <section>
+        <div className="relative bg-white py-20">
+          <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+            <img
+              src={aiOrnamentImage}
+              loading="lazy"
+              alt="ornament"
+              className="h-full object-cover transform scale-x-[-1]"
+            />
+          </div>
+          <div className="relative px-5 max-w-screen-xl mx-auto">
+            <h1 className="text-center text-3xl md:text-5xl font-bold">
+              Solutions & Services
+            </h1>
+          </div>
+        </div>
+      </section>
+
+          <section id="solutions">
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper1}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+          <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Automated IT Service Management (ITSM)
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Automates incident, problem, and change management.</li>
+                <li>Centralized platform for handling service requests and issues</li>
+                <li>Ensures faster resolution and higher service availability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Configuration Management Automation
+
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>
+                Automates configuration management across hybrid and multi-cloud environments
+                </li>
+                <li>
+                Enforces configuration policies and automatically detects unauthorized changes
+                </li>
+                <li>Helps IT teams maintain compliance effectively.
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper2}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Business Intelligence & Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper1}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+          <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Automated Backup and Recovery
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Automates data backup and recovery.</li>
+                <li>Simplifies backup management for both on-premises and cloud environments.</li>
+                <li>Automatically protects data, ensuring it is recoverable during system failures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Cloud Resource Orchestration
+
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>
+                Optimizes cloud resource provisioning, scaling, and monitoring.
+                </li>
+                <li>
+                Continuously analyzes application performance
+                </li>
+                <li>Automatically adjusts resources for optimal performance and cost control
+                </li>
+              </ul>
+            </div>
+            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper2}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Business Intelligence & Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
+            <div className="md:w-1/2 w-full p-1  md:p-4">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={hyper1}
+                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  alt="Data Orchestration"
+                />
+              </div>
+            </div>
+          <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
+              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              Predictive Maintenance Automation
+              </h2>
+              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+                <li>Automates asset management and predictive maintenance.</li>
+                <li>Uses AI-driven insights to analyze real-time equipment data.
+                </li>
+                <li>Predicts maintenance needs, reducing downtime and repair costs.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          </section>
+
             <section>
- <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-5xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans"}}>Our Solutions:</h2>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans"}}>Automated IT Service Management (ITSM)</h2>
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-3xl'>Automates incident, problem, and change management.</li>
-          <li className='text-3xl'>Centralized platform for handling service requests and issues.</li>
-          <li className='text-3xl'>Ensures faster resolution and higher service availability.</li>
-        </ul>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper1}
-          alt="Cloud illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-    </div>
+              
+          
+            <section className="py-5 bg-light">
+      <h1 className="display-4 text-center mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}} id="inds">Industries we serve</h1>
 
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper2}
-          alt="Data center illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
+      <div className="container">
+        <div className="row justify-content-between">
+          {industriesforitautomation.map((industry, index) => (
+            <div
+              key={index}
+              className="col-12 col-md-3 mb-4 position-relative"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div className="card overflow-hidden">
+                <img src={industry.img} className="card-img-top" alt={industry.title} />
+                <div className="card-img-overlay d-flex flex-column justify-content-end">
+                  <h5 className="card-title text-white">{industry.title}</h5>
+                  <FaLongArrowAltRight className="text-white" />
+                </div>
+                <div
+                  className={`card-body  text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
+                style={{backgroundColor:"#3f649a"}}
+                >
+                  <h5 className="card-title">{industry.title}</h5>
+                  <p style={{textAlign:"center"}}>{industry.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans",fontWeight:"bold"}}>Configuration Management Automation</h2>
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-3xl'>Automates configuration management across hybrid and multi-cloud environm</li>
-          <li className='text-3xl'>Enforces configuration policies and automatically detects unauthorized changes.</li>
-          <li className='text-3xl'>Helps IT teams maintain compliance effectively.</li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-5xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans",fontWeight:"bold"}}> Automated Backup and Recovery</h2>
-        {/* <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-left">Automated IT Service Management (ITSM)</h2> */}
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-3xl'>Automates data backup and recovery.</li>
-          <li className='text-3xl'>Simplifies backup management for both on-premises and cloud environments.</li>
-          <li className='text-3xl'>Automatically protects data, ensuring it is recoverable during system failures.</li>
-        </ul>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper1}
-          alt="Cloud illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-    </div>
-    
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper2}
-          alt="Data center illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans",fontWeight:"bold"}}>Cloud Resource Orchestration</h2>
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-3xl'>Optimizes cloud resource provisioning, scaling, and monitoring.</li>
-          <li className='text-3xl'>Continuously analyzes application performance.</li>
-          <li className='text-3xl'>Automatically adjusts resources for optimal performance and cost control.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="p-6 md:w-2/3">
-        <h2 className="text-5xl font-semibold text-gray-800 mb-4 text-left" style={{fontFamily:"league spartans",fontWeight:"bold"}}>Predictive Maintenance Automation</h2>
-        {/* <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-left">Automated IT Service Management (ITSM)</h2> */}
-        <ul className="list-disc list-inside space-y-2  text-left text-base font-normal" style={{fontFamily:"glacial indifference"}}>
-          <li className='text-3xl'>Automates asset management and predictive maintenance.</li>
-          <li className='text-3xl'>Uses AI-driven insights to analyze real-time equipment data.</li>
-          <li className='text-3xl'>Predicts maintenance needs, reducing downtime and repair costs.</li>
-        </ul>
-      </div>
-      <div className="flex md:w-1/2">
-        <img
-          src={hyper1}
-          alt="Cloud illustration"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-    </div>
+    <Certifications />
+   
 
 <br /><br />
+
+<section className="py-8">
+        <div className="container mx-auto max-w-7xl px-4" id='products'>
+          <h1 className="text-5xl font-bold text-center mb-12">
+            {/* Powered by <span className="text-red-600">watsonX</span> */}
+            Products
+          </h1>
+
+          {/* Watson Assistant */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">Instana</h2>
+              <p className="text-lg">
+              provides real-time, full-stack observability for applications, enabling automatic discovery
+              and continuous monitoring of performance metrics across various environments
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={wat3}
+                alt="Watson Assistant"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+              />
+            </div>
+          </div>
+
+          {/* Watson Discovery */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={wat5}
+                alt="Watson Discovery"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+              />
+            </div>
+            <div className="md:w-1/2 w-full md:pl-10">
+              <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
+              <p className="text-lg">
+              offers visibility into application performance and resource utilization, allowing
+organizations to optimize their infrastructure based on real-time data.
+
+              </p>
+            </div>
+          </div>
+
+          {/* Instana */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full md:pr-10">
+              <h2 className="text-3xl font-bold mb-4">Watson AIOps</h2>
+              <p className="text-lg">
+              leverages AI to analyze operational data, providing insights that help teams
+understand system performance and proactively resolve issues.
+
+              </p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <img
+                src={wat2}
+                alt="Instana"
+                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
+              />
+            </div>
+          </div>
+
+          {/* Cognos */}
+          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+            <div className="md:w-1/2 w-full flex justify-center ">
+              <div className='animation-border'>
+                 <br /><br />
+                <img src={seven1} alt="" style={{
+                  width:"330px"
+                }} />
+              </div>
+            </div>
+            <div className="md:w-1/2 w-full md:pl-10">
+              <h2 className="text-3xl font-bold mb-4">SevOne</h2>
+              <p className="text-lg">
+              delivers automated network observability, enabling deep insights into network performance
+              across multivendor environments, ensuring continuous monitoring and proactive management.
+              </p>
+            </div>
+          </div>
+
+        
+        </div>
+      </section>
+
 </section>
 
             {/* FAQ Accordion */}
-            <section className="bg-[#F5F9FD] flex items-center justify-center min-h-screen">
+            <section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-8">
             Frequently Asked Questions
           </h1>
           <div className="space-y-4">
             {accordionData.map((item, index) => (
-              <div key={index} className="border-b border-gray-200">
+              <div key={index} className="border-b">
                 <h2>
                   <button
                     className={`w-full text-left py-4 px-6 text-black font-semibold focus:outline-none flex justify-between items-center ${
-                      activeIndex === index ? "border border-blue-200" : ""
+                      activeIndex === index ? "" : ""
                     }`}
                     onClick={() => toggleAccordion(index)}
+                    style={{fontSize:"20px"}}
                   >
                     {item.title}
                     <span className="text-blue-600">
@@ -255,13 +559,14 @@ function Itautomation() {
                   </button>
                 </h2>
                 {activeIndex === index && (
-                  <div className="px-6 py-4 text-gray-700">{item.content}</div>
+                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
                 )}
               </div>
             ))}
           </div>
         </div>
       </section>
+      <Contactus />
         </>
     );
 }

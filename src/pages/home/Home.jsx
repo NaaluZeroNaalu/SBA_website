@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Home1 from "../../assets/videos/Home1.mp4";
+import Home1 from "../../assets/images/home1.gif";
 import Home4 from "../../assets/videos/Home4.mp4";
 import Home5 from "../../assets/videos/Home5.mp4";
 import Home6 from "../../assets/videos/Home6.mp4";
@@ -65,6 +65,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Counter from "./Counter";
 import { Checkmark } from "react-checkmark";
+import Certifications from "../common/certifications";
+import Industriesweserve from "../common/industries";
 
 function Homepage(){
 
@@ -119,7 +121,7 @@ function Homepage(){
     return(
         <>
         <section>
-        <div className="ai-green-Home">
+        {/* <div className="ai-green-Home">
           <div className="init-ai-Home">
             <div className="  md:hidden">
               <div className="init-red-bg px-5">Eliminate the Mundane</div>
@@ -133,7 +135,13 @@ function Homepage(){
           <video autoPlay muted loop>
             <source src={Home1} type="video/mp4" />
           </video>
+        </div> */}
+        <div className="absolute top-80">
+          <p className="ms-5" style={{color:"white",fontWeight:"bold",fontSize:"70px",fontFamily:"league spartans"}}>Automate the Mundane </p>
+          <p className="ms-5 p-2" style={{backgroundColor:"red",color:"white",fontSize:"70px",fontWeight:"bold",fontFamily:"league spartans",textAlign:"center"
+          }} >Elevate Human Potential</p>
         </div>
+        <img src={Home1} alt="" style={{width:"1700px"}}  />
       </section>
 
       <section className="responsive-video-section">
@@ -154,7 +162,7 @@ function Homepage(){
               </h2>
             </div>
             <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
-              <h3 className="text-red-600 font-semibold text-lg sm:text-xl mb-4" id="ani" >
+              <h3 className="text-red-600 font-semibold text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
                 For data-driven enterprises looking to create exceptional
                 customer and employee experience,
               </h3>
@@ -162,7 +170,7 @@ function Homepage(){
                 SBA provides modular and sustainable AI solutions that are:
               </p>
 
-              <ul className="list-none space-y-2">
+              <ul className="list-none space-y-2 ms-2">
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
                     <Checkmark size="25px" color="red" />
@@ -580,6 +588,9 @@ function Homepage(){
         </a>
       </section>
       <br /><br />
+      <Industriesweserve />
+      <Certifications />
+      <br /><br />
   <section className="w-full  to-gray-800 py-16 ms-3 me-3 ">
   <div className="px-4 sm:px-6 lg:px-8 max-w-screen-lg mx-auto  p-8 rounded-lg shadow-lg">
     <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
@@ -691,7 +702,8 @@ function Homepage(){
       <div className="d-grid">
         <button
           type="submit"
-          className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg"
+          className="px-8 py-3 text-white font-bold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg"
+          style={{backgroundColor:"#3f649a "}}
         >
           Submit Request
         </button>
