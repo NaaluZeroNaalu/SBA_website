@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import "./style.scss";
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
-import hyper1 from "../../assets/images/hyper1.jpg";
-import hyper2 from "../../assets/images/hyper2.jpg";
-import hyper3 from "../../assets/images/hyper3.jpg";
+import cloud1 from "../../assets/images/cloud/cloud1.png"
+import cloud2 from "../../assets/images/cloud/cloud2.png"
+import cloud3 from "../../assets/images/cloud/cloud3.png"
+import cloud4 from "../../assets/images/cloud/cloud4.png"
+import cloud5 from "../../assets/images/cloud/cloud5.png"
+import cloud6 from "../../assets/images/cloud/cloud6.png"
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
 import Industriesweserve from '../common/industries';
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
-import aiSectionImage from "../../assets/images/ai-section.svg";
+import aiSectionImage from "../../assets/images/cloud/cloud6.png";
 import ind1 from "../../assets/images/ind_1.png";
 import ind2 from "../../assets/images/ind_2.png";
 import ind3 from "../../assets/images/ind_3.png";
 import ind4 from "../../assets/images/ind_4.png";
+import ind5 from "../../assets/images/media.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
-import rhel from "../../assets/images/rhel.png"
-import ansi from "../../assets/images/ansi.jpg"
-import open from "../../assets/images/openshift.png"
+import rhel from "../../assets/images/cloud/redhat.png"
+import ansi from "../../assets/images/cloud/ansible.png"
+import open from "../../assets/images/cloud/openshift.png"
 
 function Openhybridcloud(){
 
@@ -113,7 +117,7 @@ const [activeIndex, setActiveIndex] = useState(null);
         },
         {
           title: "Media",
-          img: ind4,
+          img: ind5,
           description: "Develop adaptable infrastructures that support various digital content platforms and automation tools, simplifying the management of hybrid cloud environments for seamless task automation across public, private, and on-premise systems.",
         },
       ];
@@ -122,19 +126,28 @@ const [activeIndex, setActiveIndex] = useState(null);
 
     return(
         <>
-<section>
-        <div class="ai-green-v1">
-          <div class="init-ai-section1">
-            <div className="abspage16">Open Hybrid Cloud</div>
-            <div class="init-red-bg16 ">
-              Integrated Cloud Services
-            </div>
-          </div>
-          <video autoPlay muted loop>
-            <source src={HyperClouds} type="video/mp4" />
-          </video>
+
+<section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+          Open Hybrid Cloud
         </div>
-</section>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+          Integrated Cloud Services
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={HyperClouds} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
 
 {/* <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
       <div className="p-6 md:w-2/3">
@@ -178,24 +191,26 @@ const [activeIndex, setActiveIndex] = useState(null);
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
               <p className="text-[41px] font-light md:w-10/12 w-full">
-                For data driven enterprises looking to create exceptional
-                customer and employee experience,
+              Accelerate Innovation with Agile, Scalable, and Secure
               </p>
               <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
-                SBA provides{" "}
+              SBA automates  {" "}
                 <span className="text-red-600 font-semibold">
-                  modular and sustainable AI solutions
-                </span>{" "}
-                that are
+                IT tasks, optimize system performance, and enable seamless workflows
+                </span>{" "} through Open Hybrid Cloud
+                
               </p>
             </div>
             <div className="w-full md:w-4/12">
-              <img
+             <div className="animation-border" style={{height:"410px"}}>
+             <img
                 src={aiSectionImage}
                 loading="lazy"
                 alt="AI"
-                className="h-[28rem] w-[22rem] object-contain"
+                className=""
+                style={{width:"400px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
               />
+             </div>
             </div>
           </div>
         </div>
@@ -255,7 +270,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper1}
+                  src={cloud1}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -263,10 +278,10 @@ const [activeIndex, setActiveIndex] = useState(null);
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Infrastructure Management & security
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Automates security practices and compliance checks to reduce risks.</li>
                 <li>
                 Enhances the efficiency of provisioning, configuration, and management of infrastructure through
@@ -285,10 +300,10 @@ const [activeIndex, setActiveIndex] = useState(null);
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Application Development and delivery
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                 Facilitates the development, deployment, and management of applications in a containerized
                 environment.
@@ -307,7 +322,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper2}
+                  src={cloud2}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -323,7 +338,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper1}
+                  src={cloud3}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -331,10 +346,10 @@ const [activeIndex, setActiveIndex] = useState(null);
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               OS management & Security
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Streamlines system administration and management tasks.
                 </li>
                 <li>
@@ -410,7 +425,7 @@ const [activeIndex, setActiveIndex] = useState(null);
         <div className="container mx-auto max-w-7xl px-4" id='products'>
           <h1 className="text-5xl font-bold text-center mb-12">
             {/* Powered by <span className="text-red-600">watsonX</span> */}
-            Products
+            Powered by
           </h1>
 
           {/* Watson Assistant */}
@@ -425,22 +440,33 @@ const [activeIndex, setActiveIndex] = useState(null);
               </p>
             </div>
             <div className="md:w-1/2 w-full flex justify-center ">
+              <div className="animation-border">
+              <div style={{height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}>
+                <br /><br />
               <img
                 src={rhel}
                 alt="Watson Assistant"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+                className="rounded-lg object-cover "
+                // style={{width:"800px",height:"386px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
               />
+              </div>
+              </div>
             </div>
           </div>
 
           {/* Watson Discovery */}
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full flex justify-center ">
+              <div className="animation-border2">
+                <div style={{height:"390px",borderTopRightRadius:"100px",borderBottomLeftRadius:"100px",borderTopLeftRadius:"0px",borderBottomRightRadius:"0px",border:"12px solid #EEEEEE"}}>
+                  <br /><br />
               <img
                 src={ansi}
                 alt="Watson Discovery"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
+                className="rounded-lg  object-cover "
               />
+                </div>
+              </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-2xl font-bold mb-4">Redhat Ansible automation platform</h2>
@@ -465,11 +491,18 @@ consistently across hybrid cloud environments
               </p>
             </div>
             <div className="md:w-1/2 w-full flex justify-center ">
-              <img
+             <div className="animation-border">
+              <div style={{height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}>
+             <br /><br />
+             <img
                 src={open}
                 alt="Instana"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
+                className="rounded-lg object-cover"
+                
               />
+
+              </div>
+             </div>
             </div>
           </div>
 

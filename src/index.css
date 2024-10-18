@@ -32,6 +32,8 @@
     }
 }
 
+
+
 .border-animation {
     animation: border_animation 4s infinite; /* You can adjust the duration and timing */
     border-width: 5px; /* Set border width */
@@ -62,6 +64,12 @@
     }
 }
 
+.animb{
+    border: 6px solid #D3271f;
+    height: 400px;
+    width: 350px;
+    animation: border_animations 3s linear infinite;
+}
 
 .animation-border {
     border: 6px solid #D3271f;

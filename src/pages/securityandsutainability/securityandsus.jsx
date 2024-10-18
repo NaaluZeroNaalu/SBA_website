@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
 import "./style.scss";
-import hyper3 from "../../assets/images/hyper3.jpg";
+import sands1 from "../../assets/images/security/sands1.png"
+import sands2 from "../../assets/images/security/sands2.png"
+import sands3 from "../../assets/images/security/sands3.png"
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
-import sands from "../../assets/images/sands.jpg"
+import sands from "../../assets/images/1.png"
 import Industriesweserve from '../common/industries';
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
@@ -13,8 +15,9 @@ import ind1 from "../../assets/images/ind_1.png";
 import ind2 from "../../assets/images/ind_2.png";
 import ind3 from "../../assets/images/ind_3.png";
 import ind4 from "../../assets/images/ind_4.png";
+import tele from "../../assets/images/telecommunication.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
-import l1 from "../../assets/images/linuxone.png"
+import l1 from "../../assets/images/security/linux1logo.png"
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
@@ -108,7 +111,7 @@ function Securityandsus() {
       },
       {
         title: "Telecommunications",
-        img: ind4,
+        img: tele,
         description: "Delivers scalable, secure infrastructure for handling high data volumes and ensuring compliance.",
       },
     ];
@@ -118,44 +121,53 @@ function Securityandsus() {
 
     return (
         <>
-            <section>
-                <div className="ai-green-ss">
-                    <div className="init-ai-section1">
-                        <div className="abspage16">Security and Sustainability</div>
-                        <div className="init-red-bg16 ">
-                            Secure Enterprise Computing
-                        </div>
-                    </div>
-                    <video autoPlay muted loop>
-                        <source src={HyperClouds} type="video/mp4" />
-                    </video>
-                </div>
-            </section>
+       <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+          Security and Sustainability
+        </div>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+          Secure Enterprise Computing
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={HyperClouds} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
 
     <section className="relative my-20">
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
               <p className="text-[41px] font-light md:w-10/12 w-full">
-                For data driven enterprises looking to create exceptional
-                customer and employee experience,
+              Protect and Thrive with IBM LinuxONE Secure, Sustainable, and Efficient
               </p>
               <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
-                SBA provides{" "}
+              SBA empowers enterprises {" "}
                 <span className="text-red-600 font-semibold">
-                  modular and sustainable AI solutions
-                </span>{" "}
-                that are
+                to Safeguard data, reduce environmental impact, and optimize operations 
+                </span>{" "}with IBM LinuxONE.
+           
               </p>
             </div>
             <div className="w-full md:w-4/12">
-              <img
+            <div className="animation-border" style={{height:"420px"}}>
+            <img
                 src={sands}
                 loading="lazy"
                 alt="AI"
                 className=""
-                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"5px solid grey"}}
+                style={{width:"500px",height:"410px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
               />
+            </div>
             </div>
           </div>
         </div>
@@ -212,7 +224,7 @@ function Securityandsus() {
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper3}
+                  src={sands1}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -220,10 +232,10 @@ function Securityandsus() {
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Secure Mainframe Solutions
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
                 <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
                 <li>High Availability Designed for resilience, minimizing downtime.
@@ -237,10 +249,10 @@ function Securityandsus() {
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Efficient Linux Workloads
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                 Workload Isolation Secure environments protect data integrity.
                 </li>
@@ -255,7 +267,7 @@ function Securityandsus() {
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper3}
+                  src={sands2}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -266,12 +278,12 @@ function Securityandsus() {
         </div>
 
 
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+        {/* <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper3}
+                  src={sands3}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -291,15 +303,15 @@ function Securityandsus() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Sustainability Goals
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                 Reduced Carbon Footprint Energy-efficient practices lower emissions.
                 </li>
@@ -314,7 +326,7 @@ function Securityandsus() {
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper3}
+                  src={sands3}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -380,12 +392,15 @@ specifically for the open-source community
               </p>
             </div>
             <div className="md:w-1/2 w-full flex justify-center ">
+              <div className="animation-border">
               <img
                 src={l1}
                 alt="Watson Assistant"
-                className="rounded-lg    animation-border2"
-                style={{width:"300px",height:"340px"}}
+                className="rounded-lg  w-full  object-cover"
+                // style={{width:"400px",height:"400px"}}
+                style={{width:"600px",height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
               />
+              </div>
             </div>
           </div>
 
@@ -434,7 +449,10 @@ understand system performance and proactively resolve issues.
                  <br /><br />
                 <img src={seven1} alt="" style={{
                   width:"330px"
-                }} />
+                  
+                }}
+                className='mt-4'
+                />
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-10">

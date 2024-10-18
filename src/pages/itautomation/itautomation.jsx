@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Indus from "../../assets/videos/Industries.mp4";
 import "./style.scss";
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
-import hyper1 from "../../assets/images/hyper1.jpg";
-import hyper2 from "../../assets/images/hyper2.jpg";
-import hyper3 from "../../assets/images/hyper3.jpg";
+import hyper1 from "../../assets/images/itautomation/it1.png";
+import hyper2 from "../../assets/images/itautomation/it2.png";
+import hyper3 from "../../assets/images/itautomation/it3.png";
+import hyper4 from "../../assets/images/itautomation/it4.png";
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
 import aili from "../../assets/images/ai-li.svg";
@@ -13,10 +14,10 @@ import aiSectionImage from "../../assets/images/ai-section.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
 import ind1 from "../../assets/images/ind_1.png";
 import ind2 from "../../assets/images/ind_2.png";
-import ind3 from "../../assets/images/ind_3.png";
+import ind3 from "../../assets/images/healthcare.png";
 import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import its from "../../assets/images/itautomation.jpg"
+import its from "../../assets/images/itautomation/its.png"
 import wat3 from "../../assets/images/wat_3.svg";
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
@@ -124,46 +125,58 @@ function Itautomation() {
 
     return (
         <>
-            <section>
-                <div className="ai-green-Ins1">
-                    <div className="init-ai-sectionIns1">
-                        <div className="Ins1">IT Automation</div>
-                        <div className="init-red-bg px-5" style={{marginLeft:"-400px"}}>
-                            Empower Your Operations
-                        </div>
-                    </div>
-                    <video autoPlay muted loop>
-                        <source src={Indus} type="video/mp4" />
-                    </video>
-                </div>
-            </section>
+        <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+          IT Automation
+        </div>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+          Empower Your Operations
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={Indus} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
 
             <section>
 
-         <section className="relative my-20">
+         <section className="relative my-20 ">
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
               <p className="text-[41px] font-light md:w-10/12 w-full">
-                For data driven enterprises looking to create exceptional
-                customer and employee experience,
+              Leverage the power of IT Automation with advanced, state-of-the-art solutions.
+              {/* 
+              SBA effectively automates repetitive tasks, enhance system efficiency, and facilitate smarter workflows.
+              */}
               </p>
               <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
-                SBA provides{" "}
+              SBA effectively automates{" "}
                 <span className="text-red-600 font-semibold">
-                  modular and sustainable AI solutions
+                repetitive tasks, enhance system efficiency, and facilitate
                 </span>{" "}
-                that are
+                smarter workflows
               </p>
             </div>
             <div className="w-full md:w-4/12">
-            <img
+           <div className='animation-border' style={{height:"410px"}}>
+           <img
                 src={its}
                 loading="lazy"
                 alt="AI"
                 className=""
-                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"5px solid grey"}}
+                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
               />
+           </div>
             </div>
           </div>
         </div>
@@ -248,10 +261,10 @@ function Itautomation() {
               </div>
             </div>
           <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Automated IT Service Management (ITSM)
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Automates incident, problem, and change management.</li>
                 <li>Centralized platform for handling service requests and issues</li>
                 <li>Ensures faster resolution and higher service availability</li>
@@ -264,11 +277,11 @@ function Itautomation() {
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Configuration Management Automation
 
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                 Automates configuration management across hybrid and multi-cloud environments
                 </li>
@@ -297,7 +310,7 @@ function Itautomation() {
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper1}
+                  src={hyper3}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -305,10 +318,10 @@ function Itautomation() {
               </div>
             </div>
           <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Automated Backup and Recovery
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Automates data backup and recovery.</li>
                 <li>Simplifies backup management for both on-premises and cloud environments.</li>
                 <li>Automatically protects data, ensuring it is recoverable during system failures</li>
@@ -321,11 +334,11 @@ function Itautomation() {
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Cloud Resource Orchestration
 
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                 Optimizes cloud resource provisioning, scaling, and monitoring.
                 </li>
@@ -339,7 +352,7 @@ function Itautomation() {
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper2}
+                  src={hyper4}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -362,10 +375,10 @@ function Itautomation() {
               </div>
             </div>
           <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Predictive Maintenance Automation
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Automates asset management and predictive maintenance.</li>
                 <li>Uses AI-driven insights to analyze real-time equipment data.
                 </li>
@@ -421,7 +434,7 @@ function Itautomation() {
         <div className="container mx-auto max-w-7xl px-4" id='products'>
           <h1 className="text-5xl font-bold text-center mb-12">
             {/* Powered by <span className="text-red-600">watsonX</span> */}
-            Products
+            Powered By
           </h1>
 
           {/* Watson Assistant */}

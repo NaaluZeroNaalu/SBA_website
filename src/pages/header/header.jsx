@@ -19,7 +19,7 @@ function Header() {
               </div>
             </li>
             <li className="dropdown">
-              <a href="/Solutions">Solutions</a>
+              <a href="#">Solutions</a>
               <div className="dropdown-content">
                 <a href="Data-AI">Data and AI</a>
                 <a href="Itautomation">IT and Business Automation</a>

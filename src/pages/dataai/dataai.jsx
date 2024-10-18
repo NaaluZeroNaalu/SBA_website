@@ -108,17 +108,27 @@ function Dataai(){
 
     return(
         <>
-        <section>
-        <div class="ai-green-vi">
-          <div class="init-ai-section">
-            <div>Empower Your Business with</div>
-            <div class="init-red-bg px-5">Trusted AI Solutions</div>
-          </div>
-          <video autoPlay muted loop>
-            <source src={datapage} type="video/mp4" />
-          </video>
+    <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+          Empower Your Business With
         </div>
-      </section>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+          Trusted AI Solutions
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={datapage} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
       <section className="relative my-20">
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
@@ -130,9 +140,9 @@ function Dataai(){
               <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
                 SBA provides{" "}
                 <span className="text-red-600 font-semibold">
-                  modular and sustainable AI solutions
+                  modular and sustainable AI solutions & ML Models
                 </span>{" "}
-                that are
+      
               </p>
             </div>
             <div className="w-full md:w-4/12">
@@ -205,10 +215,10 @@ function Dataai(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
                 Data Orchestration and Management
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>Database Consulting and Management</li>
                 <li>Data Fabric Architecture for Self-Service</li>
                 <li>Data Warehousing, Data Lakes, and Lakehouses</li>
@@ -224,10 +234,10 @@ function Dataai(){
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
                 Business Intelligence & Analytics 
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                   Cognos Analytics for enterprise BI, reporting, and augmented
                   analytics with inbuilt AI
@@ -267,10 +277,10 @@ function Dataai(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
                 <b>Intelligent IT Automation</b>
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left">
                 <li>
                   Enterprise Observability for application performance and
                   Infrastructure quality management
@@ -288,10 +298,10 @@ function Dataai(){
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-6 md:mb-16 text-left">
+              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
                 <b>Enterprise ML and Generative AI</b>
               </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left ms-5">
+              <ul className="text-base pl-0 list-disc space-y-3 text-left ms-5">
                 <li>Customer care and call center modernization</li>
                 <li>
                   Retrieval Augmented generation for knowledge self-service

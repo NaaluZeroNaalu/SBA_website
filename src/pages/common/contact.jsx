@@ -110,7 +110,7 @@ function Contactus(){
       </div>
 
       {/* Submit Button */}
-      <div className="d-grid">
+      <div className="" style={{textAlign:"center"}}>
         <button
           type="submit"
           className="px-8 py-3 text-white font-bold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg"
@@ -120,6 +120,7 @@ function Contactus(){
         </button>
       </div>
     </form>
+    <br /><br /><br />
         </>
     )
 }

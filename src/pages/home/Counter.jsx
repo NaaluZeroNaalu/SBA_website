@@ -22,7 +22,7 @@ function Counter() {
             } else {
                 clearInterval(yearsInterval);
             }
-        }, 100); // Adjust the speed of the counting
+        }, 10); // Adjust the speed of the counting
 
         return () => {
             clearInterval(customerInterval);
@@ -32,25 +32,39 @@ function Counter() {
 
     return (
         <>
-        
-            <h1 className="text-center font-bold">Why work with us?</h1>
-            <section className="work ms-5">
+        <br />
+    <h1 className="text-center font-bold">Why work with us?</h1>
+            <section className="work ms-5 mt-5" style={{height:"300px"}}>
                 <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-screen-lg mx-auto">
-                    <div className="flex flex-col items-center gradient-border-square  w-48 h-48 justify-center">
+                    
+                    <div className="animb" style={{height:"205px",width:"205px"}}>
+
+                    <div className="flex flex-col items-center   w-48 h-48 justify-center" style={{border:"9px solid #EEEEEE"}}>
                         <h1 className="text-3xl font-bold">{customerCount}+</h1>
                         <p>customers</p>
                     </div>
-                    <div className="flex flex-col items-center gradient-border-square w-48 h-48 justify-center">
+                    </div>
+                   <div className="animb" style={{height:"205px",width:"205px"}}>
+
+                    <div className="flex flex-col items-center  w-48 h-48 justify-center" style={{border:"9px solid #EEEEEE"}}>
                         <h1 className="text-3xl font-bold">{yearsCount}+</h1>
                         <p>years in market</p>
                     </div>
-                    <div className="flex flex-col items-center gradient-border-square w-48 h-48 justify-center">
+                   </div>
+
+                   <div className="animb" style={{height:"205px",width:"205px"}}>
+
+                    <div className="flex flex-col items-center  w-48 h-48 justify-center" style={{border:"9px solid #EEEEEE"}}> 
                         <h1 className="text-3xl font-bold">Best</h1>
                         <p>predictive support</p>
                     </div>
-                    <div className="flex flex-col items-center gradient-border-square  w-48 h-48 justify-center">
+
+                   </div>
+                    <div className="animb" style={{height:"205px",width:"205px"}}>
+                    <div className="flex flex-col items-center  w-48 h-48 justify-center" style={{border:"9px solid #EEEEEE"}}>
                         <h1 className="text-3xl font-bold">ISO</h1>
-                        <p>process rigor & certifications</p>
+                        <p style={{textAlign:"center"}}>process rigor & certifications</p>
+                    </div>
                     </div>
                 </div>
             </section>

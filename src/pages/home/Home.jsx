@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Home1 from "../../assets/images/home1.gif";
+import Home1 from "../../assets/videos/Home1.mp4";
 import Home4 from "../../assets/videos/Home4.mp4";
 import Home5 from "../../assets/videos/Home5.mp4";
 import Home6 from "../../assets/videos/Home6.mp4";
@@ -58,7 +58,10 @@ import com39 from "../../assets/images/company39.png";
 import com40 from "../../assets/images/company40.jpg";
 import com41 from "../../assets/images/company41.png";
 import com42 from "../../assets/images/company42.png";
-
+import homev from "../../assets/videos/homev.mp4"
+import trusted from "../../assets/videos/trusted.mp4"
+import redhat from "../../assets/images/trustedpartners/redhat.png"
+import ibm from "../../assets/images/trustedpartners/ibm.png"
 import "./style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -120,29 +123,27 @@ function Homepage(){
 
     return(
         <>
-        <section>
-        {/* <div className="ai-green-Home">
-          <div className="init-ai-Home">
-            <div className="  md:hidden">
-              <div className="init-red-bg px-5">Eliminate the Mundane</div>
-            </div>
-
-            <div className="hidden md:block ">
-              <div className="ms-5" style={{}}>Eliminate the mundane</div>
-              <div className="init-red-bg px-5">automate the repetitive Elevate Human patential</div>
-            </div>
-          </div>
-          <video autoPlay muted loop>
-            <source src={Home1} type="video/mp4" />
-          </video>
-        </div> */}
-        <div className="absolute top-80">
-          <p className="ms-5" style={{color:"white",fontWeight:"bold",fontSize:"70px",fontFamily:"league spartans"}}>Automate the Mundane </p>
-          <p className="ms-5 p-2" style={{backgroundColor:"red",color:"white",fontSize:"70px",fontWeight:"bold",fontFamily:"league spartans",textAlign:"center"
-          }} >Elevate Human Potential</p>
+      <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+           Automate the mundane
         </div>
-        <img src={Home1} alt="" style={{width:"1700px"}}  />
-      </section>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+          Elevate Human potential
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={Home1} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
 
       <section className="responsive-video-section">
         <div className="relative w-full min-h-screen">
@@ -156,18 +157,23 @@ function Homepage(){
             style={{ paddingTop: "10%" }}
           >
             <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
-              <h2 className="text-black font-bold text-3xl sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontFamily:"league spartan"}}>
-                Enable people and organizations to achieve extraordinary
-                outcomes, effortlessly.
+              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Vision</p>
+              <h2 className="text-black font-bold  sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",fontFamily:"league spartan"}}>
+              
+              To become a global leader in creating agile and
+               secure work environments that boost productivity and 
+               promote sustainable growth, contributing to a more resilient and 
+               equitable global economy 
               </h2>
             </div>
             <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
-              <h3 className="text-red-600 font-semibold text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
-                For data-driven enterprises looking to create exceptional
-                customer and employee experience,
+              <h3 className="text-black-600 font-semibold text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
+              <span style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Mission</span>
+              <br />
+              To be the transformative force that shapes an agile, purposeful future of work on a global scale 
               </h3>
-              <p className="text-gray-700 font-bold text-sm sm:text-md mb-4">
-                SBA provides modular and sustainable AI solutions that are:
+              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>
+                Value
               </p>
 
               <ul className="list-none space-y-2 ms-2">
@@ -175,35 +181,34 @@ function Homepage(){
                   <span className="text-red-500 text-xl mr-2">
                     <Checkmark size="25px" color="red" />
                   </span>
-                  <span>Easy to adopt</span>
+                  <span><b>Relentless curiosity & agility</b> </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
                     <Checkmark size="25px" color="red" />
                   </span>
-                  <span>Trusted, governed, secure, and ethical</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
-                  </span>
-                  <span>
-                    Focused on augmenting human intelligence, not replacing it
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
-                  </span>
-                  <span>Trained on your quality enterprise data</span>
+                  <span><b>Bold experimentation</b></span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
                     <Checkmark size="25px" color="red" />
                   </span>
                   <span>
-                    Transformative – Helping you gain a truly competitive edge
-                    over the market
+                  <b>Multidisciplinary Innovation</b>
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span><b>Wisdom in Action</b></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-red-500 text-xl mr-2">
+                    <Checkmark size="25px" color="red" />
+                  </span>
+                  <span>
+                  <b>Data and Future Obsessed</b>
                   </span>
                 </li>
               </ul>
@@ -231,6 +236,18 @@ function Homepage(){
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-10 w-full max-w-screen-xl">
+            
+            <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
+    <img
+      src={Homeg9}
+      alt="Data, Automation & AI"
+      className="h-12 md:h-16 mb-4"
+    />
+    <h3 className="text-center text-black font-semibold text-base md:text-lg">
+      Data & AI
+    </h3>
+    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
+  </div>
             <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
               <img
                  src={Homeg7}
@@ -238,100 +255,46 @@ function Homepage(){
                            className="h-12 md:h-16 mb-4"
                            />
             <h3  className="text-center text-black font-semibold text-base md:text-lg">
-      Infrastructure & Application Modernization
+      IT & Buisness Automation
                   </h3>
                  <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
             </div>
 
+      
             <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-    <img
-      src={Homeg8}
-      alt="Cyber Resiliency"
-      className="h-12 md:h-16 mb-4"
-    />
-    <h3 className="text-center text-black font-semibold text-base md:text-lg">
-      Cyber Resiliency
-    </h3>
-    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-  </div>
-
-              
-  <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-    <img
-      src={Homeg9}
-      alt="Data, Automation & AI"
-      className="h-12 md:h-16 mb-4"
-    />
-    <h3 className="text-center text-black font-semibold text-base md:text-lg">
-      Data, Automation & AI
-    </h3>
-    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-  </div>
-
-  <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
     <img
       src={Homeg11}
       alt="Managed Services"
       className="h-12 md:h-16 mb-4"
     />
     <h3 className="text-center text-black font-semibold text-base md:text-lg">
-      Managed Services
+    Security and Sustainability
     </h3>
     <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
   </div>
+      <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
+    <img
+      src={Homeg8}
+      alt="Cyber Resiliency"
+      className="h-12 md:h-16 mb-4"
+    />
+    <h3 className="text-center text-black font-semibold text-base md:text-lg">
+    Open Hybrid Cloud
+    </h3>
+    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
+  </div>
+
+              
+  
+
+  
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div className="relative w-full h-screen">
-          <video autoPlay muted loop playsInline className="absolute ">
-            <source src={Home11} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
 
-          <div className="relative z-10 py-16 w-full md:ml-[22%] md:w-[78%] px-4 sm:px-6 sm:py-10">
-            <h2 style={{fontFamily:"league spartan"}} className="text-red-600 font-semibold text-xl sm:text-2xl md:text-2xl mb-6 sm:mb-12 text-center md:text-left">
-              For core applications and domains of banking, insurance, and
-              institutions
-            </h2>
-
-            <p style={{fontFamily:"league spartan"}} className="text-black text-lg sm:text-xl md:text-2xl mb-6 sm:mb-12 text-center md:text-left">
-              We drastically simplify business and IT operations by building{" "}
-              <span className="font-bold">
-                digital systems powered by AI, automation, and hybrid cloud
-                infrastructure
-              </span>
-            </p>
-
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4 md:px-0">
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
-                <h3 className="font-semibold text-lg sm:text-xl mb-4">BFSI</h3>
-                <img src={Homeg3} alt="BFSI" className="mx-auto" />
-              </div>
-
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
-                <h3 className="font-semibold text-lg sm:text-xl mb-4">
-                  Manufacture
-                </h3>
-                <img src={Homeg4} alt="Manufacturing" className="mx-auto" />
-              </div>
-
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
-                <h3 className="font-semibold text-lg sm:text-xl mb-4">Media</h3>
-                <img src={Homeg5} alt="Media" className="mx-auto" />
-              </div>
-
-              <div className="bg-red-500 text-white p-4 rounded-lg shadow-md text-center">
-                <h3 className="font-semibold text-lg sm:text-xl mb-4">
-                  IT/ITES
-                </h3>
-                <img src={Homeg6} alt="IT/ITES" className="mx-auto" />
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section>
@@ -359,20 +322,15 @@ function Homepage(){
       </section>
 
       <section className="relative h-60 ms-2 me-2">
-        <div className="absolute inset-0 flex justify-center items-center z-10 text-center">
+        <div className="absolute inset-0 flex justify-center items-center z-10 text-center container">
           <div className="text-white px-4">
             <h1 style={{fontFamily:"league spartan"}} className="text-white text-3xl md:text-5xl font-bold">
-              Our mission
+             
             </h1>
             <p style={{fontFamily:"league spartan "}} className="mt-4 text-xl md:text-4xl init-red-bg1">
-              At our core, we believe in empowering human potential through the
-              responsible use of artificial intelligence and data-driven
-              technologies.
+            The problem is not that computers will begin to think like men, It’s that men will begin to think like computers
             </p>
-            <p className="mt-2 text-base md:text-lg text-gray-300">
-              Ethically developed technologies can enhance human creativity,
-              decision-making, and product experiences.
-            </p>
+           
           </div>
         </div>
         <video
@@ -381,20 +339,21 @@ function Homepage(){
           loop
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
-          <source src={Home6} type="video/mp4" />
+          <source src={Home5} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
       </section>
 <br /><br />
       <section className="relative  h-60  ms-3 me-3">
         <div className="absolute inset-0 flex justify-center items-center z-10 text-center px-4">
-          <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-4xl xl:text-4xl leading-relaxed">
-            <span className="text-black">
-              The problem is not that computers will begin to think like men,
+          <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-4xl xl:text-4xl ">
+            <span className="text-red-600">
+            Empower with Data, Accelerate with Agility
             </span>
-            <span className="text-red-500">
+            <br />
+            <span className="" style={{color:"white",fontFamily:"league spartan "}}>
               {" "}
-              It’s that men will begin to think like computers
+              Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.
             </span>
           </p>
         </div>
@@ -405,7 +364,7 @@ function Homepage(){
           loop
           className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
         >
-          <source src={Home5} type="video/mp4" />
+          <source src={homev} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
@@ -421,20 +380,18 @@ function Homepage(){
               </div>
               <div className="w-full md:w-1/2 text-right">
                 <p style={{fontFamily:"league spartan "}} className="text-lg text-gray-600 mb-6">
-                  IT teams and business functions of all sizes are leveraging
-                  our expertise to create value for themselves and their
-                  customers.
+                 
                 </p>
-                <a style={{fontFamily:"league spartan "}} className="text-lg">View customer stories →</a>
+                <a style={{fontFamily:"league spartan "}} className="text-lg">View client stories →</a>
               </div>
             </div>
           </div>
 
-          <div className="mx-auto px-8 max-w-screen-xl">
-            <h3 style={{fontFamily:"league spartan "}} className="text-lg font-semibold text-center mb-4 init-red-bg1">
+          <div className="mx-auto px-8 max-w-screen-xl" style={{height:"250px"}}>
+            <h3 style={{fontFamily:"league spartan "}} className="text-center text-3xl md:text-5xl font-bold">
               Trusted by talented leaders at:
             </h3>
-            <br />
+            <br /><br />
             <Slider
               dots={false}
               infinite={true}
@@ -485,7 +442,7 @@ function Homepage(){
                   <img
                     src={logo}
                     alt={`Company logo ${index + 1}`}
-                    className="mx-auto h-16"
+                    className="mx-auto h-20"
                   />
                 </div>
               ))}
@@ -500,93 +457,38 @@ function Homepage(){
 
       <section className="w-full bg-gray-50">
         <div className="py-10">
-          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-3xl font-bold mb-4">Our partner ecosystem</h2>
-              <p style={{fontFamily:"league spartan "}} className="text-lg text-gray-600 mb-6">
-                Empowering our success through the collective strength and
-                expertise of our partner network
-              </p>
+          
+
+  <section className="relative h-60 mx-3">
+    <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center px-4">
+        <br /><br />
+        <h2 className="text-6xl font-bold mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}}>Our Partner Ecosystem</h2>
+
+        <div className="flex justify-center">
+            <div className="mx-2"> {/* Adjust spacing between images */}
+                <img src={redhat} alt="Red Hat" className=" object-contain" style={{width:"200px"}} />
             </div>
-          </div>
+            <div className="mx-2"> {/* Adjust spacing between images */}
+                <img src={ibm} alt="IBM" className=" object-contain" style={{width:"200px"}} />
+            </div>
+        </div>
+    </div>
 
-          <div className="mx-auto px-6 max-w-screen-xl text-center">
-            <h3 style={{fontFamily:"league spartan "}} className="text-lg font-semibold mb-4 init-red-bg1">
-              Trusted by talented leaders at:
-            </h3>
-
-            <Slider
-              dots={false}
-              infinite={true}
-              speed={500}
-              slidesToShow={5}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={2000}
-              nextArrow={
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              }
-              prevArrow={
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M15 5l-7 7 7 7"
-                    />
-                  </svg>
-                </div>
-              }
-            >
-              {Ecosys.map((logo, index) => (
-                <div key={index} className="px-2">
-                  <img
-                    src={logo}
-                    alt={`Company logo ${index + 1}`}
-                    className="mx-auto h-16"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+    <video
+        autoPlay
+        muted
+        loop
+        className="absolute inset-0 w-full  object-cover z-0 hidden md:block"
+        style={{height:"300px"}}
+    >
+        <source src={trusted} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+</section>
         </div>
       </section>
 
-      <section>
-      <a href="/Resources" >
-        <div class="ai-green-vi ms-3 me-3">
-          <div class="init-ai-section">
-            <div style={{fontFamily:"league spartan "}} >Resources</div>
-            
-          </div>
-          <video autoPlay muted loop>
-            <source src={Home4} type="video/mp4" />
-          </video>
-        </div>
-        </a>
-      </section>
+      
       <br /><br />
       <Industriesweserve />
       <Certifications />
