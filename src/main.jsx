@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from './pages/header/header.jsx'
 import Footer from './pages/footer/footer.jsx'
+import Sidecontent from './pages/sidecontact/side.jsx'
 
 
 
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <>
     <Header />
     <App />
+    <Sidecontent />
     <Footer />
     </>
   

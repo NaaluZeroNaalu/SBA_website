@@ -1,7 +1,8 @@
-.footers{
+.nav-container{
 
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
+    
     
 }
 
@@ -9,10 +10,11 @@
 #footer a{
 
     color: black;
-    font-weight: bold;
-    font-family: league spartans;
+    // font-weight: bold;
+    // font-family: league spartans;
     font-size: 20px;
 }
+
 
 
 #footer video{
@@ -22,7 +24,7 @@
 
 @media (max-width: 320px){
 
-    .footers{
+    .nav-container{
 
         display: grid;
         grid-template-columns: auto;

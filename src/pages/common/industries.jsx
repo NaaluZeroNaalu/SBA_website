@@ -51,7 +51,10 @@ function Industriesweserve(){
             >
               <div className="card overflow-hidden">
                 <img src={industry.img} className="card-img-top" alt={industry.title} />
-                <div className="card-img-overlay d-flex flex-column justify-content-end">
+                <div className="card-img-overlay d-flex flex-column justify-content-end" onClick={()=>{
+
+                  window.location.href = "/industries"
+                }}>
                   <h5 className="card-title text-white">{industry.title}</h5>
                   <FaLongArrowAltRight className="text-white" />
                 </div>

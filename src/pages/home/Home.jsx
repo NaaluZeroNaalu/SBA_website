@@ -70,6 +70,7 @@ import Counter from "./Counter";
 import { Checkmark } from "react-checkmark";
 import Certifications from "../common/certifications";
 import Industriesweserve from "../common/industries";
+import Sidecontent from "../sidecontact/side";
 
 function Homepage(){
 
@@ -145,6 +146,7 @@ function Homepage(){
       <div className="absolute inset-0 bg-black opacity-60"></div>
     </section>
 
+
       <section className="responsive-video-section">
         <div className="relative w-full min-h-screen">
           <video className="absolute " autoPlay muted loop playsInline>
@@ -217,7 +219,7 @@ function Homepage(){
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="relative w-full h-screen">
           <video
             className="absolute inset-0 object-cover w-full h-full"
@@ -291,7 +293,7 @@ function Homepage(){
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
 

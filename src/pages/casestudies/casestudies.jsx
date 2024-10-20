@@ -18,50 +18,30 @@ function Casestudies(){
       link: "https://ww1.sbainfo.in/case-study/2/a-leading-non-banking-financial-company-trustssba-info-to-protect-and-manage-their-end-point", // Replace with actual link
     },
     {
-      title: "Multinational BPO eases data portability and compliance adherence with cost effective Mailing solution",
+      title: "Leading Multinational Infrastructure Organization Trusts SBA Info for Fast and Reliable Data Recovery & Backup",
       description: "By having multiple domains, managing their AD and LDAP was the client’s raising issue. Hence, our client wanted an extended team to tackle the concern.",
       link: "https://ww1.sbainfo.in/case-study/3/multinational-bpo-eases-data-portability-and-compliance-adherence-with-cost-effective-mailing-solution", // Replace with actual link
     },
     {
-      title: "SBA Info Supports Leading Global Analytics Provider with ARCON’s Privileged Access Management (PAM) Solution",
+      title: "Securing Medical Data and Improving Incident Response: SBA Helps Leading Health tech company implement IBM Qradar",
       description: "Our customer deals with a huge amount of structured/unstructured data, they need to adhere to regulations and guidelines of various industries.",
       link: "https://ww1.sbainfo.in/case-study/4/sba-info-supports-leading-global-analytics-provider-with-arcons-privileged-access-management-pam-solution", // Replace with actual link
     },
     {
-      title: "Leading Multinational Infrastructure Organization Trusts SBA Info for Fast and Reliable Data Recovery & Backup",
+      title: "Efficient Data Management and Enhanced Security: Leading TN Bank's Success with SBA & IBM FS7300",
       description: "Our client wanted to improve data management and protection while accessing high-priority and frequently needed data sets.",
       link: "https://ww1.sbainfo.in/case-study/5/leading-multinational-infrastructure-organization-trusts-sba-info-for-fast-and-reliable-data-recovery-backup", // Replace with actual link
     },
     {
-      title: "SBA Info Supports a Leading Higher Education & Research Institute with the Implementation of High-Performing Supercomputers",
+      title: "Boosting Performance and Security: Chennai based Bank's Successful Migration to AIX with IBM Power 9",
       description: "Our customer’s existing high-performance cluster was not supporting their growing demands, and they wanted to deploy a supercomputer of 700TF.",
       link: "https://ww1.sbainfo.in/case-study/6/sba-info-supports-a-leading-higher-education-research-institute-with-the-implementation-of-high-performing-supercomputers", // Replace with actual link
-    },
-    {
-      title: "SBA Info Supports a Leading Healthcare Revenue Cycle Management Services Provider with HCI Solution",
-      description: "Our customer wished to have an infrastructure that is completely manageable through an agile dashboard console like managing a hyperscale cloud solution.",
-      link: "https://ww1.sbainfo.in/case-study/7/sba-info-supports-a-leading-healthcare-revenue-cycle-management-services-provider-with-hci-solution", // Replace with actual link
-    },
-    {
-      title: "Securing Medical Data and Improving Incident Response: SBA Helps Leading Health tech company implement IBM Qradar",
-      description: "Specialized in handling complex medical billing and coding tasks, our client leverages technology to help healthcare providers to focus on delivering high-quality patient care.",
-      link: "https://ww1.sbainfo.in/case-study/8/securing-medical-data-and-improving-incident-response-sba-helps-leading-health-tech-company-implement-ibm-qradar", // Replace with actual link
-    },
-    {
-      title: "SBA Powers SAP HANA Migration for a leading automotive manufacturer",
-      description: "Our customer headquartered in Chennai is one of the leading automotive manufacturers in India.",
-      link: "https://ww1.sbainfo.in/case-study/9/sba-powers-sap-hana-migration-for-a-leading-automotive-manufacturer", // Replace with actual link
-    },
-    {
-      title: "Efficient Data Management and Enhanced Security: Leading TN Bank",
-      description: "In operation for more than 100 years, the bank has a strong presence in southern India and is known for its customer-centric approach and innovative solutions.",
-      link: "https://ww1.sbainfo.in/case-study/10/efficient-data-management-and-enhanced-security-leading-tn-banks-success-with-sba-ibm-fs7300", // Replace with actual link
     },
   ];
 
     return(
         <>
-        <section>
+        {/* <section>
         <div className="ai-green-v1">
           <div className="init-ai-section1">
             <div className="abspage14" style={{marginLeft:"350px"}}>Case Studies</div>
@@ -73,7 +53,28 @@ function Casestudies(){
             <source src={CaseStudys} type="video/mp4" />
           </video>
         </div>
-      </section>
+      </section> */}
+      <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        Case Studies
+        </div>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        Real Results, Remarkable Journeys
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={CaseStudys} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
 
       {/* <section>
         <h1>
@@ -101,12 +102,13 @@ These detailed accounts provide actionable insights into how our solutions can b
                   transition={{ duration: 0.5 }}
                 >
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">{study.title}</h2>
-                  <p className="text-gray-700 mb-4">{study.description}</p>
+                  {/* <p className="text-gray-700 mb-4">{study.description}</p> */}
                   <a
                     href={study.link} // Link to individual case study
                     target="_blank" // Open link in a new tab
                     rel="noopener noreferrer" // Security measure
                     className="inline-block bg-blue-600 text-white py-2 px-4 rounded-full font-semibold shadow-md transition-transform duration-200 hover:bg-blue-700 hover:shadow-lg"
+                  style={{textDecoration:"none"}}
                   >
                     Read More
                   </a>

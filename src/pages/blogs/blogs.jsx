@@ -36,14 +36,14 @@ function Blogs(){
       link: "https://ww1.sbainfo.in/blog/truths-about-generative-ai-every-it-leader-must-know" // Add a link for navigation
     },
     {
-      title: "8 Secrets to Choosing the Perfect Email Service Provider: A Certified Guide",
+      title: "Software-defined approach – Defining the Future",
       author: "Venkatesh A",
       date: "12-06-2023",
       description: "In today's digital era, selecting the perfect email service provider is crucial for businesses of all sizes. A reliable and efficient email service plays a vital role in communication, collaboration, and maintaining a professional image.",
       link: "https://ww1.sbainfo.in/blog/8-secrets-to-choosing-the-perfect-email-service-provider-a-certified-guide" // Add a link for navigation
     },
     {
-      title: "Recover from cyber-attacks in hours, not days, with IBM FlashSystem",
+      title: "Cyber Security Drivers of the BFSI Sector in India",
       author: "Venkatesh A",
       date: "16-04-2023",
       description: "Businesses of all sizes are facing pressure to optimize IT and address digital transformation.",
@@ -83,7 +83,7 @@ function Blogs(){
 
     return(
         <>
-        <section>
+        {/* <section>
         <div className="ai-green-v1">
           <div className="init-ai-section1">
             <div className="abspage12" style={{marginLeft:"-15px",fontSize:"60px"}}>Blogs</div>
@@ -95,7 +95,28 @@ function Blogs(){
             <source src={Blog} type="video/mp4" />
           </video>
         </div>
-      </section>
+      </section> */}
+      <section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        {/* Large heading */}
+        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        Blogs
+        </div>
+
+        {/* Centered red box with large text */}
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        Illuminating Ideas, Inspiring Minds
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={Blog} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
         
 
       <section>
@@ -128,6 +149,7 @@ function Blogs(){
                   <a
                     href={post.link} // Use the link from the blog post
                     className="inline-block bg-blue-600 text-white py-2 px-4 rounded-full font-semibold shadow-md transition-transform duration-200 hover:bg-blue-700 hover:shadow-lg"
+                  style={{textDecoration:"none"}}
                   >
                     Read More
                   </a>

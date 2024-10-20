@@ -173,8 +173,8 @@ function Itautomation() {
                 src={its}
                 loading="lazy"
                 alt="AI"
-                className=""
-                style={{width:"360px",height:"400px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
+                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
+                style={{ width: '360px', height: '400px' }}
               />
            </div>
             </div>
