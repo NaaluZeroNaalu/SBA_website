@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Indus from "../../assets/videos/Industries.mp4";
 import "./style.scss";
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
-import hyper1 from "../../assets/images/itautomation/it1.png";
+import hyper1 from "../../assets/images/itautomation/it4.png";
 import hyper2 from "../../assets/images/itautomation/it2.png";
 import hyper3 from "../../assets/images/itautomation/it3.png";
 import hyper4 from "../../assets/images/itautomation/it4.png";
+import hyper5 from "../../assets/images/itautomation/it1.png";
+import hyper6 from "../../assets/images/itautomation/cloud1.png";
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
 import aili from "../../assets/images/ai-li.svg";
@@ -29,11 +31,11 @@ function Itautomation() {
 
   const benifits = [
     "Increased Efficiency Streamlines tasks, boosting productivity",
-    "Cost Reduction Cuts labor costs and errors, saving money.",
-    "Improved Accuracy Reduces errors, improving data integrity.",
-    "Faster Response Quick issue resolution, improving service.",
-    "Enhanced Compliance Ensures policy consistency and regulatory adherence.",
-    "Proactive Resolution Detects and fixes problems early."
+    "Cost Reduction Cuts labor costs and errors, saving money",
+    "Improved Accuracy Reduces errors, improving data integrity",
+    "Faster Response Quick issue resolution, improving service",
+    "Enhanced Compliance Ensures policy consistency and regulatory adherence",
+    "Proactive Resolution Detects and fixes problems early"
   ];
 
     const accordionData = [
@@ -295,7 +297,7 @@ function Itautomation() {
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper2}
+                  src={hyper6}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -352,7 +354,7 @@ function Itautomation() {
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper4}
+                  src={hyper5}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -367,7 +369,7 @@ function Itautomation() {
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={hyper1}
+                  src={hyper2}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -404,6 +406,9 @@ function Itautomation() {
               className="col-12 col-md-3 mb-4 position-relative"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() => {
+                window.location.href = "/industries"; // Redirect on card click
+              }}
             >
               <div className="card overflow-hidden">
                 <img src={industry.img} className="card-img-top" alt={industry.title} />
@@ -516,6 +521,8 @@ understand system performance and proactively resolve issues.
         </div>
       </section>
 
+      <br /><br /><br />
+
 </section>
 
             {/* FAQ Accordion */}
@@ -579,6 +586,8 @@ understand system performance and proactively resolve issues.
           </div>
         </div>
       </section>
+
+      <br /><br /><br />
       <Contactus />
         </>
     );

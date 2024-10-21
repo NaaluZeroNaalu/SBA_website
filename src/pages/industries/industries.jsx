@@ -284,7 +284,7 @@ function Industries(){
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries2}
+                  src={Industries4}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -413,7 +413,7 @@ function Industries(){
             <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries2}
+                  src={Industries6}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Business Intelligence & Analytics"
@@ -424,7 +424,9 @@ function Industries(){
         </div>
       </section>
 
+      <br /><br /><br />
       <Certifications />
+      <br /><br /><br />
       <Contactus />
 
       <section className="flex flex-col items-center justify-center py-16 bg-white">

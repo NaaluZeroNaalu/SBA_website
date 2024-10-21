@@ -24,7 +24,7 @@ function Footer(){
         <div className="nav-container">
             <div className="">
                 <nav className="nav flex-column">
-                    <h5>Company</h5>
+                    <h5 className="ms-3">Company</h5>
                     <li className="nav-item">
                         <a href="#" className="nav-link">About Us</a>
                     </li>
@@ -35,7 +35,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5>Solutions</h5>
+                    <h5 className="ms-3">Solutions</h5>
                     <li className="nav-item">
                         <a href="#" className="nav-link">Data and AI</a>
                     </li>
@@ -52,7 +52,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5>Industries</h5>
+                    <h5 className="ms-3">Industries</h5>
                     <li className="nav-item">
                         <a href="#" className="nav-link">Industries</a>
                     </li>
@@ -60,7 +60,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5>Client</h5>
+                    <h5 className="ms-3">Client</h5>
                     <li className="nav-item">
                         <a href="#" className="nav-link">Client Stories</a>
                     </li>
@@ -68,7 +68,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5>Resources</h5>
+                    <h5 className="ms-3">Resources</h5>
                     <li className="nav-item">
                         <a href="#" className="nav-link">Resources</a>
                     </li>
@@ -82,7 +82,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column" id="socialmedia">
-                    <h5>Connect</h5>
+                    <h5 className="ms-3">Connect</h5>
                     <li className="nav-item">
                         <a href="https://www.linkedin.com" className="nav-link" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={{color:"blue"}} />

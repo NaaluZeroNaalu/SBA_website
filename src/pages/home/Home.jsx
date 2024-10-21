@@ -16,48 +16,48 @@ import Homeg8 from "../../assets/images/Homeg8.png";
 import Homeg9 from "../../assets/images/Homeg9.png";
 import Homeg11 from "../../assets/images/Homeg11.png";
 import Home15 from "../../assets/videos/Home15.mp4";
-import com1 from "../../assets/images/company1.png";
-import com2 from "../../assets/images/company2.png";
-import com3 from "../../assets/images/company3.png";
-import com4 from "../../assets/images/company4.png";
-import com5 from "../../assets/images/company5.png";
-import com6 from "../../assets/images/company6.png";
-import com7 from "../../assets/images/company7.png";
-import com8 from "../../assets/images/company8.png";
-import com9 from "../../assets/images/company9.png";
+import com1 from "../../assets/images/partners/company1.png";
+import com2 from "../../assets/images/partners/company2.png";
+import com3 from "../../assets/images/partners/company3.png";
+import com4 from "../../assets/images/partners/company4.png";
+import com5 from "../../assets/images/partners/company5.png";
+import com6 from "../../assets/images/partners/company6.png";
+import com7 from "../../assets/images/partners/company7.png";
+import com8 from "../../assets/images/partners/company8.png";
+import com9 from "../../assets/images/partners/company9.png";
 import com10 from "../../assets/images/company10.jpeg";
-import com11 from "../../assets/images/company11.png";
-import com12 from "../../assets/images/company12.png";
-import com13 from "../../assets/images/company13.png";
-import com14 from "../../assets/images/company14.png";
-import com15 from "../../assets/images/company15.png";
-import com16 from "../../assets/images/company16.png";
-import com17 from "../../assets/images/company17.jpeg";
-import com18 from "../../assets/images/company18.png";
-import com19 from "../../assets/images/company19.png";
-import com20 from "../../assets/images/company20.jpeg";
-import com21 from "../../assets/images/company21.png";
-import com22 from "../../assets/images/company22.jpeg";
-import com23 from "../../assets/images/company23.png";
-import com24 from "../../assets/images/company24.png";
-import com25 from "../../assets/images/company25.png";
-import com26 from "../../assets/images/company26.png";
-import com27 from "../../assets/images/company27.png";
-import com28 from "../../assets/images/company28.jpg";
-import com29 from "../../assets/images/company29.jpg";
-import com30 from "../../assets/images/company30.jpeg";
-import com31 from "../../assets/images/company31.jpeg";
-import com32 from "../../assets/images/company32.png";
-import com33 from "../../assets/images/company33.png";
-import com34 from "../../assets/images/company34.png";
-import com35 from "../../assets/images/company35.png";
-import com36 from "../../assets/images/company36.png";
-import com37 from "../../assets/images/company37.jpg";
-import com38 from "../../assets/images/company38.png";
-import com39 from "../../assets/images/company39.png";
-import com40 from "../../assets/images/company40.jpg";
-import com41 from "../../assets/images/company41.png";
-import com42 from "../../assets/images/company42.png";
+import com11 from "../../assets/images/partners/company11.png";
+import com12 from "../../assets/images/partners/company12.png";
+import com13 from "../../assets/images/partners/company13.png";
+import com14 from "../../assets/images/partners/company14.png";
+import com15 from "../../assets/images/partners/company15.png";
+import com16 from "../../assets/images/partners/company16.png";
+import com17 from "../../assets/images/partners/company17.png";
+import com18 from "../../assets/images/partners/company18.png";
+import com19 from "../../assets/images/partners/company19.png";
+import com20 from "../../assets/images/partners/company20.jpeg";
+import com21 from "../../assets/images/partners/company21.png";
+import com22 from "../../assets/images/partners/company22.png";
+import com23 from "../../assets/images/partners/company23.png";
+import com24 from "../../assets/images/partners/company24.png";
+import com25 from "../../assets/images/partners/company25.png";
+import com26 from "../../assets/images/partners/company26.png";
+import com27 from "../../assets/images/partners/company27.png";
+import com28 from "../../assets/images/partners/company28.jpg";
+import com29 from "../../assets/images/partners/company29.jpg";
+import com30 from "../../assets/images/partners/company30.jpeg";
+import com31 from "../../assets/images/partners/company31.jpeg";
+import com32 from "../../assets/images/partners/company32.png";
+import com33 from "../../assets/images/partners/company33.png";
+import com34 from "../../assets/images/partners/company34.png";
+import com35 from "../../assets/images/partners/company35.png";
+import com36 from "../../assets/images/partners/company36.png";
+import com37 from "../../assets/images/partners/company37.jpg";
+import com38 from "../../assets/images/partners/company38.png";
+import com39 from "../../assets/images/partners/company39.png";
+import com40 from "../../assets/images/partners/company40.jpg";
+import com41 from "../../assets/images/partners/company41.png";
+import com42 from "../../assets/images/partners/company42.png";
 import homev from "../../assets/videos/homev.mp4"
 import trusted from "../../assets/videos/trusted.mp4"
 import redhat from "../../assets/images/trustedpartners/redhat.png"
@@ -71,6 +71,7 @@ import { Checkmark } from "react-checkmark";
 import Certifications from "../common/certifications";
 import Industriesweserve from "../common/industries";
 import Sidecontent from "../sidecontact/side";
+import Contactus from "../common/contact";
 
 function Homepage(){
 
@@ -160,7 +161,7 @@ function Homepage(){
           >
             <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
               <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Vision</p>
-              <h2 className="text-black font-bold  sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",fontFamily:"league spartan"}}>
+              <h2 className="text-black font-bold  sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",fontFamily:"league spartan",textAlign:"left"}}>
               
               To become a global leader in creating agile and
                secure work environments that boost productivity and 
@@ -348,12 +349,12 @@ function Homepage(){
 <br /><br />
       <section className="relative  h-60  ms-3 me-3">
         <div className="absolute inset-0 flex justify-center items-center z-10 text-center px-4">
-          <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-4xl xl:text-4xl ">
+          <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-3xl xl:text-3xl ">
             <span className="text-red-600">
             Empower with Data, Accelerate with Agility
             </span>
             <br />
-            <span className="" style={{color:"white",fontFamily:"league spartan "}}>
+            <span className="" style={{color:"white",fontFamily:"league spartan ",fontSize:"30px"}}>
               {" "}
               Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.
             </span>
@@ -371,6 +372,8 @@ function Homepage(){
         </video>
       </section>
 
+
+<br /><br /><br /><br /><br />
       <section className="w-full bg-gray-50">
         <div className="py-10">
           <div className="mx-auto px-4 mb-10 max-w-screen-xl">
@@ -389,6 +392,7 @@ function Homepage(){
             </div>
           </div>
 
+          <br /><br /><br />
           <div className="mx-auto px-8 max-w-screen-xl" style={{height:"250px"}}>
             <h3 style={{fontFamily:"league spartan "}} className="text-center text-3xl md:text-5xl font-bold">
               Trusted by talented leaders at:
@@ -463,15 +467,15 @@ function Homepage(){
 
   <section className="relative h-60 mx-3">
     <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center px-4">
-        <br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
         <h2 className="text-6xl font-bold mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}}>Our Partner Ecosystem</h2>
 
         <div className="flex justify-center">
-            <div className="mx-2"> {/* Adjust spacing between images */}
-                <img src={redhat} alt="Red Hat" className=" object-contain" style={{width:"200px"}} />
+            <div className="mx-5"> {/* Adjust spacing between images */}
+                <img src={redhat} alt="Red Hat" className=" object-contain" style={{width:"300px"}} />
             </div>
-            <div className="mx-2"> {/* Adjust spacing between images */}
-                <img src={ibm} alt="IBM" className=" object-contain" style={{width:"200px"}} />
+            <div className="mx-5"> {/* Adjust spacing between images */}
+                <img src={ibm} alt="IBM" className=" object-contain" style={{width:"300px"}} />
             </div>
         </div>
     </div>
@@ -481,7 +485,7 @@ function Homepage(){
         muted
         loop
         className="absolute inset-0 w-full  object-cover z-0 hidden md:block"
-        style={{height:"300px"}}
+        style={{height:"400px"}}
     >
         <source src={trusted} type="video/mp4" />
         Your browser does not support the video tag.
@@ -491,130 +495,13 @@ function Homepage(){
       </section>
 
       
-      <br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Industriesweserve />
+      <br /><br /><br /><br />
       <Certifications />
-      <br /><br />
-  <section className="w-full  to-gray-800 py-16 ms-3 me-3 ">
-  <div className="px-4 sm:px-6 lg:px-8 max-w-screen-lg mx-auto  p-8 rounded-lg shadow-lg">
-    <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
-      Contact Us for Support
-    </h2>
-    <form className="space-y-8">
-      {/* Form Row 1 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label
-            htmlFor="fullName"
-            className="block text-lg font-semibold text-gray-700"
-          >
-            Full Name
-          </label>
-          <input
-            type="text"
-            id="fullName"
-            placeholder="Your Full Name"
-            className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="email"
-            className="block text-lg font-semibold text-gray-700"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Your Work Email Address"
-            className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-          />
-        </div>
-      </div>
-      
-      {/* Form Row 2 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label
-            htmlFor="phone"
-            className="block text-lg font-semibold text-gray-700"
-          >
-            Phone Number
-          </label>
-          <input
-            type="text"
-            id="phone"
-            placeholder="Your Phone Number"
-            className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="company"
-            className="block text-lg font-semibold text-gray-700"
-          >
-            Company Name
-          </label>
-          <input
-            type="text"
-            id="company"
-            placeholder="Your Company Name"
-            className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-          />
-        </div>
-      </div>
-      
-      {/* Support Section */}
-      <div>
-        <label
-          htmlFor="support"
-          className="block text-lg font-semibold text-gray-700"
-        >
-          Support Required On
-        </label>
-        <select
-          id="support"
-          className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-        >
-          <option value="" disabled>
-            Choose a Solution/Service
-          </option>
-          <option value="service1">Data and AI</option>
-          <option value="service2">Infra</option>
-          <option value="service3">Business Support</option>
-        </select>
-      </div>
+      <br /><br /><br /><br />
 
-      {/* Query Section */}
-      <div>
-        <label
-          htmlFor="query"
-          className="block text-lg font-semibold text-gray-700"
-        >
-          Query
-        </label>
-        <textarea
-          id="query"
-          placeholder="Describe your Requirement in Detail"
-          className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-          rows="5"
-        ></textarea>
-      </div>
-
-      {/* Submit Button */}
-      <div className="d-grid">
-        <button
-          type="submit"
-          className="px-8 py-3 text-white font-bold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg"
-          style={{backgroundColor:"#3f649a "}}
-        >
-          Submit Request
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
+      <Contactus />
 
         </>
     )

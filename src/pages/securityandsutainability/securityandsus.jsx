@@ -79,12 +79,12 @@ function Securityandsus() {
 
 
     const featuresforsands = [
-      "Security Advanced encryption and secure partitioning protect data.",
-      "Performance Handles large workloads efficiently for demanding industries.",
-      "Scalability Easily expands resources without performance loss.",
-      "Reliability Ensures continuous availability with minimal downtime.",
+      "Security Advanced encryption and secure partitioning protect data",
+      "Performance Handles large workloads efficiently for demanding industries",
+      "Scalability Easily expands resources without performance loss",
+      "Reliability Ensures continuous availability with minimal downtime",
       "Cost Efficiency Reduces energy use and operational costs through consolidation",
-      "Sustainability Lowers CO2 emissions with efficient resource use.",
+      "Sustainability Lowers CO2 emissions with efficient resource use",
     ];
 
 
@@ -350,6 +350,9 @@ function Securityandsus() {
           className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => {
+            window.location.href = "/industries"; // Redirect on card click
+          }}
         >
           <div className="card overflow-hidden">
             <img src={industry.img} className="card-img-top" alt={industry.title} />
@@ -529,7 +532,7 @@ understand system performance and proactively resolve issues.
           </div>
         </div>
       </section>
-
+      <br /><br /><br />
        
         <Contactus />
         </>

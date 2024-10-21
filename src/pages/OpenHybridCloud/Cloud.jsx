@@ -69,12 +69,12 @@ function Openhybridcloud(){
 ];
 
 const featuresforcloud = [
-  "Flexibility to select the optimal environment for each workload.",
-  "Scalability to adjust applications and infrastructure according to demand.",
-  "Simplified management across different environments.",
-  "Enhanced security to protect applications and data through best practices.",
+  "Flexibility to select the optimal environment for each workload",
+  "Scalability to adjust applications and infrastructure according to demand",
+  "Simplified management across different environments",
+  "Enhanced security to protect applications and data through best practices",
   "Innovation by leveraging optimal technologies for every workload",
-  "Increased efficiency through streamlined automated deployments.",
+  "Increased efficiency through streamlined automated deployments",
 ];
 
 // const [openIndex, setOpenIndex] = useState(null);
@@ -399,6 +399,9 @@ const [activeIndex, setActiveIndex] = useState(null);
           className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => {
+            window.location.href = "/industries"; // Redirect on card click
+          }}
         >
           <div className="card overflow-hidden">
             <img src={industry.img} className="card-img-top" alt={industry.title} />
@@ -469,7 +472,7 @@ const [activeIndex, setActiveIndex] = useState(null);
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-2xl font-bold mb-4">Redhat Ansible automation platform</h2>
+              <h2 className="text-1xl font-bold mb-4">Redhat Ansible automation platform</h2>
               <br />
               <p className="text-lg">
               Ansible is an open-source automation tool that simplifies IT
@@ -509,7 +512,7 @@ consistently across hybrid cloud environments
       </div>
       </section>
 
-
+<br /><br /><br />
 <section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-8">
@@ -571,7 +574,7 @@ consistently across hybrid cloud environments
         </div>
       </section>
       
-     
+     <br /><br /><br />
       <Contactus />
         </>
     )
