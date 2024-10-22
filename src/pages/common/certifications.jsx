@@ -106,6 +106,7 @@ function Certifications(){
 
     return(
         <>
+        <br /><br />
         <section className="py-8">
         <div className="flex justify-between items-center mx-auto md:w-9/12">
           <button
@@ -114,7 +115,7 @@ function Certifications(){
           >
             <img src={sliderleft} alt="Previous" />
           </button>
-          <h1 className="text-center text-xl md:text-5xl font-bold">
+          <h1 className="text-center text-xl md:text-5xl font-bold" style={{fontFamily:"league spartans"}}>
             Our Proficiency and{" "}
             <span className="text-red-600">Certifications</span>
           </h1>
@@ -163,6 +164,7 @@ function Certifications(){
           </div>
         </div>
       </section>
+      <br /><br />
         </>
     )
 }

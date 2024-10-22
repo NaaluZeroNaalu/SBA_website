@@ -8,10 +8,10 @@ function Sidecontent(){
 
         <>
           <div className="sticky-buttons">
-            <a href="tel:+123456789" className="sticky-button call-button">
+            <a href="tel:+91 9500262708" className="sticky-button call-button">
                 <FaPhone /> Call Us
             </a>
-            <a href="https://wa.me/123456789" className="sticky-button whatsapp-button" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/9500262708" className="sticky-button whatsapp-button" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp /> WhatsApp
             </a>
         </div>

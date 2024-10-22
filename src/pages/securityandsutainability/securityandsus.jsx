@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HyperClouds from "../../assets/videos/HybridCloud.mp4";
+import HyperClouds from "../../assets/videos/sands.mp4";
 import "./style.scss";
 import sands1 from "../../assets/images/security/sands1.png"
 import sands2 from "../../assets/images/security/sands2.png"

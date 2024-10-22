@@ -8,7 +8,7 @@ function Footer(){
     return(
         <>
 
-<section className="relative h-60 mx-3" id="footer">
+<section className="relative h-80 mx-3" id="footer">
     <video
         autoPlay
         muted
@@ -24,7 +24,7 @@ function Footer(){
         <div className="nav-container">
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Company</h5>
+                    {/* <h5 className="ms-3">More</h5> */}
                     <li className="nav-item">
                         <a href="#" className="nav-link">About Us</a>
                     </li>
@@ -35,7 +35,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Solutions</h5>
+                    {/* <h5 className="ms-3">Solutions</h5> */}
                     <li className="nav-item">
                         <a href="#" className="nav-link">Data and AI</a>
                     </li>
@@ -52,15 +52,30 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Industries</h5>
+                    {/* <h5 className="ms-3">Industries</h5> */}
                     <li className="nav-item">
                         <a href="#" className="nav-link">Industries</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">BFSI</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">Healthcare</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">IT and ITES</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">Manufacturing</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#" className="nav-link">Media</a>
                     </li>
                 </nav>
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Client</h5>
+                    {/* <h5 className="ms-3">Client</h5> */}
                     <li className="nav-item">
                         <a href="#" className="nav-link">Client Stories</a>
                     </li>
@@ -68,7 +83,7 @@ function Footer(){
             </div>
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Resources</h5>
+                    {/* <h5 className="ms-3">Resources</h5> */}
                     <li className="nav-item">
                         <a href="#" className="nav-link">Resources</a>
                     </li>
@@ -81,33 +96,38 @@ function Footer(){
                 </nav>
             </div>
             <div className="">
-                <nav className="nav flex-column" id="socialmedia">
-                    <h5 className="ms-3">Connect</h5>
+                <nav className="nav flex-column " id="socialmedia" style={{alignItems:"center"}}>
+                    {/* <h5 className="ms-3">Connect</h5> */}
                     <li className="nav-item">
-                        <a href="https://www.linkedin.com" className="nav-link" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin style={{color:"blue"}} />
+                        <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin style={{color:"blue",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="https://www.youtube.com" className="nav-link" target="_blank" rel="noopener noreferrer">
-                            <FaYoutube style={{color:"red"}} />
+                        <a href="https://www.youtube.com/@sbainfosolutionspvtltd6340" className="nav-link" target="_blank" rel="noopener noreferrer">
+                            <FaYoutube style={{color:"red",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="tel:+123456789" className="nav-link">
-                            <FaPhone  />
+                        <a href="tel:91 9500262708" className="nav-link">
+                            <FaPhone style={{fontSize:"30px"}}  />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="mailto:example@example.com" className="nav-link">
-                            <FaEnvelope style={{color:"blue"}}  />
+                        <a href="mailto:marketing@sbainfo.in" className="nav-link">
+                            <FaEnvelope style={{color:"blue",fontSize:"30px"}}  />
                         </a>
                     </li>
                 </nav>
             </div>
         </div>
     </div>
+    
 </section>
+<br />
+<div>
+    <p className="text-center">Copyright © 1996 - 2024, SBA Info Solutions.</p>
+</div>
 
 
 

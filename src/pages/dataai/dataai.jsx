@@ -1,5 +1,6 @@
 import { useState, useEffect, React } from "react";
-import datapage from "../../assets/videos/datapage.mp4";
+import datapage from "../../assets/videos/dataandai.mp4";
+import dataai from "../../assets/images/aipage.png"
 import "./style.scss";
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
@@ -146,12 +147,15 @@ function Dataai(){
               </p>
             </div>
             <div className="w-full md:w-4/12">
-              <img
-                src={aiSectionImage}
+            <div className='animation-border' style={{height:"410px"}}>
+           <img
+                src={dataai}
                 loading="lazy"
                 alt="AI"
-                className="h-[28rem] w-[22rem] object-contain"
+                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
+                style={{ width: '360px', height: '400px' }}
               />
+           </div>
             </div>
           </div>
         </div>

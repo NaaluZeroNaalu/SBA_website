@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./style.scss";
-import HyperClouds from "../../assets/videos/HybridCloud.mp4";
+import HyperClouds from "../../assets/videos/openhybridcloud2.mp4";
 import cloud1 from "../../assets/images/cloud/cloud1.png"
 import cloud2 from "../../assets/images/cloud/cloud2.png"
 import cloud3 from "../../assets/images/cloud/cloud3.png"
@@ -130,7 +130,7 @@ const [activeIndex, setActiveIndex] = useState(null);
 <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold mt-5">
           Open Hybrid Cloud
         </div>
 
@@ -472,7 +472,7 @@ const [activeIndex, setActiveIndex] = useState(null);
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-1xl font-bold mb-4">Redhat Ansible automation platform</h2>
+              <h2 className="text-1xl font-bold mb-4">Redhat Ansible Automation Platform</h2>
               <br />
               <p className="text-lg">
               Ansible is an open-source automation tool that simplifies IT

@@ -151,7 +151,7 @@ function Itautomation() {
 
             <section>
 
-         <section className="relative my-20 ">
+        <section className="relative my-20 ">
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">

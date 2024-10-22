@@ -53,10 +53,10 @@ function Aboutus(){
       <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+              <h2 style={{fontFamily:"league spartans"}} className="text-3xl font-bold mb-4 md:mb-16 text-left">
                 Why Choose Us?
               </h2>
-              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal"}}>
+              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
               "Founded in 1991, SBA Info Solutions 
               Private Limited is a Chennai-based automation company 
               with over 30 years of experience in delivering enterprise solutions. 
@@ -92,7 +92,7 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal"}}>
+              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
               Our focus is on creating agile and secure work
                environments that boost productivity and promote sustainable growth, 
                contributing to a more resilient and equitable global economy.
@@ -121,7 +121,7 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h1 className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal"}}>
+              <h1 className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
               SBA has 60+ partnerships with top OEMs, 
               specializing in Next  Gen AI, ML, Cloud Services, and Security networks. 
               <br /><br />
@@ -149,10 +149,10 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-            <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
+            <h2 style={{fontFamily:"league spartans"}} className="text-4xl font-bold mb-4 md:mb-16 text-left">
             Commitment to Excellence
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-base pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
                 <li>
                 <strong>Quality First:</strong> We deliver exceptional quality in everything we do.
                 </li>

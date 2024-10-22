@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Home1 from "../../assets/videos/Home1.mp4";
+import Home1 from "../../assets/videos/wait1.mp4";
 import Home4 from "../../assets/videos/Home4.mp4";
 import Home5 from "../../assets/videos/Home5.mp4";
 import Home6 from "../../assets/videos/Home6.mp4";
@@ -308,7 +308,7 @@ function Homepage(){
           </video>
 
           <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
-            <div className=" bg-white bg-opacity-70 p-8 rounded-lg shadow-lg">
+            <div className=" bg-white bg-opacity-70 p-8 rounded-lg ">
               <p style={{fontFamily:"league spartan"}} className="text-lg md:text-2xl font-bold text-black leading-relaxed">
                 In the modern workplace,{" "}
                 <span className="text-red-500">
@@ -336,14 +336,7 @@ function Homepage(){
            
           </div>
         </div>
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src={Home5} type="video/mp4" />
-        </video>
+        
         <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
       </section>
 <br /><br />
@@ -354,22 +347,13 @@ function Homepage(){
             Empower with Data, Accelerate with Agility
             </span>
             <br />
-            <span className="" style={{color:"white",fontFamily:"league spartan ",fontSize:"30px"}}>
+            <span className="" style={{fontFamily:"league spartan ",fontSize:"30px"}}>
               {" "}
               Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.
             </span>
           </p>
         </div>
-
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
-        >
-          <source src={homev} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        
       </section>
 
 
@@ -378,17 +362,17 @@ function Homepage(){
         <div className="py-10">
           <div className="mx-auto px-4 mb-10 max-w-screen-xl">
             <div className="flex justify-between items-start">
-              <div className="w-full md:w-1/2">
+              {/* <div className="w-full md:w-1/2">
                 <h2 style={{fontFamily:"league spartan "}} className="text-3xl font-bold mb-4">
                   Discover how businesses become more intelligent with SBA
                 </h2>
-              </div>
-              <div className="w-full md:w-1/2 text-right">
+              </div> */}
+              {/* <div className="w-full md:w-1/2 text-right">
                 <p style={{fontFamily:"league spartan "}} className="text-lg text-gray-600 mb-6">
                  
                 </p>
                 <a style={{fontFamily:"league spartan "}} className="text-lg">View client stories →</a>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -456,7 +440,7 @@ function Homepage(){
           </div>
         </div>
       </section>
-<br />
+<br /><br /><br />
       <section>
         <Counter />
       </section>
@@ -466,30 +450,21 @@ function Homepage(){
           
 
   <section className="relative h-60 mx-3">
-    <div className="absolute inset-0 flex flex-col justify-center items-center z-10 text-center px-4">
-        <br /><br /><br /><br /><br /><br /><br /><br />
-        <h2 className="text-6xl font-bold mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}}>Our Partner Ecosystem</h2>
+  <div className="inset-0 flex flex-col justify-center items-center z-10 text-center px-4">
+    <br /><br /><br /><br />
+    <h2 className="text-6xl font-bold mb-8" style={{fontFamily: "League Spartan", fontWeight: "bold"}}>Our Partner Ecosystem</h2>
 
-        <div className="flex justify-center">
-            <div className="mx-5"> {/* Adjust spacing between images */}
-                <img src={redhat} alt="Red Hat" className=" object-contain" style={{width:"300px"}} />
-            </div>
-            <div className="mx-5"> {/* Adjust spacing between images */}
-                <img src={ibm} alt="IBM" className=" object-contain" style={{width:"300px"}} />
-            </div>
+    <div className="flex justify-center items-center space-x-10"> {/* Use space-x-10 for even spacing */}
+        <div className="flex-shrink-0"> {/* Prevent shrinking */}
+            <img src={redhat} alt="Red Hat" className="object-contain" style={{width: "300px"}} />
+        </div>
+        <div className="flex-shrink-0"> {/* Prevent shrinking */}
+            <img src={ibm} alt="IBM" className="object-contain" style={{width: "300px"}} />
         </div>
     </div>
+</div>
 
-    <video
-        autoPlay
-        muted
-        loop
-        className="absolute inset-0 w-full  object-cover z-0 hidden md:block"
-        style={{height:"400px"}}
-    >
-        <source src={trusted} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+
 </section>
         </div>
       </section>
