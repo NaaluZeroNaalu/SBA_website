@@ -27,6 +27,7 @@ const ContactForm = () => {
 <br />
 <div>
       <h1 style={{ fontWeight: "bold", textAlign: "center", fontFamily: "league spartans" }}>Contact Us</h1>
+      <br /><br />
       <form className="space-y-8 container" ref={formRef} onSubmit={sendEmail}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>

@@ -21,6 +21,7 @@ import l1 from "../../assets/images/security/linux1logo.png"
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
+import Watsons from '../common/watsons';
 
 function Securityandsus() {
     const securityAccordionData = [
@@ -470,8 +471,9 @@ understand system performance and proactively resolve issues.
         
         </div>
       </section>
-
       <br /><br /><br />
+<Watsons />
+      <br /><br /><br /><br /><br />
 
             {/* FAQ Accordion */}
             <section className=" flex items-center justify-center min-h-screen">

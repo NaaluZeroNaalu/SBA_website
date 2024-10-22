@@ -12,6 +12,7 @@ import Contactus from "../common/contact";
 import Certifications from "../common/certifications";
 
 import aiOrnamentImage from "../../assets/images/image.png";
+import Watsons from "../common/watsons";
 
 
 function Industries(){
@@ -430,7 +431,9 @@ function Industries(){
 
       <br /><br /><br />
       <Certifications />
-      <br /><br /><br />
+      <br /><br /><br /><br /><br />
+      <Watsons />
+      <br /><br /><br /><br /><br />
       <Contactus />
 
       <section className="flex flex-col items-center justify-center py-16 bg-white">
