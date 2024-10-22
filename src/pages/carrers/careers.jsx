@@ -146,7 +146,7 @@ function Careers(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left" style={{fontFamily:"league spartans"}}>
               Be the Change - Partner With Us!
               </h2>
-              <p className="ms-4" style={{fontFamily:"league spartans",fontSize:"25px"}}>
+              <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>
               Join a team that's redefining the future of business. 
               Our culture is built on a foundation of innovation, collaboration,
                and mutual respect, where creativity thrives and growth is limitless.

@@ -89,6 +89,9 @@
     animation: border_animations 3s linear infinite;
 }
 
+#details{
+    font-family: league spartans;
+}
 
 img{
     border-radius: 10px;

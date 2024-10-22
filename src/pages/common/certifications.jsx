@@ -106,8 +106,8 @@ function Certifications(){
 
     return(
         <>
-        <br /><br />
-        <section className="py-8">
+  
+        <section className="">
         <div className="flex justify-between items-center mx-auto md:w-9/12">
           <button
             className="bg-transparent p-2 cursor-pointer focus:outline-none"
@@ -164,7 +164,7 @@ function Certifications(){
           </div>
         </div>
       </section>
-      <br /><br />
+      
         </>
     )
 }

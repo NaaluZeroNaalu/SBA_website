@@ -24,7 +24,7 @@ const ContactForm = () => {
 
   return (
 <>
-<br /><br /><br />
+<br />
 <div>
       <h1 style={{ fontWeight: "bold", textAlign: "center", fontFamily: "league spartans" }}>Contact Us</h1>
       <form className="space-y-8 container" ref={formRef} onSubmit={sendEmail}>

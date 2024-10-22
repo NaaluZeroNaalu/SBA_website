@@ -21,7 +21,7 @@ function Casestudiesfour(){
        
         
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight" style={{fontFamily:"league spartans"}}>
         Securing Medical Data and Improving Incident Response: SBA Helps Leading Health tech company implement IBM Qradar
         </h1>
        
@@ -30,11 +30,11 @@ function Casestudiesfour(){
 
 <section className="min-h-screen bg-gray-100 py-10 px-5">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "league Spartans" }}>
       Securing Medical Data and Improving Incident Response: SBA Helps Leading Health Tech Company Implement IBM QRadar
     </h1>
 
-    <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-10">
+    <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-10" id="details">
       <h2 className="text-2xl font-semibold mb-4">The Client</h2>
       <p className="text-lg text-gray-700 mb-4">
         Our client is a leading health tech company focused on providing innovative solutions to enhance patient care and streamline healthcare processes. With a commitment to data security and regulatory compliance, they handle sensitive medical data and require robust security measures to protect patient information and maintain trust within the healthcare ecosystem.

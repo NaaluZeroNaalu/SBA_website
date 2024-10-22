@@ -24,6 +24,7 @@ import wat3 from "../../assets/images/wat_3.svg";
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
+import Watsons from '../common/watsons';
 
 
 
@@ -266,7 +267,7 @@ function Itautomation() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Automated IT Service Management (ITSM)
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Automates incident, problem, and change management.</li>
                 <li>Centralized platform for handling service requests and issues</li>
                 <li>Ensures faster resolution and higher service availability</li>
@@ -283,7 +284,7 @@ function Itautomation() {
               Configuration Management Automation
 
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>
                 Automates configuration management across hybrid and multi-cloud environments
                 </li>
@@ -323,7 +324,7 @@ function Itautomation() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Automated Backup and Recovery
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
                 <li>Automates data backup and recovery.</li>
                 <li>Simplifies backup management for both on-premises and cloud environments.</li>
                 <li>Automatically protects data, ensuring it is recoverable during system failures</li>
@@ -340,7 +341,7 @@ function Itautomation() {
               Cloud Resource Orchestration
 
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>
                 Optimizes cloud resource provisioning, scaling, and monitoring.
                 </li>
@@ -380,7 +381,7 @@ function Itautomation() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Predictive Maintenance Automation
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Automates asset management and predictive maintenance.</li>
                 <li>Uses AI-driven insights to analyze real-time equipment data.
                 </li>
@@ -429,6 +430,7 @@ function Itautomation() {
         </div>
       </div>
     </section>
+    <br /><br />
 
     <Certifications />
    
@@ -524,6 +526,10 @@ understand system performance and proactively resolve issues.
       <br /><br /><br />
 
 </section>
+   
+
+<Watsons />
+<br /><br /><br /><br /><br />
 
             {/* FAQ Accordion */}
             <section className=" flex items-center justify-center min-h-screen">
@@ -587,7 +593,7 @@ understand system performance and proactively resolve issues.
         </div>
       </section>
 
-      <br /><br /><br />
+      <br /><br /><br /><br />
       <Contactus />
         </>
     );

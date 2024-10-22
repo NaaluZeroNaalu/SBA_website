@@ -20,15 +20,15 @@ function Casestudiesone(){
        
         
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight" style={{fontFamily:"league spartans"}}>
         Leading Healthcare Services Provider Trusts SBA Info for their Security and Compliance Requirements
         </h1>
         
     </div>
 </section>
-<section className="min-h-screen bg-gray-100 py-10 px-5">
+<section className="min-h-screen bg-gray-100 py-10 px-5" id="details">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartans" }}>
       Leading Healthcare Services Provider Trusts SBA Info for their Security and Compliance Requirements
     </h1>
 

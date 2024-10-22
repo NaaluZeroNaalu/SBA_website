@@ -235,7 +235,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Secure Mainframe Solutions
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
                 <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
                 <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
                 <li>High Availability Designed for resilience, minimizing downtime.
@@ -252,7 +252,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Efficient Linux Workloads
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left">
                 <li>
                 Workload Isolation Secure environments protect data integrity.
                 </li>
@@ -311,7 +311,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Sustainability Goals
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left">
                 <li>
                 Reduced Carbon Footprint Energy-efficient practices lower emissions.
                 </li>
@@ -388,7 +388,7 @@ function Securityandsus() {
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
-              <p className="text-lg">
+              <p className="text-lg pl-5">
               LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
 environment. It is optimized for running more transactions faster and with more security and reliability,
 specifically for the open-source community
@@ -418,7 +418,7 @@ specifically for the open-source community
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
-              <p className="text-lg">
+              <p className="text-lg pl-4">
               offers visibility into application performance and resource utilization, allowing
 organizations to optimize their infrastructure based on real-time data.
 
@@ -430,7 +430,7 @@ organizations to optimize their infrastructure based on real-time data.
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">Watson AIOps</h2>
-              <p className="text-lg">
+              <p className="text-lg pl-4">
               leverages AI to analyze operational data, providing insights that help teams
 understand system performance and proactively resolve issues.
 
@@ -460,7 +460,7 @@ understand system performance and proactively resolve issues.
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">SevOne</h2>
-              <p className="text-lg">
+              <p className="text-lg pl-4">
               delivers automated network observability, enabling deep insights into network performance
               across multivendor environments, ensuring continuous monitoring and proactive management.
               </p>
@@ -470,6 +470,8 @@ understand system performance and proactively resolve issues.
         
         </div>
       </section>
+
+      <br /><br /><br />
 
             {/* FAQ Accordion */}
             <section className=" flex items-center justify-center min-h-screen">

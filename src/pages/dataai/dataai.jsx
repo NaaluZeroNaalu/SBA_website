@@ -19,13 +19,12 @@ import wat2 from "../../assets/images/wat_2.svg";
 import wat3 from "../../assets/images/wat_3.svg";
 import wat4 from "../../assets/images/wat_4.svg";
 import wat5 from "../../assets/images/wat_5.svg";
-import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
-import red_hat from "../../assets/images/red_hat.svg";
-import bg from "../../assets/images/powred_bfimg.png";
+
 import Group from "../../assets/images/Group.svg";
 import Certifications from "../common/certifications";
 import Contactus from "../common/contact";
 import Industriesweserve from "../common/industries";
+import Watsons from "../common/watsons";
 
 function Dataai(){
 
@@ -443,65 +442,8 @@ function Dataai(){
           </div>
         </div>
       </section>
-      <section className="pt-0 md:pt-5 w-full">
-        <div className="w-full mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <a href="https://www.ibm.com/products/watsonx-ai" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${bg})` }}
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.ai
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
 
-            <a href="https://www.ibm.com/products/watsonx-data" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${bg})` }} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.data
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.ibm.com/products/watsonx-governance" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${bg})` }} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.governance
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.redhat.com/en/technologies/all-products" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div className="h-60 bg-gray-100 rounded-lg">
-                <p className="flex items-end justify-center h-3/5 text-2xl font-black">
-                  <img src={red_hat} alt="Red Hat" />
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
+     <Watsons />
 
 
       <section className="my-5 py-5">

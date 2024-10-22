@@ -38,7 +38,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="Your Work Email Address"
+            placeholder="Your Email Address"
             className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
           />
         </div>

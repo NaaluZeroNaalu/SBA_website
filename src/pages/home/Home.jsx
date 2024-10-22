@@ -300,7 +300,7 @@ function Homepage(){
 
       </section>
 
-      <section>
+      <section style={{marginBottom:"-200px"}}>
         <div className="relative w-full h-screen overflow-hidden">
           <video autoPlay muted loop className="absolute ">
             <source src={Home9} type="video/mp4" />
@@ -324,24 +324,29 @@ function Homepage(){
         </div>
       </section>
 
-      <section className="relative h-60 ms-2 me-2">
-        <div className="absolute inset-0 flex justify-center items-center z-10 text-center container">
-          <div className="text-white px-4">
-            <h1 style={{fontFamily:"league spartan"}} className="text-white text-3xl md:text-5xl font-bold">
-             
-            </h1>
-            <p style={{fontFamily:"league spartan "}} className="mt-4 text-xl md:text-4xl init-red-bg1">
-            The problem is not that computers will begin to think like men, It’s that men will begin to think like computers
-            </p>
-           
-          </div>
-        </div>
-        
-        <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
-      </section>
-<br /><br />
-      <section className="relative  h-60  ms-3 me-3">
-        <div className="absolute inset-0 flex justify-center items-center z-10 text-center px-4">
+<section className="relative  ms-2 me-2" style={{height:"500px"}}>
+  {/* Video in the background */}
+  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+    <source src={Home6} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  {/* Dark overlay for better text readability */}
+  <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
+
+  {/* Text content centered on top of the video */}
+  <div className="absolute inset-0 flex justify-center items-center z-10 text-center container">
+    <div className="text-white px-4">
+      {/* Main heading */}
+      <h1 style={{ fontFamily: "league spartan" }} className="text-white text-3xl md:text-5xl font-bold">
+        {/* Heading text (currently empty, add if needed) */}
+      </h1>
+
+      {/* Subtext with a meaningful quote */}
+      <p style={{ fontFamily: "league spartan" }} className="mt-4 text-xl md:text-4xl init-red-bg1">
+        The problem is not that computers will begin to think like men, It’s that men will begin to think like computers
+        <br /><br /><br /><br />
+        <div className=" inset-0 flex justify-center items-center z-10 text-center px-4">
           <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-3xl xl:text-3xl ">
             <span className="text-red-600">
             Empower with Data, Accelerate with Agility
@@ -353,8 +358,17 @@ function Homepage(){
             </span>
           </p>
         </div>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+{/* <section className="relative  h-60  ms-3 me-3">
+      
         
-      </section>
+      </section> */}
 
 
 <br /><br /><br /><br /><br />
@@ -377,7 +391,7 @@ function Homepage(){
           </div>
 
           <br /><br /><br />
-          <div className="mx-auto px-8 max-w-screen-xl" style={{height:"250px"}}>
+          <div className="mx-auto px-8 max-w-screen-xl" style={{height:"250px",marginTop:"-150px"}}>
             <h3 style={{fontFamily:"league spartan "}} className="text-center text-3xl md:text-5xl font-bold">
               Trusted by talented leaders at:
             </h3>

@@ -22,6 +22,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import rhel from "../../assets/images/cloud/redhat.png"
 import ansi from "../../assets/images/cloud/ansible.png"
 import open from "../../assets/images/cloud/openshift.png"
+import Watsons from '../common/watsons';
 
 function Openhybridcloud(){
 
@@ -281,7 +282,7 @@ const [activeIndex, setActiveIndex] = useState(null);
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Infrastructure Management & security
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Automates security practices and compliance checks to reduce risks.</li>
                 <li>
                 Enhances the efficiency of provisioning, configuration, and management of infrastructure through
@@ -303,7 +304,7 @@ const [activeIndex, setActiveIndex] = useState(null);
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Application Development and delivery
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>
                 Facilitates the development, deployment, and management of applications in a containerized
                 environment.
@@ -349,7 +350,7 @@ const [activeIndex, setActiveIndex] = useState(null);
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               OS management & Security
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Streamlines system administration and management tasks.
                 </li>
                 <li>
@@ -511,8 +512,9 @@ consistently across hybrid cloud environments
 
       </div>
       </section>
-
 <br /><br /><br />
+<Watsons />
+<br /><br /><br /><br />
 <section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-center mb-8">

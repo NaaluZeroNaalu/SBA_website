@@ -76,7 +76,7 @@ function Blogsections(){
               {blogPosts.map((post, index) => (
                 <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg p-6">
                   {/* Blog Image */}
-                  <div className="w-full h-64 overflow-hidden mb-4">
+                  <div className="w-full h-64 overflow-hidden mb-4" >
                     <img
                       src={post.image}
                       alt={post.title}
@@ -86,11 +86,11 @@ function Blogsections(){
 
                   {/* Blog Title */}
                   <a href={post.link} style={{textDecoration:"none"}}>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4">{post.title}</h2>
+                  <h2 className="text-3xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartans"}}>{post.title}</h2>
                   </a>
 
                   {/* Blog Description */}
-                  <p className="text-lg text-gray-700 mb-6">{post.description}</p>
+                  <p className="text-lg text-gray-700 mb-6" style={{fontFamily:"league spartans"}}>{post.description}</p>
                 </div>
               ))}
             </div>

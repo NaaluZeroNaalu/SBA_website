@@ -26,10 +26,10 @@ function Footer(){
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">More</h5> */}
                     <li className="nav-item">
-                        <a href="#" className="nav-link">About Us</a>
+                        <a href="/Aboutus" className="nav-link">About Us</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Careers</a>
+                        <a href="/Careers" className="nav-link">Careers</a>
                     </li>
                 </nav>
             </div>
@@ -37,16 +37,16 @@ function Footer(){
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Solutions</h5> */}
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Data and AI</a>
+                        <a href="/Data-AI" className="nav-link">Data and AI</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">IT and Business Automation</a>
+                        <a href="/Itautomation" className="nav-link">IT and Business Automation</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Open Hybrid Cloud</a>
+                        <a href="/Open-Hybrid-Cloud" className="nav-link">Open Hybrid Cloud</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Security and Sustainability</a>
+                        <a href="/Security-and-sustainability" className="nav-link">Security and Sustainability</a>
                     </li>
                 </nav>
             </div>
@@ -54,22 +54,22 @@ function Footer(){
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Industries</h5> */}
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Industries</a>
+                        <a href="/Industries" className="nav-link">Industries</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">BFSI</a>
+                        <a href="/Industries" className="nav-link">BFSI</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Healthcare</a>
+                        <a href="/Industries" className="nav-link">Healthcare</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">IT and ITES</a>
+                        <a href="/Industries" className="nav-link">IT and ITES</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Manufacturing</a>
+                        <a href="/Industries" className="nav-link">Manufacturing</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Media</a>
+                        <a href="/Industries" className="nav-link">Media</a>
                     </li>
                 </nav>
             </div>
@@ -88,16 +88,16 @@ function Footer(){
                         <a href="#" className="nav-link">Resources</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Blog</a>
+                        <a href="/Blogs" className="nav-link">Blog</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Case Studies</a>
+                        <a href="/Casestudies" className="nav-link">Case Studies</a>
                     </li>
                 </nav>
             </div>
             <div className="">
                 <nav className="nav flex-column " id="socialmedia" style={{alignItems:"center"}}>
-                    {/* <h5 className="ms-3">Connect</h5> */}
+                    <h5 className="ms-3">Connect</h5>
                     <li className="nav-item">
                         <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={{color:"blue",fontSize:"30px"}} />
