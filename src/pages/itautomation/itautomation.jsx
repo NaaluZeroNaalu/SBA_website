@@ -533,67 +533,68 @@ understand system performance and proactively resolve issues.
 </section>
    
 
-<section className="pt-0 md:pt-5 w-full">
-        <div className="w-full mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p1})` }}
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  Instana<span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p2})` }} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                Turbonimic<span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.ibm.com/products/watsonx-governance" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p4})` }} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                Watson AIOps<span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.redhat.com/en/technologies/all-products" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-            <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p3})` }} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                SevenOne<span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
+<section className="pt-0 md:pt-5 w-full" id='poweredby'>
+  <div className="w-full mx-auto px-4 md:px-6">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Instana
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
-      </section>
+      </a>
+
+      <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Turbonimic
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.ibm.com/products/watsonx-governance" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p4})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+           <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Watson AIOps
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.redhat.com/en/technologies/all-products" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for SevenOne
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 
 <br /><br /><br /><br /><br />
 
