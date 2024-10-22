@@ -18,10 +18,13 @@ import ind4 from "../../assets/images/ind_4.png";
 import tele from "../../assets/images/telecommunication.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import l1 from "../../assets/images/security/linux1logo.png"
-import wat5 from "../../assets/images/wat_5.svg";
+import wat5 from "../../assets/images/security/powerdby/1.png";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
 import Watsons from '../common/watsons';
+import p1 from "../../assets/images/security/powerdby/1.png"
+import p2 from "../../assets/images/security/powerdby/2.png"
+import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 
 function Securityandsus() {
     const securityAccordionData = [
@@ -382,97 +385,109 @@ function Securityandsus() {
         <div className="container mx-auto max-w-7xl px-4">
           <h1 className="text-5xl font-bold text-center mb-12">
             {/* Powered by <span className="text-red-600">watsonX</span> */}
-            Products
+            Powered By
           </h1>
 
-          {/* Watson Assistant */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
-              <p className="text-lg pl-5">
-              LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
-environment. It is optimized for running more transactions faster and with more security and reliability,
-specifically for the open-source community
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <div className="animation-border">
-              <img
-                src={l1}
-                alt="Watson Assistant"
-                className="rounded-lg  w-full  object-cover"
-                // style={{width:"400px",height:"400px"}}
-                style={{width:"600px",height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
-              />
-              </div>
-            </div>
-          </div>
+         {/* LinuxOne */}
+<div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+  <div className="md:w-1/2 w-full md:pr-10">
+    <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
+    <p className="text-lg pl-5">
+      LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
+      environment. It is optimized for running more transactions faster and with more security and reliability,
+      specifically for the open-source community.
+    </p>
+  </div>
+  <div className="md:w-1/2 w-full flex justify-center">
+    <div className="animation-border" style={{height:"410px"}}>
+      <img
+        src={p2}
+        alt="Watson Assistant"
+        className="rounded-lg w-full object-cover"
+        style={{
+          width: "500px",
+          height: "400px",
+          borderTopLeftRadius: "100px",
+          borderBottomRightRadius: "100px",
+          borderTopRightRadius: "0px",
+          borderBottomLeftRadius: "0px",
+          border: "12px solid #EEEEEE"
+        }}
+      />
+    </div>
+  </div>
+</div>
 
-          {/* Watson Discovery */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat5}
-                alt="Watson Discovery"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
-              />
-            </div>
-            <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
-              <p className="text-lg pl-4">
-              offers visibility into application performance and resource utilization, allowing
-organizations to optimize their infrastructure based on real-time data.
+{/* Watson Discovery */}
+<div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+  <div className="md:w-1/2 w-full flex justify-center">
+    <div className="animation-border2" style={{height:"410px"}}>
+    <img
+      src={p1}
+      alt="Watson Discovery"
+      className="rounded-lg w-full object-cover"
+      style={{
+        width: "500px",
+        height: "400px",
+        borderTopLeftRadius: "0px",
+        borderBottomRightRadius: "0px",
+        borderTopRightRadius: "100px",
+        borderBottomLeftRadius: "100px",
+        border: "12px solid #EEEEEE"
+      }}
+    />
+    </div>
+  </div>
+  <div className="md:w-1/2 w-full md:pl-10">
+    <h2 className="text-3xl font-bold mb-4">Mainframe</h2>
+    <p className="text-lg pl-4">
+    Mainframe computing uses large, powerful computers for high-volume data processing and
+     critical applications. These systems offer exceptional reliability, security, 
+     and processing power for industries like banking and healthcare. Despite their age,
+      mainframes continue to evolve, integrating with modern technologies while maintaining 
+      their core strengths.
+    </p>
+  </div>
+</div>
 
-              </p>
-            </div>
-          </div>
-
-          {/* Instana */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Watson AIOps</h2>
-              <p className="text-lg pl-4">
-              leverages AI to analyze operational data, providing insights that help teams
-understand system performance and proactively resolve issues.
-
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat2}
-                alt="Instana"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
-              />
-            </div>
-          </div>
-
-          {/* Cognos */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full flex justify-center ">
-            <div className='animation-border'>
-                 <br /><br />
-                <img src={seven1} alt="" style={{
-                  width:"330px"
-                  
-                }}
-                className='mt-4'
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-3xl font-bold mb-4">SevOne</h2>
-              <p className="text-lg pl-4">
-              delivers automated network observability, enabling deep insights into network performance
-              across multivendor environments, ensuring continuous monitoring and proactive management.
-              </p>
-            </div>
-          </div>
-
-        
         </div>
       </section>
       <br /><br /><br />
-<Watsons />
+
+      <section className="pt-0 md:pt-5 w-full">
+        <div className="w-full mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <a href="https://www.ibm.com/products/z16" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p1})`}}
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                  <span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p2})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                <span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a> 
+          </div>
+        </div>
+      </section>
+
       <br /><br /><br /><br /><br />
 
             {/* FAQ Accordion */}

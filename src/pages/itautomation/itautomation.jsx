@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Indus from "../../assets/videos/Industries.mp4";
+import Indus from "../../assets/videos/itautomation.mp4";
 import "./style.scss";
 import HyperClouds from "../../assets/videos/HybridCloud.mp4";
 import hyper1 from "../../assets/images/itautomation/it4.png";
@@ -25,6 +25,11 @@ import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
 import Watsons from '../common/watsons';
+import p1 from "../../assets/images/itautomation/powerdby/1.png"
+import p2 from "../../assets/images/itautomation/powerdby/2.png"
+import p3 from "../../assets/images/itautomation/powerdby/3.png"
+import p4 from "../../assets/images/itautomation/powerdby/4.png"
+import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 
 
 
@@ -528,7 +533,68 @@ understand system performance and proactively resolve issues.
 </section>
    
 
-<Watsons />
+<section className="pt-0 md:pt-5 w-full">
+        <div className="w-full mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p1})` }}
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                  Instana<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p2})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                Turbonimic<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.ibm.com/products/watsonx-governance" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p4})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                Watson AIOps<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.redhat.com/en/technologies/all-products" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+            <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p3})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                SevenOne<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
 <br /><br /><br /><br /><br />
 
             {/* FAQ Accordion */}

@@ -23,6 +23,10 @@ import rhel from "../../assets/images/cloud/redhat.png"
 import ansi from "../../assets/images/cloud/ansible.png"
 import open from "../../assets/images/cloud/openshift.png"
 import Watsons from '../common/watsons';
+import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
+import p1 from "../../assets/images/cloud/powerdby/1.png"
+import p2 from "../../assets/images/cloud/powerdby/2.png"
+import p3 from "../../assets/images/cloud/powerdby/3.png"
 
 function Openhybridcloud(){
 
@@ -513,7 +517,56 @@ consistently across hybrid cloud environments
       </div>
       </section>
 <br /><br /><br />
-<Watsons />
+
+<section className="pt-0 md:pt-5 w-full">
+        <div className="w-full mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p1})` }}
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                  Ansible<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+              <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p2})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                Open shift<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+
+            
+
+            <a href="https://www.redhat.com/en/technologies/all-products" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+            <div
+                className="h-60 bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${p3})` }} 
+              >
+                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+                Red Hat<span className="text-blue-600"></span>
+                </p>
+                <div className="flex justify-end px-3 mt-5">
+                  <img src={rt_arrow} loading="lazy" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 <br /><br /><br /><br />
 <section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">

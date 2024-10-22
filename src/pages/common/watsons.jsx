@@ -6,7 +6,7 @@ function Watsons(){
 
     return(
         <>
-         <section className="pt-0 md:pt-5 w-full">
+      <section className="pt-0 md:pt-5 w-full">
         <div className="w-full mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
