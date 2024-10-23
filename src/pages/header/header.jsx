@@ -30,7 +30,7 @@ function Header() {
       <li><a href="/Industries">Industries</a></li>
       <li><a href="#">Client stories</a></li>
       <li className="dropdown">
-        <a href="/Resources">Resources</a>
+        <a href="#">Resources</a>
         <div className="dropdown-content">
           <a href="/Blogs">Blog</a>
           <a href="/Casestudies">Case Studies</a>
