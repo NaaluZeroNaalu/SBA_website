@@ -16,20 +16,23 @@ function Blogthree(){
     />
 
     {/* Text content on white background */}
-    <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
-        {/* Subtitle */}
+    {/* <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
        
-        
-        {/* Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
         How can Large Language Models grow your productivity by 5X
         </h1>
        
-    </div>
+    </div> */}
 </section>
 <section className="min-h-screen bg-gray-100 py-10 px-5">
+
+<div className="container mx-auto">
+    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily:"league spartan"}}>
+    How can Large Language Models grow your productivity by 5X
+    </h1>
+  </div>
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 className="text-4xl text-center mb-10 text-gray-800" style={{ fontFamily: "league Spartan" }}>
       Introduction to Large Language Models (LLMs)
     </h1>
 

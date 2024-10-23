@@ -30,12 +30,12 @@ function Aboutus(){
       <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
         About Us
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"80px"}}>
         Intelligent Solutions, Limitless Potential
         </div>
       </div>
@@ -53,11 +53,11 @@ function Aboutus(){
       <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 style={{fontFamily:"league spartans"}} className="text-3xl font-bold mb-4 md:mb-16 text-left">
+              <h2 style={{fontFamily:"league spartan"}} className="text-3xl font-bold mb-4 md:mb-16 text-left">
                 Why Choose Us?
               </h2>
-              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
-              "Founded in 1991, SBA Info Solutions 
+              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartan"}}>
+              Founded in 1991, SBA Info Solutions 
               Private Limited is a Chennai-based automation company 
               with over 30 years of experience in delivering enterprise solutions. 
               We strive to empower professionals by advancing innovative solutions 
@@ -92,7 +92,7 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
+              <p className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartan"}}>
               Our focus is on creating agile and secure work
                environments that boost productivity and promote sustainable growth, 
                contributing to a more resilient and equitable global economy.
@@ -121,7 +121,7 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h1 className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartans"}}>
+              <h1 className="text-2xl  mb-4 md:mb-16 text-left" style={{fontWeight:"normal",fontFamily:"league spartan"}}>
               SBA has 60+ partnerships with top OEMs, 
               specializing in Next  Gen AI, ML, Cloud Services, and Security networks. 
               <br /><br />
@@ -149,10 +149,10 @@ function Aboutus(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-            <h2 style={{fontFamily:"league spartans"}} className="text-4xl font-bold mb-4 md:mb-16 text-left">
+            <h2 style={{fontFamily:"league spartan"}} className="text-4xl font-bold mb-4 md:mb-16 text-left">
             Commitment to Excellence
               </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
+              <ul className="text-base pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
                 <li>
                 <strong>Quality First:</strong> We deliver exceptional quality in everything we do.
                 </li>
@@ -171,9 +171,9 @@ function Aboutus(){
           </div>
           </div>
       </section>
-
+<br /><br />
       <Certifications />
-
+<br /><br />
       <Contactus />
         </>
     )

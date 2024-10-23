@@ -1,4 +1,4 @@
-import one from "../../assets/images/blogs/one.jpeg"
+import one from "../../assets/images/blogs/one.png"
 import two from "../../assets/images/blogs/two.jpeg"
 import three from "../../assets/images/blogs/three.jpeg"
 import four from "../../assets/images/blogs/four.jpeg"
@@ -68,7 +68,7 @@ function Blogsections(){
 <section>
         <div className="min-h-screen bg-gray-100 py-10 px-5">
           <div className="container mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-10 text-black-600" style={{ fontFamily: "League Spartan" }}>
+            <h1 className="text-4xl font-bold text-center mb-10 text-black-600" style={{ fontFamily: "league spartan" }}>
               Blog Posts
             </h1>
 
@@ -86,11 +86,11 @@ function Blogsections(){
 
                   {/* Blog Title */}
                   <a href={post.link} style={{textDecoration:"none"}}>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartans"}}>{post.title}</h2>
+                  <h2 className="text-3xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}}>{post.title}</h2>
                   </a>
 
                   {/* Blog Description */}
-                  <p className="text-lg text-gray-700 mb-6" style={{fontFamily:"league spartans"}}>{post.description}</p>
+                  <p className="text-lg text-gray-700 mb-6" style={{fontFamily:"league spartan"}}>{post.description}</p>
                 </div>
               ))}
             </div>

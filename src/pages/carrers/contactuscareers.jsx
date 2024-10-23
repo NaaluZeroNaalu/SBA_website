@@ -30,6 +30,7 @@ const ContactForm = () => {
             name="fullName"
             placeholder="Your Full Name"
             className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
+          required
           />
         </div>
         <div>
@@ -40,6 +41,7 @@ const ContactForm = () => {
             name="email"
             placeholder="Your Email Address"
             className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
+            required
           />
         </div>
       </div>
@@ -54,6 +56,7 @@ const ContactForm = () => {
             name="phone"
             placeholder="Your Phone Number"
             className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
+            required
           />
         </div>
         <div>
@@ -64,37 +67,32 @@ const ContactForm = () => {
             name="education"
             placeholder="Education"
             className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
+            required
           />
         </div>
       </div>
 
       {/* Support Section */}
       <div>
-        <label htmlFor="support" className="block text-lg font-semibold text-gray-700">Support Required On</label>
-        <select
+        <label htmlFor="support" className="block text-lg font-semibold text-gray-700">Domain</label>
+        <input
           id="support"
           name="support"
           className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
-        >
-          <option value="" disabled>Choose a Solution/Service</option>
-          <option value="Data and AI">Data and AI</option>
-          <option value="IT and Business Automation">IT and Business Automation</option>
-          <option value="Open Hybrid Cloud">Open Hybrid Cloud</option>
-          <option value="Security and Sustainability">Security and Sustainability</option>
-        </select>
+        />
       </div>
 
       {/* Update Resume Section */}
-      <div>
+      {/* <div>
         <label htmlFor="resume" className="block text-lg font-semibold text-gray-700">Update Resume</label>
         <input
-          type="file"
-          id="resume"
-          name="resume"
-          accept=".pdf"
-          className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf"
+        className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
         />
-      </div>
+        </div> */}
 
       {/* Submit Button */}
       <div style={{ textAlign: "center" }}>
@@ -106,6 +104,9 @@ const ContactForm = () => {
           Submit Request
         </button>
       </div>
+        <div>
+          <p style={{textAlign:"center",fontSize:"40px"}}>Email Us at <span style={{color:"red"}}>hr@sbainfo.in</span></p>
+        </div>
     </form>
   );
 };

@@ -51,7 +51,7 @@ function Casestudiessections(){
         <section>
   <div className="min-h-screen bg-gray-100 py-10 px-5">
     <div className="container mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-10 text-black-600" style={{ fontFamily: "League Spartans" }}>
+      <h1 className="text-5xl font-bold text-center mb-10 text-black-600" style={{ fontFamily: "league Spartan" }}>
         Case Studies
       </h1>
 
@@ -69,11 +69,11 @@ function Casestudiessections(){
 
             {/* Blog Title */}
             <a href={post.link} style={{ textDecoration: "none" }}>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartans"}}>{post.title}</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}}>{post.title}</h2>
             </a>
 
             {/* Blog Description */}
-            <p className="text-base md:text-lg text-gray-700 mb-6" style={{fontFamily:"league spartans"}}>{post.description}</p>
+            <p className="text-base md:text-lg text-gray-700 mb-6" style={{fontFamily:"league spartan"}}>{post.description}</p>
           </div>
         ))}
       </div>

@@ -129,12 +129,12 @@ function Homepage(){
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
         <div className="text-white text-6xl md:text-8xl font-extrabold">
-           Automate the mundane
+           Automate the Mundane
         </div>
 
         {/* Centered red box with large text */}
         <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
-          Elevate Human potential
+          Elevate Human Potential
         </div>
       </div>
 
@@ -310,7 +310,7 @@ function Homepage(){
           <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
             <div className=" bg-white bg-opacity-70 p-8 rounded-lg ">
               <p style={{fontFamily:"league spartan"}} className="text-lg md:text-2xl font-bold text-black leading-relaxed">
-                In the modern workplace,{" "}
+                In the modern workplace,
                 <span className="text-red-500">
                   repetitive tasks like data entry and information retrieval
                 </span>{" "}
@@ -459,32 +459,31 @@ function Homepage(){
         <Counter />
       </section>
 
-      <section className="w-full bg-gray-50">
+<section className="w-full">
         <div className="py-10">
-          
-
-  <section className="relative h-60 mx-3">
-  <div className="inset-0 flex flex-col justify-center items-center z-10 text-center px-4">
+  <section className=" h-60 mx-3 "> {/* Add bg-cream class for background color */}
+  <div style={{backgroundColor:"#DADBDD"}} className="inset-0 flex flex-col  justify-center items-center z-10 text-center px-4">
     <br /><br /><br /><br />
-    <h2 className="text-6xl font-bold mb-8" style={{fontFamily: "League Spartan", fontWeight: "bold"}}>Our Partner Ecosystem</h2>
-
-    <div className="flex justify-center items-center space-x-10"> {/* Use space-x-10 for even spacing */}
-        <div className="flex-shrink-0"> {/* Prevent shrinking */}
-            <img src={redhat} alt="Red Hat" className="object-contain" style={{width: "300px"}} />
-        </div>
-        <div className="flex-shrink-0"> {/* Prevent shrinking */}
-            <img src={ibm} alt="IBM" className="object-contain" style={{width: "300px"}} />
-        </div>
+    <h2 className="text-6xl font-bold mb-8" style={{ fontFamily: "League Spartan", fontWeight: "bold",marginTop:"-40px"}}>
+      Our Partner Ecosystem
+    <div className="flex justify-center items-center space-x-10" style={{marginTop:"-40px",marginBottom:"-80px"}}> {/* Use space-x-10 for even spacing */}
+      <div className="flex-shrink-0"> {/* Prevent shrinking */}
+        <img src={redhat} alt="Red Hat" className="object-contain" style={{ width: "450px",height:"300px" }} />
+      </div>
+      <div className="flex-shrink-0"> {/* Prevent shrinking */}
+        <img src={ibm} alt="IBM" className="object-contain" style={{ width: "300px",height:"300px"}} />
+      </div>
     </div>
-</div>
+    </h2>
 
-
+  </div>
 </section>
+
         </div>
       </section>
 
       
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
       <Industriesweserve />
       <br /><br /><br /><br />
       <Certifications />

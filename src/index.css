@@ -97,26 +97,21 @@ img{
     border-radius: 10px;
 }
 
-#solutions ul li{
 
-    font-family: roboto;
-    font-size: 20px;
-    margin-left: 20px;
+
+h2,p,h1,h4,h5,span{
+    font-family: league spartan;
+    margin-left: 10px;
 }
 
-h2{
-    font-family: league spartans;
-    margin-left: 10px;
+
+ul li{
+    
+    font-family: league spartan;
+    font-size: 20px;
 }
 
 #products h2{
 
     font-size: 50px;
-}
-
-#products p{
-
-    font-size: 20px;
-    font-family: Glacial Indifference;
-    padding-left: 20px;
 }

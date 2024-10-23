@@ -111,7 +111,7 @@ function Industries(){
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               BFSI
               </h2>
-              <p className=" text-2xl pl-4 space-y-3 text-left" style={{fontFamily:"league spartans"}}>
+              <p className=" text-2xl pl-4 space-y-3 text-left" style={{fontFamily:"league spartan"}}>
               SBA offers end-to-end services for the BFSI industry,
                including digital transformation, IT consulting, cybersecurity, 
                data analytics, and regulatory compliance. 
@@ -130,8 +130,8 @@ function Industries(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
               Manufacturing
               </h2>
-              <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>We provide advanced solutions for manufacturing industries that include:</p>
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
+              {/* <p className="ms-4 text-2xl" style={{fontFamily:"league spartan"}}>We provide advanced solutions for manufacturing industries that include:</p> */}
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
                 <li>
                 Predictive Maintenance
                 </li>
@@ -219,16 +219,16 @@ function Industries(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
               Media
               </h2>
-              <p style={{fontFamily:"league spartans"}} className="ms-4 text-2xl">We offer AI-driven services for the media industry:</p>
-              <ul style={{fontFamily:"league spartans",}} className="text-2xl pl-10 list-disc space-y-3 text-left">
-                 <li>Content Creation: AI-generated content.</li>
-                  <li>Summarization: Condensing complex information.</li>
-                  <li>Entity Extraction: Identifying key entities.</li>
-                  <li>Classification: Organizing data for better insights.</li>
-                  <li>Efficiency Gains: Boosting productivity, reducing costs.</li>
+              {/* <p style={{fontFamily:"league spartan"}} className="ms-4 text-2xl">We offer AI-driven services for the media industry:</p> */}
+              <ul style={{fontFamily:"league spartan",}} className="text-2xl pl-10 list-disc space-y-3 text-left">
+                 <li><strong>Content Creation:</strong> AI-generated content.</li>
+                  <li><strong>Summarization:</strong> Condensing complex information.</li>
+                  <li><strong>Entity Extraction:</strong> Identifying key entities.</li>
+                  <li><strong>Classification:</strong> Organizing data for better insights.</li>
+                  <li><strong>Efficiency Gains:</strong> Boosting productivity, reducing costs.</li>
               </ul>
-              <p className="ms-4 text-2xl">
-              Our solutions help media organizations achieve more with less.</p>
+              {/* <p className="ms-4 text-2xl">
+              Our solutions help media organizations achieve more with less.</p> */}
             </div>
           </div>
         </div>
@@ -274,8 +274,8 @@ function Industries(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
               IT/ITES
               </h2>
-              <ul style={{fontFamily:"league spartans"}} className="text-base pl-4 list-disc space-y-3 text-left">
-              <p className="text-2xl" style={{fontFamily:"league spartans"}}>
+              <ul style={{fontFamily:"league spartan"}} className="text-base pl-4 list-disc space-y-3 text-left">
+              <p className="text-2xl" style={{fontFamily:"league spartan"}}>
                   To optimize IT operations, enhance productivity, and ensure
                   robust security measures tailored to business needs, we
                   provide a comprehensive suite of IT services for the IT/ITES
@@ -335,7 +335,7 @@ function Industries(){
             <div className="md:w-1/2 w-full p-1  md:p-4">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={Industries3}
+                  src={Industries5}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                   alt="Data Orchestration"
@@ -346,17 +346,17 @@ function Industries(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
               Telecom/BPO KPO
               </h2>
-              <p style={{fontFamily:"league spartans"}} className="ms-4 text-2xl">
+              {/* <p style={{fontFamily:"league spartan"}} className="ms-4 text-2xl">
                 Enhancing Call Center Efficiency
-                </p>
-              <ul style={{fontFamily:"league spartans"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
+                </p> */}
+              <ul style={{fontFamily:"league spartan"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
               <li><strong>Speech Transcription:</strong> Accurate voice-to-text transcription</li>
                 <li><strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.</li>
                 <li><strong>Agent Assist:</strong> Real-time assistance for boosted productivity and morale.</li>
                 <li><strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement.</li>
               </ul>
-              <p className="pl-5 text-2xl" style={{fontFamily:"league spartans"}}>
-              Our solutions help media organizations achieve more with less.</p>
+              {/* <p className="pl-5 text-2xl" style={{fontFamily:"league spartan"}}>
+              Our solutions help media organizations achieve more with less.</p> */}
             </div>
           </div>
         </div>
@@ -402,11 +402,11 @@ function Industries(){
               <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
               Healthcare
               </h2>
-              <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>
+              {/* <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>
                 SBA Info Solutions provides comprehensive IT services
                  to the healthcare industry, including:
-                </p>
-              <ul style={{fontFamily:"league spartans",fontSize:"25px"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
+                </p> */}
+              <ul style={{fontFamily:"league spartan",fontSize:"25px"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
               <li>Hybrid Cloud Infrastructure</li>
                   <li>Intelligent Data-as-a-Service (iDaaS)</li>
                   <li>AI-Enhanced Data Analysis</li>
@@ -432,8 +432,8 @@ function Industries(){
       <br /><br /><br />
       <Certifications />
       <br /><br /><br /><br /><br />
-      <Watsons />
-      <br /><br /><br /><br /><br />
+      {/* <Watsons />
+      <br /><br /><br /><br /><br /> */}
       <Contactus />
 
       <section className="flex flex-col items-center justify-center py-16 bg-white">

@@ -15,7 +15,8 @@ function Watsons(){
                 style={{ backgroundImage: `url(${bg})` }}
               >
                 <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.ai
+                  {/* watson<span className="text-blue-600 ms-1">x</span>.ai */}
+                  watsonx.ai
                 </p>
                 <div className="flex justify-end px-3 mt-5">
                   <img src={rt_arrow} loading="lazy" alt="arrow" />
@@ -29,7 +30,8 @@ function Watsons(){
                 style={{ backgroundImage: `url(${bg})` }} 
               >
                 <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.data
+                  {/* watson<span className="text-blue-600 ms-1">x</span>.data */}
+                  watsonx.data
                 </p>
                 <div className="flex justify-end px-3 mt-5">
                   <img src={rt_arrow} loading="lazy" alt="arrow" />
@@ -43,7 +45,8 @@ function Watsons(){
                 style={{ backgroundImage: `url(${bg})` }} 
               >
                 <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  watson<span className="text-blue-600">x</span>.governance
+                  {/* watson<span className="text-blue-600 ms-1">x</span>.governance */}
+                  watsonx.governance
                 </p>
                 <div className="flex justify-end px-3 mt-5">
                   <img src={rt_arrow} loading="lazy" alt="arrow" />

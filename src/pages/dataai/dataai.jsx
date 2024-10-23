@@ -111,12 +111,12 @@ function Dataai(){
     <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Empower Your Business With
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Trusted AI Solutions
         </div>
       </div>
@@ -218,7 +218,7 @@ function Dataai(){
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left" >
                 Data Orchestration and Management
               </h2>
               <ul className="text-base pl-10 list-disc space-y-3 text-left">
@@ -301,7 +301,7 @@ function Dataai(){
         <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
+              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
                 <b>Enterprise ML and Generative AI</b>
               </h2>
               <ul className="text-base pl-0 list-disc space-y-3 text-left ms-5">
@@ -333,8 +333,9 @@ function Dataai(){
 
       {/* industries */}
    <Industriesweserve />
-
+   <br /><br />
       <Certifications />
+      <br /><br />
       <section className="py-8">
         <div className="container mx-auto max-w-7xl px-4" id="products">
           <h1 className="text-5xl font-bold text-center mb-12">
@@ -345,7 +346,7 @@ function Dataai(){
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">watson Assistant</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
                 IBM Watson Assistant is a conversation AI platform that helps
                 you provide customers fast, straightforward, and accurate
                 answers to their questions, across any application, device, or
@@ -372,7 +373,7 @@ function Dataai(){
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">watson Discovery</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
                 IBM Watson Discovery is an award-winning enterprise search and
                 AI search technology that breaks open data silos and retrieves
                 specific answers to your questions while analyzing trends and
@@ -385,7 +386,7 @@ function Dataai(){
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">Instana</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
                 Instana Observability is a fully-automated application
                 performance management solution designed for the challenges of
                 managing microservice and cloud-native applications. It makes
@@ -413,7 +414,7 @@ function Dataai(){
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">Cognos</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
                 Unleash the power of your data through AI-driven automation and
                 insights in Cognos Analytics. Simply pose a question or
                 hypothesis, and let AI provide the insights you require.
@@ -425,7 +426,7 @@ function Dataai(){
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
                 Turbonomic is a software platform that helps organizations
                 optimize the performance and cost of their IT infrastructure,
                 including public, private, and hybrid cloud environments, by
@@ -457,55 +458,46 @@ function Dataai(){
         </div>
       </section>
       <section className="my-5 py-5 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-          {/* Left Content */}
-          <div className="md:w-1/2 w-full text-center md:text-left">
-            <p className="text-5xl font-bold text-gray-900 leading-tight">
-              Ready To <span className="text-red-600">Unlock</span> The Power Of{" "}
-              <span className="text-red-600">Data and AI?</span>
-            </p>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+    {/* Left Content */}
+    <div className="md:w-1/2 w-full text-center md:text-left">
+      <p className="text-5xl font-bold text-gray-900 leading-tight">
+        Ready To <span className="text-red-600">Unlock</span> The Power Of{" "}
+        <span className="text-red-600">Data and AI?</span>
+      </p>
 
-            <p className="text-lg text-gray-700 mt-5">
-              If you're interested in exploring our Data and AI solutions or
-              need more information, our experts are ready to assist you.
-            </p>
+      <p className="text-lg text-gray-700 mt-5">
+        If you're interested in exploring our Data and AI solutions or need
+        more information, our experts are ready to assist you.
+      </p>
 
-            <div className="flex gap-3 mt-5 justify-center md:justify-start flex-col md:flex-row items-center">
-              {/* Call Back Button */}
-              {/* <button
-                onClick={fetchUsers}
-                className="bg-red-600 text-white py-2 px-5 rounded-full hover:bg-red-700 transition duration-300"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <a href="/ContactUs"> Get a Call Back</a>
-              </button> */}
+      <div className="flex gap-3 mt-5 justify-center md:justify-start flex-col md:flex-row items-center">
+        {/* Brochure Download Button */}
+        <a
+          href={brochure} // Ensure this points to the correct PDF URL
+          target="_blank"
+          rel="noopener noreferrer"
+          download // Just the 'download' attribute is enough, no need for value
+        >
+          <button className="border-2 border-red-600 text-red-600 py-2 px-5 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+            Download Brochure
+          </button>
+        </a>
+      </div>
+    </div>
 
-              {/* Brochure Download Button */}
-              <a
-                href={brochure}
-                target="_blank"
-                rel="noopener noreferrer"
-                download={brochure}
-              >
-                <button download={brochure} className="border-2 border-red-600 text-red-600 py-2 px-5 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
-                  Download Brochure
-                </button>
-              </a>
-            </div>
-          </div>
+    {/* Right Image */}
+    <div className="md:w-1/2 w-full mt-5 md:mt-0 flex justify-center md:justify-end">
+      <img
+        src={Group}
+        className="w-full max-w-md"
+        loading="lazy"
+        alt="AI"
+      />
+    </div>
+  </div>
+</section>
 
-          {/* Right Image */}
-          <div className="md:w-1/2 w-full mt-5 md:mt-0 flex justify-center md:justify-end">
-            <img
-              src={Group}
-              className="w-full max-w-md"
-              loading="lazy"
-              alt="AI"
-            />
-          </div>
-        </div>
-      </section>
       <br />
       <Contactus />
       {/* <section className="bg-[#F5F9FD] flex items-center justify-center min-h-screen">

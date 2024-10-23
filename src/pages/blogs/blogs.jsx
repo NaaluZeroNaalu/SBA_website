@@ -51,8 +51,8 @@ function Blogs(){
         
 
       <section>
-        <div className="flex justify-center items-center h-screen py-1">
-          <p className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl px-1" style={{fontFamily:"league spartans"}}>
+        <div className="flex justify-center items-center py-1" style={{height:"300px"}}>
+          <p className="text-center text-lg sm:text-xl md:text-4xl lg:text-3xl px-1" style={{fontFamily:"league spartan"}}>
             Stay ahead in the business landscape with our comprehensive blog, featuring practical tips, industry trends, and in-depth guides tailored for small business owners and aspiring entrepreneurs.
           </p>
         </div>

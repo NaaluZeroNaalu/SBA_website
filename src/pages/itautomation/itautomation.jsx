@@ -136,12 +136,12 @@ function Itautomation() {
         <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           IT Automation
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Empower Your Operations
         </div>
       </div>
@@ -329,7 +329,7 @@ function Itautomation() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Automated Backup and Recovery
               </h2>
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
+              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
                 <li>Automates data backup and recovery.</li>
                 <li>Simplifies backup management for both on-premises and cloud environments.</li>
                 <li>Automatically protects data, ensuring it is recoverable during system failures</li>
@@ -402,7 +402,7 @@ function Itautomation() {
               
           
             <section className="py-5 bg-light">
-      <h1 className="display-4 text-center mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}} id="inds">Industries we serve</h1>
+      <h1 className="display-4 text-center mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}} id="inds">Industries We Serve</h1>
 
       <div className="container">
         <div className="row justify-content-between">
@@ -453,7 +453,7 @@ function Itautomation() {
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">Instana</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
               provides real-time, full-stack observability for applications, enabling automatic discovery
               and continuous monitoring of performance metrics across various environments
               </p>
@@ -478,7 +478,7 @@ function Itautomation() {
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
               offers visibility into application performance and resource utilization, allowing
 organizations to optimize their infrastructure based on real-time data.
 
@@ -489,8 +489,8 @@ organizations to optimize their infrastructure based on real-time data.
           {/* Instana */}
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Watson AIOps</h2>
-              <p className="text-lg">
+              <h2 className="text-3xl font-bold mb-4">watson AIOps</h2>
+              <p className="text-2xl">
               leverages AI to analyze operational data, providing insights that help teams
 understand system performance and proactively resolve issues.
 
@@ -517,7 +517,7 @@ understand system performance and proactively resolve issues.
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
               <h2 className="text-3xl font-bold mb-4">SevOne</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
               delivers automated network observability, enabling deep insights into network performance
               across multivendor environments, ensuring continuous monitoring and proactive management.
               </p>
@@ -534,31 +534,33 @@ understand system performance and proactively resolve issues.
    
 
 <section className="pt-0 md:pt-5 w-full" id='poweredby'>
-  <div className="w-full mx-auto px-4 md:px-6">
+  <div className="w-full mx-auto px-4 md:px-6" >
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <a href="https://www.ibm.com/products/instana" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://instana-demo.c8f8f055.public.multi-containers.ibm.com/component1" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            Instana<span className="text-blue-600"> </span>
+            <span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Instana
           </span>
           <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>Instana</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
       </a>
 
-      <a href="https://www.ibm.com/products/turbonomic" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://turbonomic-demo.17f48735.public.multi-containers.ibm.com/" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            Turbonomic<span className="text-blue-600"> </span>
+            {/* Turbonomic<span className="text-blue-600"> </span> */}
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Turbonimic
           </span>
           <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl me-5' style={{color:"black"}}>Turbonomic</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
@@ -567,26 +569,29 @@ understand system performance and proactively resolve issues.
       <a href="https://www.ibm.com/products/cloud-pak-for-aiops" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p4})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-          Watson AIOps<span className="text-blue-600"> </span>
+          <span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Watson AIOps
           </span>
           <div className="flex justify-end px-3 mt-5">
+            <br />
+            <span className='text-2xl me-5' style={{color:"black"}}>watson AIOps</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
       </a>
 
-      <a href="https://www.ibm.com/products/sevone-network-performance-management" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://demos.ibm.com/player/?demoId=d48700a1-09ae-45c5-ab06-0dc0f57967b7&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=app" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-          SevenOne<span className="text-blue-600"> </span>
+          <span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for SevenOne
           </span>
           <div className="flex justify-end px-3 mt-5">
+          <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>SevOne</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
@@ -601,19 +606,19 @@ understand system performance and proactively resolve issues.
             {/* FAQ Accordion */}
             <section className=" flex items-center justify-center min-h-screen">
         <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-8">
+          <h1 className="text-4xl font-bold text-center mb-8" style={{fontFamily:"league spartan"}}>
             Frequently Asked Questions
           </h1>
           <div className="space-y-4">
             {accordionData.map((item, index) => (
-              <div key={index} className="border-b">
+              <div key={index} className="">
                 <h2>
                   <button
                     className={`w-full text-left py-4 px-6 text-black font-semibold focus:outline-none flex justify-between items-center ${
                       activeIndex === index ? "" : ""
                     }`}
                     onClick={() => toggleAccordion(index)}
-                    style={{fontSize:"20px"}}
+                    style={{fontSize:"20px",fontFamily:"league spartan"}}
                   >
                     {item.title}
                     <span className="text-blue-600">
@@ -652,7 +657,7 @@ understand system performance and proactively resolve issues.
                   </button>
                 </h2>
                 {activeIndex === index && (
-                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
+                  <div className="px-6 py-4 ms-3" style={{fontSize:"20px",fontFamily:"league spartan"}}>{item.content}</div>
                 )}
               </div>
             ))}

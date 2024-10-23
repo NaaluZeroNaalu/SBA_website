@@ -22,9 +22,11 @@ import wat5 from "../../assets/images/security/powerdby/1.png";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/sevone.png"
 import Watsons from '../common/watsons';
-import p1 from "../../assets/images/security/powerdby/1.png"
-import p2 from "../../assets/images/security/powerdby/2.png"
+import p1 from "../../assets/images/security/2.png"
+import p2 from "../../assets/images/security/1.png"
 import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
+import a from "../../assets/images/security/powerdby/1.png"
+import b from "../../assets/images/security/powerdby/2.png"
 
 function Securityandsus() {
     const securityAccordionData = [
@@ -128,12 +130,12 @@ function Securityandsus() {
        <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Security and Sustainability
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Secure Enterprise Computing
         </div>
       </div>
@@ -214,7 +216,7 @@ function Securityandsus() {
             />
           </div>
           <div className="relative px-5 max-w-screen-xl mx-auto">
-            <h1 className="text-center text-3xl md:text-5xl font-bold">
+            <h1 className="text-center text-3xl md:text-5xl font-bold" >
               Solutions & Services
             </h1>
           </div>
@@ -239,7 +241,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Secure Mainframe Solutions
               </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left" style={{fontFamily:"league spartans"}}>
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
                 <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
                 <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
                 <li>High Availability Designed for resilience, minimizing downtime.
@@ -343,7 +345,7 @@ function Securityandsus() {
 
       <section className="py-5 bg-light">
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
-    Industries we serve
+    Industries We Serve
   </h1>
 
   <div className="container">
@@ -378,12 +380,12 @@ function Securityandsus() {
   </div>
 </section>
 
-
+<br /><br />
                 <Certifications />
-
+<br /><br />
                 <section className="py-8">
         <div className="container mx-auto max-w-7xl px-4">
-          <h1 className="text-5xl font-bold text-center mb-12">
+          <h1 className="text-5xl font-bold text-center mb-12" style={{fontFamily:"league spartan"}}>
             {/* Powered by <span className="text-red-600">watsonX</span> */}
             Powered By
           </h1>
@@ -392,7 +394,7 @@ function Securityandsus() {
 <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
   <div className="md:w-1/2 w-full md:pr-10">
     <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
-    <p className="text-lg pl-5">
+    <p className="text-2xl pl-5">
       LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
       environment. It is optimized for running more transactions faster and with more security and reliability,
       specifically for the open-source community.
@@ -440,7 +442,7 @@ function Securityandsus() {
   </div>
   <div className="md:w-1/2 w-full md:pl-10">
     <h2 className="text-3xl font-bold mb-4">Mainframe</h2>
-    <p className="text-lg pl-4">
+    <p className="text-2xl pl-4">
     Mainframe computing uses large, powerful computers for high-volume data processing and
      critical applications. These systems offer exceptional reliability, security, 
      and processing power for industries like banking and healthcare. Despite their age,
@@ -454,41 +456,41 @@ function Securityandsus() {
       </section>
       <br /><br /><br />
 
-      <section className="pt-0 md:pt-5 w-full">
-        <div className="w-full mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4" >
-            <a href="https://www.ibm.com/products/z16" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p1})`,border:"1px solid black",borderRadius:"10px"}}
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  <span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  {/* <a href="#">Readmore</a> */}
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://mediacenter.ibm.com/media/What+is+LinuxONEF/1_ev1upbfx" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p2})`,border:"1px solid black",borderRadius:"10px"}} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                <span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  {/* <a href="#">Readmore</a> */}
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a> 
+      <section className="pt-0 md:pt-5 w-full" id='poweredby' style={{marginLeft:"350px"}}>
+  <div className="w-full mx-auto px-4 md:px-6" >
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <a href="https://www.ibm.com/products/z16" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${a})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Instana
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl' style={{color:"black",marginRight:"55px"}}>Mainframe</span>
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
-      </section>
+      </a>
+
+      <a href="https://www.ibm.com/linuxone" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${b})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            {/* Turbonomic<span className="text-blue-600"> </span> */}
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Turbonimic
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>LinuxOne</span>
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
       <br /><br /><br /><br /><br />
 
@@ -500,14 +502,14 @@ function Securityandsus() {
           </h1>
           <div className="space-y-4">
             {securityAccordionData.map((item, index) => (
-              <div key={index} className="border-b">
+              <div key={index} className="">
                 <h2>
                   <button
-                    className={`w-full text-left py-4 px-6 text-black  focus:outline-none flex justify-between items-center ${
+                    className={`w-full text-left py-4 px-6 text-black font-semibold focus:outline-none flex justify-between items-center ${
                       activeIndex === index ? "" : ""
                     }`}
                     onClick={() => toggleAccordion(index)}
-                    style={{fontSize:"20px"}}
+                    style={{fontSize:"20px",fontFamily:"league spartan"}}
                   >
                     {item.title}
                     <span className="text-blue-600">
@@ -546,7 +548,7 @@ function Securityandsus() {
                   </button>
                 </h2>
                 {activeIndex === index && (
-                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
+                  <div className="px-9 py-4" style={{fontSize:"18px",fontFamily:"league spartan"}}>{item.content}</div>
                 )}
               </div>
             ))}

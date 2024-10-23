@@ -18,18 +18,21 @@ function Blogtwo(){
     />
 
     {/* Text content on white background */}
-    <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
-        {/* Subtitle */}
-       
-        
-        {/* Title */}
+    {/* <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
+      
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
         How to Pick the Right Generative AI Studio for Your Enterprise?
         </h1>
         
-    </div>
+    </div> */}
 </section>
 <section className="min-h-screen bg-gray-100 py-10 px-5">
+
+<div className="container mx-auto">
+    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily:"league spartan"}}>
+    How to Pick the Right Generative AI Studio for Your Enterprise?
+    </h1>
+  </div>
   <div className="container mx-auto">
    
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-10">

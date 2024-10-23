@@ -120,7 +120,7 @@ function Careers(){
                             alt="ornament"
                         />
                     </div>
-                    <div className="ai-li-text flex-grow text-left"> {/* Allow text to grow and fill available space */}
+                    <div className="ai-li-text flex-grow text-left" style={{fontFamily:"league spartan"}}> {/* Allow text to grow and fill available space */}
                     <strong>{text.title}:</strong> {text.content}
                     </div>
                 </div>
@@ -143,10 +143,10 @@ function Careers(){
               </div>
             </div>
           <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left" style={{fontFamily:"league spartans"}}>
+              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left" style={{fontFamily:"league spartan"}}>
               Be the Change - Partner With Us!
               </h2>
-              <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>
+              <p className="ms-4 text-2xl" style={{fontFamily:"league spartan"}}>
               Join a team that's redefining the future of business. 
               Our culture is built on a foundation of innovation, collaboration,
                and mutual respect, where creativity thrives and growth is limitless.
@@ -162,12 +162,13 @@ function Careers(){
 
         <br /><br /><br />
       <section className="flex flex-col items-center justify-center py-16 bg-white">
-        <h2 style={{fontFamily:"league spartans"}} className="text-2xl md:text-3xl font-semibold mb-4 text-center">
+        <h2 style={{fontFamily:"league spartan"}} className="text-2xl md:text-3xl font-semibold mb-4 text-center">
         If you're looking for a workplace that's <span style={{color:"red"}}>inspiring, inclusive, and empowering,</span> you're in the right place.
         </h2> 
       </section>
-        <br /><br /><br />
-        <h1 style={{fontWeight:"bold",textAlign:"center",fontFamily:"league spartans"}}>Email Us</h1>
+        
+        <h1 style={{fontWeight:"bold",textAlign:"center",fontFamily:"league spartan"}}>Email Us</h1>
+        <br />
      <ContactForm />
         <br /><br /><br />
 

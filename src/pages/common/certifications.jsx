@@ -115,9 +115,9 @@ function Certifications(){
           >
             <img src={sliderleft} alt="Previous" />
           </button>
-          <h1 className="text-center text-xl md:text-5xl font-bold" style={{fontFamily:"league spartans"}}>
+          <h1 className="text-center text-xl md:text-5xl font-bold" style={{fontFamily:"league spartan"}}>
             Our Proficiency and{" "}
-            <span className="text-red-600">Certifications</span>
+            <span className="text-red-600" style={{fontFamily:"league spartan"}}>Certifications</span>
           </h1>
           <button
             className="bg-transparent p-2 cursor-pointer focus:outline-none"

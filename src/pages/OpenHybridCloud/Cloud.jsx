@@ -101,9 +101,9 @@ const [activeIndex, setActiveIndex] = useState(null);
 
       const industriesforcloud = [
         {
-          title: "Finance",
+          title: "Manufacturing",
           img: ind1,
-          description: " Automation streamlines IT automation through agentless management, allowing system configuration without installing software on target devices and facilitating the shift from monolithic to microservices architecture.",
+          description: "Boosts efficiency with real-time analytics for faster decisions and streamlined production, while enhancing supply chain management and optimizing processes through IIoT integration",
         },
         {
           title: "BFSI",
@@ -135,12 +135,12 @@ const [activeIndex, setActiveIndex] = useState(null);
 <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold mt-5">
+        <div className="text-white text-6xl md:text-8xl font-extrabold mt-5" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Open Hybrid Cloud
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
           Integrated Cloud Services
         </div>
       </div>
@@ -284,7 +284,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Infrastructure Management & security
+              Infrastructure Management & Security
               </h2>
               <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Automates security practices and compliance checks to reduce risks.</li>
@@ -306,7 +306,7 @@ const [activeIndex, setActiveIndex] = useState(null);
           <div className="flex flex-col md:flex-row gap-6 md:gap-10">
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Application Development and delivery
+              Application Development and Delivery
               </h2>
               <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>
@@ -352,7 +352,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             </div>
             <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              OS management & Security
+              OS Management & Security
               </h2>
               <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
                 <li>Streamlines system administration and management tasks.
@@ -393,15 +393,15 @@ const [activeIndex, setActiveIndex] = useState(null);
 
 <section className="py-5 bg-light">
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
-    Industries we serve
+    Industries We Serve
   </h1>
 
-  <div className="container">
-    <div className="flex flex-wrap -mx-2"> {/* Negative margin to offset padding */}
+  <div className="container mx-auto">
+    <div className="flex flex-wrap justify-center -mx-2"> {/* Use justify-center to center the items */}
       {industriesforcloud.map((industry, index) => (
         <div
           key={index}
-          className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
+          className="w-full md:w-1/5 px-2 mb-4 position-relative" // Ensure each card has horizontal padding
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
           onClick={() => {
@@ -427,6 +427,8 @@ const [activeIndex, setActiveIndex] = useState(null);
     </div>
   </div>
 </section>
+
+<br /><br />
 <Certifications />
 <br /><br />
 <section className="py-8">
@@ -440,7 +442,7 @@ const [activeIndex, setActiveIndex] = useState(null);
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">RHEL</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
               Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise
               environments, offering robust performance and comprehensive support It includes features like SELinux
               for enhanced security, regular updates for vulnerability management, and extensive documentation to aid
@@ -477,9 +479,9 @@ const [activeIndex, setActiveIndex] = useState(null);
               </div>
             </div>
             <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-1xl font-bold mb-4">Redhat Ansible Automation Platform</h2>
+              <h2 className="text-1xl font-bold" >Redhat Ansible Automation Platform</h2>
               <br />
-              <p className="text-lg">
+              <p className="text-2xl" style={{marginTop:"-20px"}}>
               Ansible is an open-source automation tool that simplifies IT
 processes such as configuration management, application deployment, and orchestration by using
 human-readable YAML playbooks, eliminating the need for agents on target systems
@@ -491,7 +493,7 @@ human-readable YAML playbooks, eliminating the need for agents on target systems
           <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
             <div className="md:w-1/2 w-full md:pr-10">
               <h2 className="text-3xl font-bold mb-4">Redhat Openshift</h2>
-              <p className="text-lg">
+              <p className="text-2xl">
               OpenShift is a Kubernetes-based container platform developed by Red Hat that
 facilitates the deployment, scaling, and management of containerized applications. It provides a unified
 development and operational experience, enabling teams to build, deploy, and manage applications
@@ -519,55 +521,58 @@ consistently across hybrid cloud environments
 <br /><br /><br />
 
 
-<section className="pt-0 md:pt-5 w-full">
-        <div className="w-full mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4" >
-            <a href="https://www.ibm.com/products/z16" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p1})`,border:"1px solid black",borderRadius:"10px"}}
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                  <span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  {/* <a href="#">Readmore</a> */}
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a>
-
-            <a href="https://mediacenter.ibm.com/media/What+is+LinuxONEF/1_ev1upbfx" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p2})`,border:"1px solid black",borderRadius:"10px"}} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                <span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  {/* <a href="#">Readmore</a> */}
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a> 
-            <a href="https://mediacenter.ibm.com/media/What+is+LinuxONEF/1_ev1upbfx" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
-              <div
-                className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p3})`,border:"1px solid black",borderRadius:"10px"}} 
-              >
-                <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-                <span className="text-blue-600"></span>
-                </p>
-                <div className="flex justify-end px-3 mt-5">
-                  {/* <a href="#">Readmore</a> */}
-                  <img src={rt_arrow} loading="lazy" alt="arrow" />
-                </div>
-              </div>
-            </a> 
+<section className="pt-0 md:pt-5 w-full" id='poweredby' style={{marginLeft:"200px"}}>
+  <div className="w-full mx-auto px-4 md:px-6"  >
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <a href="https://www.redhat.com/en/technologies/management/ansible" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Instana
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>Ansible</span>
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
-      </section>
+      </a>
+
+      <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+            {/* Turbonomic<span className="text-blue-600"> </span> */}
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Turbonimic
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <span className='text-2xl' style={{color:"black",marginRight:"60px"}}>Openshift</span>
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linuxs" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
+          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
+          <span className="text-blue-600"> </span>
+          </p>
+          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            Hover Text for Watson AIOps
+          </span>
+          <div className="flex justify-end px-3 mt-5">
+            <br />
+            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>Red Hat</span>
+            <img src={rt_arrow} loading="lazy" alt="arrow" />
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
 
 <br /><br /><br /><br />
 <section className=" flex items-center justify-center min-h-screen">
@@ -577,14 +582,14 @@ consistently across hybrid cloud environments
           </h1>
           <div className="space-y-4">
             {accordionData.map((item, index) => (
-              <div key={index} className="border-b border-gray-200">
+              <div key={index} className=" border-gray-200">
                 <h2>
                   <button
                     className={`w-full text-left py-4 px-6 text-black font-semibold focus:outline-none flex justify-between items-center ${
                       activeIndex === index ? "" : ""
                     }`}
                     onClick={() => toggleAccordion(index)}
-                    style={{fontSize:"20px"}}
+                    style={{fontSize:"20px",fontFamily:"league spartan"}}
                   >
                     {item.title}
                     <span className="text-blue-600">
@@ -623,7 +628,7 @@ consistently across hybrid cloud environments
                   </button>
                 </h2>
                 {activeIndex === index && (
-                  <div className="px-6 py-4" style={{fontSize:"20px"}}>{item.content}</div>
+                  <div className="px-9 py-4" sstyle={{fontSize:"20px",fontFamily:"league spartan"}}>{item.content}</div>
                 )}
               </div>
             ))}

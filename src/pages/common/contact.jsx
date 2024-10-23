@@ -26,34 +26,34 @@ const ContactForm = () => {
 <>
 <br />
 <div>
-      <h1 style={{ fontWeight: "bold", textAlign: "center", fontFamily: "league spartans" }}>Contact Us</h1>
+      <h1 style={{ fontWeight: "bold", textAlign: "center", fontFamily: "league spartan" }}>Contact Us</h1>
       <br /><br />
-      <form className="space-y-8 container" ref={formRef} onSubmit={sendEmail}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <form className="space-y-8 container" ref={formRef}  onSubmit={sendEmail}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{fontFamily:"league spartan"}}>
           <div>
             <label htmlFor="fullName" className="block text-lg font-semibold text-gray-700">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+            <input required type="text" id="fullName" name="fullName" placeholder="Your Full Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
           </div>
           <div>
             <label htmlFor="email" className="block text-lg font-semibold text-gray-700">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your Work Email Address" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+            <input required  type="email" id="email" name="email" placeholder="Your Work Email Address" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="phone" className="block text-lg font-semibold text-gray-700">Phone Number</label>
-            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+            <input required  type="text" id="phone" name="phone" placeholder="Your Phone Number" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
           </div>
           <div>
             <label htmlFor="company" className="block text-lg font-semibold text-gray-700">Company Name</label>
-            <input type="text" id="company" name="company" placeholder="Your Company Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+            <input required  type="text" id="company" name="company" placeholder="Your Company Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
           </div>
         </div>
 
         <div>
           <label htmlFor="support" className="block text-lg font-semibold text-gray-700">Support Required On</label>
-          <select id="support" name="support" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
+          <select required  id="support" name="support" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
             <option value="" disabled>Choose a Solution/Service</option>
             <option value="Data and AI">Data and AI</option>
             <option value="IT and Business Automation">IT and Business Automation</option>
@@ -64,7 +64,7 @@ const ContactForm = () => {
 
         <div>
           <label htmlFor="query" className="block text-lg font-semibold text-gray-700">Query</label>
-          <textarea id="query" name="query" placeholder="Describe your Requirement in Detail" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" rows="5"></textarea>
+          <textarea required  id="query" name="query" placeholder="Describe your Requirement in Detail" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" rows="5"></textarea>
         </div>
 
         <div style={{ textAlign: "center" }}>

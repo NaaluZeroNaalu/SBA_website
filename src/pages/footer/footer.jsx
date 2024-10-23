@@ -84,9 +84,9 @@ function Footer(){
             <div className="">
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Resources</h5> */}
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Resources</a>
-                    </li>
+                    {/* <li className="nav-item">
+                        <a href= className="nav-link">Resources</a>
+                    </li> */}
                     <li className="nav-item">
                         <a href="/Blogs" className="nav-link">Blog</a>
                     </li>
@@ -99,22 +99,22 @@ function Footer(){
                 <nav className="nav flex-column " id="socialmedia" style={{alignItems:"center"}}>
                     <h5 className="ms-3">Connect</h5>
                     <li className="nav-item">
-                        <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link" title="https://www.linkedin.com/company/sba-info-solutions/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={{color:"blue",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="https://www.youtube.com/@sbainfosolutionspvtltd6340" className="nav-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/@sbainfosolutionspvtltd6340" className="nav-link" target="_blank" rel="noopener noreferrer" title="https://www.youtube.com/@sbainfosolutionspvtltd6340">
                             <FaYoutube style={{color:"red",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="tel:91 9500262708" className="nav-link">
+                        <a href="tel:91 9500262708" className="nav-link" title="tel:91 9500262708">
                             <FaPhone style={{fontSize:"30px"}}  />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="mailto:marketing@sbainfo.in" className="nav-link">
+                        <a href="mailto:marketing@sbainfo.in" className="nav-link" title="marketing@sbainfo.in">
                             <FaEnvelope style={{color:"blue",fontSize:"30px"}}  />
                         </a>
                     </li>

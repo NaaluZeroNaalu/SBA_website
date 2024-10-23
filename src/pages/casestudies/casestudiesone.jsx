@@ -15,20 +15,17 @@ function Casestudiesone(){
     />
 
     {/* Text content on white background */}
-    <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
-        {/* Subtitle */}
-       
-        
-        {/* Title */}
+    {/* <div className="absolute bottom-0 left-20 bg-white text-black p-10 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 z-10">
+      
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight" style={{fontFamily:"league spartans"}}>
         Leading Healthcare Services Provider Trusts SBA Info for their Security and Compliance Requirements
         </h1>
         
-    </div>
+    </div> */}
 </section>
 <section className="min-h-screen bg-gray-100 py-10 px-5" id="details">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartans" }}>
+    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
       Leading Healthcare Services Provider Trusts SBA Info for their Security and Compliance Requirements
     </h1>
 

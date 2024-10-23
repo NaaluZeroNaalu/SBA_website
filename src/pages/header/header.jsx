@@ -10,36 +10,37 @@ function Header() {
   <header className="navbar" style={{ position: "sticky" }}>
   <img src={logo} alt="Logo" style={{ height: "100px", width: "100px", marginLeft: "50px" }} />
   <nav>
-    <ul className="nav-links">
-      <li className="dropdown">
-        <a href="#">About</a>
-        <div className="dropdown-content">
-          <a href="/Aboutus">About us</a>
-          <a href="/Careers">Careers</a>
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="#">Solutions</a>
-        <div className="dropdown-content">
-          <a href="/Data-AI">Data and AI</a>
-          <a href="/Itautomation">IT and Business Automation</a>
-          <a href="/Open-Hybrid-Cloud">Open Hybrid Cloud</a>
-          <a href="/Security-and-sustainability">Security and Sustainability</a>
-        </div>
-      </li>
-      <li><a href="/Industries">Industries</a></li>
-      <li><a href="#">Client stories</a></li>
-      <li className="dropdown">
-        <a href="#">Resources</a>
-        <div className="dropdown-content">
-          <a href="/Blogs">Blog</a>
-          <a href="/Casestudies">Case Studies</a>
-        </div>
-      </li>
-      <li>
-        <button className='btn btn-danger' style={{ borderRadius: "30px" }}>Request a demo</button>
-      </li>
-    </ul>
+  <ul className="nav-links flex items-center justify-between">
+  <li className="dropdown">
+    <a href="#">About</a>
+    <div className="dropdown-content">
+      <a href="/Aboutus">About Us</a>
+      <a href="/Careers">Careers</a>
+    </div>
+  </li>
+  <li className="dropdown">
+    <a href="#">Solutions</a>
+    <div className="dropdown-content">
+      <a href="/Data-AI">Data and AI</a>
+      <a href="/Itautomation">IT and Business Automation</a>
+      <a href="/Open-Hybrid-Cloud">Open Hybrid Cloud</a>
+      <a href="/Security-and-sustainability">Security and Sustainability</a>
+    </div>
+  </li>
+  <li><a href="/Industries">Industries</a></li>
+  <li><a href="#">Client stories</a></li>
+  <li className="dropdown">
+    <a href="#">Resources</a>
+    <div className="dropdown-content">
+      <a href="/Blogs">Blog</a>
+      <a href="/Casestudies">Case Studies</a>
+    </div>
+  </li>
+  <li className="flex items-center"> {/* Added flex to align button */}
+    <button className='btn btn-danger' style={{ borderRadius: "30px" }}>Request a demo</button>
+  </li>
+</ul>
+
     <div className="offcanvas offcanvas-start" id="demo">
       <div className="offcanvas-header">
         <h1 className="offcanvas-title"></h1>
@@ -78,7 +79,7 @@ function Header() {
         </ul>
       </div>
     </div>
-    <button className="btn" id='navbtn' type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    <button className="btn" id='navbtn' type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" >
       <IoReorderThreeSharp />
     </button>
   </nav>

@@ -38,7 +38,7 @@ function Industriesweserve(){
         <>
         
       <section className="py-5 bg-light">
-      <h1 className="display-4 text-center mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}} id="inds">Industries we serve</h1>
+      <h1 className="display-4 text-center mb-4" style={{fontWeight:"bold"}} id="inds">Industries We Serve</h1>
 
       <div className="container">
   <div className="row justify-content-between">
@@ -60,10 +60,10 @@ function Industriesweserve(){
           </div>
           <div
             className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
-            style={{ backgroundColor: "#3f649a" }}
+            style={{ backgroundColor: "#3f649a",fontFamily:"league spartan"}}
           >
             <h5 className="card-title">{industry.title}</h5>
-            <p style={{ textAlign: "center" }}>{industry.description}</p>
+            <p style={{ textAlign: "center",fontFamily:"league spartan"}}>{industry.description}</p>
           </div>
         </div>
       </div>
