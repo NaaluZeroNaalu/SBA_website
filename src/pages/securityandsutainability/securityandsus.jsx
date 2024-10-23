@@ -456,30 +456,32 @@ function Securityandsus() {
 
       <section className="pt-0 md:pt-5 w-full">
         <div className="w-full mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4" >
             <a href="https://www.ibm.com/products/z16" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
               <div
                 className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p1})`}}
+                style={{ backgroundImage: `url(${p1})`,border:"1px solid black",borderRadius:"10px"}}
               >
                 <p className="flex items-end justify-center h-3/5 text-2xl text-black">
                   <span className="text-blue-600"></span>
                 </p>
                 <div className="flex justify-end px-3 mt-5">
+                  {/* <a href="#">Readmore</a> */}
                   <img src={rt_arrow} loading="lazy" alt="arrow" />
                 </div>
               </div>
             </a>
 
-            <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
+            <a href="https://mediacenter.ibm.com/media/What+is+LinuxONEF/1_ev1upbfx" target="_blank" style={{textDecoration:"none",fontWeight:"bold"}}>
               <div
                 className="h-60 bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${p2})` }} 
+                style={{ backgroundImage: `url(${p2})`,border:"1px solid black",borderRadius:"10px"}} 
               >
                 <p className="flex items-end justify-center h-3/5 text-2xl text-black">
                 <span className="text-blue-600"></span>
                 </p>
                 <div className="flex justify-end px-3 mt-5">
+                  {/* <a href="#">Readmore</a> */}
                   <img src={rt_arrow} loading="lazy" alt="arrow" />
                 </div>
               </div>

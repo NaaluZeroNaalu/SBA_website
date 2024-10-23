@@ -536,10 +536,10 @@ understand system performance and proactively resolve issues.
 <section className="pt-0 md:pt-5 w-full" id='poweredby'>
   <div className="w-full mx-auto px-4 md:px-6">
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://www.ibm.com/products/instana" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
+            Instana<span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Instana
@@ -550,10 +550,10 @@ understand system performance and proactively resolve issues.
         </div>
       </a>
 
-      <a href="https://www.ibm.com/products/watsonx-data" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://www.ibm.com/products/turbonomic" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
+            Turbonomic<span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Turbonimic
@@ -564,10 +564,10 @@ understand system performance and proactively resolve issues.
         </div>
       </a>
 
-      <a href="https://www.ibm.com/products/watsonx-governance" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://www.ibm.com/products/cloud-pak-for-aiops" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p4})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-           <span className="text-blue-600"> </span>
+          Watson AIOps<span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for Watson AIOps
@@ -578,10 +578,10 @@ understand system performance and proactively resolve issues.
         </div>
       </a>
 
-      <a href="https://www.redhat.com/en/technologies/all-products" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
+      <a href="https://www.ibm.com/products/sevone-network-performance-management" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
         <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
+          SevenOne<span className="text-blue-600"> </span>
           </p>
           <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Hover Text for SevenOne
