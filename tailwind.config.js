@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      
+      colors:{
+        'blue-color':'#3f649a'
+      }
     },
     screens: {
       'md': '768px',
