@@ -548,7 +548,7 @@ consistently across hybrid cloud environments
             Hover Text for Turbonimic
           </span>
           <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"60px"}}>Openshift</span>
+            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>Openshift</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>
@@ -564,7 +564,7 @@ consistently across hybrid cloud environments
           </span>
           <div className="flex justify-end px-3 mt-5">
             <br />
-            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>Red Hat</span>
+            <span className='text-2xl' style={{color:"black",marginRight:"100px"}}>RHEL</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>

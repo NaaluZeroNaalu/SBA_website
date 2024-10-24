@@ -241,7 +241,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Secure Mainframe Solutions
               </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4" style={{fontFamily:"league spartan"}}>
                 <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
                 <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
                 <li>High Availability Designed for resilience, minimizing downtime.
@@ -258,7 +258,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Efficient Linux Workloads
               </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4">
                 <li>
                 Workload Isolation Secure environments protect data integrity.
                 </li>
@@ -317,7 +317,7 @@ function Securityandsus() {
               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
               Sustainability Goals
               </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left">
+              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4">
                 <li>
                 Reduced Carbon Footprint Energy-efficient practices lower emissions.
                 </li>

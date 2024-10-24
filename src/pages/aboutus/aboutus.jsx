@@ -61,7 +61,7 @@ function Aboutus(){
               Private Limited is a Chennai-based automation company 
               with over 30 years of experience in delivering enterprise solutions. 
               We strive to empower professionals by advancing innovative solutions 
-              that seamlessly integrate Data and AI,  Security & Sustainability, 
+              that seamlessly integrate Data & AI, IT & Business Automation,  Security & Sustainability, 
               and Open hybrid cloud technologies. 
 
               </p>

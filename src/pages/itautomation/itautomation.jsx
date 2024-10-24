@@ -560,7 +560,7 @@ understand system performance and proactively resolve issues.
             Hover Text for Turbonimic
           </span>
           <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl me-5' style={{color:"black"}}>Turbonomic</span>
+            <span className='text-2xl ' style={{color:"black",marginRight:"60px"}}>Turbonomic</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
           </div>
         </div>

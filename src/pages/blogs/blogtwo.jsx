@@ -40,11 +40,11 @@ function Blogtwo(){
       <p className="text-lg text-gray-700 mb-4">
         The advent of Gemini marks Google DeepMind's foray into the realm of next-generation AI models, aiming to surpass the capabilities of OpenAI's ChatGPT. In the landscape of generative AI, both ChatGPT and Gemini share the common thread of learning patterns from input data to generate diverse outputs. Yet, Gemini transcends boundaries by embracing a multi-modal paradigm, accommodating not only text but also images, audio, and video in its input and output domains.
       </p>
-      <p className="text-lg text-gray-700 mb-4">Check the versatility of Google’s Gemini here:</p>
+      {/* <p className="text-lg text-gray-700 mb-4">Check the versatility of Google’s Gemini here:</p> */}
       {/* Placeholder for image or video */}
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <img src="YOUR_IMAGE_SOURCE" alt="Gemini Overview" className="w-full h-auto object-cover rounded-md" />
-      </div>
+      </div> */}
     </div>
 
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-10">
@@ -61,9 +61,9 @@ function Blogtwo(){
         A Generative AI studio fosters innovation and creativity through collaborative projects that leverage generative AI technologies. It becomes a hub where technical and business experts work together, ensuring adaptability to changing landscapes and aligning technical capabilities with strategic objectives.
       </p>
       {/* Placeholder for image */}
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <img src="YOUR_IMAGE_SOURCE" alt="Collaboration in AI Studio" className="w-full h-auto object-cover rounded-md" />
-      </div>
+      </div> */}
     </div>
 
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-10">
