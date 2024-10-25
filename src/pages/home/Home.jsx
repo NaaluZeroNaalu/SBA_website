@@ -161,7 +161,7 @@ function Homepage(){
           >
             <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
               <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Vision</p>
-              <h2 className="text-black font-bold  sm:text-4xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",fontFamily:"league spartan",textAlign:"left"}}>
+              <h2 className="text-black font-bold  sm:text-2xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
               
               To become a global leader in creating agile and
                secure work environments that boost productivity and 

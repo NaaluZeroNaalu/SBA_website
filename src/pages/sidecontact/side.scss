@@ -19,6 +19,16 @@
     transition: background-color 0.3s;
 }
 
+@media screen and (min-width: 320px) {
+   
+
+    .sticky-buttons{
+        right: 250px;
+        
+    }
+
+}
+
 .sticky-button:hover {
     background-color: #218838; /* Darker shade on hover */
 }
