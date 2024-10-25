@@ -1,4 +1,9 @@
-import React, { useState, useEffect } from "react";
+import ind1 from "../../assets/images/ind_1.png";
+import ind2 from "../../assets/images/ind_2.png";
+import ind3 from "../../assets/images/healthcare.png";
+import ind4 from "../../assets/images/ind_4.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { useState, useEffect, React, useRef } from "react";
 import Home1 from "../../assets/videos/wait1.mp4";
 import Home4 from "../../assets/videos/Home4.mp4";
 import Home5 from "../../assets/videos/Home5.mp4";
@@ -62,18 +67,126 @@ import homev from "../../assets/videos/homev.mp4"
 import trusted from "../../assets/videos/trusted.mp4"
 import redhat from "../../assets/images/trustedpartners/redhat.png"
 import ibm from "../../assets/images/trustedpartners/ibm.png"
-import "./style.scss";
+import { FaCheck } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Counter from "./Counter";
-import { Checkmark } from "react-checkmark";
-import Certifications from "../common/certifications";
-import Industriesweserve from "../common/industries";
-import Sidecontent from "../sidecontact/side";
-import Contactus from "../common/contact";
+import sliderleft from "../../assets/images/slider-left.svg";
+import sliderright from "../../assets/images/slider-right.svg";
+import certification1 from "../../assets/images/certification 1.png";
+import certification2 from "../../assets/images/certification 2.png";
+import certification3 from "../../assets/images/certification 3.png";
+import certification4 from "../../assets/images/certification 4.png";
+import certification5 from "../../assets/images/certification 5.png";
+import certification6 from "../../assets/images/certification 6.png";
+import certification7 from "../../assets/images/certification 7.png";
+import certification8 from "../../assets/images/certification 8.png";
+import certification9 from "../../assets/images/certification 9.png";
+import certification10 from "../../assets/images/cetification 10.png";
+import certification11 from "../../assets/images/certification 11.png";
+import certification12 from "../../assets/images/certification 12.png";
+import certification13 from "../../assets/images/certification 13.png";
+import certification14 from "../../assets/images/certification 14.png";
+import certification15 from "../../assets/images/certification 15.jpg";
+import certification16 from "../../assets/images/certification 16.jpg";
+import certification17 from "../../assets/images/certification 17.jpg";
+import certification18 from "../../assets/images/certification 18.jpg";
+import certification19 from "../../assets/images/certification 19.jpg";
+import certification20 from "../../assets/images/certification 20.jpg";
+import certification21 from "../../assets/images/certification 21.png";
+import certification22 from "../../assets/images/certification 22.png";
+import certification23 from "../../assets/images/certification 23.png";
+import certification24 from "../../assets/images/certification 24.png";
+import certification25 from "../../assets/images/certification 25.png";
+import certification26 from "../../assets/images/certification 26.jpg";
+import certification27 from "../../assets/images/certification 27.png";
+import certification28 from "../../assets/images/certification 28.png";
+import emailjs from 'emailjs-com';
+import certification29 from "../../assets/images/certification 29.png";
+
 
 function Homepage(){
+
+ 
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Check if formRef is correctly set
+    if (formRef.current) {
+      emailjs.sendForm('service_99sz48v', 'template_cvvyb9s', formRef.current, '_s33J6xuP7n0eqqjG')
+        .then((result) => {
+          console.log('Email sent successfully!', result.text);
+          alert("Request submitted successfully");
+          e.target.reset(); // Reset form after submission
+        }, (error) => {
+          console.error('Error sending email:', error.text);
+        });
+    } else {
+      console.error('Form reference is not set.');
+    }
+  };
+
+  const slides = [
+    [
+      certification1,
+      certification2,
+      certification3,
+      certification4,
+      certification5,
+      certification6,
+      certification7,
+      certification8,
+      certification9,
+      certification10,
+      certification11,
+      certification12,
+      certification13,
+      certification14,
+      certification15,
+      certification16,
+      certification17,
+      certification18,
+      certification19,
+      certification20,
+      certification21,
+      certification22,
+      certification23,
+      certification24, 
+      certification25,
+      certification26,
+      certification27,
+      certification28,
+      certification29,
+    ]
+  ];
+
+
+    const industries = [
+        {
+          title: "Manufacturing",
+          img: ind1,
+          description: "AI forecasts equipment failures, minimizing downtime by 43%, automates supply chains, and enhances quality control by identifying defects instantly.",
+        },
+        {
+          title: "BFSI",
+          img: ind2,
+          description: "AI streamlines 90% of customer inquiries, enhancing efficiency and cutting costs while detecting fraud in real-time.",
+        },
+        {
+          title: "Healthcare",
+          img: ind3,
+          description: "AI speeds up drug discovery and reduces research expenses, improves diagnostics through image analysis, and supports patient care with virtual assistants.",
+        },
+        {
+          title: "IT/ITES",
+          img: ind4,
+          description: "AI decreases IT support tickets by 70%, automates monitoring and resolution, and generates 60% of code, accelerating development.",
+        },
+      ];
+
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const Discover = [
         com13,
@@ -121,19 +234,52 @@ function Homepage(){
         com10,
         com11,
         com12,
-      ];
+    ];
+    
 
+    const [customerCount, setCustomerCount] = useState(0);
+    const [yearsCount, setYearsCount] = useState(0);
+
+    useEffect(() => {
+        // Animate customer count
+        const customerInterval = setInterval(() => {
+            if (customerCount < 300) {
+                setCustomerCount(prev => prev + 1);
+            } else {
+                clearInterval(customerInterval);
+            }
+        }, 10); // Adjust the speed of the counting
+
+        // Animate years count
+        const yearsInterval = setInterval(() => {
+            if (yearsCount < 30) {
+                setYearsCount(prev => prev + 1);
+            } else {
+                clearInterval(yearsInterval);
+            }
+        }, 10); // Adjust the speed of the counting
+
+        return () => {
+            clearInterval(customerInterval);
+            clearInterval(yearsInterval);
+        };
+    }, [customerCount, yearsCount]);
+
+    
     return(
         <>
-      <section className="relative w-full h-screen">
+
+
+{/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
+<section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl md:text-8xl font-extrabold font-spartan">
            Automate the Mundane
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 font-spartan text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
           Elevate Human Potential
         </div>
       </div>
@@ -147,8 +293,10 @@ function Homepage(){
       <div className="absolute inset-0 bg-black opacity-60"></div>
     </section>
 
+{/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
 
-      <section className="responsive-video-section">
+{/* ---------------------------SECTION 2 START----------------------------------- */}
+    <section className="responsive-video-section">
         <div className="relative w-full min-h-screen">
           <video className="absolute " autoPlay muted loop playsInline>
             <source src={Home13} type="video/mp4" />
@@ -158,10 +306,10 @@ function Homepage(){
           <div
             className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full h-full px-4 py-8 sm:px-6 sm:py-12 md:px-10 md:py-16"
             style={{ paddingTop: "10%" }}
-          >
+            >
             <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
-              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Vision</p>
-              <h2 className="text-black font-bold  sm:text-2xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
+              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">Vision</p>
+              <h2 className="text-black font-bold font-spartan sm:text-2xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
               
               To become a global leader in creating agile and
                secure work environments that boost productivity and 
@@ -170,31 +318,31 @@ function Homepage(){
               </h2>
             </div>
             <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
-              <h3 className="text-black-600 font-semibold text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
-              <span style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>Mission</span>
+              <h3 className="text-black-600 font-semibold font-spartan text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
+              <span style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">Mission</span>
               <br />
               To be the transformative force that shapes an agile, purposeful future of work on a global scale 
               </h3>
-              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}}>
+              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">
                 Value
               </p>
 
-              <ul className="list-none space-y-2 ms-2">
+              <ul className="list-none space-y-2 ms-2 font-spartan">
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
+                    <FaCheck size="25px" color="red" />
                   </span>
                   <span><b>Relentless curiosity & agility</b> </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
+                    <FaCheck size="25px" color="red" />
                   </span>
                   <span><b>Bold experimentation</b></span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
+                    <FaCheck size="25px" color="red" />
                   </span>
                   <span>
                   <b>Multidisciplinary Innovation</b>
@@ -202,13 +350,13 @@ function Homepage(){
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
+                    <FaCheck size="25px" color="red" />
                   </span>
                   <span><b>Wisdom in Action</b></span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
-                    <Checkmark size="25px" color="red" />
+                    <FaCheck size="25px" color="red" />
                   </span>
                   <span>
                   <b>Data and Future Obsessed</b>
@@ -219,88 +367,11 @@ function Homepage(){
           </div>
         </div>
       </section>
+      {/* ---------------------------SECTION 2 END--------------------------------- */}
 
-      {/* <section>
-        <div className="relative w-full h-screen">
-          <video
-            className="absolute inset-0 object-cover w-full h-full"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src={Home15} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
 
-          <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50">
-            <h2  style={{fontFamily:"league spartan"}} className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-center px-4">
-              Intelligent Solutions
-            </h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-10 w-full max-w-screen-xl">
-            
-            <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-    <img
-      src={Homeg9}
-      alt="Data, Automation & AI"
-      className="h-12 md:h-16 mb-4"
-    />
-    <h3 className="text-center text-black font-semibold text-base md:text-lg">
-      Data & AI
-    </h3>
-    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-  </div>
-            <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-              <img
-                 src={Homeg7}
-                           alt="Infrastructure & Application Modernization"
-                           className="h-12 md:h-16 mb-4"
-                           />
-            <h3  className="text-center text-black font-semibold text-base md:text-lg">
-      IT & Buisness Automation
-                  </h3>
-                 <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-            </div>
-
-      
-            <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-    <img
-      src={Homeg11}
-      alt="Managed Services"
-      className="h-12 md:h-16 mb-4"
-    />
-    <h3 className="text-center text-black font-semibold text-base md:text-lg">
-    Security and Sustainability
-    </h3>
-    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-  </div>
-      <div className="bg-white p-4 md:p-6 rounded-md shadow-md flex flex-col items-center hover:shadow-lg transition-shadow duration-300 relative">
-    <img
-      src={Homeg8}
-      alt="Cyber Resiliency"
-      className="h-12 md:h-16 mb-4"
-    />
-    <h3 className="text-center text-black font-semibold text-base md:text-lg">
-    Open Hybrid Cloud
-    </h3>
-    <div className="absolute bottom-0 left-0 w-full h-4 bg-red-600"></div>
-  </div>
-
-              
-  
-
-  
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section>
-
-      </section>
-
-      <section style={{marginBottom:"-200px"}}>
+      {/* ---------------------------SECTION 3 START--------------------------------- */}
+      <section >
         <div className="relative w-full h-screen overflow-hidden">
           <video autoPlay muted loop className="absolute ">
             <source src={Home9} type="video/mp4" />
@@ -309,13 +380,13 @@ function Homepage(){
 
           <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
             <div className=" bg-white bg-opacity-70 p-8 rounded-lg ">
-              <p style={{fontFamily:"league spartan"}} className="text-lg md:text-2xl font-bold text-black leading-relaxed">
+              <p className="text-lg font-spartan md:text-2xl font-bold text-black leading-relaxed">
                 In the modern workplace,
                 <span className="text-red-500">
                   repetitive tasks like data entry and information retrieval
                 </span>{" "}
               </p>
-              <p style={{fontFamily:"league spartan"}} className="text-lg md:text-2xl font-bold text-black leading-relaxed">
+              <p  className="text-lg md:text-2xl font-bold text-black leading-relaxed font-spartan">
                 hinder employees from engaging in strategic and creative aspects
                 of their roles
               </p>
@@ -324,175 +395,336 @@ function Homepage(){
         </div>
       </section>
 
-<section className="relative  ms-2 me-2" style={{height:"500px"}}>
-  {/* Video in the background */}
-  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
-    <source src={Home6} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      {/* ---------------------------SECTION 3 END--------------------------------- */}
 
-  {/* Dark overlay for better text readability */}
-  <div className="absolute inset-0 bg-black opacity-50 z-5"></div>
 
-  {/* Text content centered on top of the video */}
-  <div className="absolute inset-0 flex justify-center items-center z-10 text-center container">
-    <div className="text-white px-4">
-      {/* Main heading */}
-      <h1 style={{ fontFamily: "league spartan" }} className="text-white text-3xl md:text-5xl font-bold">
-        {/* Heading text (currently empty, add if needed) */}
-      </h1>
+      {/* ---------------------------SECTION 4 START--------------------------------- */}
 
-      {/* Subtext with a meaningful quote */}
-      <p style={{ fontFamily: "league spartan" }} className="mt-4 text-xl md:text-4xl init-red-bg1">
-        The problem is not that computers will begin to think like men, It’s that men will begin to think like computers
-        <br /><br /><br /><br />
-        <div className=" inset-0 flex justify-center items-center z-10 text-center px-4">
-          <p style={{fontFamily:"league spartan "}} className="text-base sm:text-lg md:text-5xl lg:text-3xl xl:text-3xl ">
-            <span className="text-red-600">
-            Empower with Data, Accelerate with Agility
-            </span>
-            <br />
-            <span className="" style={{fontFamily:"league spartan ",fontSize:"30px"}}>
-              {" "}
-              Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.
-            </span>
-          </p>
+<section className="relative w-full h-screen">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center ">
+        {/* Large heading */}
+        <div className="text-white text-3xl  font-spartan">
+           The problem is not that computer will begin to think like men, it's that men will begin to think like computers
         </div>
-      </p>
-    </div>
-  </div>
-</section>
+
+        {/* Centered red box with large text */}
+        <div className="font-spartan text-white  px-10 py-4 mt-6 text-5xl md:text-6xl">
+          <h1 className="text-red-600 text-3xl">Empower with Data, Accelerate with Agility</h1>
+          <h3 className="">Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.</h3>
+        </div>
+      </div>
+
+      {/* Background video */}
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <source src={Home6} type="video/mp4" />
+      </video>
+
+      {/* Overlay to darken the video */}
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+    </section>
+      {/* ---------------------------SECTION 4 END--------------------------------- */}
 
 
+      {/* ---------------------------SECTION 5 START--------------------------------- */}
 
-{/* <section className="relative  h-60  ms-3 me-3">
-      
-        
-      </section> */}
-
-
-<br /><br /><br /><br /><br />
-      <section className="w-full bg-gray-50">
-        <div className="py-10">
-          <div className="mx-auto px-4 mb-10 max-w-screen-xl">
-            <div className="flex justify-between items-start">
-              {/* <div className="w-full md:w-1/2">
-                <h2 style={{fontFamily:"league spartan "}} className="text-3xl font-bold mb-4">
-                  Discover how businesses become more intelligent with SBA
-                </h2>
-              </div> */}
-              {/* <div className="w-full md:w-1/2 text-right">
-                <p style={{fontFamily:"league spartan "}} className="text-lg text-gray-600 mb-6">
-                 
-                </p>
-                <a style={{fontFamily:"league spartan "}} className="text-lg">View client stories →</a>
-              </div> */}
-            </div>
-          </div>
-
-          <br /><br /><br />
-          <div className="mx-auto px-8 max-w-screen-xl" style={{height:"250px",marginTop:"-150px"}}>
-            <h3 style={{fontFamily:"league spartan "}} className="text-center text-3xl md:text-5xl font-bold">
-              Trusted by talented leaders at:
+  <section className="w-full bg-gray-50">
+    <div className="py-10">
+        <br /><br />
+        <div className="mx-auto px-8 max-w-screen-xl">
+            <h3 style={{ fontFamily: "league spartan" }} className="text-center text-3xl md:text-5xl font-bold">
+                Trusted by talented leaders at:
             </h3>
             <br /><br />
             <Slider
-              dots={false}
-              infinite={true}
-              speed={500}
-              slidesToShow={5}
-              slidesToScroll={1}
-              autoplay={true}
-              autoplaySpeed={2000}
-              nextArrow={
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              }
-              prevArrow={
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-700"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M15 5l-7 7 7 7"
-                    />
-                  </svg>
-                </div>
-              }
+                dots={false}
+                infinite={true}
+                speed={500}
+                slidesToShow={5} // Default to 5 slides
+                slidesToScroll={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+                nextArrow={
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                }
+                prevArrow={
+                    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5l-7 7 7 7" />
+                        </svg>
+                    </div>
+                }
+                responsive={[
+                    {
+                        breakpoint: 1024, // for screens smaller than 1024px
+                        settings: {
+                            slidesToShow: 3, // Show 3 slides for medium screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768, // for screens smaller than 768px
+                        settings: {
+                            slidesToShow: 1, // Show 1 slide for mobile screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                ]}
             >
-              {Discover.map((logo, index) => (
-                <div key={index} className="px-2">
-                  <img
-                    src={logo}
-                    alt={`Company logo ${index + 1}`}
-                    className="mx-auto h-20"
-                  />
-                </div>
-              ))}
+                {Discover.map((logo, index) => (
+                    <div key={index} className="px-2">
+                        <img
+                            src={logo}
+                            alt={`Company logo ${index + 1}`}
+                            className="mx-auto h-20"
+                        />
+                    </div>
+                ))}
             </Slider>
-          </div>
         </div>
-      </section>
-<br /><br /><br />
-      <section>
-        <Counter />
-      </section>
-
-<section className="w-full">
-        <div className="py-10">
-  <section className=" h-60 mx-3 "> {/* Add bg-cream class for background color */}
-  <div style={{backgroundColor:"#DADBDD"}} className="inset-0 flex flex-col  justify-center items-center z-10 text-center px-4">
-    <br /><br /><br /><br />
-    <h2 className="text-6xl font-bold mb-8" style={{ fontFamily: "League Spartan", fontWeight: "bold",marginTop:"-40px"}}>
-      Our Partner Ecosystem
-    <div className="flex justify-center items-center space-x-10" style={{marginTop:"-40px",marginBottom:"-80px"}}> {/* Use space-x-10 for even spacing */}
-      <div className="flex-shrink-0"> {/* Prevent shrinking */}
-        <img src={redhat} alt="Red Hat" className="object-contain" style={{ width: "450px",height:"300px" }} />
-      </div>
-      <div className="flex-shrink-0"> {/* Prevent shrinking */}
-        <img src={ibm} alt="IBM" className="object-contain" style={{ width: "300px",height:"300px"}} />
-      </div>
     </div>
-    </h2>
-
-  </div>
 </section>
 
+      {/* ---------------------------SECTION 5 END--------------------------------- */}
+      
+      <br /><br /><br />
+      
+      {/* ---------------------------SECTION 6 START--------------------------------- */}
+
+<h1 className="text-center font-bold font-spartan">Why work with us?</h1>
+
+<section className="work items-center mt-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-screen-lg mx-auto items-center justify-items-center">
+        
+        <div className="animb" style={{ height: "205px", width: "205px" }}>
+            <div className="flex flex-col items-center w-48 h-48 justify-center" style={{ border: "9px solid #EEEEEE" }}>
+                <h1 className="text-3xl font-bold font-spartan">{customerCount}+</h1>
+                <p className="font-spartan">customers</p>
+            </div>
         </div>
-      </section>
+
+        <div className="animb" style={{ height: "205px", width: "205px" }}>
+            <div className="flex flex-col items-center w-48 h-48 justify-center" style={{ border: "9px solid #EEEEEE" }}>
+                <h1 className="text-3xl font-bold font-spartan">{yearsCount}+</h1>
+                <p className="font-spartan">years in market</p>
+            </div>
+        </div>
+
+        <div className="animb" style={{ height: "205px", width: "205px" }}>
+            <div className="flex flex-col items-center w-48 h-48 justify-center" style={{ border: "9px solid #EEEEEE" }}>
+                <h1 className="text-3xl font-bold font-spartan">Best</h1>
+                <p className="font-spartan">predictive support</p>
+            </div>
+        </div>
+
+        <div className="animb" style={{ height: "205px", width: "205px" }}>
+            <div className="flex flex-col items-center w-48 h-48 justify-center" style={{ border: "9px solid #EEEEEE" }}>
+                <h1 className="text-3xl font-bold">ISO</h1>
+                <p style={{ textAlign: "center" }}>process rigor & certifications</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+      {/* ---------------------------SECTION 6 END--------------------------------- */}
+
+<br /><br />
+
+      {/* ---------------------------SECTION 7 START--------------------------------- */}
+
+<section className="mx-3 bg-gray-200" style={{height:"450px"}}> 
+    <div className="flex flex-col justify-center items-center text-center px-4 py-10">
+        <h2 className="text-4xl md:text-6xl font-bold mb-8 font-spartan" >
+            Our Partner Ecosystem
+        </h2>
+        <div className="flex flex-col md:flex-row justify-center items-center space-x-10">
+            <div className="flex-shrink-0 mb-5 md:mb-0"> 
+                <img src={redhat} alt="Red Hat" className="object-contain w-3/4 md:w-[450px] h-auto" />
+            </div>
+            <div className="flex-shrink-0">
+                <img src={ibm} alt="IBM" className="object-contain w-3/4 md:w-[300px] h-auto mb-5" />
+            </div>
+        </div>
+    </div>
+</section>
 
       
-      <br /><br /><br /><br /><br />
-      <Industriesweserve />
-      <br /><br /><br /><br />
-      <Certifications />
-      <br /><br /><br /><br />
+      {/* ---------------------------SECTION 7 END--------------------------------- */}
 
-      <Contactus />
 
-        </>
-    )
+      {/* ---------------------------SECTION 8 START--------------------------------- */}
+
+      <section className="py-5 bg-light">
+      <h1 className="display-4 text-center mb-4" style={{fontWeight:"bold"}} id="inds">Industries We Serve</h1>
+
+      <div className="container">
+  <div className="row justify-content-between">
+    {industries.map((industry, index) => (
+      <div
+        key={index}
+        className="col-12 col-md-3 mb-4 position-relative"
+        onMouseEnter={() => setHoveredIndex(index)}
+        onMouseLeave={() => setHoveredIndex(null)}
+        onClick={() => {
+          window.location.href = "/industries"; // Redirect on card click
+        }}
+      >
+        <div className="card overflow-hidden">
+          <img src={industry.img} className="card-img-top" alt={industry.title} />
+          <div className="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 className="card-title text-white">{industry.title}</h5>
+            <FaLongArrowAltRight className="text-white" />
+          </div>
+          <div
+            className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
+            style={{ backgroundColor: "#3f649a",fontFamily:"league spartan"}}
+            >
+            <h5 className="card-title">{industry.title}</h5>
+            <p style={{ textAlign: "center",fontFamily:"league spartan"}}>{industry.description}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+    </section>
+
+      {/* ---------------------------SECTION 8 END--------------------------------- */}
+
+
+
+      {/* ---------------------------SECTION 9 START--------------------------------- */}
+
+      <section className="w-full bg-gray-50">
+    <div className="py-10">
+        <br /><br />
+        <div className="mx-auto px-8 max-w-screen-xl">
+            <h3 style={{ fontFamily: "league spartan" }} className="text-center text-3xl md:text-5xl font-bold">
+            Our Proficiency and <span className="text-red-600">Certifications</span>
+            </h3>
+            <br /><br />
+            <Slider
+                dots={false}
+                infinite={true}
+                speed={500}
+                slidesToShow={5} // Default to 5 slides
+                slidesToScroll={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+                nextArrow={
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                }
+                prevArrow={
+                    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5l-7 7 7 7" />
+                        </svg>
+                    </div>
+                }
+                responsive={[
+                    {
+                        breakpoint: 1024, // for screens smaller than 1024px
+                        settings: {
+                            slidesToShow: 3, // Show 3 slides for medium screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768, // for screens smaller than 768px
+                        settings: {
+                            slidesToShow: 1, // Show 1 slide for mobile screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                ]}
+            >
+                {slides[0].map((logo, index) => (
+                    <div key={index} className="px-2">
+                        <img
+                            src={logo}
+                            alt={`Certification logo ${index + 1}`}
+                            style={{borderRadius:"10px"}}
+                        />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    </div>
+</section>
+
+
+{/* ---------------------------SECTION 9 END--------------------------------- */}
+
+<br /><br />
+
+{/* ---------------------------SECTION 10 START--------------------------------- */}
+
+<div>
+      <h1 style={{ fontWeight: "bold", textAlign: "center", fontFamily: "league spartan" }}>Contact Us</h1>
+      <br /><br />
+      <form className="space-y-8 container" ref={formRef}  onSubmit={sendEmail}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6" style={{fontFamily:"league spartan"}}>
+          <div>
+            <label htmlFor="fullName" className="block text-lg font-semibold text-gray-700">Full Name</label>
+            <input required type="text" id="fullName" name="fullName" placeholder="Your Full Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-lg font-semibold text-gray-700">Email Address</label>
+            <input required  type="email" id="email" name="email" placeholder="Your Work Email Address" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="phone" className="block text-lg font-semibold text-gray-700">Phone Number</label>
+            <input required  type="text" id="phone" name="phone" placeholder="Your Phone Number" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+          </div>
+          <div>
+            <label htmlFor="company" className="block text-lg font-semibold text-gray-700">Company Name</label>
+            <input required  type="text" id="company" name="company" placeholder="Your Company Name" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" />
+          </div>
+        </div>
+
+        <div>
+          <label htmlFor="support" className="block text-lg font-semibold text-gray-700">Support Required On</label>
+          <select required  id="support" name="support" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300">
+            <option value="" disabled>Choose a Solution/Service</option>
+            <option value="Data and AI">Data and AI</option>
+            <option value="IT and Business Automation">IT and Business Automation</option>
+            <option value="Open Hybrid Cloud">Open Hybrid Cloud</option>
+            <option value="Security and Sustainability">Security and Sustainability</option>
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="query" className="block text-lg font-semibold text-gray-700">Query</label>
+          <textarea required  id="query" name="query" placeholder="Describe your Requirement in Detail" className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300" rows="5"></textarea>
+        </div>
+
+        <div style={{ textAlign: "center" }}>
+          <button type="submit" className="px-8 py-3 text-white font-bold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg" style={{ backgroundColor: "#3f649a" }}>
+            Submit Request
+          </button>
+        </div>
+      </form>
+    </div>
+
+
+{/* ---------------------------SECTION 10 END--------------------------------- */}
+
+</>
+
+)
 }
 
 export default Homepage

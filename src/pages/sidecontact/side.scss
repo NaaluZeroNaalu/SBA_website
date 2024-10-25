@@ -1,7 +1,7 @@
 .sticky-buttons {
     position: fixed;
     bottom: 470px;
-    right: 20px;
+    right: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -19,15 +19,7 @@
     transition: background-color 0.3s;
 }
 
-@media screen and (min-width: 320px) {
-   
 
-    .sticky-buttons{
-        right: 250px;
-        
-    }
-
-}
 
 .sticky-button:hover {
     background-color: #218838; /* Darker shade on hover */
