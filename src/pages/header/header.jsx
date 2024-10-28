@@ -6,11 +6,27 @@ import "./style.scss"
 
 function Header() {
   const formRef = useRef();
+  const formRefforbook = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_99sz48v', 'template_cvvyb9s', formRef.current, '_s33J6xuP7n0eqqjG')
+      .then((result) => {
+          console.log(result.text);
+          alert('Booked Successfully!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send message. Please try again.');
+      });
+
+    e.target.reset();
+  };
+
+  const sendEmailforbook = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_99sz48v', 'template_cvvyb9s', formRefforbook.current, '_s33J6xuP7n0eqqjG')
       .then((result) => {
           console.log(result.text);
           alert('Booked Successfully!');
@@ -78,6 +94,7 @@ function Header() {
         </div>
       </div>
 
+
       {/* For mobile start */}
       <div className="modal fade" id="bookformobile" tabIndex="-1" aria-labelledby="bookLabel" aria-hidden="true">
         <div className="modal-dialog">
@@ -87,7 +104,7 @@ function Header() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <form ref={formRef} onSubmit={sendEmail} required>
+              <form ref={formRefforbook } onSubmit={sendEmailforbook} required>
                 <div className="mb-3">
                   <label htmlFor="date" className="form-label">Select Date</label>
                   <input type="date" className="form-control" id="date" name="date" required />
