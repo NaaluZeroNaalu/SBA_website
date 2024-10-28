@@ -271,27 +271,28 @@ function Homepage(){
 
 
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
-<section className="relative w-full h-screen">
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
-        {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold font-spartan">
-           Automate the Mundane
-        </div>
+<section className="relative w-full h-screen overflow-hidden">
+  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+    {/* Large heading */}
+    <div className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold font-spartan">
+      Automate the Mundane
+    </div>
 
-        {/* Centered red box with large text */}
-        <div className="bg-red-600 font-spartan text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
-          Elevate Human Potential
-        </div>
-      </div>
+    {/* Centered red box with large text */}
+    <div className="bg-red-600 font-spartan text-white font-extrabold px-6 py-3 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      Elevate Human Potential
+    </div>
+  </div>
 
-      {/* Background video */}
-      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
-        <source src={Home1} type="video/mp4" />
-      </video>
+  {/* Background video */}
+  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+    <source src={Home1} type="video/mp4" />
+  </video>
 
-      {/* Overlay to darken the video */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-    </section>
+  {/* Overlay to darken the video */}
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+</section>
+
 
 {/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
 
