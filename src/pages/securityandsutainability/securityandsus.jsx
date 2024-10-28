@@ -27,6 +27,8 @@ import p2 from "../../assets/images/security/1.png"
 import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import a from "../../assets/images/security/powerdby/1.png"
 import b from "../../assets/images/security/powerdby/2.png"
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 function Securityandsus() {
     const securityAccordionData = [
@@ -182,28 +184,28 @@ function Securityandsus() {
         </div>
       </section>
 
-    <section className="custom-container ai-section">
-        <div className="relative px-12 md:px-25">
-          <div className="flex flex-wrap justify-between mt-10">
-            {featuresforsands.map((text, index) => (
-              <div
-                key={index}
-                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
-              >
-                <div>
-                  <img
-                    className="ai-m"
-                    src={aili}
-                    loading="lazy"
-                    alt="ornament"
-                  />
-                </div>
-                <div className="ai-li-text">{text}</div>
-              </div>
-            ))}
+<section className="custom-container ai-section">
+  <div className="relative px-6 md:px-12 lg:px-24">
+    <div className="flex flex-wrap justify-between mt-10">
+      {featuresforsands.map((text, index) => (
+        <div
+          key={index}
+          className="w-full sm:w-6/12 md:w-4/12 mb-6 flex items-center gap-4"
+        >
+          <div className="flex-shrink-0">
+            <img
+              className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+              src={aili}
+              loading="lazy"
+              alt="ornament"
+            />
           </div>
+          <div className="ai-li-text text-base md:text-2xl font-spartan">{text}</div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section>
         <div className="relative bg-white py-20">
@@ -222,127 +224,71 @@ function Securityandsus() {
           </div>
         </div>
       </section>
+<div className="solutions">
 
-      <section id="solutions">
-
-      <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={sands1}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Secure Mainframe Solutions
-              </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4" style={{fontFamily:"league spartan"}}>
-                <li>Enhanced Security IBM Z offers encryption and access controls to protect data.</li>
-                <li>Compliance Tools for auditing and monitoring help meet regulatory requirements</li>
-                <li>High Availability Designed for resilience, minimizing downtime.
-                </li>
-
-              </ul>
-            </div>
+      {
+        [
+          
+          {
+                title: "Secure Mainframe Solutions",
+                description: [
+                  "Enhanced Security IBM Z offers encryption and access controls to protect data.",
+                  "Compliance Tools for auditing and monitoring help meet regulatory requirements",
+                  "High Availability Designed for resilience, minimizing downtime.",
+                ],
+                image: sands1
+              },
+              {
+                title: "Efficient Linux Workloads",
+                description: [
+                  "Workload Isolation Secure environments protect data integrity.",
+                  "Energy Efficiency Consolidation reduces energy consumption and costs.",
+                  "Scalability High-performance capabilities support efficient workload scaling.",
+                ],
+                image: sands2
+              },
+              {
+                title: "Sustainability Goals",
+                description: [
+                  "Reduced Carbon Footprint Energy-efficient practices lower emissions.",
+                  "Cost Savings Reduces operational costs through efficiency.",
+                  "Brand Reputation Enhances reputation and supports compliance with sustainability goals.",
+                  
+                ],
+                image: sands3
+              }
+            ].map((val,id)=>(
+              <>
+              <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+       <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+        <div className="w-full p-1 md:p-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={val.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
+              loading="lazy"
+              alt={val.title}
+              />
           </div>
         </div>
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Efficient Linux Workloads
-              </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4">
-                <li>
-                Workload Isolation Secure environments protect data integrity.
-                </li>
-                <li>
-                Energy Efficiency Consolidation reduces energy consumption and costs.
-                </li>
-                <li>Scalability High-performance capabilities support efficient workload scaling.
-                </li>
-                
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={sands2}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+            {val.title}
+          </h2>
+          <ul className="text-base pl-10 list-disc space-y-3 text-left">
+            {val.description.map((desc, idx) => (
+              <li key={idx}>{desc}</li>
+            ))}
+          </ul>
         </div>
+      </div>
+    </div>
+              </>
+            ))
+          }
+      </div>
 
-
-        {/* <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={sands3}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-16 text-left">
-              Application Modernization
-              </h2>
-              <ul className="text-base pl-5 list-disc space-y-3 text-left">
-                <li>Flexibility Integrates cloud services with legacy systems for agility.</li>
-                <li>Cost Optimization Allocates resources based on needs, preventing waste</li>
-                <li>Innovation Drives growth and operational efficiency.
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Sustainability Goals
-              </h2>
-              <ul className="text-2xl pl-4 list-disc space-y-3 text-left ms-4">
-                <li>
-                Reduced Carbon Footprint Energy-efficient practices lower emissions.
-                </li>
-                <li>
-                Cost Savings Reduces operational costs through efficiency.
-                </li>
-                <li>Brand Reputation Enhances reputation and supports compliance with sustainability goals.
-                </li>
-                
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={sands3}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
       <section className="py-5 bg-light">
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
     Industries We Serve
@@ -390,106 +336,117 @@ function Securityandsus() {
             Powered By
           </h1>
 
-         {/* LinuxOne */}
-<div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-  <div className="md:w-1/2 w-full md:pr-10">
-    <h2 className="text-3xl font-bold mb-4">LinuxOne</h2>
-    <p className="text-2xl pl-5">
-      LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux
-      environment. It is optimized for running more transactions faster and with more security and reliability,
-      specifically for the open-source community.
-    </p>
-  </div>
-  <div className="md:w-1/2 w-full flex justify-center">
-    <div className="animation-border" style={{height:"410px"}}>
-      <img
-        src={p2}
-        alt="Watson Assistant"
-        className="rounded-lg w-full object-cover"
-        style={{
-          width: "500px",
-          height: "400px",
-          borderTopLeftRadius: "100px",
-          borderBottomRightRadius: "100px",
-          borderTopRightRadius: "0px",
-          borderBottomLeftRadius: "0px",
-          border: "12px solid #EEEEEE"
-        }}
-      />
+          {
+  [
+    {
+      title: "LinuxOne",
+      description:
+        "LinuxONE is a portfolio of hardware, software, and solutions designed for an enterprise-grade Linux environment. It is optimized for running more transactions faster and with more security and reliability, specifically for the open-source community.",
+      img: p2,
+      anim: "animation-border",
+    },
+    {
+      title: "Mainframe",
+      description:
+        "Mainframe computing uses large, powerful computers for high-volume data processing and critical applications. These systems offer exceptional reliability, security, and processing power for industries like banking and healthcare. Despite their age, mainframes continue to evolve, integrating with modern technologies while maintaining their core strengths.",
+      img: p1,
+      anim: "animation-border2",
+    },
+  ].map((val, id) => (
+    <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+      {id % 2 === 0 ? (
+        <>
+          <div className="md:w-1/2 w-full md:pr-10">
+            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
+            <p className="text-2xl pl-5">{val.description}</p>
+          </div>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <div className={val.anim} style={{ height: "410px" }}>
+              <img
+                src={val.img}
+                alt={val.title}
+                className="rounded-lg w-full object-cover"
+                style={{
+                  width: "500px",
+                  height: "400px",
+                  borderTopLeftRadius: id === 0 ? "100px" : "0px",
+                  borderBottomRightRadius: id === 0 ? "100px" : "0px",
+                  borderTopRightRadius: id === 0 ? "0px" : "100px",
+                  borderBottomLeftRadius: id === 0 ? "0px" : "100px",
+                  border: "12px solid #EEEEEE",
+                }}
+              />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <div className={val.anim} style={{ height: "410px" }}>
+              <img
+                src={val.img}
+                alt={val.title}
+                className="rounded-lg w-full object-cover"
+                style={{
+                  width: "500px",
+                  height: "400px",
+                  borderTopLeftRadius: "0px",
+                  borderBottomRightRadius: "0px",
+                  borderTopRightRadius: "100px",
+                  borderBottomLeftRadius: "100px",
+                  border: "12px solid #EEEEEE",
+                }}
+              />
+            </div>
+          </div>
+          <div className="md:w-1/2 w-full md:pl-10">
+            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
+            <p className="text-2xl pl-4">{val.description}</p>
+          </div>
+        </>
+      )}
     </div>
-  </div>
-</div>
-
-{/* Watson Discovery */}
-<div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-  <div className="md:w-1/2 w-full flex justify-center">
-    <div className="animation-border2" style={{height:"410px"}}>
-    <img
-      src={p1}
-      alt="Watson Discovery"
-      className="rounded-lg w-full object-cover"
-      style={{
-        width: "500px",
-        height: "400px",
-        borderTopLeftRadius: "0px",
-        borderBottomRightRadius: "0px",
-        borderTopRightRadius: "100px",
-        borderBottomLeftRadius: "100px",
-        border: "12px solid #EEEEEE"
-      }}
-    />
-    </div>
-  </div>
-  <div className="md:w-1/2 w-full md:pl-10">
-    <h2 className="text-3xl font-bold mb-4">Mainframe</h2>
-    <p className="text-2xl pl-4">
-    Mainframe computing uses large, powerful computers for high-volume data processing and
-     critical applications. These systems offer exceptional reliability, security, 
-     and processing power for industries like banking and healthcare. Despite their age,
-      mainframes continue to evolve, integrating with modern technologies while maintaining 
-      their core strengths.
-    </p>
-  </div>
-</div>
+  ))
+}
 
         </div>
       </section>
       <br /><br /><br />
 
-      <section className="pt-0 md:pt-5 w-full" id='poweredby' style={{marginLeft:"350px"}}>
-  <div className="w-full mx-auto px-4 md:px-6" >
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <a href="https://www.ibm.com/products/z16" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${a})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
-          </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Instana
-          </span>
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"55px"}}>Mainframe</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
+<section className="pt-0 md:pt-5 w-full" id='poweredby'>
+<div className="flex flex-col md:flex-row justify-center items-center">
 
-      <a href="https://www.ibm.com/linuxone" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${b})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            {/* Turbonomic<span className="text-blue-600"> </span> */}
-          </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Turbonimic
-          </span>
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>LinuxOne</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
+{
+  [
+    {
+      link:"https://www.redhat.com/en/technologies/management/ansible",
+      img:a,
+      name:"Ansible",
+    },
+    {
+      link:"https://www.redhat.com/en/technologies/cloud-computing/openshift",
+      img:b,
+      name:"Openshift",
+    },
+    
+  ].map((val,i)=>(
+    <>
+    <a href={val.link} className='no-underline text-black font-bold text-2xl'>
+      <div className='flex flex-col'>
+        <div style={{ backgroundImage: `url(${val.img})`,width:"400px",height:"300px",backgroundRepeat:"no-repeat",borderRadius:"10px"}}>
+          
+          <div style={{marginTop:"190px",textAlign:"center",display:"flex",justifyContent:"center",gap:"10px"}}>
+          <p>{val.name}</p>
+          <p ><FaArrowRightLong /></p>
+          
           </div>
         </div>
-      </a>
-    </div>
-  </div>
+      </div>
+    </a>
+    </>
+  ))
+}
+</div>
 </section>
 
       <br /><br /><br /><br /><br />

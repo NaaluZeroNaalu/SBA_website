@@ -20,6 +20,13 @@
 }
 
 
+@media (max-width: 768px) {
+    .sticky-buttons {
+        bottom: 350px; /* Adjust this value to move down on mobile */
+    }
+}
+
+
 
 .sticky-button:hover {
     background-color: #218838; /* Darker shade on hover */

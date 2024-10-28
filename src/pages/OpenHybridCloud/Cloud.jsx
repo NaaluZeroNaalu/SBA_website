@@ -27,6 +27,7 @@ import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import p1 from "../../assets/images/cloud/powerdby/1.png"
 import p2 from "../../assets/images/cloud/powerdby/2.png"
 import p3 from "../../assets/images/cloud/powerdby/3.png"
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Openhybridcloud(){
 
@@ -223,33 +224,32 @@ const [activeIndex, setActiveIndex] = useState(null);
           <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
         </div>
       </section>
-  <section className="custom-container ai-section">
-        <div className="relative px-12 md:px-25">
-          <div className="flex flex-wrap justify-between mt-10">
-            {featuresforcloud.map((text, index) => (
-              <div
-                key={index}
-                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
-              >
-                <div>
-                  <img
-                    className="ai-m"
-                    src={aili}
-                    loading="lazy"
-                    alt="ornament"
-                  />
-                </div>
-                <div className="ai-li-text">{text}</div>
-              </div>
-            ))}
+
+
+      <section className="custom-container ai-section">
+  <div className="relative px-6 md:px-12 lg:px-24">
+    <div className="flex flex-wrap justify-between mt-10">
+      {featuresforcloud.map((text, index) => (
+        <div
+          key={index}
+          className="w-full sm:w-6/12 md:w-4/12 mb-6 flex items-center gap-4"
+        >
+          <div className="flex-shrink-0">
+            <img
+              className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+              src={aili}
+              loading="lazy"
+              alt="ornament"
+            />
           </div>
+          <div className="ai-li-text text-base md:text-2xl font-spartan">{text}</div>
         </div>
-      </section>
-      <section>
+      ))}
+    </div>
+  </div>
+</section>
 
-
-
-      </section>
+    
 
       <section>
         <div className="relative bg-white py-20">
@@ -269,106 +269,6 @@ const [activeIndex, setActiveIndex] = useState(null);
         </div>
       </section>
 
-<section id="solutions">
-<div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={cloud1}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Infrastructure Management & Security
-              </h2>
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
-                <li>Automates security practices and compliance checks to reduce risks.</li>
-                <li>
-                Enhances the efficiency of provisioning, configuration, and management of infrastructure through
-                the implementation of Ansible.
-                </li>
-                <li>
-                Operates without the need for agents on target systems, simplifying deployment and reducing
-                overhead.
-                </li>
-              </ul>
-            </div>
-          </div>
-    </div>
-
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              Application Development and Delivery
-              </h2>
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
-                <li>
-                Facilitates the development, deployment, and management of applications in a containerized
-                environment.
-                </li>
-                <li>
-                Facilitates the migration of outdated applications to contemporary architectures utilizing OpenShift
-                </li>
-                <li>
-                Enables deployment and management of applications at the edge, closer to data sources.
-                </li>
-                <li>
-                Provides capabilities for virtualizing resources and optimizing infrastructure usage.
-                </li>
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={cloud2}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={cloud3}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              OS Management & Security
-              </h2>
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left">
-                <li>Streamlines system administration and management tasks.
-                </li>
-                <li>
-                RHEL Provides tools and features for enhancing security and ensuring compliance with standards.
-                </li>
-                <li>
-                Delivers stable and reliable performance across various workloads
-                </li>
-              </ul>
-            </div>
-          </div>
-    </div>
-
-</section>
 
 {/* <section className="mt-10">
                 <h3 className="text-xl font-bold">Frequently Asked Questions</h3>
@@ -390,6 +290,64 @@ const [activeIndex, setActiveIndex] = useState(null);
                 ))}
 
 </section> */}
+<section id="solutions">
+  {[
+    {
+      title: "Infrastructure Management & Security",
+      description: [
+        "Automates security practices and compliance checks to reduce risks.",
+        "Enhances the efficiency of provisioning, configuration, and management of infrastructure through the implementation of Ansible.",
+        "Operates without the need for agents on target systems, simplifying deployment and reducing overhead.",
+      ],
+      image: cloud1
+    },
+    {
+      title: "Application Development and Delivery",
+      description: [
+        "Facilitates the development, deployment, and management of applications in a containerized environment.",
+        "Facilitates the migration of outdated applications to contemporary architectures utilizing OpenShift",
+        "Enables deployment and management of applications at the edge, closer to data sources.",
+        "Provides capabilities for virtualizing resources and optimizing infrastructure usage.",
+      ],
+      image: cloud2
+    },
+    {
+      title: "OS Management & Security",
+      description: [
+        "Streamlines system administration and management tasks.",
+        "RHEL Provides tools and features for enhancing security and ensuring compliance with standards.",
+        "Delivers stable and reliable performance across various workloads",
+      ],
+      image: cloud3
+    },
+    
+  ].map((item, index) => (
+    <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+      <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+        <div className="w-full p-1 md:p-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={item.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
+              loading="lazy"
+              alt={item.title}
+            />
+          </div>
+        </div>
+        <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+            {item.title}
+          </h2>
+          <ul className="text-base pl-10 list-disc space-y-3 text-left">
+            {item.description.map((desc, idx) => (
+              <li key={idx}>{desc}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
 
 <section className="py-5 bg-light">
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
@@ -438,141 +396,116 @@ const [activeIndex, setActiveIndex] = useState(null);
             Powered by
           </h1>
 
-          {/* Watson Assistant */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">RHEL</h2>
-              <p className="text-2xl">
-              Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise
-              environments, offering robust performance and comprehensive support It includes features like SELinux
-              for enhanced security, regular updates for vulnerability management, and extensive documentation to aid
-              system administrators in maintaining their infrastructure 
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <div className="animation-border">
-              <div style={{height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}>
+          {
+  [
+    {
+      title: "RHEL",
+      description: "Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise environments, offering robust performance and comprehensive support. It includes features like SELinux for enhanced security, regular updates for vulnerability management, and extensive documentation to aid system administrators in maintaining their infrastructure.",
+      img: rhel,
+      anim: "animation-border"
+    },
+    {
+      title: "Redhat Ansible Automation Platform",
+      description: "Ansible is an open-source automation tool that simplifies IT processes such as configuration management, application deployment, and orchestration by using human-readable YAML playbooks, eliminating the need for agents on target systems.",
+      img: ansi,
+      anim: "animation-border2"
+    },
+    {
+      title: "Redhat Openshift",
+      description: "OpenShift is a Kubernetes-based container platform developed by Red Hat that facilitates the deployment, scaling, and management of containerized applications. It provides a unified development and operational experience, enabling teams to build, deploy, and manage applications consistently across hybrid cloud environments.",
+      img: open,
+      anim: "animation-border"
+    },
+  ].map((val, id) => (
+    <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+      {id % 2 === 0 ? (
+        <>
+          <div className="md:w-1/2 w-full md:pr-10">
+            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
+            <p className="text-2xl">{val.description}</p>
+          </div>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <div className={val.anim}>
+              <div style={{ height: "390px", borderTopLeftRadius: "100px", borderBottomRightRadius: "100px", borderTopRightRadius: "0px", borderBottomLeftRadius: "0px", border: "12px solid #EEEEEE" }}>
                 <br /><br />
-              <img
-                src={rhel}
-                alt="Watson Assistant"
-                className="rounded-lg object-cover "
-                // style={{width:"800px",height:"386px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}
-              />
-              </div>
+                <img
+                  src={val.img}
+                  alt={val.title}
+                  className="rounded-lg object-cover"
+                />
               </div>
             </div>
           </div>
-
-          {/* Watson Discovery */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <div className="animation-border2">
-                <div style={{height:"390px",borderTopRightRadius:"100px",borderBottomLeftRadius:"100px",borderTopLeftRadius:"0px",borderBottomRightRadius:"0px",border:"12px solid #EEEEEE"}}>
-                  <br /><br />
-              <img
-                src={ansi}
-                alt="Watson Discovery"
-                className="rounded-lg  object-cover "
-              />
-                </div>
+        </>
+      ) : (
+        <>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <div className={val.anim}>
+              <div style={{ height: "390px", borderTopRightRadius: "100px", borderBottomLeftRadius: "100px", borderTopLeftRadius: "0px", borderBottomRightRadius: "0px", border: "12px solid #EEEEEE" }}>
+                <br /><br />
+                <img
+                  src={val.img}
+                  alt={val.title}
+                  className="rounded-lg object-cover img-fluid"
+                />
               </div>
             </div>
-            <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-1xl font-bold" >Redhat Ansible Automation Platform</h2>
-              <br />
-              <p className="text-2xl" style={{marginTop:"-20px"}}>
-              Ansible is an open-source automation tool that simplifies IT
-processes such as configuration management, application deployment, and orchestration by using
-human-readable YAML playbooks, eliminating the need for agents on target systems
-              </p>
-            </div>
           </div>
-
-          {/* Instana */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Redhat Openshift</h2>
-              <p className="text-2xl">
-              OpenShift is a Kubernetes-based container platform developed by Red Hat that
-facilitates the deployment, scaling, and management of containerized applications. It provides a unified
-development and operational experience, enabling teams to build, deploy, and manage applications
-consistently across hybrid cloud environments
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-             <div className="animation-border">
-              <div style={{height:"390px",borderTopLeftRadius:"100px",borderBottomRightRadius:"100px",borderTopRightRadius:"0px",borderBottomLeftRadius:"0px",border:"12px solid #EEEEEE"}}>
-             <br /><br />
-             <img
-                src={open}
-                alt="Instana"
-                className="rounded-lg object-cover"
-                
-              />
-
-              </div>
-             </div>
-            </div>
+          <div className="md:w-1/2 w-full md:pl-10">
+            <h2 className="text-1xl font-bold">{val.title}</h2>
+            <br />
+            <p className="text-2xl" style={{ marginTop: "-20px" }}>{val.description}</p>
           </div>
+        </>
+      )}
+    </div>
+  ))
+}
+
 
       </div>
       </section>
 <br /><br /><br />
 
+<div className="flex flex-col md:flex-row justify-center items-center">
 
-<section className="pt-0 md:pt-5 w-full" id='poweredby' style={{marginLeft:"200px"}}>
-  <div className="w-full mx-auto px-4 md:px-6"  >
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <a href="https://www.redhat.com/en/technologies/management/ansible" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
-          </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Instana
-          </span>
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>Ansible</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
+{
+  [
+    {
+      link:"https://www.redhat.com/en/technologies/management/ansible",
+      img:p1,
+      name:"Ansible",
+    },
+    {
+      link:"https://www.redhat.com/en/technologies/cloud-computing/openshift",
+      img:p2,
+      name:"Openshift",
+    },
+    {
+      link:"https://www.redhat.com/en/technologies/linux-platforms/enterprise-linuxs",
+      img:p3,
+      name:"RHEL",
+    },
+  ].map((val,i)=>(
+    <>
+    <a href={val.link} className='no-underline text-black font-bold text-2xl'>
+      <div className='flex flex-col items-center '>
+        <div style={{ backgroundImage: `url(${val.img})`,width:"400px",height:"300px",backgroundRepeat:"no-repeat",borderRadius:"10px"}}>
+          
+          <div style={{textAlign:"center",display:"flex",justifyContent:"center",gap:"10px"}}>
+          <p>{val.name}</p>
+          <p ><FaArrowRightLong /></p>
+          
           </div>
         </div>
-      </a>
+      </div>
+    </a>
+    </>
+  ))
+}
+</div>
 
-      <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            {/* Turbonomic<span className="text-blue-600"> </span> */}
-          </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Turbonimic
-          </span>
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"70px"}}>Openshift</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
 
-      <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linuxs" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-          <span className="text-blue-600"> </span>
-          </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Watson AIOps
-          </span>
-          <div className="flex justify-end px-3 mt-5">
-            <br />
-            <span className='text-2xl' style={{color:"black",marginRight:"100px"}}>RHEL</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
 
 <br /><br /><br /><br />
 <section className=" flex items-center justify-center min-h-screen">

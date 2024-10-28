@@ -23,7 +23,7 @@ import its from "../../assets/images/itautomation/its.png"
 import wat3 from "../../assets/images/wat_3.svg";
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
-import seven1 from "../../assets/images/sevone.png"
+import seven1 from "../../assets/images/itautomation/sev1.png"
 import Watsons from '../common/watsons';
 import p1 from "../../assets/images/itautomation/powerdby/1.png"
 import p2 from "../../assets/images/itautomation/powerdby/2.png"
@@ -427,7 +427,7 @@ function Itautomation() {
                 src={val.img}
                 alt="Watson Assistant"
                 className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
-                style={{height:val.w}}
+                style={{width:val.w}}
                 />
                 </div>
                 </div>
@@ -452,9 +452,7 @@ function Itautomation() {
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
             <span className="text-blue-600"> </span>
           </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Instana
-          </span>
+          
           <div className="flex justify-end px-3 mt-5">
             <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>Instana</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
@@ -463,13 +461,11 @@ function Itautomation() {
       </a>
 
       <a href="https://turbonomic-demo.17f48735.public.multi-containers.ibm.com/" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})` }}>
+        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})`,backgroundSize:"" }}>
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
             {/* Turbonomic<span className="text-blue-600"> </span> */}
           </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Turbonimic
-          </span>
+        
           <div className="flex justify-end px-3 mt-5">
             <span className='text-2xl ' style={{color:"black",marginRight:"60px"}}>Turbonomic</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
@@ -482,9 +478,7 @@ function Itautomation() {
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
           <span className="text-blue-600"> </span>
           </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for Watson AIOps
-          </span>
+          
           <div className="flex justify-end px-3 mt-5">
             <br />
             <span className='text-2xl me-5' style={{color:"black"}}>watson AIOps</span>
@@ -498,9 +492,7 @@ function Itautomation() {
           <p className="flex items-end justify-center h-3/5 text-2xl text-black">
           <span className="text-blue-600"> </span>
           </p>
-          <span className="absolute bottom-0 left-0 w-full text-center text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Hover Text for SevenOne
-          </span>
+      
           <div className="flex justify-end px-3 mt-5">
           <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>SevOne</span>
             <img src={rt_arrow} loading="lazy" alt="arrow" />
