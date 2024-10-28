@@ -108,43 +108,54 @@ function Dataai(){
 
     return(
         <>
-    <section className="relative w-full h-screen">
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
-        {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
-          Empower Your Business With
-        </div>
 
-        {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
-          Trusted AI Solutions
-        </div>
-      </div>
+      
+      {/* -------------------------------SECTION 1 START------------------------ */}
+      <section className="relative w-full h-screen">
+  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+    {/* Large heading */}
+    <div className="text-white text-4xl md:text-6xl lg:text-8xl font-extrabold" style={{ fontFamily: "league spartan" }}>
+      Empower Your Business With
+    </div>
 
-      {/* Background video */}
-      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
-        <source src={datapage} type="video/mp4" />
-      </video>
+    {/* Centered red box with large text */}
+    <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-4xl md:text-5xl lg:text-6xl" style={{ fontFamily: "league spartan" }}>
+      Trusted AI Solutions
+    </div>
+  </div>
 
-      {/* Overlay to darken the video */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-    </section>
+  {/* Background video */}
+  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+    <source src={datapage} type="video/mp4" />
+  </video>
+
+  {/* Overlay to darken the video */}
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+</section>
+
+
+    
+    
+     {/* -------------------------------SECTION 1 END------------------------ */}
+
+    
+    {/* ----------------------SECTION 2 START-------------------------------*/}
       <section className="relative my-20">
-        <div className="container mx-auto max-w-[1600px] px-16">
+        <div className="container mx-auto max-w-[1600px] px-16 ">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
-                For data driven enterprises looking to create exceptional
-                customer and employee experience,
-              </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
-                SBA provides{" "}
-                <span className="text-red-600 font-semibold">
-                  modular and sustainable AI solutions & ML Models
-                </span>{" "}
-      
-              </p>
-            </div>
+            <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
+            For data-driven enterprises looking to create exceptional
+            customer and employee experience,
+            </p>
+            <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+            SBA provides{" "}
+            <span className="text-red-600 font-semibold">
+              modular and sustainable AI solutions & ML Models
+            </span>
+            </p>
+
+          </div>
             <div className="w-full md:w-4/12">
             <div className='animation-border' style={{height:"410px"}}>
            <img
@@ -153,7 +164,7 @@ function Dataai(){
                 alt="AI"
                 className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
                 style={{ width: '360px', height: '400px' }}
-              />
+                />
            </div>
             </div>
           </div>
@@ -162,176 +173,133 @@ function Dataai(){
           <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
         </div>
       </section>
-      <section className="custom-container ai-section">
-        <div className="relative px-12 md:px-25">
-          <div className="flex flex-wrap justify-between mt-10">
-            {features.map((text, index) => (
-              <div
-                key={index}
-                className="w-full md:w-4/12 mb-4 flex items-center gap-6"
-              >
-                <div>
-                  <img
-                    className="ai-m"
-                    src={aili}
-                    loading="lazy"
-                    alt="ornament"
-                  />
-                </div>
-                <div className="ai-li-text">{text}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <br /><br />
-      <section>
-        <div className="relative bg-white py-20">
-          <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+  <section className="custom-container ai-section">
+  <div className="relative px-6 md:px-12 lg:px-24">
+    <div className="flex flex-wrap justify-between mt-10">
+      {features.map((text, index) => (
+        <div
+          key={index}
+          className="w-full sm:w-6/12 md:w-4/12 mb-6 flex items-center gap-4"
+        >
+          <div className="flex-shrink-0">
             <img
-              src={aiOrnamentImage}
+              className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+              src={aili}
               loading="lazy"
               alt="ornament"
-              className="h-full object-cover transform scale-x-[-1]"
             />
           </div>
-          <div className="relative px-5 max-w-screen-xl mx-auto">
-            <h1 className="text-center text-3xl md:text-5xl font-bold">
-              Solutions & Services
-            </h1>
+          <div className="ai-li-text text-base md:text-2xl font-spartan">{text}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+    {/* -------------------------------SECTION 2 END-------------------------------*/}
+      <br /><br />
+
+
+
+    {/* -----------------------------------SECTION 3 START-------------------------------*/}
+    <section>
+  <div className="relative bg-white py-10 md:py-20">
+    <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+      <img
+        src={aiOrnamentImage}
+        loading="lazy"
+        alt="ornament"
+        className="h-full object-cover transform scale-x-[-1]"
+      />
+    </div>
+    <div className="relative px-5 max-w-screen-xl mx-auto">
+      <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold">
+        Solutions & Services
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section id="solutions">
+  {[
+    {
+      title: "Data Orchestration and Management",
+      description: [
+        "Database Consulting and Management",
+        "Data Fabric Architecture for Self-Service",
+        "Data Warehousing, Data Lakes, and Lakehouses",
+        "Partner Ecosystem Services - Migration, Administration, Performance Tuning, Security, and Compliance Services"
+      ],
+      image: s1
+    },
+    {
+      title: "Business Intelligence & Analytics",
+      description: [
+        "Cognos Analytics for enterprise BI, reporting, and augmented analytics with inbuilt AI",
+        "Integration with SAP Analytics Cloud, other BI tools, data sources, and applications",
+        "Custom report development and dashboard creation",
+        "Data modeling and ETL/ELT services",
+        "Training and enablement services"
+      ],
+      image: s2
+    },
+    {
+      title: "Intelligent IT Automation",
+      description: [
+        "Enterprise Observability for application performance and Infrastructure quality management",
+        "AI powered Cloud and Finops",
+        "Incident management & sustainable IT",
+        "ML services and ChatOps for streamlined IT service management"
+      ],
+      image: s3
+    },
+    {
+      title: "Enterprise ML and Generative AI",
+      description: [
+        "Customer care and call center modernization",
+        "Retrieval Augmented generation for knowledge self-service",
+        "Conversational AI and virtual assistant development",
+        "Development and deployment of ML models",
+        "Responsible AI and model governance consulting",
+        "Integration with enterprise systems and applications",
+        "Data preparation and feature engineering services"
+      ],
+      image: s4
+    }
+  ].map((item, index) => (
+    <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+      <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+        <div className="w-full p-1 md:p-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={item.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
+              loading="lazy"
+              alt={item.title}
+            />
           </div>
         </div>
-      </section>
-
-      
-      <section id="solutions">
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={s1}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left" >
-                Data Orchestration and Management
-              </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
-                <li>Database Consulting and Management</li>
-                <li>Data Fabric Architecture for Self-Service</li>
-                <li>Data Warehousing, Data Lakes, and Lakehouses</li>
-                <li>
-                  Partner Ecosystem Services - Migration, Administration,
-                  Performance Tuning, Security, and Compliance Services
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+            {item.title}
+          </h2>
+          <ul className="text-base pl-10 list-disc space-y-3 text-left">
+            {item.description.map((desc, idx) => (
+              <li key={idx}>{desc}</li>
+            ))}
+          </ul>
         </div>
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-                Business Intelligence & Analytics 
-              </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
-                <li>
-                  Cognos Analytics for enterprise BI, reporting, and augmented
-                  analytics with inbuilt AI
-                </li>
-                <li>
-                  Integration with SAP Analytics Cloud, other BI tools, data
-                  sources, and applications
-                </li>
-                <li>Custom report development and dashboard creation</li>
-                <li>Data modeling and ETL/ELT services</li>
-                <li>Training and enablement services</li>
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={s2}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1 md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={s3}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Intelligent IT Automation"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-                <b>Intelligent IT Automation</b>
-              </h2>
-              <ul className="text-base pl-10 list-disc space-y-3 text-left">
-                <li>
-                  Enterprise Observability for application performance and
-                  Infrastructure quality management
-                </li>
-                <li>AI powered Cloud and Finops</li>
-                <li>Incident management & sustainable IT</li>
-                <li>
-                  ML services and ChatOps for streamlined IT service management
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-                <b>Enterprise ML and Generative AI</b>
-              </h2>
-              <ul className="text-base pl-0 list-disc space-y-3 text-left ms-5">
-                <li>Customer care and call center modernization</li>
-                <li>
-                  Retrieval Augmented generation for knowledge self-service
-                </li>
-                <li>Conversational AI and virtual assistant development</li>
-                <li>Development and deployment of ML models</li>
-                <li>Responsible AI and model governance consulting</li>
-                <li>Integration with enterprise systems and applications</li>
-                <li>Data preparation and feature engineering services</li>
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={s4}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Enterprise ML and Generative AI"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  ))}
+</section>
 
 
-      {/* industries */}
+
+  {/* -----------------------------------SECTION 3 END-------------------------------*/}
+
+  {/* industries */}
    <Industriesweserve />
    <br /><br />
       <Certifications />
@@ -342,112 +310,69 @@ function Dataai(){
             Powered by <span className="text-red-600">watsonX</span>
           </h1>
 
-          {/* Watson Assistant */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">watson Assistant</h2>
-              <p className="text-2xl">
-                IBM Watson Assistant is a conversation AI platform that helps
-                you provide customers fast, straightforward, and accurate
-                answers to their questions, across any application, device, or
-                channel.
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat1}
+          {
+            [
+              {
+                title:"watson Assistant",
+                description:"IBM Watson Assistant is a conversation AI platform that helps you provide customers fast, straightforward, and accurate answers to their questions, across any application, device, or channel.",
+                img:wat1,
+                anim:"animation-border"
+              },
+              {
+                title:"watson Discovery",
+                description:"IIBM Watson Discovery is an award-winning enterprise search and AI search technology that breaks open data silos and retrieves specific answers to your questions while analyzing trends and relationships buried in enterprise data.",
+                img:wat2,
+                anim:"animation-border2"
+              },
+              {
+                title:"Instana",
+                description:"Instana Observability is a fully-automated application performance management solution designed for the challenges of managing microservice and cloud-native applications. It makes your applications visible and enables intelligent actions based on observed information.",
+                img:wat3,
+                anim:"animation-border"
+              },
+              {
+                title:"Cognos",
+                description:"Unleash the power of your data through AI-driven automation and insights in Cognos Analytics. Simply pose a question or hypothesis, and let AI provide the insights you require.",
+                img:wat4,
+                anim:"animation-border2"
+              },
+              {
+                title:"Turbonomic",
+                description:"Turbonomic is a software platform that helps organizations optimize the performance and cost of their IT infrastructure, including public, private, and hybrid cloud environments, by automating optimization actions in real-time.",
+                img:wat5,
+                anim:"animation-border"
+              },
+            ].map((val,id)=>(
+              <>
+              
+              <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+                <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  <div className="md:w-1/2 w-full md:pr-10">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4">{val.title}</h2>
+                  <p className="text-lg md:text-2xl">
+                    {val.description}
+                    </p>
+                </div>
+                <div className="md:w-1/2 w-full flex justify-center">
+                <img
+                src={val.img}
                 alt="Watson Assistant"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
-              />
-            </div>
-          </div>
+                className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
+                />
+                </div>
+                </div>
+                </div>
+              </>
+            ))
+          }
 
-          {/* Watson Discovery */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat2}
-                alt="Watson Discovery"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
-              />
-            </div>
-            <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-3xl font-bold mb-4">watson Discovery</h2>
-              <p className="text-2xl">
-                IBM Watson Discovery is an award-winning enterprise search and
-                AI search technology that breaks open data silos and retrieves
-                specific answers to your questions while analyzing trends and
-                relationships buried in enterprise data.
-              </p>
-            </div>
-          </div>
-
-          {/* Instana */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Instana</h2>
-              <p className="text-2xl">
-                Instana Observability is a fully-automated application
-                performance management solution designed for the challenges of
-                managing microservice and cloud-native applications. It makes
-                your applications visible and enables intelligent actions based
-                on observed information.
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat3}
-                alt="Instana"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
-              />
-            </div>
-          </div>
-
-          {/* Cognos */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat4}
-                alt="Cognos"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border2"
-              />
-            </div>
-            <div className="md:w-1/2 w-full md:pl-10">
-              <h2 className="text-3xl font-bold mb-4">Cognos</h2>
-              <p className="text-2xl">
-                Unleash the power of your data through AI-driven automation and
-                insights in Cognos Analytics. Simply pose a question or
-                hypothesis, and let AI provide the insights you require.
-              </p>
-            </div>
-          </div>
-
-          {/* Turbonomic */}
-          <div className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-            <div className="md:w-1/2 w-full md:pr-10">
-              <h2 className="text-3xl font-bold mb-4">Turbonomic</h2>
-              <p className="text-2xl">
-                Turbonomic is a software platform that helps organizations
-                optimize the performance and cost of their IT infrastructure,
-                including public, private, and hybrid cloud environments, by
-                automating optimization actions in real-time.
-              </p>
-            </div>
-            <div className="md:w-1/2 w-full flex justify-center ">
-              <img
-                src={wat5}
-                alt="Turbonomic"
-                className="rounded-lg h-auto w-full max-w-xs object-cover animation-border"
-              />
-            </div>
-          </div>
-        </div>
+      </div>
       </section>
 
      <Watsons />
 
 
-      <section className="my-5 py-5">
+  <section className="my-5 py-5">
         <div className="relative pb-[37.25%] h-0 overflow-hidden container" style={{width:"1000px"}}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
@@ -456,7 +381,9 @@ function Dataai(){
             title="YouTube Video"
           ></iframe>
         </div>
-      </section>
+  </section>
+
+  
       <section className="my-5 py-5 bg-white">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
     {/* Left Content */}

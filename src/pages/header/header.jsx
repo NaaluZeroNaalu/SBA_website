@@ -78,9 +78,65 @@ function Header() {
         </div>
       </div>
 
+      {/* For mobile start */}
+      <div className="modal fade" id="bookformobile" tabIndex="-1" aria-labelledby="bookLabel" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="bookLabel">Book a Meeting</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <form ref={formRef} onSubmit={sendEmail} required>
+                <div className="mb-3">
+                  <label htmlFor="date" className="form-label">Select Date</label>
+                  <input type="date" className="form-control" id="date" name="date" required />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="time" className="form-label">Select Time (IST)</label>
+                  <div className="grid grid-cols-3 gap-2">
+                    <select className="form-select" name="hour" required>
+                      {[10, 11, 12, 1, 2, 3, 4, 5, 6].map((h, i) => (
+                        <option key={i} value={h}>{h}</option>
+                      ))}
+                    </select>
+                    <select className="form-select" name="minute" required>
+                      {[0, 15, 30, 45].map((min) => (
+                        <option key={min} value={min}>{min < 10 ? `0${min}` : min}</option>
+                      ))}
+                    </select>
+                    <select className="form-select" name="period" required>
+                      <option value="AM">AM</option>
+                      <option value="PM">PM</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label">Your Name</label>
+                  <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" required />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="company" className="form-label">Your Company Name</label>
+                  <input type="text" className="form-control" id="company" name="company" placeholder="Enter your company name" required />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="number" className="form-label">Phone Number</label>
+                  <input type="tel" className="form-control" id="number" name="number" placeholder="Enter your phone number" required />
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" className="btn btn-primary">BOOK</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* For mobile end */}
 
 
-      <header className="sticky top-0 z-50 bg-white shadow-md" id="topnav">
+
+<header className="fixed w-100 top-0 z-50 bg-white shadow-md" id="topnav" >
   <div className="flex items-center justify-between p-4">
     <img src={logo} alt="Logo" className="h-24 w-24" />
     <nav className="hidden md:flex">
@@ -145,7 +201,7 @@ function Header() {
             <li><a href="/Blogs" className='nav-link mb-2'>Blogs</a></li>
             <li><a href="/Casestudies" className='nav-link mb-2'>Case Studies</a></li>
             <li>
-              <button className='bg-red-600 text-white py-2 px-3 rounded-full' data-bs-toggle="modal" data-bs-target="#book" type="button">
+              <button className='bg-red-600 text-white py-2 px-3 rounded-full' data-bs-toggle="modal" data-bs-target="#bookformobile" type="button">
                 Request a Demo
               </button>
             </li>

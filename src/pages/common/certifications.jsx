@@ -30,51 +30,46 @@ import certification27 from "../../assets/images/certification 27.png";
 import certification28 from "../../assets/images/certification 28.png";
 import certification29 from "../../assets/images/certification 29.png";
 import { useState, useEffect, React } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function Certifications(){
 
-    const slides = [
-        [
-          certification1,
-          certification2,
-          certification3,
-          certification4,
-          certification5,
-          certification6,
-        ],
-        [
-          certification7,
-          certification8,
-          certification9,
-          certification10,
-          certification11,
-          certification12,
-        ],
-        [
-          certification13,
-          certification14,
-          certification15,
-          certification16,
-          certification17,
-          certification18,
-        ],
-        [
-          certification19,
-          certification20,
-          certification21,
-          certification22,
-          certification23,
-          certification24,
-        ],
-        [
-          certification25,
-          certification26,
-          certification27,
-          certification28,
-          certification29,
-        ],
-      ];
-    
+  const slides = [
+    [
+      certification1,
+      certification2,
+      certification3,
+      certification4,
+      certification5,
+      certification6,
+      certification7,
+      certification8,
+      certification9,
+      certification10,
+      certification11,
+      certification12,
+      certification13,
+      certification14,
+      certification15,
+      certification16,
+      certification17,
+      certification18,
+      certification19,
+      certification20,
+      certification21,
+      certification22,
+      certification23,
+      certification24, 
+      certification25,
+      certification26,
+      certification27,
+      certification28,
+      certification29,
+    ]
+  ];
+
       const [currentSlide, setCurrentSlide] = useState(0);
     
       // Function to move the slide manually
@@ -106,65 +101,69 @@ function Certifications(){
 
     return(
         <>
-  
-        <section className="">
-        <div className="flex justify-between items-center mx-auto md:w-9/12">
-          <button
-            className="bg-transparent p-2 cursor-pointer focus:outline-none"
-            onClick={() => moveSlide(-1)}
-          >
-            <img src={sliderleft} alt="Previous" />
-          </button>
-          <h1 className="text-center text-xl md:text-5xl font-bold" style={{fontFamily:"league spartan"}}>
-            Our Proficiency and{" "}
-            <span className="text-red-600" style={{fontFamily:"league spartan"}}>Certifications</span>
-          </h1>
-          <button
-            className="bg-transparent p-2 cursor-pointer focus:outline-none"
-            onClick={() => moveSlide(1)}
-          >
-            <img src={sliderright} alt="Next" />
-          </button>
-        </div>
 
-        <div className="mx-auto overflow-hidden mt-6">
-          {/* Slides */}
-          {slides.map((slideImages, index) => (
-            <div
-              key={index}
-              className={`${
-                index === currentSlide ? "block" : "hidden"
-              } w-full transition-transform duration-500 ease-in-out`}
+<section className="w-full bg-gray-50">
+    <div className="py-10">
+        <br /><br />
+        <div className="mx-auto px-8 max-w-screen-xl">
+            <h3 style={{ fontFamily: "league spartan" }} className="text-center text-3xl md:text-5xl font-bold">
+            Our Proficiency and <span className="text-red-600">Certifications</span>
+            </h3>
+            <br /><br />
+            <Slider
+                dots={false}
+                infinite={true}
+                speed={500}
+                slidesToShow={5} // Default to 5 slides
+                slidesToScroll={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+                nextArrow={
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                }
+                prevArrow={
+                    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5l-7 7 7 7" />
+                        </svg>
+                    </div>
+                }
+                responsive={[
+                    {
+                        breakpoint: 1024, // for screens smaller than 1024px
+                        settings: {
+                            slidesToShow: 3, // Show 3 slides for medium screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 768, // for screens smaller than 768px
+                        settings: {
+                            slidesToShow: 1, // Show 1 slide for mobile screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                ]}
             >
-              <div className="flex flex-wrap">
-                {slideImages.map((image, idx) => (
-                  <div key={idx} className="w-1/6 px-1">
-                    <img
-                      src={image}
-                      alt={`Certification ${idx + 1}`}
-                      className="w-full"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                {slides[0].map((logo, index) => (
+                    <div key={index} className="px-2">
+                        <img
+                            src={logo}
+                            alt={`Certification logo ${index + 1}`}
+                            style={{borderRadius:"10px",height:"300px",width:"300px"}}
 
-          {/* Bullets */}
-          <div className="flex justify-center mt-4">
-            {slides.map((_, index) => (
-              <span
-                key={index}
-                className={`h-4 w-4 rounded-full mx-1 cursor-pointer ${
-                  index === currentSlide ? "bg-red-600" : "bg-gray-400"
-                }`}
-                onClick={() => currentSlideHandler(index)}
-              ></span>
-            ))}
-          </div>
+                        />
+                    </div>
+                ))}
+            </Slider>
         </div>
-      </section>
-      
+    </div>
+</section>
+
         </>
     )
 }
