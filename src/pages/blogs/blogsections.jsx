@@ -4,6 +4,7 @@ import three from "../../assets/images/blogs/three.jpeg"
 import four from "../../assets/images/blogs/four.jpeg"
 import five from "../../assets/images/blogs/five.png"
 import six from "../../assets/images/blogs/six.png"
+import "./style.scss"
 
 function Blogsections(){
 
@@ -72,27 +73,20 @@ function Blogsections(){
               Blog Posts
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {blogPosts.map((post, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                  {/* Blog Image */}
-                  <div className="w-full h-64 overflow-hidden mb-4" >
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-
-                  {/* Blog Title */}
-                  <a href={post.link} style={{textDecoration:"none"}}>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}}>{post.title}</h2>
+            <div className="row gx-5 gy-5">
+              {
+              blogPosts.map((post, index) => (
+                <>
+                <div key={index} className="col-md-6">
+                  <img src={post.image} alt={post.title} className="" />
+                  <a href={post.link} className="no-underline">
+                    <h1 className="text-black text-3xl font-bold" id="blogtitle">{post.title}</h1>
+                    <p className="text-black">{post.description}</p>
                   </a>
-
-                  {/* Blog Description */}
-                  <p className="text-lg text-gray-700 mb-6" style={{fontFamily:"league spartan"}}>{post.description}</p>
                 </div>
-              ))}
+                </>
+              ))
+              }
             </div>
 
             <footer className="mt-10 text-center">

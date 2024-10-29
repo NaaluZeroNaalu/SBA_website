@@ -4,6 +4,7 @@ import three from "../../assets/images/casestudies/three.jpeg"
 import four from "../../assets/images/casestudies/four.png"
 import five from "../../assets/images/casestudies/five.png"
 import six from "../../assets/images/casestudies/six.png"
+import "./style.scss"
 
 function Casestudiessections(){
 
@@ -69,7 +70,7 @@ function Casestudiessections(){
 
             {/* Blog Title */}
             <a href={post.link} style={{ textDecoration: "none" }}>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}}>{post.title}</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}} id="casestudiestitle">{post.title}</h2>
             </a>
 
             {/* Blog Description */}
