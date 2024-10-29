@@ -26,14 +26,14 @@ function Casestudies(){
         </div>
       </section> */}
       <section className="relative w-full h-screen">
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center" id="topvideo">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
+        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan"}} id="toptext">
         Case Studies
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"70px"}}>
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan"}} id="bottomtext">
         Real Results, Remarkable Journeys
         </div>
       </div>

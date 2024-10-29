@@ -34,15 +34,15 @@ function Industries(){
           </video>
         </div>
       </section> */}
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold">
+        <div className="text-white text-6xl  font-extrabold" id="toptext">
         Industries
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl">
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" id="bottomtext">
         Explore Industry-Specific Solutions
         </div>
       </div>
