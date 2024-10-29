@@ -111,15 +111,15 @@ function Dataai(){
 
       
       {/* -------------------------------SECTION 1 START------------------------ */}
-      <section className="relative w-full h-screen">
+  <section className="relative w-full h-screen" id="topvideo">
   <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
     {/* Large heading */}
-    <div className="text-white text-4xl md:text-6xl lg:text-8xl font-extrabold" style={{ fontFamily: "league spartan" }}>
+    <div className="text-white text-8xl  font-extrabold" style={{marginTop:"150px"}} id="toptext">
       Empower Your Business With
     </div>
 
     {/* Centered red box with large text */}
-    <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-4xl md:text-5xl lg:text-6xl" style={{ fontFamily: "league spartan" }}>
+    <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-6xl" id="bottomtext">
       Trusted AI Solutions
     </div>
   </div>

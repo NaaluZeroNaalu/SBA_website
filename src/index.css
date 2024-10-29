@@ -90,7 +90,7 @@
 }
 
 #details{
-    font-family: league spartans;
+    font-family: league spartan;
 }
 
 img{
@@ -125,5 +125,35 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
-  
+}
+
+
+@media (max-width: 768px) {
+    
+    #topvideo #toptext{
+
+        font-size: 40px;
+        
+    }
+
+    #topvideo #bottomtext{
+
+        font-size: 20px;
+        
+    }
+
+}
+
+/* #topvideo #toptext{
+    
+    font-size: 100px;
+    
+    font-family: league spartan;
+}
+
+#topvideo #bottomtext{
+    
+    font-size: 100px;
+    font-family: league spartan;
+    
+} */

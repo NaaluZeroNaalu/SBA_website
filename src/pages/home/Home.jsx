@@ -72,6 +72,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import emailjs from 'emailjs-com';
+import Certifications from "../common/certifications";
 
 
 
@@ -208,15 +209,15 @@ function Homepage(){
 
 
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
-<section className="relative w-full h-screen overflow-hidden">
-  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+<section className=" relative w-full h-screen overflow-hidden" id="topvideo">
+  <div className="absolute  inset-0 z-10 flex flex-col items-center justify-center text-center" style={{marginTop:"150px"}}>
     {/* Large heading */}
-    <div className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold font-spartan">
+    <div className="text-white text-8xl   font-extrabold font-spartan" id="toptext">
       Automate the Mundane
     </div>
 
     {/* Centered red box with large text */}
-    <div className="bg-red-600 font-spartan text-white font-extrabold px-6 py-3 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+    <div className="bg-red-600 font-spartan text-white font-extrabold px-6 py-3 mt-6 text-6xl " id="bottomtext">
       Elevate Human Potential
     </div>
   </div>
@@ -536,7 +537,7 @@ function Homepage(){
       {/* ---------------------------SECTION 8 END--------------------------------- */}
 
 
-
+<Certifications />
       {/* ---------------------------SECTION 9 START--------------------------------- */}
 
      

@@ -133,15 +133,15 @@ const [activeIndex, setActiveIndex] = useState(null);
     return(
         <>
 
-<section className="relative w-full h-screen">
+<section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold mt-5" style={{fontFamily:"league spartan",fontSize:"100px"}}>
+        <div className="text-white text-8xl font-extrabold mt-5" style={{fontFamily:"league spartan"}} id="toptext">
           Open Hybrid Cloud
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-8xl" style={{fontFamily:"league spartan"}} id="bottomtext">
           Integrated Cloud Services
         </div>
       </div>

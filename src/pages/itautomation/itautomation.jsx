@@ -133,15 +133,15 @@ function Itautomation() {
 
     return (
         <>
-        <section className="relative w-full h-screen">
+        <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-6xl md:text-8xl font-extrabold" style={{fontFamily:"league spartan",fontSize:"100px"}}>
+        <div className="text-white text-8xl  font-extrabold" id="toptext" style={{marginTop:"150px",fontFamily:"league spartan"}}>
           IT Automation
         </div>
 
         {/* Centered red box with large text */}
-        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-5xl md:text-6xl" style={{fontFamily:"league spartan",fontSize:"100px"}}>
+        <div className="bg-red-600 text-white font-extrabold px-10 py-4 mt-6 text-8xl " id="bottomtext" style={{fontFamily:"league spartan"}}>
           Empower Your Operations
         </div>
       </div>
@@ -157,7 +157,7 @@ function Itautomation() {
 
             <section>
 
-        <section className="relative my-20 ">
+    <section className="relative my-20 ">
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
