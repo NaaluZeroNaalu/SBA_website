@@ -148,7 +148,7 @@ const sendEmail = (e) => {
             <li><a href="/Blogs" className='nav-link mb-2'>Blogs</a></li>
             <li><a href="/Casestudies" className='nav-link mb-2'>Case Studies</a></li>
             <li>
-              <a className='bg-red-600 text-white py-2 px-3 rounded-full' href='/request-a-demo' type="button">
+              <a className='bg-red-600 text-white py-2 px-3 rounded-full no-underline' href='/request-a-demo' type="button">
                 Request a Demo
               </a>
             </li>

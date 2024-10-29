@@ -11,7 +11,7 @@ function Sidecontent(){
             <a href="tel:+91 9500262708" className="sticky-button call-button">
                 <FaPhone /> Call Us
             </a>
-            <a href="https://wa.me/9500262708" className="sticky-button whatsapp-button" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/9500262708" className="sticky-button whatsapp-button text-white" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp /> WhatsApp
             </a>
         </div>

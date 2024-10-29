@@ -107,14 +107,15 @@ function Careers(){
       <section className="custom-container ai-section">
     <div className="relative px-12 md:px-25">
         <div className="flex flex-wrap justify-start mt-10">
-            {features.map((text, index) => (
+            {
+            features.map((text, index) => (
                 <div
                     key={index}
                     className="w-full mb-4 flex items-center gap-4" // Added gap for spacing
                 >
                     <div className="flex-shrink-0"> {/* Ensures image maintains its size */}
                         <img
-                            className="ai-m"
+                            className="ai-m img-fluid"
                             src={aili}
                             loading="lazy"
                             alt="ornament"

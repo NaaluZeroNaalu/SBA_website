@@ -176,7 +176,8 @@ function Dataai(){
   <section className="custom-container ai-section">
   <div className="relative px-6 md:px-12 lg:px-24">
     <div className="flex flex-wrap justify-between mt-10">
-      {features.map((text, index) => (
+      {
+      features.map((text, index) => (
         <div
           key={index}
           className="w-full sm:w-6/12 md:w-4/12 mb-6 flex items-center gap-4"
