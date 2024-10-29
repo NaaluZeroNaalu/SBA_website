@@ -33,6 +33,7 @@ function Footer(){
                     </li>
                 </nav>
             </div>
+            <hr />
             <div className="">
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Solutions</h5> */}
@@ -50,12 +51,11 @@ function Footer(){
                     </li>
                 </nav>
             </div>
+            <hr />
             <div className="">
                 <nav className="nav flex-column">
-                    {/* <h5 className="ms-3">Industries</h5> */}
-                    <li className="nav-item">
-                        <a href="/Industries" className="nav-link">Industries</a>
-                    </li>
+                    <h5 className="ms-3">Industries</h5>
+                   
                     <li className="nav-item">
                         <a href="/Industries" className="nav-link">BFSI</a>
                     </li>
@@ -73,6 +73,7 @@ function Footer(){
                     </li>
                 </nav>
             </div>
+            <hr />
             <div className="">
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Client</h5> */}
@@ -81,6 +82,7 @@ function Footer(){
                     </li>
                 </nav>
             </div>
+            <hr />
             <div className="">
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Resources</h5> */}
@@ -95,39 +97,40 @@ function Footer(){
                     </li>
                 </nav>
             </div>
+            <hr />
             <div className="">
-                <nav className="nav flex-column " id="socialmedia" style={{alignItems:"center"}}>
+                <nav className="nav flex-column " id="socialmedia">
                     <h5 className="ms-3">Connect</h5>
                     <li className="nav-item">
-                        <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link" title="https://www.linkedin.com/company/sba-info-solutions/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/sba-info-solutions/" className="nav-link ms-3" title="https://www.linkedin.com/company/sba-info-solutions/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={{color:"blue",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="https://www.youtube.com/@sbainfosolutionspvtltd6340" className="nav-link" target="_blank" rel="noopener noreferrer" title="https://www.youtube.com/@sbainfosolutionspvtltd6340">
+                        <a href="https://www.youtube.com/@sbainfosolutionspvtltd6340" className="nav-link ms-3" target="_blank" rel="noopener noreferrer" title="https://www.youtube.com/@sbainfosolutionspvtltd6340">
                             <FaYoutube style={{color:"red",fontSize:"30px"}} />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="tel:91 9500262708" className="nav-link" title="tel:91 9500262708">
+                        <a href="tel:91 9500262708" className="nav-link ms-3" title="tel:91 9500262708">
                             <FaPhone style={{fontSize:"30px"}}  />
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="mailto:marketing@sbainfo.in" className="nav-link" title="marketing@sbainfo.in">
+                        <a href="mailto:marketing@sbainfo.in" className="nav-link ms-3" title="marketing@sbainfo.in">
                             <FaEnvelope style={{color:"blue",fontSize:"30px"}}  />
                         </a>
                     </li>
                 </nav>
             </div>
         </div>
+<div>
+    <p className="text-center">Copyright © 1996 - 2024, SBA Info Solutions.</p>
+</div>
     </div>
     
 </section>
 <br />
-<div>
-    <p className="text-center">Copyright © 1996 - 2024, SBA Info Solutions.</p>
-</div>
 
 
 

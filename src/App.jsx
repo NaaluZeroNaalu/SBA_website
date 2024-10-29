@@ -28,6 +28,7 @@ import Casestudiesfour from './pages/casestudies/casestudeisfour'
 import Casestudiesfive from './pages/casestudies/casestudiesfive'
 import Casestudiessix from './pages/casestudies/casestudiessix'
 import Casestudiesone from './pages/casestudies/casestudiesone'
+import Book from './pages/book/book'
 
 
 
@@ -63,6 +64,7 @@ function App() {
     <Route path="/Casestudies/Securing-Medical-Data-and-Improving-Incident-Response:-SBA-Helps-Leading-Health-tech-company-implement-IBM-Qradar" element={<Casestudiesfour />} />
     <Route path="/Casestudies/Efficient-Data-Management-and-Enhanced-Security:Leading-TN-Bank's-Success-with-SBA&IBM-FS7300" element={<Casestudiesfive />} />
     <Route path="/Casestudies/Boosting-Performance-and-Security:Chennai-based-Bank's-Successful-Migration-to-AIX-with-IBM-Power-9" element={<Casestudiessix />} />
+    <Route path='/request-a-demo' element={<Book />} />
    </Routes>
    </BrowserRouter>
     </>

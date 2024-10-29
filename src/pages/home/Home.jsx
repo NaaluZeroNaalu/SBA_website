@@ -73,6 +73,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import emailjs from 'emailjs-com';
 import Certifications from "../common/certifications";
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -223,9 +224,11 @@ function Homepage(){
   </div>
 
   {/* Background video */}
-  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
-    <source src={Home1} type="video/mp4" />
-  </video>
+  <LazyLoad height={720} offset={100}>
+        <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+          <source src={Home1} type="video/mp4" />
+        </video>
+      </LazyLoad>
 
   {/* Overlay to darken the video */}
   <div className="absolute inset-0 bg-black opacity-60"></div>
