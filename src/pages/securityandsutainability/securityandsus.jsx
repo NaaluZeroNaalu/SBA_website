@@ -414,35 +414,32 @@ function Securityandsus() {
       <br /><br /><br />
 
 <section className="pt-0 md:pt-5 w-full" id='poweredby'>
-<div className="flex flex-col md:flex-row justify-center items-center">
+<div className="d-flex flex-wrap justify-content-center">
 
 {
   [
     {
       link:"https://www.redhat.com/en/technologies/management/ansible",
       img:a,
-      name:"Ansible",
+      name:"Mainframe",
     },
     {
       link:"https://www.redhat.com/en/technologies/cloud-computing/openshift",
       img:b,
-      name:"Openshift",
+      name:"LinuxOne",
     },
     
   ].map((val,i)=>(
     <>
-    <a href={val.link} className='no-underline text-black font-bold text-2xl'>
-      <div className='flex flex-col'>
-        <div style={{ backgroundImage: `url(${val.img})`,width:"400px",height:"300px",backgroundRepeat:"no-repeat",borderRadius:"10px"}}>
-          
-          <div style={{marginTop:"190px",textAlign:"center",display:"flex",justifyContent:"center",gap:"10px"}}>
-          <p>{val.name}</p>
-          <p ><FaArrowRightLong /></p>
-          
+   <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+        <div className="relative">
+          <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
+          <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
+            <p className="p-5  rounded text-center">{val.name}</p>
+            <p className="text-center"><FaArrowRightLong /></p>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
     </>
   ))
 }

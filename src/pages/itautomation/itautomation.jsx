@@ -30,7 +30,7 @@ import p2 from "../../assets/images/itautomation/powerdby/2.png"
 import p3 from "../../assets/images/itautomation/powerdby/3.png"
 import p4 from "../../assets/images/itautomation/powerdby/4.png"
 import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 function Itautomation() {
@@ -161,13 +161,13 @@ function Itautomation() {
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
               Leverage the power of IT Automation with advanced, state-of-the-art solutions.
               {/* 
               SBA effectively automates repetitive tasks, enhance system efficiency, and facilitate smarter workflows.
               */}
               </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
               SBA effectively automates{" "}
                 <span className="text-red-600 font-semibold">
                 repetitive tasks, enhance system efficiency, and facilitate
@@ -444,64 +444,42 @@ function Itautomation() {
 </section>
    
 
-<section className="pt-0 md:pt-5 w-full" id='poweredby'>
-  <div className="w-full mx-auto px-4 md:px-6" >
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <a href="https://instana-demo.c8f8f055.public.multi-containers.ibm.com/component1" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p1})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            <span className="text-blue-600"> </span>
-          </p>
-          
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>Instana</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
+<div className="d-flex flex-wrap justify-content-center">
+  {
+    [
+      {
+        link: "https://instana-demo.c8f8f055.public.multi-containers.ibm.com/component1",
+        img: p1,
+        name: "Instana",
+      },
+      {
+        link: "https://turbonomic-demo.17f48735.public.multi-containers.ibm.com/",
+        img: p2,
+        name: "Turbonomic",
+      },
+      {
+        link: "https://www.ibm.com/products/cloud-pak-for-aiops",
+        img: p4,
+        name: "Watson AIOps",
+      },
+      {
+        link: "https://demos.ibm.com/player/?demoId=d48700a1-09ae-45c5-ab06-0dc0f57967b7&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=ap",
+        img: p3,
+        name: "SevOne",
+      },
+    ].map((val, i) => (
+      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+        <div className="relative">
+          <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
+          <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
+            <p className="p-5  rounded text-center">{val.name}</p>
+            <p className="text-center"><FaArrowRightLong /></p>
           </div>
         </div>
       </a>
-
-      <a href="https://turbonomic-demo.17f48735.public.multi-containers.ibm.com/" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p2})`,backgroundSize:"" }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-            {/* Turbonomic<span className="text-blue-600"> </span> */}
-          </p>
-        
-          <div className="flex justify-end px-3 mt-5">
-            <span className='text-2xl ' style={{color:"black",marginRight:"60px"}}>Turbonomic</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.ibm.com/products/cloud-pak-for-aiops" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p4})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-          <span className="text-blue-600"> </span>
-          </p>
-          
-          <div className="flex justify-end px-3 mt-5">
-            <br />
-            <span className='text-2xl me-5' style={{color:"black"}}>watson AIOps</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://demos.ibm.com/player/?demoId=d48700a1-09ae-45c5-ab06-0dc0f57967b7&showGuide=true&showGuidesToolbar=true&showHotspots=true&source=app" target="_blank" style={{ textDecoration: "none", fontWeight: "bold" }}>
-        <div className="relative h-60 bg-no-repeat bg-cover group" style={{ backgroundImage: `url(${p3})` }}>
-          <p className="flex items-end justify-center h-3/5 text-2xl text-black">
-          <span className="text-blue-600"> </span>
-          </p>
-      
-          <div className="flex justify-end px-3 mt-5">
-          <span className='text-2xl' style={{color:"black",marginRight:"90px"}}>SevOne</span>
-            <img src={rt_arrow} loading="lazy" alt="arrow" />
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
+    ))
+  }
+</div>
 
 
 <br /><br /><br /><br /><br />

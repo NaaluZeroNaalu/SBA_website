@@ -196,10 +196,10 @@ const [activeIndex, setActiveIndex] = useState(null);
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
               Accelerate Innovation with Agile, Scalable, and Secure
               </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
               SBA automates  {" "}
                 <span className="text-red-600 font-semibold">
                 IT tasks, optimize system performance, and enable seamless workflows
@@ -389,122 +389,100 @@ const [activeIndex, setActiveIndex] = useState(null);
 <br /><br />
 <Certifications />
 <br /><br />
+
+
 <section className="py-8">
-        <div className="container mx-auto max-w-7xl px-4" id='products'>
-          <h1 className="text-5xl font-bold text-center mb-12">
-            {/* Powered by <span className="text-red-600">watsonX</span> */}
-            Powered by
-          </h1>
+  <div className="container mx-auto max-w-7xl px-4" id='products'>
+    <h1 className="text-5xl font-bold text-center mb-12">
+      Powered by
+    </h1>
 
-          {
-  [
     {
-      title: "RHEL",
-      description: "Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise environments, offering robust performance and comprehensive support. It includes features like SELinux for enhanced security, regular updates for vulnerability management, and extensive documentation to aid system administrators in maintaining their infrastructure.",
-      img: rhel,
-      anim: "animation-border"
-    },
-    {
-      title: "Redhat Ansible Automation Platform",
-      description: "Ansible is an open-source automation tool that simplifies IT processes such as configuration management, application deployment, and orchestration by using human-readable YAML playbooks, eliminating the need for agents on target systems.",
-      img: ansi,
-      anim: "animation-border2"
-    },
-    {
-      title: "Redhat Openshift",
-      description: "OpenShift is a Kubernetes-based container platform developed by Red Hat that facilitates the deployment, scaling, and management of containerized applications. It provides a unified development and operational experience, enabling teams to build, deploy, and manage applications consistently across hybrid cloud environments.",
-      img: open,
-      anim: "animation-border"
-    },
-  ].map((val, id) => (
-    <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-      {id % 2 === 0 ? (
-        <>
-          <div className="md:w-1/2 w-full md:pr-10">
-            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
-            <p className="text-2xl">{val.description}</p>
-          </div>
-          <div className="md:w-1/2 w-full flex justify-center">
-            <div className={val.anim}>
-              <div style={{ height: "390px", borderTopLeftRadius: "100px", borderBottomRightRadius: "100px", borderTopRightRadius: "0px", borderBottomLeftRadius: "0px", border: "12px solid #EEEEEE" }}>
-                <br /><br />
-                <img
-                  src={val.img}
-                  alt={val.title}
-                  className="rounded-lg object-cover"
-                />
+      [
+        {
+          title: "RHEL",
+          description: "Red Hat Enterprise Linux (RHEL) is a stable and secure Linux distribution tailored for enterprise environments, offering robust performance and comprehensive support. It includes features like SELinux for enhanced security, regular updates for vulnerability management, and extensive documentation to aid system administrators in maintaining their infrastructure.",
+          img: rhel,
+          anim: "animation-border",
+          border:"100px 0 100px 0"
+        },
+        {
+          title: "Redhat Ansible Automation Platform",
+          description: "Ansible is an open-source automation tool that simplifies IT processes such as configuration management, application deployment, and orchestration by using human-readable YAML playbooks, eliminating the need for agents on target systems.",
+          img: ansi,
+          anim: "animation-border2",
+          border:"0 100px 0 100px"
+        },
+        {
+          title: "Redhat Openshift",
+          description: "OpenShift is a Kubernetes-based container platform developed by Red Hat that facilitates the deployment, scaling, and management of containerized applications. It provides a unified development and operational experience, enabling teams to build, deploy, and manage applications consistently across hybrid cloud environments.",
+          img: open,
+          anim: "animation-border",
+          border:"100px 0 100px 0"
+        },
+      ].map((val, id) => (
+        <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
+          <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} w-full`}>
+            {/* Content Section */}
+            <div className={`md:w-1/2 w-full ${id % 2 === 0 ? 'md:pr-10' : 'md:pl-10'}`}>
+              <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
+              <p className="text-2xl">{val.description}</p>
+            </div>
+            {/* Image Section */}
+            <div className={`md:w-1/2 w-full flex justify-center`}>
+              <div className={val.anim}>
+                <div style={{ height: "390px", borderRadius: val.border, border: "12px solid #EEEEEE" }}>
+                  <br /><br />
+                  <img
+                    src={val.img}
+                    alt={val.title}
+                    className="rounded-lg object-cover img-fluid"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="md:w-1/2 w-full flex justify-center">
-            <div className={val.anim}>
-              <div style={{ height: "390px", borderTopRightRadius: "100px", borderBottomLeftRadius: "100px", borderTopLeftRadius: "0px", borderBottomRightRadius: "0px", border: "12px solid #EEEEEE" }}>
-                <br /><br />
-                <img
-                  src={val.img}
-                  alt={val.title}
-                  className="rounded-lg object-cover img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="md:w-1/2 w-full md:pl-10">
-            <h2 className="text-1xl font-bold">{val.title}</h2>
-            <br />
-            <p className="text-2xl" style={{ marginTop: "-20px" }}>{val.description}</p>
-          </div>
-        </>
-      )}
-    </div>
-  ))
-}
-
-
-      </div>
-      </section>
-<br /><br /><br />
-
-<div className="flex flex-col md:flex-row justify-center items-center">
-
-{
-  [
-    {
-      link:"https://www.redhat.com/en/technologies/management/ansible",
-      img:p1,
-      name:"Ansible",
-    },
-    {
-      link:"https://www.redhat.com/en/technologies/cloud-computing/openshift",
-      img:p2,
-      name:"Openshift",
-    },
-    {
-      link:"https://www.redhat.com/en/technologies/linux-platforms/enterprise-linuxs",
-      img:p3,
-      name:"RHEL",
-    },
-  ].map((val,i)=>(
-    <>
-    <a href={val.link} className='no-underline text-black font-bold text-2xl'>
-      <div className='flex flex-col items-center '>
-        <div style={{ backgroundImage: `url(${val.img})`,width:"400px",height:"300px",backgroundRepeat:"no-repeat",borderRadius:"10px"}}>
-          
-          <div style={{textAlign:"center",display:"flex",justifyContent:"center",gap:"10px"}}>
-          <p>{val.name}</p>
-          <p ><FaArrowRightLong /></p>
-          
           </div>
         </div>
-      </div>
-    </a>
-    </>
-  ))
-}
-</div>
+      ))
+    }
 
+  </div>
+</section>
+
+
+<br /><br /><br />
+
+<div className="d-flex flex-wrap justify-content-center">
+  {
+    [
+      {
+        link: "https://www.redhat.com/en/technologies/management/ansible",
+        img: p1,
+        name: "Ansible",
+      },
+      {
+        link: "https://www.redhat.com/en/technologies/cloud-computing/openshift",
+        img: p2,
+        name: "Openshift",
+      },
+      {
+        link: "https://www.redhat.com/en/technologies/linux-platforms/enterprise-linuxs",
+        img: p3,
+        name: "RHEL",
+      },
+    ].map((val, i) => (
+      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+        <div className="relative">
+          <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
+          <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
+            <p className="p-5  rounded text-center">{val.name}</p>
+            <p className="text-center"><FaArrowRightLong /></p>
+          </div>
+        </div>
+      </a>
+    ))
+  }
+</div>
 
 
 <br /><br /><br /><br />

@@ -147,7 +147,7 @@ function Dataai(){
             <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
             For data-driven enterprises looking to create exceptional
             customer and employee experience,
-            </p>
+            </p> 
             <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
             SBA provides{" "}
             <span className="text-red-600 font-semibold">
@@ -343,12 +343,12 @@ function Dataai(){
                 anim:"animation-border"
               },
             ].map((val,id)=>(
-              <>
+              <> 
               
               <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
                 <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div className="md:w-1/2 w-full md:pr-10">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">{val.title}</h2>
+                  <h2 className="text-2xl  font-bold mb-4">{val.title}</h2>
                   <p className="text-lg md:text-2xl">
                     {val.description}
                     </p>
@@ -373,7 +373,7 @@ function Dataai(){
 
 
   <section className="my-5 py-5">
-        <div className="relative pb-[37.25%] h-0 overflow-hidden container" style={{width:"1000px"}}>
+        <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"1000px"}}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/2qhssWueRUI"
