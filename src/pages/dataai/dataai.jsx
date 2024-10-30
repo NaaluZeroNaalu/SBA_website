@@ -156,7 +156,8 @@ function Dataai(){
             </p>
 
           </div>
-            <div className="w-full md:w-4/12 justify-content-center">
+         
+            <div className="w-full md:w-4/12">
             <div className='animation-border' style={{height:"410px"}}>
            <img
                 src={dataai}

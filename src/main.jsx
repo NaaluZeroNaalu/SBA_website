@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
     <>
     <Header />
     <App />
-    <Sidecontent />
+    {/* <Sidecontent /> */}
     <Footer />
     </>
   
