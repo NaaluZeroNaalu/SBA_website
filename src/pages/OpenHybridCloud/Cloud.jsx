@@ -477,7 +477,7 @@ const [activeIndex, setActiveIndex] = useState(null);
         name: "RHEL",
       },
     ].map((val, i) => (
-      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" target="_blank" key={i}>
         <div className="relative">
           <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
           <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
@@ -525,7 +525,7 @@ const [activeIndex, setActiveIndex] = useState(null);
                             d="M19 9l-7 7-7-7"
                           ></path>
                         </svg>
-                      ) : (
+                      ) : ( 
                         <svg
                           className="w-4 h-4"
                           fill="none"

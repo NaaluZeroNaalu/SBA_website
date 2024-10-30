@@ -8,6 +8,7 @@ import two from "../../assets/images/aboutus/2.png"
 import three from "../../assets/images/aboutus/3.png"
 import four from "../../assets/images/aboutus/4.png"
 import Certifications from "../common/certifications";
+import Sidecontent from "../sidecontact/side";
 
 function Aboutus(){
 
@@ -27,6 +28,7 @@ function Aboutus(){
           </video>
         </div>
       </section> */}
+      <Sidecontent />
       <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}

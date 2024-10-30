@@ -7,12 +7,12 @@ function Casestudiesfour(){
 
     return(
         <>
-<section className="relative w-full h-screen">
+<section className="w-full h-full" style={{marginTop:"150px"}}>
     {/* Background image */}
     <img 
         src={casestudiesfour} // replace this with your image path
         alt="Blog Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="inset-0 w-full h-full object-cover img-fluid"
     />
 
     {/* Text content on white background */}
@@ -27,7 +27,7 @@ function Casestudiesfour(){
 
 <section className="min-h-screen bg-gray-100 py-10 px-5">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "league Spartan" }}>
+    <h1 id="casestudiestitle" className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "league Spartan" }}>
       Securing Medical Data and Improving Incident Response: SBA Helps Leading Health Tech Company Implement IBM QRadar
     </h1>
 

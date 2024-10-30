@@ -8,12 +8,12 @@ function Blogfive(){
 
     return(
         <>
-        <section className="relative w-full h-screen">
+        <section className="relative w-full h-full">
     {/* Background image */}
     <img 
         src={blogfive} // replace this with your image path
         alt="Blog Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="inset-0 w-full h-full object-cover img-fluid"
     />
 
     {/* Text content on white background */}
@@ -27,7 +27,7 @@ function Blogfive(){
 </section>
 <section className="min-h-screen bg-gray-100 py-10 px-5">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 id="blogtitle" className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
       Software-Defined Approach – Defining the Future
     </h1>
 

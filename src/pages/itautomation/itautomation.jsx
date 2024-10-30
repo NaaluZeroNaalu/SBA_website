@@ -136,7 +136,7 @@ function Itautomation() {
         <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
-        <div className="text-white text-8xl  font-extrabold" id="toptext" style={{marginTop:"150px",fontFamily:"league spartan"}}>
+        <div className="text-white text-8xl  font-extrabold" id="toptext" style={{fontFamily:"league spartan"}}>
           IT Automation
         </div>
 
@@ -468,7 +468,7 @@ function Itautomation() {
         name: "SevOne",
       },
     ].map((val, i) => (
-      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+      <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" target="_blank" key={i}>
         <div className="relative">
           <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
           <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>

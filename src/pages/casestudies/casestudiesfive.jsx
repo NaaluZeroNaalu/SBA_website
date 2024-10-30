@@ -6,12 +6,12 @@ function Casestudiesfive(){
 
     return(
         <>
-        <section className="relative w-full h-screen">
+<section className="w-full h-full" style={{marginTop:"150px"}}>
     {/* Background image */}
     <img 
         src={casestudiesfive} // replace this with your image path
         alt="Blog Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="inset-0 w-full h-full object-cover img-fluid"
     />
 
     {/* Text content on white background */}
@@ -26,7 +26,7 @@ function Casestudiesfive(){
 
 <section className="min-h-screen bg-gray-100 py-10 px-5" id="details">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 id="casestudiestitle" className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
       Efficient Data Management and Enhanced Security: Leading TN Bank's Success with SBA & IBM FS7300
     </h1>
 

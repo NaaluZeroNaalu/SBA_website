@@ -74,6 +74,7 @@ import Slider from "react-slick";
 import emailjs from 'emailjs-com';
 import Certifications from "../common/certifications";
 import LazyLoad from 'react-lazyload';
+import Sidecontent from "../sidecontact/side";
 
 
 
@@ -207,7 +208,7 @@ function Homepage(){
     
     return(
         <>
-
+<Sidecontent />
 
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
 <section className=" relative w-full h-screen overflow-hidden" id="topvideo">

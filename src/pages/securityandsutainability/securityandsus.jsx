@@ -155,10 +155,10 @@ function Securityandsus() {
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
               Protect and Thrive with IBM LinuxONE Secure, Sustainable, and Efficient
               </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
               SBA empowers enterprises {" "}
                 <span className="text-red-600 font-semibold">
                 to Safeguard data, reduce environmental impact, and optimize operations 
@@ -431,7 +431,7 @@ function Securityandsus() {
     
   ].map((val,i)=>(
     <>
-   <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" key={i}>
+   <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" target="_blank" key={i}>
         <div className="relative">
           <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
           <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>

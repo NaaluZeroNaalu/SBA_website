@@ -76,6 +76,8 @@ function Book(){
   </div>
 </form>
 
+<br /><br />
+<hr />
         </>
     )
 }

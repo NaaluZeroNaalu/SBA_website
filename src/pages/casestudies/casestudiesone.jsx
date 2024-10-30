@@ -6,12 +6,12 @@ function Casestudiesone(){
 
     return(
         <>
-        <section className="relative w-full h-screen">
+        <section className="w-full h-full">
     {/* Background image */}
     <img 
         src={casestudiesone} // replace this with your image path
         alt="Blog Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="inset-0 w-full h-full object-cover img-fluid"
     />
 
     {/* Text content on white background */}
@@ -25,7 +25,7 @@ function Casestudiesone(){
 </section>
 <section className="min-h-screen bg-gray-100 py-10 px-5" id="details">
   <div className="container mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
+    <h1 id="casestudiestitle" className="text-4xl font-bold text-center mb-10 text-gray-800" style={{ fontFamily: "League Spartan" }}>
       Leading Healthcare Services Provider Trusts SBA Info for their Security and Compliance Requirements
     </h1>
 

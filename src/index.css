@@ -128,11 +128,18 @@ body, html {
 }
 
 
+#topvideo{
+
+
+    margin-top: 140px;
+}
+
 @media (max-width: 768px) {
     
     #topvideo #toptext{
 
-        font-size: 40px;
+        font-size: 50px;
+        margin-top: 30px;
         
     }
 
@@ -152,6 +159,21 @@ body, html {
 
         font-size: 11px;
         
+    }
+
+    #blog1 li{
+
+        font-size: small;
+    }
+
+    #blogtitles{
+
+        font-size: 17px;
+    }
+
+    #casestudiestitle{
+
+        font-size: 17px;
     }
 
 }

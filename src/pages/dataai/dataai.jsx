@@ -114,7 +114,7 @@ function Dataai(){
   <section className="relative w-full h-screen" id="topvideo">
   <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
     {/* Large heading */}
-    <div className="text-white text-8xl  font-extrabold" style={{marginTop:"150px"}} id="toptext">
+    <div className="text-white text-8xl  font-extrabold"  id="toptext">
       Empower Your Business With
     </div>
 
@@ -140,7 +140,7 @@ function Dataai(){
 
     
     {/* ----------------------SECTION 2 START-------------------------------*/}
-      <section className="relative my-20"> 
+  <section className="relative my-20"> 
         <div className="container mx-auto max-w-[1600px] px-16 ">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">

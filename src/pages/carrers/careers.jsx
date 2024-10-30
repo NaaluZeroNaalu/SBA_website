@@ -7,6 +7,7 @@ import aiOrnamentImage from "../../assets/images/image.png";
 import aili from "../../assets/images/ai-li.svg";
 import Contactus from "../common/contact";
 import ContactForm from "./contactuscareers";
+import Sidecontent from "../sidecontact/side";
 
 function Careers(){
 
@@ -41,6 +42,8 @@ function Careers(){
 
     return(
         <>
+
+  <Sidecontent />
 
 <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
