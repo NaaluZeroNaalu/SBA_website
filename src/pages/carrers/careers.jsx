@@ -104,7 +104,7 @@ function Careers(){
         </div>
       </section>
 
-      <section className="custom-container ai-section">
+<section className="custom-container ai-section" id="careerspoints">
     <div className="relative px-12 md:px-25">
         <div className="flex flex-wrap justify-start mt-10">
             {
@@ -115,7 +115,7 @@ function Careers(){
                 >
                     <div className="flex-shrink-0"> {/* Ensures image maintains its size */}
                         <img
-                            className="ai-m img-fluid"
+                            className="ai-m"
                             src={aili}
                             loading="lazy"
                             alt="ornament"

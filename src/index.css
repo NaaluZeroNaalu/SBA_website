@@ -142,6 +142,18 @@ body, html {
         
     }
 
+    #careerspoints img{
+
+        width: 30px;
+        /* margin-left: -10px; */
+    }
+
+    #careerspoints div{
+
+        font-size: 10px;
+        
+    }
+
 }
 
 /* #topvideo #toptext{
