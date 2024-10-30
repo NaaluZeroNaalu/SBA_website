@@ -102,7 +102,8 @@ function Industries(){
         "SBA offers end-to-end services for the BFSI industry, including digital transformation, IT consulting, cybersecurity, data analytics, and regulatory compliance. These solutions enhance operational efficiency, ensure data security, and support seamless integration of advanced technologies, helping financial institutions stay competitive and compliant.",
       ],
       image: Industries1,
-      list:"none"
+      list:"none",
+      gap:"-10px"
     },
     {
       title: "Manufacturing",
@@ -115,7 +116,8 @@ function Industries(){
         "AI Assistants"
       ],
       image: Industries2,
-      list:""
+      list:"",
+      gap:""
     },
     {
       title: "Media",
@@ -127,7 +129,8 @@ function Industries(){
         "<strong>Efficiency Gains:</strong> Boosting productivity, reducing costs."
       ],
       image: Industries3,
-      list:""
+      list:"",
+      gap:""
     },
     {
       title: "IT/ITES",
@@ -135,7 +138,8 @@ function Industries(){
         "To optimize IT operations, enhance productivity, and ensure robust security measures tailored to business needs, we provide a comprehensive suite of IT services for the IT/ITES sector, including cloud solutions, managed security services, data center infrastructure, disaster recovery, and remote infrastructure management."
       ],
       image: Industries4,
-      list:"none"
+      list:"none",
+      gap:"-10px"
     },
     {
       title: "Telecom/BPO KPO",
@@ -146,7 +150,8 @@ function Industries(){
         "<strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement."
       ],
       image: Industries5,
-      list:""
+      list:"",
+      gap:""
     },
     {
       title: "Healthcare",
@@ -158,7 +163,8 @@ function Industries(){
         "Automated Security"
       ],
       image: Industries6,
-      list:""
+      list:"",
+      gap:""
     },
   ].map((item, index) => (
     <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
@@ -177,7 +183,7 @@ function Industries(){
           <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
             {item.title}
           </h2>
-          <ul className="text-2xl pl-10 list-disc  space-y-3 text-left" style={{ fontFamily: "league spartan",listStyleType:item.list }}>
+          <ul className="text-2xl pl-10 list-disc  space-y-3 text-left" style={{ fontFamily: "league spartan",listStyleType:item.list,marginLeft:item.gap}}>
             {item.description.map((desc, idx) => (
               <li key={idx} dangerouslySetInnerHTML={{ __html: desc }} />
             ))}
