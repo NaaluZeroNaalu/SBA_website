@@ -126,12 +126,14 @@ const sendEmail = (e) => {
       </ul>
     </nav>
 
+
     {/* Mobile menu button */}
     <button className="md:hidden p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
       <IoReorderThreeSharp className="text-2xl" />
     </button>
   </div>
 </header>
+    
 
 
       <div className="offcanvas offcanvas-start" id="demo">
@@ -155,9 +157,8 @@ const sendEmail = (e) => {
             </li>
           </ul>
         </div>
-      </div>
+      </div>      
       
-      <Sidecontent />
     </>
   );
 }

@@ -156,7 +156,7 @@ function Dataai(){
             </p>
 
           </div>
-            <div className="w-full md:w-4/12">
+            <div className="w-full md:w-4/12 justify-content-center">
             <div className='animation-border' style={{height:"410px"}}>
            <img
                 src={dataai}
@@ -374,7 +374,17 @@ function Dataai(){
 
 
   <section className="my-5 py-5">
-        <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"1000px"}}>
+        <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"1000px"}} id="youtubevideo1">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/2qhssWueRUI"
+            allowFullScreen
+            title="YouTube Video"
+          ></iframe>
+        </div>
+  </section>
+  <section className="my-5 py-5">
+        <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"370px",height:"300px"}} id="youtubevideo2">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/2qhssWueRUI"
@@ -399,7 +409,7 @@ function Dataai(){
         more information, our experts are ready to assist you.
       </p>
 
-      <div className="flex gap-3 mt-5 justify-center md:justify-start flex-col md:flex-row items-center">
+      <div className="flex gap-3 mt-5 justify-content-center md:justify-start flex-col md:flex-row items-center">
         {/* Brochure Download Button */}
         <a
           href={brochure} // Ensure this points to the correct PDF URL
@@ -407,7 +417,7 @@ function Dataai(){
           rel="noopener noreferrer"
           download // Just the 'download' attribute is enough, no need for value
         >
-          <button className="border-2 border-red-600 text-red-600 py-2 px-5 rounded-full hover:bg-red-600 hover:text-white transition duration-300">
+          <button className="border-2 border-red-600 text-red-600 py-2 px-5 rounded-full hover:bg-red-600 hover:text-white transition duration-300 btn btn-danger">
             Download Brochure
           </button>
         </a>
