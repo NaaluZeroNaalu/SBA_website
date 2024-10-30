@@ -60,10 +60,10 @@ function Industries(){
         <div className="container mx-auto max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
               SBA has 60+ partnerships with top OEMs, specializing in Next-Gen Information Security, Cloud Services, and Data Center Modernization.
               </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+              <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
               Our expertise spans{" "}
                 <span className="text-red-600 font-semibold">
                 BFSI, manufacturing, IT/ITES, 
@@ -94,342 +94,102 @@ function Industries(){
     
 <br /><br /><br />
 
-      <section>
-      <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries1}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
-              BFSI
-              </h2>
-              <p className=" text-2xl pl-4 space-y-3 text-left" style={{fontFamily:"league spartan"}}>
-              SBA offers end-to-end services for the BFSI industry,
-               including digital transformation, IT consulting, cybersecurity, 
-               data analytics, and regulatory compliance. 
-              These solutions enhance operational efficiency, 
-              ensure data security, and support seamless 
-              integration of advanced technologies, helping financial 
-              institutions stay competitive and compliant.
-              </p>
-            </div>
+<section id="solutions">
+  {[
+    {
+      title: "BFSI",
+      description: [
+        "SBA offers end-to-end services for the BFSI industry, including digital transformation, IT consulting, cybersecurity, data analytics, and regulatory compliance. These solutions enhance operational efficiency, ensure data security, and support seamless integration of advanced technologies, helping financial institutions stay competitive and compliant.",
+      ],
+      image: Industries1,
+      list:"none"
+    },
+    {
+      title: "Manufacturing",
+      description: [
+        "Predictive Maintenance",
+        "Supply Chain Optimization",
+        "Cloudera Workload Optimization",
+        "SAP Observability",
+        "High Performance Analytics",
+        "AI Assistants"
+      ],
+      image: Industries2,
+      list:""
+    },
+    {
+      title: "Media",
+      description: [
+        "<strong>Content Creation:</strong> AI-generated content.",
+        "<strong>Summarization:</strong> Condensing complex information.",
+        "<strong>Entity Extraction:</strong> Identifying key entities.",
+        "<strong>Classification:</strong> Organizing data for better insights.",
+        "<strong>Efficiency Gains:</strong> Boosting productivity, reducing costs."
+      ],
+      image: Industries3,
+      list:""
+    },
+    {
+      title: "IT/ITES",
+      description: [
+        "To optimize IT operations, enhance productivity, and ensure robust security measures tailored to business needs, we provide a comprehensive suite of IT services for the IT/ITES sector, including cloud solutions, managed security services, data center infrastructure, disaster recovery, and remote infrastructure management."
+      ],
+      image: Industries4,
+      list:"none"
+    },
+    {
+      title: "Telecom/BPO KPO",
+      description: [
+        "<strong>Speech Transcription:</strong> Accurate voice-to-text transcription.",
+        "<strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.",
+        "<strong>Agent Assist:</strong> Real-time assistance for boosted productivity and morale.",
+        "<strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement."
+      ],
+      image: Industries5,
+      list:""
+    },
+    {
+      title: "Healthcare",
+      description: [
+        "Hybrid Cloud Infrastructure",
+        "Intelligent Data-as-a-Service (iDaaS)",
+        "AI-Enhanced Data Analysis",
+        "Data Protection",
+        "Automated Security"
+      ],
+      image: Industries6,
+      list:""
+    },
+  ].map((item, index) => (
+    <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+      <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+        <div className="w-full p-1 md:p-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={item.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+              loading="lazy"
+              alt={item.title}
+            />
           </div>
         </div>
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
-              Manufacturing
-              </h2>
-              {/* <p className="ms-4 text-2xl" style={{fontFamily:"league spartan"}}>We provide advanced solutions for manufacturing industries that include:</p> */}
-              <ul className="text-2xl pl-10 list-disc space-y-3 text-left" style={{fontFamily:"league spartan"}}>
-                <li>
-                Predictive Maintenance
-                </li>
-                <li>
-                Supply Chain Optimization
-                </li>
-                <li>
-                Cloudera Workload Optimization
-                </li>
-                <li>
-                SAP Observability
-                </li>
-                <li>
-                High Performance Analytics
-                </li>
-                <li>
-                AI Assistants
-                </li>
-                
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries2}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
+            {item.title}
+          </h2>
+          <ul className="text-2xl pl-10 list-disc  space-y-3 text-left" style={{ fontFamily: "league spartan",listStyleType:item.list }}>
+            {item.description.map((desc, idx) => (
+              <li key={idx} dangerouslySetInnerHTML={{ __html: desc }} />
+            ))}
+          </ul>
         </div>
-      </section>
+      </div>
+    </div>
+  ))}
+</section>
 
-      <section>
-        {/* <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries4}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Enterprise ML and Generative AI"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-4 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-9 text-left text-gray-600">
-                <b>Media</b>
-              </h2>
-              <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
-                <p>We offer AI-driven services for the media industry:</p>
 
-                <ul className="list-disc">
-                We offer AI-driven services for the media industry:
-                  <li>Content Creation: AI-generated content.</li>
-                  <li>Summarization: Condensing complex information.</li>
-                  <li>Entity Extraction: Identifying key entities.</li>
-                  <li>Classification: Organizing data for better insights.</li>
-                  <li>Efficiency Gains: Boosting productivity, reducing costs.</li>
-                </ul>
-                <p>
-                Our solutions help media organizations achieve more with less.
-                </p>
-              </ul>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries3}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
-              Media
-              </h2>
-              {/* <p style={{fontFamily:"league spartan"}} className="ms-4 text-2xl">We offer AI-driven services for the media industry:</p> */}
-              <ul style={{fontFamily:"league spartan",}} className="text-2xl pl-10 list-disc space-y-3 text-left">
-                 <li><strong>Content Creation:</strong> AI-generated content.</li>
-                  <li><strong>Summarization:</strong> Condensing complex information.</li>
-                  <li><strong>Entity Extraction:</strong> Identifying key entities.</li>
-                  <li><strong>Classification:</strong> Organizing data for better insights.</li>
-                  <li><strong>Efficiency Gains:</strong> Boosting productivity, reducing costs.</li>
-              </ul>
-              {/* <p className="ms-4 text-2xl">
-              Our solutions help media organizations achieve more with less.</p> */}
-            </div>
-          </div>
-        </div>
-
-        
-
-      </section>
-
-      {/* <section>
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-4 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-9 text-left text-gray-600">
-                <b>IT/ITES</b>
-              </h2>
-              <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
-                <p>
-                  To optimize IT operations, enhance productivity, and ensure
-                  robust security measures tailored to business needs, we
-                  provide a comprehensive suite of IT services for the IT/ITES
-                  sector, including cloud solutions, managed security services,
-                  data center infrastructure, disaster recovery, and remote
-                  infrastructure management
-                </p>
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries5}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Enterprise ML and Generative AI"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-       <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
-              IT/ITES
-              </h2>
-              <ul style={{fontFamily:"league spartan"}} className="text-base pl-4 list-disc space-y-3 text-left">
-              <p className="text-2xl" style={{fontFamily:"league spartan"}}>
-                  To optimize IT operations, enhance productivity, and ensure
-                  robust security measures tailored to business needs, we
-                  provide a comprehensive suite of IT services for the IT/ITES
-                  sector, including cloud solutions, managed security services,
-                  data center infrastructure, disaster recovery, and remote
-                  infrastructure management
-                </p>
-                
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries4}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <section>
-        {/* <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries6}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Enterprise ML and Generative AI"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-4 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-9 text-left text-gray-600">
-                <b>Telecom/BPO KPO</b>
-              </h2>
-              <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
-                <p>
-                Enhancing Call Center Efficiency
-                </p>
-               <ul className="list-disc">
-                <li><strong>Speech Transcription:</strong> Accurate voice-to-text transcription</li>
-                <li><strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.</li>
-                <li><strong>Agent Assist:</strong> Real-time assistance for boosted productivity and morale.</li>
-                <li><strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement.</li>
-               </ul>
-              </ul>
-            </div>
-          </div>
-        </div> */}
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full p-1  md:p-4">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries5}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Data Orchestration"
-                />
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
-              Telecom/BPO KPO
-              </h2>
-              {/* <p style={{fontFamily:"league spartan"}} className="ms-4 text-2xl">
-                Enhancing Call Center Efficiency
-                </p> */}
-              <ul style={{fontFamily:"league spartan"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
-              <li><strong>Speech Transcription:</strong> Accurate voice-to-text transcription</li>
-                <li><strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.</li>
-                <li><strong>Agent Assist:</strong> Real-time assistance for boosted productivity and morale.</li>
-                <li><strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement.</li>
-              </ul>
-              {/* <p className="pl-5 text-2xl" style={{fontFamily:"league spartan"}}>
-              Our solutions help media organizations achieve more with less.</p> */}
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section>
-        {/* <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-4 md:mt-6">
-              <h2 className="text-3xl font-bold mb-6 md:mb-9 text-left text-gray-600">
-                <b>Healthcare</b>
-              </h2>
-              <ul className="text-2xl pl-5 list-disc space-y-5 text-left">
-                <p>
-                SBA Info Solutions provides comprehensive IT services
-                 to the healthcare industry, including:
-                </p>
-                <ul className="list-disc">
-                  <li>Hybrid Cloud Infrastructure</li>
-                  <li>Intelligent Data-as-a-Service (iDaaS)</li>
-                  <li>AI-Enhanced Data Analysis</li>
-                  <li>Data Protection</li>
-                  <li>Automated Security</li>
-                </ul>
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries5}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Enterprise ML and Generative AI"
-                />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <div className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-            <div className="md:w-1/2 w-full md:pl-6 mt-6 md:mt-6">
-              <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
-              Healthcare
-              </h2>
-              {/* <p className="ms-4 text-2xl" style={{fontFamily:"league spartans"}}>
-                SBA Info Solutions provides comprehensive IT services
-                 to the healthcare industry, including:
-                </p> */}
-              <ul style={{fontFamily:"league spartan",fontSize:"25px"}} className="text-2xl pl-10 list-disc space-y-3 text-left">
-              <li>Hybrid Cloud Infrastructure</li>
-                  <li>Intelligent Data-as-a-Service (iDaaS)</li>
-                  <li>AI-Enhanced Data Analysis</li>
-                  <li>Data Protection</li>
-                  <li>Automated Security</li>
-                
-              </ul>
-            </div>
-            <div className="md:w-1/2 w-full p-1 md:p-4 d-flex justify-end">
-              <div className="overflow-hidden rounded-lg">
-                <img
-                  src={Industries6}
-                  className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                  alt="Business Intelligence & Analytics"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <br /><br /><br />
+<br /><br /><br />
       <Certifications />
       <br /><br /><br /><br /><br />
       {/* <Watsons />

@@ -77,8 +77,8 @@ function Blogsections(){
               {
               blogPosts.map((post, index) => (
                 <>
-                <div key={index} className="col-md-6">
-                <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-6">
+                <div key={index} className="col-md-6 bg-white border border-gray-200 rounded-lg shadow-lg p-6">
+                <div className="">
                 <img src={post.image} alt={post.title} className="" />
                   <a href={post.link} className="no-underline mt-5">
                     <h1 className="text-black text-3xl font-bold" id="blogtitle">{post.title}</h1>

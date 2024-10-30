@@ -421,14 +421,17 @@ const [activeIndex, setActiveIndex] = useState(null);
           border:"100px 0 100px 0"
         },
       ].map((val, id) => (
+        
+        <>
         <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
           <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} w-full`}>
             {/* Content Section */}
             <div className={`md:w-1/2 w-full ${id % 2 === 0 ? 'md:pr-10' : 'md:pl-10'}`}>
               <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
-              <p className="text-2xl">{val.description}</p>
+              <p className="text-2xl ">{val.description}</p>
             </div>
             {/* Image Section */}
+            <br /><br />
             <div className={`md:w-1/2 w-full flex justify-center`}>
               <div className={val.anim}>
                 <div style={{ height: "390px", borderRadius: val.border, border: "12px solid #EEEEEE" }}>
@@ -443,10 +446,13 @@ const [activeIndex, setActiveIndex] = useState(null);
             </div>
           </div>
         </div>
+        <hr />
+        </>
       ))
     }
 
   </div>
+  
 </section>
 
 

@@ -254,7 +254,7 @@ function Itautomation() {
         </div>
       </section>
 
-      <section id="solutions">
+<section id="solutions">
   {[
     {
       title: "Automated IT Service Management (ITSM)",
@@ -419,7 +419,7 @@ function Itautomation() {
                   <div className="md:w-1/2 w-full md:pr-10">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">{val.title}</h2>
                   <p className="text-lg md:text-2xl">
-                    {val.description}
+                    {val.description} 
                     </p>
                 </div>
                 <div className="md:w-1/2 w-full flex justify-center">
