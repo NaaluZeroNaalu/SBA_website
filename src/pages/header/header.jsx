@@ -93,14 +93,14 @@ const sendEmail = (e) => {
       <ul className="flex items-center space-x-4">
         <li className="relative group">
           <a href="#" className="no-underline text-black mr-5">About</a>
-          <div className="hidden absolute left-0 mt-2 w-48 bg-white shadow-lg group-hover:block">
+          <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
             <a href="/Aboutus" className="block px-4 py-2 no-underline text-black">About Us</a>
             <a href="/Careers" className="block px-4 py-2 no-underline text-black">Careers</a>
           </div>
         </li>
         <li className="relative group">
           <a href="#" className="no-underline text-black mr-5">Solutions</a>
-          <div className="hidden absolute left-0 mt-2 w-48 bg-white shadow-lg group-hover:block">
+          <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
             <a href="/Data-AI" className="block px-4 py-2 no-underline text-black">Data and AI</a>
             <a href="/Itautomation" className="block px-4 py-2 no-underline text-black mt-3">IT and Business Automation</a>
             <a href="/Open-Hybrid-Cloud" className="block px-4 py-2 no-underline text-black mt-3">Open Hybrid Cloud</a>
@@ -115,7 +115,7 @@ const sendEmail = (e) => {
         </li>
         <li className="relative group">
           <a href="#" className="no-underline text-black mr-5">Resources</a>
-          <div className="hidden absolute left-0 mt-2 w-48 bg-white shadow-lg group-hover:block">
+          <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
             <a href="/Blogs" className="block px-4 py-2 no-underline text-black">Blog</a>
             <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a>
           </div>
@@ -137,11 +137,11 @@ const sendEmail = (e) => {
 </header>
     
       {/* Contact Buttons Section */}
-  <div className="fixed top-40 right-4 flex flex-col gap-2 z-50">
-        <button className="bg-blue-500 text-white flex items-center px-4 py-2  mb-2" style={{borderRadius:"5px"}}>
+  <div className="fixed top-56 right-4 flex flex-col gap-2 z-50">
+        <button className="bg-blue-500 text-white flex items-center px-4 py-3  mb-2" style={{borderRadius:"5px"}}>
           <FaPhoneAlt className="mr-2" /> Call Us
         </button>
-        <button className="bg-green-500 text-white flex items-center px-4 py-2 " style={{borderRadius:"5px"}}>
+        <button className="bg-green-500 text-white flex items-center px-4 py-3 " style={{borderRadius:"5px"}}>
           <FaWhatsapp className="mr-2" /> WhatsApp
         </button>
       </div>

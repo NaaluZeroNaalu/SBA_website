@@ -208,7 +208,7 @@ function Homepage(){
     
     return(
         <>
-<Sidecontent />
+
 
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
 <section className=" relative w-full h-screen overflow-hidden" id="topvideo">

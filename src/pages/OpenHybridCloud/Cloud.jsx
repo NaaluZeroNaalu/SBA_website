@@ -28,6 +28,7 @@ import p1 from "../../assets/images/cloud/powerdby/1.png"
 import p2 from "../../assets/images/cloud/powerdby/2.png"
 import p3 from "../../assets/images/cloud/powerdby/3.png"
 import { FaArrowRightLong } from "react-icons/fa6";
+import LazyLoad from 'react-lazyload';
 
 function Openhybridcloud(){
 
@@ -147,9 +148,12 @@ const [activeIndex, setActiveIndex] = useState(null);
       </div>
 
       {/* Background video */}
+      <LazyLoad height={720} offset={100}>
+        
       <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
         <source src={HyperClouds} type="video/mp4" />
       </video>
+      </LazyLoad>
 
       {/* Overlay to darken the video */}
       <div className="absolute inset-0 bg-black opacity-60"></div>

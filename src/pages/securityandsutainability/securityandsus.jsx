@@ -28,6 +28,7 @@ import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import a from "../../assets/images/security/powerdby/1.png"
 import b from "../../assets/images/security/powerdby/2.png"
 import { FaArrowRightLong } from "react-icons/fa6";
+import LazyLoad from 'react-lazyload';
 
 
 function Securityandsus() {
@@ -143,10 +144,11 @@ function Securityandsus() {
       </div>
 
       {/* Background video */}
+      <LazyLoad height={720} offset={100}>
       <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
         <source src={HyperClouds} type="video/mp4" />
       </video>
-
+      </LazyLoad>
       {/* Overlay to darken the video */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
     </section>

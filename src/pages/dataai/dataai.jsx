@@ -25,6 +25,7 @@ import Certifications from "../common/certifications";
 import Contactus from "../common/contact";
 import Industriesweserve from "../common/industries";
 import Watsons from "../common/watsons";
+import LazyLoad from "react-lazyload";
 
 
 function Dataai(){
@@ -125,9 +126,12 @@ function Dataai(){
   </div>
 
   {/* Background video */}
+  <LazyLoad height={720} offset={100}>
+    
   <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
     <source src={datapage} type="video/mp4" />
   </video>
+  </LazyLoad>
 
   {/* Overlay to darken the video */}
   <div className="absolute inset-0 bg-black opacity-60"></div>

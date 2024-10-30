@@ -32,6 +32,7 @@ import p4 from "../../assets/images/itautomation/powerdby/4.png"
 import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Sidecontent from "../sidecontact/side";
+import LazyLoad from 'react-lazyload';
 
 
 function Itautomation() {
@@ -150,9 +151,13 @@ function Itautomation() {
       </div>
 
       {/* Background video */}
+
+      <LazyLoad height={720} offset={100}>
+
       <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
         <source src={Indus} type="video/mp4" />
       </video>
+      </LazyLoad>
 
       {/* Overlay to darken the video */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
