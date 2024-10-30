@@ -31,6 +31,7 @@ import p3 from "../../assets/images/itautomation/powerdby/3.png"
 import p4 from "../../assets/images/itautomation/powerdby/4.png"
 import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Sidecontent from "../sidecontact/side";
 
 
 function Itautomation() {
@@ -133,7 +134,9 @@ function Itautomation() {
 
     return (
         <>
-        <section className="relative w-full h-screen" id="topvideo">
+      
+      
+    <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
         <div className="text-white text-8xl  font-extrabold" id="toptext" style={{fontFamily:"league spartan"}}>

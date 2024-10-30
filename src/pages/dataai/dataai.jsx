@@ -26,6 +26,7 @@ import Contactus from "../common/contact";
 import Industriesweserve from "../common/industries";
 import Watsons from "../common/watsons";
 
+
 function Dataai(){
 
     const features = [
@@ -109,7 +110,6 @@ function Dataai(){
     return(
         <>
 
-      
       {/* -------------------------------SECTION 1 START------------------------ */}
   <section className="relative w-full h-screen" id="topvideo">
   <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">

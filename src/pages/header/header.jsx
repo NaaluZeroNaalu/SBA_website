@@ -3,6 +3,7 @@ import logo from './logo.jpg';
 import { IoReorderThreeSharp } from 'react-icons/io5';
 import emailjs from 'emailjs-com';
 import "./style.scss"
+import Sidecontent from "../sidecontact/side";
 
 function Header() {
   const formRef = useRef();
@@ -155,6 +156,8 @@ const sendEmail = (e) => {
           </ul>
         </div>
       </div>
+      
+      <Sidecontent />
     </>
   );
 }
