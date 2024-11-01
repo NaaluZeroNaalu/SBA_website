@@ -29,6 +29,7 @@ import Casestudiesfive from './pages/casestudies/casestudiesfive'
 import Casestudiessix from './pages/casestudies/casestudiessix'
 import Casestudiesone from './pages/casestudies/casestudiesone'
 import Book from './pages/book/book'
+import Pagenotfound from './pages/notfoundpage/pagenotfound'
 
 
 
@@ -38,6 +39,7 @@ function App() {
     <>
    <BrowserRouter>
    <Routes>
+    <Route path='*' element={<Pagenotfound />} />
     <Route path="/" element={<Homepage />} />
     <Route path="/Data-AI" element={<Dataai />} />
     <Route path="/Open-Hybrid-Cloud" element={<Openhybridcloud />} />

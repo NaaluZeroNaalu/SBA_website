@@ -156,7 +156,12 @@ const sendEmail = (e) => {
           <ul className="flex flex-col">
             <li><a href="/Aboutus" className='nav-link mb-2'>About Us</a></li>
             <li><a href="/Careers" className='nav-link mb-2'>Careers</a></li>
+            <hr />
+            <li><a href="/Industries" className='nav-link mb-2'>Data and AI</a></li>
+            <li><a href="/Industries" className='nav-link mb-2'>IT and Buisness Automation</a></li>
             <li><a href="/Industries" className='nav-link mb-2'>Industries</a></li>
+            <li><a href="/Industries" className='nav-link mb-2'>Security and Sustainability</a></li>
+            <hr />
             <li><a href="#" className='nav-link mb-2'>Client Stories</a></li>
             <li><a href="/Resources" className='nav-link mb-2'>Resources</a></li>
             <li><a href="/Blogs" className='nav-link mb-2'>Blogs</a></li>
