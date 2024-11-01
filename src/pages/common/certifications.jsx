@@ -111,7 +111,7 @@ function Certifications(){
             </h3>
             <br /><br />
             <Slider
-                dots={false}
+                dots={true}
                 infinite={true}
                 speed={500}
                 slidesToShow={5} // Default to 5 slides
@@ -143,7 +143,14 @@ function Certifications(){
                     {
                         breakpoint: 768, // for screens smaller than 768px
                         settings: {
-                            slidesToShow: 1, // Show 1 slide for mobile screens
+                            slidesToShow: 2, // Show 1 slide for mobile screens
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 480, 
+                        settings: {
+                            slidesToShow: 1, 
                             slidesToScroll: 1,
                         },
                     },

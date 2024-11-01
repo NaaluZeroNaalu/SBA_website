@@ -212,7 +212,7 @@ function Homepage(){
 
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
 <section className=" relative w-full h-screen overflow-hidden" id="topvideo">
-  <div className="absolute  inset-0 z-10 flex flex-col items-center justify-center text-center" style={{marginTop:"150px"}}>
+  <div className="absolute  inset-0 z-10 flex flex-col items-center justify-center text-center" >
     {/* Large heading */}
     <div className="text-white text-8xl font-extrabold font-spartan" id="toptext">
       Automate the Mundane
