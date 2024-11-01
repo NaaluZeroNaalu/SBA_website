@@ -43,7 +43,7 @@ function Careers(){
     return(
         <>
 
-  <Sidecontent />
+ 
 
 <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
@@ -93,7 +93,7 @@ function Careers(){
            <div className='animation-border' style={{height:"410px"}}>
            <img
                 src={one}
-                loading="lazy"
+                loading="eager"
                 alt="AI"
                 className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
                 style={{ width: '360px', height: '400px' }}
@@ -120,7 +120,7 @@ function Careers(){
                         <img
                             className="ai-m"
                             src={aili}
-                            loading="lazy"
+                            loading="eager"
                             alt="ornament"
                         />
                     </div>
@@ -141,7 +141,7 @@ function Careers(){
                 <img
                   src={two}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                   alt="Data Orchestration"
                 />
               </div>

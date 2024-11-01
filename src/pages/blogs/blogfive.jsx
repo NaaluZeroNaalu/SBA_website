@@ -13,6 +13,7 @@ function Blogfive(){
     <img 
         src={blogfive} // replace this with your image path
         alt="Blog Background" 
+        loading="eager"
         className="inset-0 w-full h-full object-cover img-fluid"
     />
 

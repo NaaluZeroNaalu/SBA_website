@@ -15,20 +15,7 @@ function Aboutus(){
 
     return(
         <>
-         {/* <section>
-        <div class="ai-green-v1">
-          <div class="init-ai-section1">
-            <div className="abspage" style={{marginLeft:"-400px",fontSize:"60px"}}>About Us</div>
-            <div class="init-red-bg" style={{marginLeft:"300px",fontSize:"50px"}}>
-              Intelligent Solutions, Limitless Potential
-            </div>
-          </div>
-          <video autoPlay muted loop>
-            <source src={aboutUs} type="video/mp4" />
-          </video>
-        </div>
-      </section> */}
-      <Sidecontent />
+     
       <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}
@@ -73,7 +60,7 @@ function Aboutus(){
                 <img
                   src={one}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                   alt="Business Intelligence & Analytics"
                 />
               </div>
@@ -88,7 +75,7 @@ function Aboutus(){
                 <img
                   src={two}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                   alt="Data Orchestration"
                 />
               </div>
@@ -117,7 +104,7 @@ function Aboutus(){
                 <img
                   src={three}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                   alt="Data Orchestration"
                 />
               </div>
@@ -145,7 +132,7 @@ function Aboutus(){
                 <img
                   src={four}
                   className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
                   alt="Data Orchestration"
                 />
               </div>

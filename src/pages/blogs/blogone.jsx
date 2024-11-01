@@ -12,7 +12,8 @@ function Blogone(){
     {/* Background image */}
     <img 
         src={blogone} // replace this with your image path
-        alt="Blog Background" 
+        alt="Blog Background"
+        loading="eager" 
         className="inset-0 w-full h-full object-cover img-fluid"
     />
 </section>

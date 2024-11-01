@@ -144,40 +144,42 @@ function Dataai(){
 
     
     {/* ----------------------SECTION 2 START-------------------------------*/}
-  <section className="relative my-20"> 
-        <div className="container mx-auto max-w-[1600px] px-16 ">
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-8/12">
-            <p className="text-[28px] md:text-[41px] font-light md:w-10/12 w-full">
-            For data-driven enterprises looking to create exceptional
-            customer and employee experience,
-            </p> 
-            <p className="text-[28px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
-            SBA provides{" "}
-            <span className="text-red-600 font-semibold">
-              modular and sustainable AI solutions & ML Models
-            </span>
-            </p>
+    <section className="relative my-20">
+  <div className="container mx-auto max-w-[1600px] px-6 md:px-16">
+    <div className="flex flex-wrap">
+      <div className="w-full md:w-8/12">
+        <p className="text-[24px] md:text-[41px] font-light md:w-10/12 w-full">
+          For data-driven enterprises looking to create exceptional
+          customer and employee experience,
+        </p>
+        <p className="text-[24px] md:text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+          SBA provides{" "}
+          <span className="text-red-600 font-semibold">
+            modular and sustainable AI solutions & ML Models
+          </span>
+        </p>
+      </div>
 
-          </div>
-         
-            <div className="w-full md:w-4/12">
-            <div className='animation-border' style={{height:"410px"}}>
-           <img
-                src={dataai}
-                loading="lazy"
-                alt="AI"
-                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
-                style={{ width: '360px', height: '400px' }}
-                />
-           </div>
-            </div>
-          </div>
+      <div className="w-full md:w-4/12 flex justify-center">
+        <div className='animation-border flex justify-center items-center' style={{ height: "auto", maxHeight: "410px", overflow: "hidden" }}>
+          <img
+            src={dataai}
+            loading="eager"
+            alt="AI"
+            className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
+            style={{height:"370px"}}
+          />
         </div>
-        <div className="absolute top-0 right-0 hidden md:block z-[-1]">
-          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
-        </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <div className="absolute top-0 right-0 hidden md:block z-[-1]">
+    <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+  </div>
+</section>
+
+
+      
   <section className="custom-container ai-section">
   <div className="relative px-6 md:px-12 lg:px-24">
     <div className="flex flex-wrap justify-between mt-10">
@@ -191,7 +193,7 @@ function Dataai(){
             <img
               className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
               src={aili}
-              loading="lazy"
+              loading="eager"
               alt="ornament"
             />
           </div>
@@ -214,7 +216,7 @@ function Dataai(){
     <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
       <img
         src={aiOrnamentImage}
-        loading="lazy"
+        loading="eager"
         alt="ornament"
         className="h-full object-cover transform scale-x-[-1]"
       />
@@ -281,7 +283,7 @@ function Dataai(){
             <img
               src={item.image}
               className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
-              loading="lazy"
+              loading="eager"
               alt={item.title}
             />
           </div>

@@ -73,21 +73,21 @@ function Industries(){
                 and Managed security services.
               </p>
             </div>
-            <div className="w-full md:w-4/12">
-           <div className='animation-border' style={{height:"410px"}}>
-           <img
-                src={Industriess}
-                loading="lazy"
-                alt="AI"
-                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
-                style={{ width: '360px', height: '400px' }}
-              />
-           </div>
-            </div>
+            <div className="w-full md:w-4/12 flex justify-center">
+        <div className='animation-border flex justify-center items-center' style={{ height: "auto", maxHeight: "410px", overflow: "hidden" }}>
+          <img
+            src={Industriess}
+            loading="eager"
+            alt="AI"
+            className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
+            style={{height:"370px"}}
+          />
+        </div>
+      </div>
           </div>
         </div>
         <div className="absolute top-0 right-0 hidden md:block z-[-1]">
-          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+          <img src={aiOrnamentImage} loading="eager" alt="Ornament" />
         </div>
       </section>
 
@@ -174,7 +174,7 @@ function Industries(){
             <img
               src={item.image}
               className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-              loading="lazy"
+              loading="eager"
               alt={item.title}
             />
           </div>

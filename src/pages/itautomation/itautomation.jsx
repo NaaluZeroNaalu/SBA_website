@@ -183,21 +183,21 @@ function Itautomation() {
                 smarter workflows
               </p>
             </div>
-            <div className="w-full md:w-4/12">
-           <div className='animation-border' style={{height:"410px"}}>
-           <img
-                src={its}
-                loading="lazy"
-                alt="AI"
-                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
-                style={{ width: '360px', height: '400px' }}
-              />
-           </div>
-            </div>
+           <div className="w-full md:w-4/12 flex justify-center">
+           <div className='animation-border flex justify-center items-center' style={{ height: "auto", maxHeight: "410px", overflow: "hidden" }}>
+          <img
+            src={its}
+            loading="eager"
+            alt="AI"
+            className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
+            style={{height:"370px"}}
+          />
+        </div>
+      </div>
           </div>
         </div>
         <div className="absolute top-0 right-0 hidden md:block z-[-1]">
-          <img src={aiOrnamentImage} loading="lazy" alt="Ornament" />
+          <img src={aiOrnamentImage} loading="eager" alt="Ornament" />
         </div>
       </section>
        
@@ -231,7 +231,7 @@ function Itautomation() {
             <img
               className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
               src={aili}
-              loading="lazy"
+              loading="eager"
               alt="ornament"
             />
           </div>
@@ -249,7 +249,7 @@ function Itautomation() {
           <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
             <img
               src={aiOrnamentImage}
-              loading="lazy"
+              loading="eager"
               alt="ornament"
               className="h-full object-cover transform scale-x-[-1]"
             />
@@ -317,7 +317,7 @@ function Itautomation() {
             <img
               src={item.image}
               className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
-              loading="lazy"
+              loading="eager"
               alt={item.title}
             />
           </div>
@@ -434,6 +434,7 @@ function Itautomation() {
                 <img
                 src={val.img}
                 alt="Watson Assistant"
+                loading='eager'
                 className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
                 style={{width:val.w}}
                 />
@@ -478,7 +479,7 @@ function Itautomation() {
     ].map((val, i) => (
       <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" target="_blank" key={i}>
         <div className="relative">
-          <img src={val.img} alt={val.name} className="w-full h-auto rounded-lg" />
+          <img src={val.img} alt={val.name} loading='eager' className="w-full h-auto rounded-lg" />
           <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
             <p className="p-5  rounded text-center">{val.name}</p>
             <p className="text-center"><FaArrowRightLong /></p>
@@ -554,6 +555,7 @@ function Itautomation() {
         </div>
       </section>
 
+   
       <br /><br /><br /><br />
       <Contactus />
         </>
