@@ -160,6 +160,7 @@ const sendEmail = (e) => {
         </div>
         <div className="offcanvas-body">
           <ul className="flex flex-col">
+            <li><a href="/" className='nav-link mb-2'>Home</a></li>
             <li><a href="/Aboutus" className='nav-link mb-2'>About Us</a></li>
             <li><a href="/Careers" className='nav-link mb-2'>Careers</a></li>
             <hr />

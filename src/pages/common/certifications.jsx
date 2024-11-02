@@ -9,23 +9,23 @@ import certification6 from "../../assets/images/certification 6.png";
 import certification7 from "../../assets/images/certification 7.png";
 import certification8 from "../../assets/images/certification 8.png";
 import certification9 from "../../assets/images/certification 9.png";
-import certification10 from "../../assets/images/cetification 10.png";
+import certification10 from "../../assets/images/certification 10.png";
 import certification11 from "../../assets/images/certification 11.png";
 import certification12 from "../../assets/images/certification 12.png";
 import certification13 from "../../assets/images/certification 13.png";
 import certification14 from "../../assets/images/certification 14.png";
-import certification15 from "../../assets/images/certification 15.jpg";
-import certification16 from "../../assets/images/certification 16.jpg";
-import certification17 from "../../assets/images/certification 17.jpg";
-import certification18 from "../../assets/images/certification 18.jpg";
-import certification19 from "../../assets/images/certification 19.jpg";
-import certification20 from "../../assets/images/certification 20.jpg";
+import certification15 from "../../assets/images/certification 15.png";
+import certification16 from "../../assets/images/certification 16.png";
+import certification17 from "../../assets/images/certification 17.png";
+import certification18 from "../../assets/images/certification 18.png";
+import certification19 from "../../assets/images/certification 19.png";
+import certification20 from "../../assets/images/certification 20.png";
 import certification21 from "../../assets/images/certification 21.png";
 import certification22 from "../../assets/images/certification 22.png";
 import certification23 from "../../assets/images/certification 23.png";
 import certification24 from "../../assets/images/certification 24.png";
 import certification25 from "../../assets/images/certification 25.png";
-import certification26 from "../../assets/images/certification 26.jpg";
+import certification26 from "../../assets/images/certification 26.png";
 import certification27 from "../../assets/images/certification 27.png";
 import certification28 from "../../assets/images/certification 28.png";
 import certification29 from "../../assets/images/certification 29.png";
@@ -110,7 +110,7 @@ function Certifications(){
             Our Proficiency and <span className="text-red-600">Certifications</span>
             </h3>
             <br /><br />
-            <Slider
+            <Slider 
                 dots={false}
                 infinite={true}
                 speed={500}
@@ -144,24 +144,28 @@ function Certifications(){
                         breakpoint: 768, // for screens smaller than 768px
                         settings: {
                             slidesToShow: 2, // Show 1 slide for mobile screens
-                            slidesToScroll: 2,
+                            slidesToScroll: 1,
                         },
                     },
                     {
-                        breakpoint:425,
+                        breakpoint:500,
                         settings:{
                             slidesToShow:1,
                             slidesToScroll: 1,
+                            
                         }
                     }
                 ]}
             >
                 {slides[0].map((logo, index) => (
-                    <div key={index} className="px-2">
+                    <div key={index} className="px-2" style={{
+                        
+                    }}>
                         <img
                             src={logo}
                             alt={`Certification logo ${index + 1}`}
-                            style={{borderRadius:"10px",height:"300px",width:"300px"}}
+                            className="mx-auto"
+                            style={{borderRadius:"10px"}}
 
                         />
                     </div>

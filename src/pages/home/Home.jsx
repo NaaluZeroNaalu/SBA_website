@@ -252,7 +252,7 @@ function Homepage(){
             >
             <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
               <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">Vision</p>
-              <h2 className="text-black font-bold font-spartan sm:text-2xl md:text-5xl mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
+              <h2 className="text-black font-bold font-spartan mx-auto mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
               
               To become a global leader in creating agile and
                secure work environments that boost productivity and 
@@ -270,7 +270,7 @@ function Homepage(){
                 Value
               </p>
 
-              <ul className="list-none space-y-2 ms-2 font-spartan">
+              <ul className="list-none space-y-2  font-spartan">
                 <li className="flex items-start">
                   <span className="text-red-500 text-xl mr-2">
                     <FaCheck size="25px" color="red" />
@@ -416,7 +416,7 @@ function Homepage(){
                         },
                     },
                 ]}
-            >
+            > 
                 {Discover.map((logo, index) => (
                     <div key={index} className="px-2">
                         <img
