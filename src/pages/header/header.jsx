@@ -110,14 +110,20 @@ const sendEmail = (e) => {
         <li>
           <a href="/Industries" className="no-underline text-black mr-5">Industries</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#" className="no-underline text-black mr-5">Client Stories</a>
+        </li> */}
+        <li className="relative group">
+          <a href="#" className="no-underline text-black mr-5">Client Stories</a>
+          <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
+            <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a>
+          </div>
         </li>
         <li className="relative group">
           <a href="#" className="no-underline text-black mr-5">Resources</a>
           <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
             <a href="/Blogs" className="block px-4 py-2 no-underline text-black">Blog</a>
-            <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a>
+            {/* <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a> */}
           </div>
         </li>
         <li>
