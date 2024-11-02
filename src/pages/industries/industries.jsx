@@ -13,6 +13,7 @@ import Certifications from "../common/certifications";
 
 import aiOrnamentImage from "../../assets/images/image.png";
 import Watsons from "../common/watsons";
+import Sidecontent from "../sidecontact/side";
 
 
 function Industries(){
@@ -34,6 +35,8 @@ function Industries(){
           </video>
         </div>
       </section> */}
+<Sidecontent />
+      <section />
     <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}

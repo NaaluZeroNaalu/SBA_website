@@ -26,6 +26,7 @@ import Contactus from "../common/contact";
 import Industriesweserve from "../common/industries";
 import Watsons from "../common/watsons";
 import LazyLoad from "react-lazyload";
+import Sidecontent from "../sidecontact/side";
 
 
 function Dataai(){
@@ -110,6 +111,8 @@ function Dataai(){
 
     return(
         <>
+
+        <Sidecontent />
 
       {/* -------------------------------SECTION 1 START------------------------ */}
   <section className="relative w-full h-screen" id="topvideo">

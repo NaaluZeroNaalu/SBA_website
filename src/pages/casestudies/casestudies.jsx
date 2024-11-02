@@ -2,6 +2,7 @@ import "./style.scss"
 import CaseStudys from "../../assets/videos/CaseStudy.mp4";
 import Contactus from "../common/contact";
 import Casestudiessections from "./casestudiessections";
+import Sidecontent from "../sidecontact/side";
 
 
 
@@ -25,6 +26,7 @@ function Casestudies(){
           </video>
         </div>
       </section> */}
+      <Sidecontent />
       <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center" id="topvideo">
         {/* Large heading */}

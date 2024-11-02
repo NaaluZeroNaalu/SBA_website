@@ -29,6 +29,7 @@ import p2 from "../../assets/images/cloud/powerdby/2.png"
 import p3 from "../../assets/images/cloud/powerdby/3.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 import LazyLoad from 'react-lazyload';
+import Sidecontent from '../sidecontact/side';
 
 function Openhybridcloud(){
 
@@ -133,6 +134,8 @@ const [activeIndex, setActiveIndex] = useState(null);
 
     return(
         <>
+
+        <Sidecontent />
 
 <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">

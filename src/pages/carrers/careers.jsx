@@ -43,7 +43,7 @@ function Careers(){
     return(
         <>
 
- 
+<Sidecontent /> 
 
 <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">

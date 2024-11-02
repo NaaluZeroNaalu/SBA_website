@@ -29,6 +29,7 @@ import a from "../../assets/images/security/powerdby/1.png"
 import b from "../../assets/images/security/powerdby/2.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 import LazyLoad from 'react-lazyload';
+import Sidecontent from '../sidecontact/side';
 
 
 function Securityandsus() {
@@ -130,6 +131,8 @@ function Securityandsus() {
 
     return (
         <>
+
+        <Sidecontent />
        <section className="relative w-full h-screen" id="topvideo">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}

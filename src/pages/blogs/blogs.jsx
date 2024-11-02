@@ -1,5 +1,6 @@
 import Blog from "../../assets/videos/Blogs.mp4";
 import Contactus from "../common/contact";
+import Sidecontent from "../sidecontact/side";
 import Blogsections from "./blogsections";
 import "./style.scss"
 
@@ -27,6 +28,7 @@ function Blogs(){
           </video>
         </div>
       </section> */}
+      <Sidecontent />
       <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
         {/* Large heading */}

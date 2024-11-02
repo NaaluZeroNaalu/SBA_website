@@ -1,20 +1,21 @@
 
 import "./side.scss"
-import { FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 function Sidecontent(){
 
     return(
 
         <>
-          <div className="sticky-buttons">
-            <a href="tel:+91 9500262708" className="sticky-button call-button">
-                <FaPhone /> Call Us
-            </a>
-            <a href="https://wa.me/9500262708" className="sticky-button whatsapp-button text-white" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp /> WhatsApp
-            </a>
-        </div>
+         {/* Contact Buttons Section */}
+      <div className="fixed top-56 right-4 flex flex-col gap-2 z-50">
+        <button className="bg-blue-500 text-white flex items-center px-4 py-3  mb-2" style={{borderRadius:"5px"}}>
+          <FaPhoneAlt className="mr-2" /> Call Us
+        </button>
+        <button className="bg-green-500 text-white flex items-center px-4 py-3 " style={{borderRadius:"5px"}}>
+          <FaWhatsapp className="mr-2" /> WhatsApp
+        </button>
+      </div>
         </>
     )
 }
