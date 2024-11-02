@@ -26,6 +26,7 @@ function Casestudies(){
           </video>
         </div>
       </section> */}
+      <br /><br /><br /><br /><br /><br />
       <Sidecontent />
       <section className="relative w-full h-screen">
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center" id="topvideo">
@@ -48,7 +49,7 @@ function Casestudies(){
       {/* Overlay to darken the video */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
     </section>
-
+    
       {/* <section>
         <h1>
         Curious about how similar businesses have achieved success with our solutions?

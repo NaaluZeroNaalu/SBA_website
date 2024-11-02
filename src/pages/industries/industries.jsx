@@ -83,7 +83,7 @@ function Industries(){
             loading="eager"
             alt="AI"
             className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
-            style={{height:"370px"}}
+            style={{height:"400px"}}
           />
         </div>
       </div>
