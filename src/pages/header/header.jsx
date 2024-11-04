@@ -156,10 +156,10 @@ const sendEmail = (e) => {
             <li><a href="/Aboutus" className='nav-link mb-2'>About Us</a></li>
             <li><a href="/Careers" className='nav-link mb-2'>Careers</a></li>
             <hr />
-            <li><a href="/Industries" className='nav-link mb-2'>Data and AI</a></li>
-            <li><a href="/Industries" className='nav-link mb-2'>IT and Buisness Automation</a></li>
+            <li><a href="/Data-AI" className='nav-link mb-2'>Data and AI</a></li>
+            <li><a href="/Itautomation" className='nav-link mb-2'>IT and Buisness Automation</a></li>
             <li><a href="/Industries" className='nav-link mb-2'>Industries</a></li>
-            <li><a href="/Industries" className='nav-link mb-2'>Security and Sustainability</a></li>
+            <li><a href="/Security-and-sustainability" className='nav-link mb-2'>Security and Sustainability</a></li>
             <hr />
             <li><a href="#" className='nav-link mb-2'>Client Stories</a></li>
             <li><a href="/Resources" className='nav-link mb-2'>Resources</a></li>
