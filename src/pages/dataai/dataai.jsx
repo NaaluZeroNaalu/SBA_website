@@ -255,16 +255,16 @@ function Dataai(){
       ],
       image: s2
     },
-    {
-      title: "Intelligent IT Automation",
-      description: [
-        "Enterprise Observability for application performance and Infrastructure quality management",
-        "AI powered Cloud and Finops",
-        "Incident management & sustainable IT",
-        "ML services and ChatOps for streamlined IT service management"
-      ],
-      image: s3
-    },
+    // {
+    //   title: "Intelligent IT Automation",
+    //   description: [
+    //     "Enterprise Observability for application performance and Infrastructure quality management",
+    //     "AI powered Cloud and Finops",
+    //     "Incident management & sustainable IT",
+    //     "ML services and ChatOps for streamlined IT service management"
+    //   ],
+    //   image: s3
+    // },
     {
       title: "Enterprise ML and Generative AI",
       description: [

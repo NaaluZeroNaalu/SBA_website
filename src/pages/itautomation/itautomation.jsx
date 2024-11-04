@@ -33,6 +33,7 @@ import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Sidecontent from "../sidecontact/side";
 import LazyLoad from 'react-lazyload';
+import s3 from "../../assets/images/s3.svg";
 
 
 function Itautomation() {
@@ -264,6 +265,16 @@ function Itautomation() {
 
 <section id="solutions">
   {[
+       {
+      title: "Intelligent IT Automation",
+      description: [
+        "Enterprise Observability for application performance and Infrastructure quality management",
+        "AI powered Cloud and Finops",
+        "Incident management & sustainable IT",
+        "ML services and ChatOps for streamlined IT service management"
+      ],
+      image: s3
+    },
     {
       title: "Automated IT Service Management (ITSM)",
       description: [

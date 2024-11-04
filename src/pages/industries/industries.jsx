@@ -203,7 +203,7 @@ function Industries(){
       <br /><br /><br /><br /><br />
       {/* <Watsons />
       <br /><br /><br /><br /><br /> */}
-      <Contactus />
+      <Contactus  />
 
       <section className="flex flex-col items-center justify-center py-16 bg-white">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">
@@ -213,7 +213,7 @@ function Industries(){
           If you're interested in exploring our solutions or need more
           information, our experts are ready to assist you
         </p>
-        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300" href="/ContactUs">
+        <a className="text-lg md:text-xl font-semibold text-black underline hover:text-gray-700 transition duration-300" href="/Contactus">
           Get a Call Back
         </a>
       </section>

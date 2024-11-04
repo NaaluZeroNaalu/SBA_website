@@ -30,6 +30,7 @@ import Casestudiessix from './pages/casestudies/casestudiessix'
 import Casestudiesone from './pages/casestudies/casestudiesone'
 import Book from './pages/book/book'
 import Pagenotfound from './pages/notfoundpage/pagenotfound'
+import ContactUs from './pages/contactus/contact'
 
 
 
@@ -41,6 +42,7 @@ function App() {
    <Routes>
     <Route path='*' element={<Pagenotfound />} />
     <Route path="/" element={<Homepage />} />
+    <Route path="/Contactus" element={<ContactUs />} />
     <Route path="/Data-AI" element={<Dataai />} />
     <Route path="/Open-Hybrid-Cloud" element={<Openhybridcloud />} />
     <Route path="/Industries" element={<Industries />} />
