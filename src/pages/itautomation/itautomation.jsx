@@ -268,6 +268,13 @@ function Itautomation() {
         </div>
       </section>
 
+
+
+   
+
+  
+  <section></section>
+
 <section id="solutions">
   {[
        {
@@ -310,86 +317,9 @@ function Itautomation() {
       ],
       image: img3
     },
-    {
-      title: "Process mining and modeling",
-      description: [
-        "Discover frequency, rework, duration, and cost from real data",
-        "Generate process models",
-        "Analyze impact on KPIs",
-        "Simulate future processes"
-      ],
-      title2: "RPA and digital labor",
-      description2: [
-        "Perform repetitive tasks",
-        "Act on data extracted from unstructured documents",
-        "Automate systems that do not have APIs",
-      ],
-      image: img4
-    },
-    {
-      title: "Core automation",
-      description: [
-        "Content services",
-        "Document processing",
-        "Workflow automation",
-        "Decision management",
-        "Low-code applications"
-      ],
-      title2: "Al and operational intelligence",
-      description2: [
-        "Apply Al to operational data",
-        "Classily and understand content",
-        "Prioritize tasks",
-        "Make predictive decisions",
-        "Build intelligent chatbots"
-      ],
-      image: img5
-    },
-    {
-      title: "Automated IT Service Management (ITSM)",
-      description: [
-        "Automates incident, problem, and change management.",
-        "Centralized platform for handling service requests and issues",
-        "Ensures faster resolution and higher service availability",
-      ],
-      image: hyper1
-    },
-    {
-      title: "Configuration Management Automation",
-      description: [
-        "Automates configuration management across hybrid and multi-cloud environments",
-        "Enforces configuration policies and automatically detects unauthorized changes",
-        "Helps IT teams maintain compliance effectively.",
-      ],
-      image: hyper6
-    },
-    {
-      title: "Automated Backup and Recovery",
-      description: [
-        "Automates data backup and recovery.",
-        "Simplifies backup management for both on-premises and cloud environments.",
-        "Automatically protects data, ensuring it is recoverable during system failures",
-      ],
-      image: hyper3
-    },
-    {
-      title: "Cloud Resource Orchestration",
-      description: [
-        "Optimizes cloud resource provisioning, scaling, and monitoring.",
-        "Continuously analyzes application performance",
-        "Automatically adjusts resources for optimal performance and cost control",
-      ],
-      image: hyper5
-    },
-    {
-      title: "Predictive Maintenance Automation",
-      description: [
-        "Automates asset management and predictive maintenance.",
-        "Uses AI-driven insights to analyze real-time equipment data.",
-        "Predicts maintenance needs, reducing downtime and repair costs.",
-      ],
-      image: hyper2
-    },
+   
+    
+
   ].map((item, index) => (
     <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
       <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
@@ -412,11 +342,99 @@ function Itautomation() {
               <li key={idx}>{desc}</li>
             ))}
           </ul>
-         {
-          "description2" in item ?(
-            <>
-            <br />
-            <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+        
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
+
+
+<section>
+        <div className="relative bg-white py-20">
+          <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+            <img
+              src={aiOrnamentImage}
+              loading="eager"
+              alt="ornament"
+              className="h-full object-cover transform scale-x-[-1]"
+            />
+          </div>
+          <div className="relative px-5 max-w-screen-xl mx-auto">
+            <h1 className="text-center text-3xl md:text-5xl font-bold">
+            Business Automation
+            </h1>
+          </div>
+        </div>
+      </section>
+  
+  <section>
+
+
+  <section id="solutions">
+  {[
+      {
+        title: "Process mining and modeling",
+        description: [
+          "Discover frequency, rework, duration, and cost from real data",
+          "Generate process models",
+          "Analyze impact on KPIs",
+          "Simulate future processes"
+        ],
+        title2: "RPA and digital labor",
+        description2: [
+          "Perform repetitive tasks",
+          "Act on data extracted from unstructured documents",
+          "Automate systems that do not have APIs",
+        ],
+        image: img4
+      },
+      {
+        title: "Core automation",
+        description: [
+          "Content services",
+          "Document processing",
+          "Workflow automation",
+          "Decision management",
+          "Low-code applications"
+        ],
+        title2: "Al and operational intelligence",
+        description2: [
+          "Apply Al to operational data",
+          "Classily and understand content",
+          "Prioritize tasks",
+          "Make predictive decisions",
+          "Build intelligent chatbots"
+        ],
+        image: img5
+      },
+  ].map((item, index) => (
+    <div key={index} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
+      <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+        <div className="w-full p-1 md:p-4">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={item.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
+              loading="eager"
+              alt={item.title}
+            />
+          </div>
+        </div>
+        <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+            {item.title}
+          </h2>
+          <ul className="text-base pl-10 list-disc space-y-3 text-left">
+            {item.description.map((desc, idx) => (
+              <li key={idx}>{desc}</li>
+            ))}
+          </ul>
+          {
+            "description2" in item ? (
+              <>
+              <br />
+               <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
             {item.title2}
           </h2>
           <ul className="text-base pl-10 list-disc space-y-3 text-left">
@@ -424,21 +442,18 @@ function Itautomation() {
               <li key={idx}>{desc}</li>
             ))}
           </ul>
-            </>
-          ):(
-            <>
-            
-            </>
-          )
-         }
+              </>
+            ):(
+              <>
+              </>
+            )
+          }
+        
         </div>
       </div>
     </div>
   ))}
 </section>
-
-  
-  <section>
               
           
             <section className="py-5 bg-light">

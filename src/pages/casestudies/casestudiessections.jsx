@@ -58,7 +58,7 @@ function Casestudiessections(){
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {caseStudies.map((post, index) => (
-          <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg p-6">
+          <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-5">
             {/* Blog Image */}
             <div className="w-full h-48 md:h-64 overflow-hidden mb-4">
               <img
@@ -76,6 +76,7 @@ function Casestudiessections(){
             {/* Blog Description */}
             <p className="text-base md:text-lg text-gray-700 mb-6" style={{fontFamily:"league spartan"}}>{post.description}</p>
           </div>
+        
         ))}
       </div>
 

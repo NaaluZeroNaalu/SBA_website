@@ -69,37 +69,37 @@ function Careers(){
 
 
     <section className="relative my-20 ">
-        <div className="container mx-auto max-w-[1600px] px-16">
+        <div className="container  max-w-[1600px] px-16">
           <div className="flex flex-wrap">
             <div className="w-full md:w-8/12">
-              <p className="text-[41px] font-light md:w-10/12 w-full">
+              <p className="text-[41px] font-light  w-full">
               
               {/* 
               SBA effectively automates repetitive tasks, enhance system efficiency, and facilitate smarter workflows.
               */}
               </p>
-              <p className="text-[41px] font-light mt-4 md:mt-20 md:w-9/12 w-full">
+              <p className="text-[41px] mx-auto font-light mt-4 md:mt-20 md:w-9/12 w-full">
               Every day, {" "}
-                <span className="text-red-600 font-semibold">
+                <span className="text-red-600 mx-auto font-semibold">
                 we innovate, adapt, and push boundaries
                 </span>{" "}
                 to make enterprises 
-                <span className="text-red-600 font-semibold">
+                <span className="text-red-600 mx-auto font-semibold">
                 {" "} more agile and responsive.
                 </span>
               </p>
             </div>
-            <div className="w-full md:w-4/12">
-           <div className='animation-border' style={{height:"410px"}}>
-           <img
-                src={one}
-                loading="eager"
-                alt="AI"
-                className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200"
-                style={{ width: '360px', height: '400px' }}
-              />
-           </div>
-            </div>
+           = <div className="w-full md:w-4/12 flex justify-center">
+        <div className='animation-border flex justify-center items-center' style={{ height: "auto", maxHeight: "410px", overflow: "hidden" }}>
+          <img
+            src={one}
+            loading="eager"
+            alt="AI"
+            className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
+            style={{height:"370px"}}
+          />
+        </div>
+      </div>
           </div>
         </div>
         <div className="absolute top-0 right-0 hidden md:block z-[-1]">

@@ -26,6 +26,9 @@ function Footer(){
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">More</h5> */}
                     <li className="nav-item">
+                        <a href="/Aboutus" className="nav-link">Home</a>
+                    </li>
+                    <li className="nav-item">
                         <a href="/Aboutus" className="nav-link">About Us</a>
                     </li>
                     <li className="nav-item">
@@ -78,11 +81,10 @@ function Footer(){
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Client</h5> */}
                     <li className="nav-item">
-                        <a href="#" className="nav-link">Client Stories</a>
+                        <a href="/Casestudies" className="nav-link">Client Stories</a>
                     </li>
                 </nav>
             </div>
-            <hr />
             <div className="">
                 <nav className="nav flex-column">
                     {/* <h5 className="ms-3">Resources</h5> */}
@@ -92,9 +94,7 @@ function Footer(){
                     <li className="nav-item">
                         <a href="/Blogs" className="nav-link">Blog</a>
                     </li>
-                    <li className="nav-item">
-                        <a href="/Casestudies" className="nav-link">Case Studies</a>
-                    </li>
+                   
                 </nav>
             </div>
             <hr />

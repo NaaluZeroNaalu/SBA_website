@@ -114,17 +114,17 @@ const sendEmail = (e) => {
           <a href="#" className="no-underline text-black mr-5">Client Stories</a>
         </li> */}
         <li className="relative group">
-          <a href="#" className="no-underline text-black mr-5">Client Stories</a>
-          <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
+          <a href="/Casestudies" className="no-underline text-black mr-5">Client Stories</a>
+          {/* <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
             <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a>
-          </div>
+          </div> */}
         </li>
         <li className="relative group">
-          <a href="#" className="no-underline text-black mr-5">Resources</a>
-          <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
-            <a href="/Blogs" className="block px-4 py-2 no-underline text-black">Blog</a>
+          <a href="/Blogs" className="no-underline text-black mr-5">Blogs</a>
+          {/* <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
+            <a href="/Blogs" className="block px-4 py-2 no-underline text-black">Blog</a> */}
             {/* <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a> */}
-          </div>
+          {/* </div> */}
         </li>
         <li>
           <button className="bg-red-600 text-white py-2 px-4 rounded-full" type="button" data-bs-toggle="modal" data-bs-target="#book">
@@ -157,14 +157,15 @@ const sendEmail = (e) => {
             <li><a href="/Careers" className='nav-link mb-2'>Careers</a></li>
             <hr />
             <li><a href="/Data-AI" className='nav-link mb-2'>Data and AI</a></li>
-            <li><a href="/Itautomation" className='nav-link mb-2'>IT and Buisness Automation</a></li>
-            <li><a href="/Industries" className='nav-link mb-2'>Industries</a></li>
+            <li><a href="/Itautomation" className='nav-link mb-2'>IT and Business Automation</a></li>
+            <li><a href="/Open-Hybrid-Cloud" className='nav-link mb-2'>Open Hybrid Cloud</a></li>
             <li><a href="/Security-and-sustainability" className='nav-link mb-2'>Security and Sustainability</a></li>
             <hr />
-            <li><a href="#" className='nav-link mb-2'>Client Stories</a></li>
-            <li><a href="/Resources" className='nav-link mb-2'>Resources</a></li>
+            <li><a href="/Industries" className='nav-link mb-2'>Industries</a></li>
+            <li><a href="/Casestudies" className='nav-link mb-2'>Client Stories</a></li>
+            {/* <li><a href="/Resources" className='nav-link mb-2'>Resources</a></li> */}
+            {/* <li><a href="/Casestudies" className='nav-link mb-2'>Case Studies</a></li> */}
             <li><a href="/Blogs" className='nav-link mb-2'>Blogs</a></li>
-            <li><a href="/Casestudies" className='nav-link mb-2'>Case Studies</a></li>
             <li>
               <a className='bg-red-600 text-white py-2 px-3 rounded-full no-underline' href='/request-a-demo' type="button">
                 Request a Demo

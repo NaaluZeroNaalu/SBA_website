@@ -73,19 +73,28 @@ function Blogsections(){
               Blog Posts
             </h1>
 
-            <div className="row gx-5 gy-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {
-              blogPosts.map((post, index) => (
+              blogPosts.map((post, index) => ( 
                 <>
-                <div key={index} className="col-md-6 bg-white border border-gray-200 rounded-lg shadow-lg p-6">
-                <div className="">
-                <img src={post.image} loading="eager" alt={post.title} className="" />
-                  <a href={post.link} className="no-underline mt-5">
-                    <h1 className="text-black text-3xl font-bold" id="blogtitle">{post.title}</h1>
-                    <p className="text-black">{post.description}</p>
-                  </a>
-                </div>
-                </div>
+               <div key={index} className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-5">
+            {/* Blog Image */}
+            <div className="w-full h-48 md:h-64 overflow-hidden mb-4">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Blog Title */}
+            <a href={post.link} style={{ textDecoration: "none" }}>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4" style={{fontFamily:"league spartan"}} id="casestudiestitle">{post.title}</h2>
+            </a>
+
+            {/* Blog Description */}
+            <p className="text-base md:text-lg text-gray-700 mb-6" style={{fontFamily:"league spartan"}}>{post.description}</p>
+          </div>
                   
                 </>
               ))
