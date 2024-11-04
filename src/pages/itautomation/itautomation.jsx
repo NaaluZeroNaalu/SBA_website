@@ -34,6 +34,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Sidecontent from "../sidecontact/side";
 import LazyLoad from 'react-lazyload';
 import s3 from "../../assets/images/s3.svg";
+import img1 from "../../assets/images/itautomation/New folder/1.png"
+import img2 from "../../assets/images/itautomation/New folder/2.png"
+import img3 from "../../assets/images/itautomation/New folder/3.png"
+import img4 from "../../assets/images/itautomation/New folder/4.png"
+import img5 from "../../assets/images/itautomation/New folder/5.png"
 
 
 function Itautomation() {
@@ -276,6 +281,71 @@ function Itautomation() {
       image: s3
     },
     {
+      title: "Planning & Value Optimization",
+      description: [
+        "Streamline tech planning, budgeting, and forecasting",
+        "Measure and optimize value streams",
+        "Gain visibility into IT and labor spend to align with priorities",
+        "Track product profitability and align investments"
+      ],
+      image: img1
+    },
+    {
+      title: "Cloud & Resource Efficiency",
+      description: [
+        "Manage public cloud spend using FinOps",
+        "Optimize cloud resources and reduce waste",
+        "Assure app performance at the lowest cost",
+        "Allocate resources effectively to meet service-level objectives"
+      ],
+      image: img2
+    },
+    {
+      title: "Proactive Issue Management & Sustainability",
+      description: [
+        "Resolve application issues before user impact",
+        "Accelerate MTTR with early detection and quick remediation",
+        "Reduce IT carbon footprint",
+        "Enable visibility into carbon usage and automate optimization"
+      ],
+      image: img3
+    },
+    {
+      title: "Process mining and modeling",
+      description: [
+        "Discover frequency, rework, duration, and cost from real data",
+        "Generate process models",
+        "Analyze impact on KPIs",
+        "Simulate future processes"
+      ],
+      title2: "RPA and digital labor",
+      description2: [
+        "Perform repetitive tasks",
+        "Act on data extracted from unstructured documents",
+        "Automate systems that do not have APIs",
+      ],
+      image: img4
+    },
+    {
+      title: "Core automation",
+      description: [
+        "Content services",
+        "Document processing",
+        "Workflow automation",
+        "Decision management",
+        "Low-code applications"
+      ],
+      title2: "Al and operational intelligence",
+      description2: [
+        "Apply Al to operational data",
+        "Classily and understand content",
+        "Prioritize tasks",
+        "Make predictive decisions",
+        "Build intelligent chatbots"
+      ],
+      image: img5
+    },
+    {
       title: "Automated IT Service Management (ITSM)",
       description: [
         "Automates incident, problem, and change management.",
@@ -342,6 +412,25 @@ function Itautomation() {
               <li key={idx}>{desc}</li>
             ))}
           </ul>
+         {
+          "description2" in item ?(
+            <>
+            <br />
+            <h2 className="text-3xl font-bold mb-4 md:mb-16 text-left">
+            {item.title2}
+          </h2>
+          <ul className="text-base pl-10 list-disc space-y-3 text-left">
+            {item.description2.map((desc, idx) => (
+              <li key={idx}>{desc}</li>
+            ))}
+          </ul>
+            </>
+          ):(
+            <>
+            
+            </>
+          )
+         }
         </div>
       </div>
     </div>
