@@ -8,7 +8,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     // Use the formRef to get the current form element
-    emailjs.sendForm('service_99sz48v', 'template_cvvyb9s', formRef.current, '_s33J6xuP7n0eqqjG')
+    emailjs.sendForm('service_4tlvjng', 'template_o0drxhs', formRef.current, '_s33J6xuP7n0eqqjG')
       .then((result) => {
         console.log('Email sent successfully!', result.text);
         alert("Request submitted successfully");
