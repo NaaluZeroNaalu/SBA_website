@@ -11,10 +11,18 @@ const ContactForm = () => {
     emailjs.sendForm('service_4tlvjng', 'template_o0drxhs', formRef.current, '_s33J6xuP7n0eqqjG')
       .then((result) => {
         console.log('Email sent successfully!', result.text);
-        alert("Request submitted successfully");
+        alert("Applied successfully");
         e.target.reset(); // Reset form after submission
       }, (error) => {
-        console.error('Error sending email:', error.text);
+
+        if(error.text === "Variables size limit. The maximum allowed variables size is 50Kb"){
+
+           alert("Kindly upload your resume (under 50KB) or email it to us at hr@sbainfo.in.")
+        }
+        else{
+          console.error('Error sending email:', error.text);
+        }
+
       });
   };
 
@@ -74,7 +82,7 @@ const ContactForm = () => {
 
       {/* Support Section */}
       <div>
-        <label htmlFor="support" className="block text-lg font-semibold text-gray-700">Domain</label>
+        <label htmlFor="domain" className="block text-lg font-semibold text-gray-700">Domain</label>
         <input
           id="support"
           name="support"
@@ -83,8 +91,8 @@ const ContactForm = () => {
       </div>
 
       {/* Update Resume Section */}
-      {/* <div>
-        <label htmlFor="resume" className="block text-lg font-semibold text-gray-700">Update Resume</label>
+      <div>
+        <label htmlFor="resume" className="block text-lg font-semibold text-gray-700">Upload your resume (max 50KB)</label>
         <input
         type="file"
         id="resume"
@@ -92,7 +100,7 @@ const ContactForm = () => {
         accept=".pdf"
         className="mt-2 w-full p-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-300"
         />
-        </div> */}
+        </div>
 
       {/* Submit Button */}
       <div style={{ textAlign: "center" }}>
@@ -104,6 +112,8 @@ const ContactForm = () => {
           Submit Request
         </button>
       </div>
+      <hr />
+      <h1 style={{textAlign:"center",fontSize:"40px"}}>OR</h1>
         <div>
           <p style={{textAlign:"center",fontSize:"40px"}}>Email Us at <span style={{color:"red"}}>hr@sbainfo.in</span></p>
         </div>
