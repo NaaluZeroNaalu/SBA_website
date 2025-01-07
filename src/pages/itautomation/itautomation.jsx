@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
 import Indus from "../../assets/videos/itautomation.mp4";
 import "./style.scss";
-import HyperClouds from "../../assets/videos/HybridCloud.mp4";
-import hyper1 from "../../assets/images/itautomation/it4.png";
-import hyper2 from "../../assets/images/itautomation/it2.png";
-import hyper3 from "../../assets/images/itautomation/it3.png";
-import hyper4 from "../../assets/images/itautomation/it4.png";
-import hyper5 from "../../assets/images/itautomation/it1.png";
-import hyper6 from "../../assets/images/itautomation/cloud1.png";
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
 import aili from "../../assets/images/ai-li.svg";
-import Industriesweserve from '../common/industries';
-import aiSectionImage from "../../assets/images/ai-section.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
 import ind1 from "../../assets/images/ind_1.png";
 import ind2 from "../../assets/images/ind_2.png";
@@ -24,12 +15,10 @@ import wat3 from "../../assets/images/wat_3.svg";
 import wat5 from "../../assets/images/wat_5.svg";
 import wat2 from "../../assets/images/wat_2.svg";
 import seven1 from "../../assets/images/itautomation/sev1.png"
-import Watsons from '../common/watsons';
 import p1 from "../../assets/images/itautomation/powerdby/1.png"
 import p2 from "../../assets/images/itautomation/powerdby/2.png"
 import p3 from "../../assets/images/itautomation/powerdby/3.png"
 import p4 from "../../assets/images/itautomation/powerdby/4.png"
-import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Sidecontent from "../sidecontact/side";
 import LazyLoad from 'react-lazyload';

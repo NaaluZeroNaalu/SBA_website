@@ -1,5 +1,3 @@
-import sliderleft from "../../assets/images/slider-left.svg";
-import sliderright from "../../assets/images/slider-right.svg";
 import certification1 from "../../assets/images/certification 1.png";
 import certification2 from "../../assets/images/certification 2.png";
 import certification3 from "../../assets/images/certification 3.png";

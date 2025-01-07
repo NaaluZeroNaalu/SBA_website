@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Header from './pages/header/header'
 import Securityandsus from './pages/securityandsutainability/securityandsus'
 import Openhybridcloud from './pages/OpenHybridCloud/Cloud'
 import Industries from './pages/industries/industries'
@@ -31,6 +28,7 @@ import Casestudiesone from './pages/casestudies/casestudiesone'
 import Book from './pages/book/book'
 import Pagenotfound from './pages/notfoundpage/pagenotfound'
 import ContactUs from './pages/contactus/contact'
+import Test from './pages/home/test'
 
 
 
@@ -42,6 +40,7 @@ function App() {
    <Routes>
     <Route path='*' element={<Pagenotfound />} />
     <Route path="/" element={<Homepage />} />
+    <Route path="/ajith" element={<Test />} />
     <Route path="/Contactus" element={<ContactUs />} />
     <Route path="/Data-AI" element={<Dataai />} />
     <Route path="/Open-Hybrid-Cloud" element={<Openhybridcloud />} />

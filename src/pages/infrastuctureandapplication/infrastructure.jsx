@@ -13,7 +13,6 @@ import Infra9 from "../../assets/images/Infra9.jpg";
 import Infra10 from "../../assets/images/Infra10.jpg";
 import Infra11 from "../../assets/images/Infra11.jpg";
 import Infra12 from "../../assets/images/Infra12.jpg";
-import Infra13 from "../../assets/images/Infra13.jpg";
 import Infra14 from "../../assets/images/Infra14.jpg";
 import Infra15 from "../../assets/images/Infra15.jpg";
 import Infra16 from "../../assets/images/Infra16.jpg";

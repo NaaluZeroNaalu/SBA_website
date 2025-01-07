@@ -4,12 +4,8 @@ import HyperClouds from "../../assets/videos/openhybridcloud2.mp4";
 import cloud1 from "../../assets/images/cloud/cloud1.png"
 import cloud2 from "../../assets/images/cloud/cloud2.png"
 import cloud3 from "../../assets/images/cloud/cloud3.png"
-import cloud4 from "../../assets/images/cloud/cloud4.png"
-import cloud5 from "../../assets/images/cloud/cloud5.png"
-import cloud6 from "../../assets/images/cloud/cloud6.png"
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
-import Industriesweserve from '../common/industries';
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
 import aiSectionImage from "../../assets/images/cloud/cloud6.png";
@@ -22,8 +18,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import rhel from "../../assets/images/cloud/redhat.png"
 import ansi from "../../assets/images/cloud/ansible.png"
 import open from "../../assets/images/cloud/openshift.png"
-import Watsons from '../common/watsons';
-import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import p1 from "../../assets/images/cloud/powerdby/1.png"
 import p2 from "../../assets/images/cloud/powerdby/2.png"
 import p3 from "../../assets/images/cloud/powerdby/3.png"

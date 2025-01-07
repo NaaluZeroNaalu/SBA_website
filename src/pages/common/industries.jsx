@@ -3,7 +3,7 @@ import ind2 from "../../assets/images/ind_2.png";
 import ind3 from "../../assets/images/healthcare.png";
 import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { useState, useEffect, React } from "react";
+import { useState, React } from "react";
 
 function Industriesweserve(){
 

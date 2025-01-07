@@ -5,22 +5,9 @@ import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState, useEffect, React, useRef } from "react";
 import Home1 from "../../assets/videos/wait1.mp4";
-import Home4 from "../../assets/videos/Home4.mp4";
-import Home5 from "../../assets/videos/Home5.mp4";
 import Home6 from "../../assets/videos/Home6.mp4";
-import Home7 from "../../assets/images/Home7.jpg";
 import Home9 from "../../assets/videos/Home9.mp4";
-import Home11 from "../../assets/videos/Home11.mp4";
 import Home13 from "../../assets/videos/Home13.mp4";
-import Homeg3 from "../../assets/images/Homeg3.png";
-import Homeg4 from "../../assets/images/Homeg4.png";
-import Homeg5 from "../../assets/images/Homeg5.png";
-import Homeg6 from "../../assets/images/Homeg6.png";
-import Homeg7 from "../../assets/images/Homeg7.png";
-import Homeg8 from "../../assets/images/Homeg8.png";
-import Homeg9 from "../../assets/images/Homeg9.png";
-import Homeg11 from "../../assets/images/Homeg11.png";
-import Home15 from "../../assets/videos/Home15.mp4";
 import com1 from "../../assets/images/partners/company1.png";
 import com2 from "../../assets/images/partners/company2.png";
 import com3 from "../../assets/images/partners/company3.png";
@@ -63,8 +50,6 @@ import com39 from "../../assets/images/partners/company39.png";
 import com40 from "../../assets/images/partners/company40.jpg";
 import com41 from "../../assets/images/partners/company41.png";
 import com42 from "../../assets/images/partners/company42.png";
-import homev from "../../assets/videos/homev.mp4"
-import trusted from "../../assets/videos/trusted.mp4"
 import redhat from "../../assets/images/trustedpartners/redhat.png"
 import ibm from "../../assets/images/trustedpartners/ibm.png"
 import { FaCheck } from "react-icons/fa";

@@ -1,7 +1,5 @@
 import "./style.scss";
 import aboutUs from "../../assets/videos/aboutUs.mp4";
-import about1 from "../../assets/images/about1.svg";
-import about2 from "../../assets/images/about2.svg";
 import Contactus from "../common/contact";
 import one from "../../assets/images/aboutus/1.png"
 import two from "../../assets/images/aboutus/2.png"

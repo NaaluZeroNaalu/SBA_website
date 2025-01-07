@@ -1,5 +1,4 @@
 import "./footer.scss"
-import { FaLocationDot } from "react-icons/fa6";
 import trusted from "../../assets/videos/trusted.mp4"
 import { FaLinkedin, FaYoutube, FaPhone, FaEnvelope } from 'react-icons/fa';
 

@@ -7,24 +7,16 @@ import sands3 from "../../assets/images/security/sands3.png"
 import Contactus from '../common/contact';
 import Certifications from '../common/certifications';
 import sands from "../../assets/images/1.png"
-import Industriesweserve from '../common/industries';
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
-import aiSectionImage from "../../assets/images/ai-section.svg";
 import ind1 from "../../assets/images/ind_1.png";
 import ind2 from "../../assets/images/ind_2.png";
 import ind3 from "../../assets/images/ind_3.png";
 import ind4 from "../../assets/images/ind_4.png";
 import tele from "../../assets/images/telecommunication.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
-import l1 from "../../assets/images/security/linux1logo.png"
-import wat5 from "../../assets/images/security/powerdby/1.png";
-import wat2 from "../../assets/images/wat_2.svg";
-import seven1 from "../../assets/images/sevone.png"
-import Watsons from '../common/watsons';
 import p1 from "../../assets/images/security/2.png"
 import p2 from "../../assets/images/security/1.png"
-import rt_arrow from "../../assets/images/rt_arrow_bl.svg";
 import a from "../../assets/images/security/powerdby/1.png"
 import b from "../../assets/images/security/powerdby/2.png"
 import { FaArrowRightLong } from "react-icons/fa6";

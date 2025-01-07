@@ -5,7 +5,6 @@ import one from "../../assets/images/careers/1.png"
 import two from "../../assets/images/careers/2.png"
 import aiOrnamentImage from "../../assets/images/image.png";
 import aili from "../../assets/images/ai-li.svg";
-import Contactus from "../common/contact";
 import ContactForm from "./contactuscareers";
 import Sidecontent from "../sidecontact/side";
 

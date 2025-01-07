@@ -4,14 +4,12 @@ import dataai from "../../assets/images/aipage.png"
 import "./style.scss";
 import aili from "../../assets/images/ai-li.svg";
 import aiOrnamentImage from "../../assets/images/image.png";
-import aiSectionImage from "../../assets/images/ai-section.svg";
 import brochure from "../broucher/data-ai-brochure.pdf"
 import s1 from "../../assets/images/s1.svg";
-import s3 from "../../assets/images/s3.svg";
 import s4 from "../../assets/images/s4.svg";
 import s2 from "../../assets/images/s2.svg";
 
-import ind5 from "../../assets/images/ind_5.png";
+
 
 
 import wat1 from "../../assets/images/wat_1.svg";

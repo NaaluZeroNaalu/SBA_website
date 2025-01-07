@@ -3,8 +3,7 @@ import logo from './logo.jpg';
 import { IoReorderThreeSharp } from 'react-icons/io5';
 import emailjs from 'emailjs-com';
 import "./style.scss"
-import Sidecontent from "../sidecontact/side";
-import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 
 function Header() {
@@ -87,14 +86,14 @@ const sendEmail = (e) => {
 
 
 <header className="fixed w-100 top-0 z-50 bg-white shadow-md" id="topnav" >
-  <div className="flex items-center justify-between p-4">
+  <div className="flex items-center justify-between">
     <img src={logo} alt="Logo" className="h-24 w-24" />
     <nav className="hidden md:flex">
       <ul className="flex items-center space-x-4">
         <li className="relative group">
           <a href="#" className="no-underline text-black mr-5">About</a>
           <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
-            <a href="/Aboutus" className="block px-4 py-2 no-underline text-black">About Us</a>
+            <a href="/Aboutus" className="block px-4 py-2 no-underline text-black">About Us </a>
             <a href="/Careers" className="block px-4 py-2 no-underline text-black">Careers</a>
           </div>
         </li>
