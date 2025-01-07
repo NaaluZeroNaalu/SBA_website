@@ -70,16 +70,7 @@ function Certifications(){
 
       const [currentSlide, setCurrentSlide] = useState(0);
     
-      // Function to move the slide manually
-      const moveSlide = (direction) => {
-        const newSlide = (currentSlide + direction + slides.length) % slides.length;
-        setCurrentSlide(newSlide);
-      };
-    
-      // Handle bullet click for current slide
-      const currentSlideHandler = (index) => {
-        setCurrentSlide(index);
-      };
+     
     
       // Auto-scroll effect
       useEffect(() => {
@@ -91,11 +82,7 @@ function Certifications(){
         return () => clearInterval(interval);
       }, [slides.length]);
     
-      const fetchUsers = () => {
-        // Your logic here, e.g., API call, state update, etc.
-        console.log("Fetching users...");
-        // You can replace this with an actual API call or any other action.
-      };
+      
 
     return(
         <>
