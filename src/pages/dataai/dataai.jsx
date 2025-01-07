@@ -381,16 +381,7 @@ function Dataai(){
      <Watsons />
 
 
-  <section className="my-5 py-5">
-        <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"1000px"}} id="youtubevideo1">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/2qhssWueRUI"
-            allowFullScreen
-            title="YouTube Video"
-          ></iframe>
-        </div>
-  </section>
+ 
   <section className="my-5 py-5">
         <div className="relative pb-[37.25%]  overflow-hidden container" style={{width:"370px",height:"300px"}} id="youtubevideo2">
           <iframe
