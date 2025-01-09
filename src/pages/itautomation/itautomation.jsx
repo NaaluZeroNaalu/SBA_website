@@ -182,7 +182,7 @@ function Itautomation() {
            <div className='animation-border flex justify-center items-center' style={{ height: "auto", maxHeight: "410px", overflow: "hidden" }}>
           <img
             src={its}
-            loading="eager"
+            loading="lazy"
             alt="AI"
             className="object-cover rounded-tl-[100px] rounded-br-[100px] rounded-tr-none rounded-bl-none border-8 border-gray-200 "
             style={{height:"370px"}}
@@ -226,7 +226,7 @@ function Itautomation() {
             <img
               className="ai-m w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
               src={aili}
-              loading="eager"
+              loading="lazy"
               alt="ornament"
             />
           </div>
@@ -244,7 +244,7 @@ function Itautomation() {
           <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
             <img
               src={aiOrnamentImage}
-              loading="eager"
+              loading="lazy"
               alt="ornament"
               className="h-full object-cover transform scale-x-[-1]"
             />
@@ -344,7 +344,7 @@ function Itautomation() {
           <div className="hidden md:block absolute top-0 left-0 w-1/2 h-full overflow-hidden">
             <img
               src={aiOrnamentImage}
-              loading="eager"
+              loading="lazy"
               alt="ornament"
               className="h-full object-cover transform scale-x-[-1]"
             />
@@ -405,7 +405,7 @@ function Itautomation() {
             <img
               src={item.image}
               className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105 img-fluid"
-              loading="eager"
+              loading="lazy"
               alt={item.title}
             />
           </div>
@@ -538,7 +538,7 @@ function Itautomation() {
                 <img
                 src={val.img}
                 alt="Watson Assistant"
-                loading='eager'
+                loading='lazy'
                 className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
                 style={{width:val.w}}
                 />

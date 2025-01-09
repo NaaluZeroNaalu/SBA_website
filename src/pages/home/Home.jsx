@@ -4,7 +4,7 @@ import ind3 from "../../assets/images/healthcare.png";
 import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState, useEffect, React, useRef } from "react";
-import Home1 from "../../assets/videos/wait1.mp4";
+import Home1 from "../../assets/videos/wait1.webm";
 import Home6 from "../../assets/videos/Home6.mp4";
 import Home9 from "../../assets/videos/Home9.mp4";
 import Home13 from "../../assets/videos/Home13.mp4";
@@ -190,6 +190,7 @@ function Homepage(){
         };
     }, [customerCount, yearsCount]);
 
+
     
     
     return(
@@ -212,7 +213,7 @@ function Homepage(){
 
   {/* Background video */}
   <LazyLoad height={720} offset={100}>
-        <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+        <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
           <source src={Home1} type="video/mp4" />
         </video>
       </LazyLoad>
@@ -302,7 +303,7 @@ function Homepage(){
       {/* ---------------------------SECTION 3 START--------------------------------- */}
       <section >
         <div className="relative w-full h-screen overflow-hidden">
-          <video autoPlay muted loop className="absolute ">
+          <video autoPlay muted loop playsInline className="absolute ">
             <source src={Home9} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -344,7 +345,7 @@ function Homepage(){
       </div>
 
       {/* Background video */}
-      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop>
+      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
         <source src={Home6} type="video/mp4" />
       </video>
 
