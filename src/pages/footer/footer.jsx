@@ -124,7 +124,7 @@ function Footer(){
             </div>
         </div>
 <div>
-    <p className="text-center">Copyright © 1996 - 2024, SBA Info Solutions.</p>
+    <p className="text-center">Copyright © 1996 - {new Date().getFullYear()}, SBA Info Solutions.</p>
 </div>
     </div>
     
