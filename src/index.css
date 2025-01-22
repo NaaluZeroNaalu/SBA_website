@@ -43,7 +43,7 @@
 
 
 @keyframes border_animations {
-    0% {
+    /* 0% {
         border-left-color: #3f649a;
     }
     25% {
@@ -61,7 +61,7 @@
     100% {
         border-bottom-color: transparent;
         border-left-color: #3f649a; 
-    }
+    } */
 }
 
 .animb{
@@ -72,7 +72,7 @@
 }
 
 .animation-border {
-    border: 6px solid #D3271f;
+    /* border: 6px solid #D3271f; */
     height: 400px;
     width: 350px;
     border-top-left-radius: 100px;
@@ -81,7 +81,7 @@
 }
 
 .animation-border2 {
-    border: 6px solid #D3271f;
+    /* border: 6px solid #D3271f; */
     height: 400px;
     width: 350px;
     border-top-right-radius: 100px;

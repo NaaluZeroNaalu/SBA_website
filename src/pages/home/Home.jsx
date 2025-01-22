@@ -65,7 +65,7 @@ import Sidecontent from "../sidecontact/side";
 
 function Homepage(){
 
- 
+  
   const formRef = useRef();
 
   const sendEmail = (e) => {
@@ -198,7 +198,9 @@ function Homepage(){
      
 <Sidecontent />
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
-<section className=" relative w-full h-screen overflow-hidden" id="topvideo">
+<section className=" relative w-full h-screen overflow-visible" id="topvideo">
+
+
   <div className="absolute  inset-0 z-10 flex flex-col items-center justify-center text-center" >
     {/* Large heading */}
     <div className="text-white text-8xl font-extrabold font-spartan" id="toptext">
@@ -223,6 +225,11 @@ function Homepage(){
 </section>
 
 
+<div id="stickyContent" className="sticky bg-yellow-300 p-4 top-0 z-40">
+        <div className="text-black font-bold text-xl">
+          This content is sticky and will stop at the header
+        </div>
+</div>
 {/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
 
 {/* ---------------------------SECTION 2 START----------------------------------- */}

@@ -445,40 +445,49 @@ function Itautomation() {
 </section>
               
           
-            <section className="py-5 bg-light">
-      <h1 className="display-4 text-center mb-4" style={{fontFamily:"league spartan",fontWeight:"bold"}} id="inds">Industries We Serve</h1>
+<section className="py-5 bg-light">
+  <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
+    Industries We Serve
+  </h1>
 
-      <div className="container">
-        <div className="row justify-content-between">
-          {industriesforitautomation.map((industry, index) => (
-            <div
-              key={index}
-              className="col-12 col-md-3 mb-4 position-relative"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              onClick={() => {
-                window.location.href = "/industries"; // Redirect on card click
-              }}
-            >
-              <div className="card overflow-hidden">
-                <img src={industry.img} className="card-img-top" alt={industry.title} />
-                <div className="card-img-overlay d-flex flex-column justify-content-end">
-                  <h5 className="card-title text-white">{industry.title}</h5>
-                  <FaLongArrowAltRight className="text-white" />
-                </div>
-                <div
-                  className={`card-body  text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
-                style={{backgroundColor:"#3f649a"}}
-                >
-                  <h5 className="card-title">{industry.title}</h5>
-                  <p style={{textAlign:"center"}}>{industry.description}</p>
-                </div>
-              </div>
+  <br /><br />
+
+  <div className="container">
+    <div className="row justify-content-between">
+      {industriesforitautomation.map((industry, index) => (
+        <div
+          key={index}
+          className="col-12 col-md-3 mb-4 position-relative"
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => {
+            window.location.href = "/industries"; // Redirect on card click
+          }}
+          style={{
+            transform: index % 2 === 0 ? 'translateY(20px)' : 'translateY(-20px)', // Create zig-zag effect
+            transition: 'transform 0.3s ease-in-out', // Smooth transition for zig-zag effect
+          }}
+        >
+          <div className="card overflow-hidden">
+            <img src={industry.img} className="card-img-top" alt={industry.title} />
+            <div className="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 className="card-title text-white">{industry.title}</h5>
+              <FaLongArrowAltRight className="text-white" />
             </div>
-          ))}
+            <div
+              className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}
+              style={{ backgroundColor: "#3f649a" }}
+            >
+              <h5 className="card-title">{industry.title}</h5>
+              <p style={{ textAlign: "center" }}>{industry.description}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
     <br /><br />
 
     <Certifications />

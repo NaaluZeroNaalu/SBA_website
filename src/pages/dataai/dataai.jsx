@@ -308,7 +308,7 @@ function Dataai(){
 
   {/* -----------------------------------SECTION 3 END-------------------------------*/}
 
-  {/* industries */}
+  {/* industries */} 
    <Industriesweserve />
    <br /><br />
       <Certifications />
@@ -354,8 +354,8 @@ function Dataai(){
             ].map((val,id)=>(
               <> 
               
-              <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg shadow-md">
-                <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+              <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg  shadow-md">
+                <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`} >
                   <div className="md:w-1/2 w-full md:pr-10">
                   <h2 className="text-2xl  font-bold mb-4">{val.title}</h2>
                   <p className="text-lg md:text-2xl">

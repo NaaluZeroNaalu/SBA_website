@@ -290,7 +290,7 @@ function Securityandsus() {
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
     Industries We Serve
   </h1>
-
+<br /><br /><br />
   <div className="container">
     <div className="flex flex-wrap -mx-2"> {/* Negative margin to offset padding */}
       {industriesforsands.map((industry, index) => (
@@ -301,6 +301,11 @@ function Securityandsus() {
           onMouseLeave={() => setHoveredIndex(null)}
           onClick={() => {
             window.location.href = "/industries"; // Redirect on card click
+          }}
+
+          style={{
+            transform: index % 2 === 0 ? 'translateY(20px)' : 'translateY(-20px)', // Create zig-zag effect
+            transition: 'transform 0.3s ease-in-out',
           }}
         >
           <div className="card overflow-hidden">

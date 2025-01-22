@@ -354,6 +354,7 @@ const [activeIndex, setActiveIndex] = useState(null);
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
     Industries We Serve
   </h1>
+  br*3
 
   <div className="container mx-auto">
     <div className="flex flex-wrap justify-center -mx-2"> {/* Use justify-center to center the items */}
@@ -365,6 +366,11 @@ const [activeIndex, setActiveIndex] = useState(null);
           onMouseLeave={() => setHoveredIndex(null)}
           onClick={() => {
             window.location.href = "/industries"; // Redirect on card click
+          }}
+
+          style={{
+            transform: index % 2 === 0 ? 'translateY(20px)' : 'translateY(-20px)', // Create zig-zag effect
+            transition: 'transform 0.3s ease-in-out',
           }}
         >
           <div className="card overflow-hidden">
@@ -398,6 +404,8 @@ const [activeIndex, setActiveIndex] = useState(null);
       Powered by
     </h1>
 
+    <br />
+
     {
       [
         {
@@ -425,7 +433,7 @@ const [activeIndex, setActiveIndex] = useState(null);
         
         <>
         <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-          <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} w-full`}>
+          <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} w-full`} style={{backgroundColor:""}}>
             {/* Content Section */}
             <div className={`md:w-1/2 w-full ${id % 2 === 0 ? 'md:pr-10' : 'md:pl-10'}`}>
               <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
@@ -435,8 +443,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <br /><br />
             <div className={`md:w-1/2 w-full flex justify-center`}>
               <div className={val.anim}>
-                <div style={{ height: "390px", borderRadius: val.border, border: "12px solid #EEEEEE" }}>
-                  <br /><br />
+                <div style={{ height: "390px"}}>
                   <img
                     src={val.img}
                     alt={val.title}

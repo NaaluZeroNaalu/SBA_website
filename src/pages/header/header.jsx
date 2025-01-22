@@ -4,6 +4,7 @@ import { IoReorderThreeSharp } from 'react-icons/io5';
 import emailjs from 'emailjs-com';
 import "./style.scss"
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 
 function Header() {
@@ -89,17 +90,21 @@ const sendEmail = (e) => {
   <div className="flex items-center justify-between">
     <img src={logo} alt="Logo" className="h-20 w-20" />
     <nav className="hidden md:flex">
-      <ul className="flex items-center space-x-4">
+      <ul className="flex items-center space-x-20">
         <li className="relative group">
-          <a href="#" className="no-underline text-black mr-5">About</a>
-          <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
+        <a href="#" className="no-underline text-black flex items-center mr-10">
+            About <IoMdArrowDropdown className="ml-2" />
+          </a>
+          <div className="hidden absolute left-0  w-48 bg-white border-1 group-hover:block">
             <a href="/Aboutus" className="block px-4 py-2 no-underline text-black">About Us </a>
             <a href="/Careers" className="block px-4 py-2 no-underline text-black">Careers</a>
           </div>
         </li>
         <li className="relative group">
-          <a href="#" className="no-underline text-black mr-5">Solutions</a>
-          <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
+        <a href="#" className="no-underline text-black flex items-center mr-10">
+            Solutions <IoMdArrowDropdown className="ml-2" />
+          </a>
+          <div className="hidden absolute left-0 w-48 bg-white border-1 group-hover:block">
             <a href="/Data-AI" className="block px-4 py-2 no-underline text-black">Data and AI</a>
             <a href="/Itautomation" className="block px-4 py-2 no-underline text-black mt-3">IT and Business Automation</a>
             <a href="/Open-Hybrid-Cloud" className="block px-4 py-2 no-underline text-black mt-3">Open Hybrid Cloud</a>
@@ -107,19 +112,19 @@ const sendEmail = (e) => {
           </div>
         </li>
         <li>
-          <a href="/Industries" className="no-underline text-black mr-5">Industries</a>
+          <a href="/Industries" className="no-underline text-black mr-10">Industries</a>
         </li>
         {/* <li>
           <a href="#" className="no-underline text-black mr-5">Client Stories</a>
         </li> */}
         <li className="relative group">
-          <a href="/Casestudies" className="no-underline text-black mr-5">Client Stories</a>
+          <a href="/Casestudies" className="no-underline text-black mr-10">Client Stories</a>
           {/* <div className="hidden absolute left-0 w-48 bg-white shadow-lg group-hover:block">
             <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a>
           </div> */}
         </li>
         <li className="relative group">
-          <a href="/Blogs" className="no-underline text-black mr-5">Blogs</a>
+          <a href="/Blogs" className="no-underline text-black mr-10">Blogs</a>
           {/* <div className="hidden absolute left-0  w-48 bg-white shadow-lg group-hover:block">
             <a href="/Blogs" className="block px-4 py-2 no-underline text-black">Blog</a> */}
             {/* <a href="/Casestudies" className="block px-4 py-2 no-underline text-black">Case Studies</a> */}
@@ -139,8 +144,7 @@ const sendEmail = (e) => {
       <IoReorderThreeSharp className="text-2xl" />
     </button>
   </div>
-</header>
-    
+</header>    
 
 
 
