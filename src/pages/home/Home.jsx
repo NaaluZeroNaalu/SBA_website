@@ -65,6 +65,31 @@ import Sidecontent from "../sidecontact/side";
 
 function Homepage(){
 
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Check if the element is in the viewport
+  const handleScroll = () => {
+    const section = document.getElementById("fadeSection");
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop <= windowHeight * 0.8) {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check on mount
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   
   const formRef = useRef();
 
@@ -224,86 +249,114 @@ function Homepage(){
   <div className="absolute inset-0 bg-black opacity-60"></div>
 </section>
 
-
-<div id="stickyContent" className="sticky bg-yellow-300 p-4 top-0 z-40">
-        <div className="text-black font-bold text-xl">
-          This content is sticky and will stop at the header
-        </div>
-</div>
 {/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
 
 {/* ---------------------------SECTION 2 START----------------------------------- */}
-    <section className="responsive-video-section">
-        <div className="relative w-full min-h-screen">
-          <video className="absolute " autoPlay muted loop playsInline>
-            <source src={Home13} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <div
-            className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full h-full px-4 py-8 sm:px-6 sm:py-12 md:px-10 md:py-16"
-            style={{ paddingTop: "10%" }}
+<section className="responsive-video-section">
+      <div className="relative w-full min-h-screen">
+        <div
+          id="fadeSection"
+          className={`relative z-10 flex flex-col md:flex-row items-center justify-between w-full h-full px-4 py-8 sm:px-6 sm:py-12 md:px-10 md:py-16 transition-opacity duration-1000 ${
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ paddingTop: "10%" }}
+        >
+          <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
+            <p
+              style={{
+                fontWeight: "bold",
+                textAlign: "left",
+                color: "red",
+                fontSize: "30px",
+              }}
+              className="font-spartan"
             >
-            <div className="w-full md:w-[50%] mb-6 md:mb-0 text-center md:text-left">
-              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">Vision</p>
-              <h2 className="text-black font-bold font-spartan mx-auto mb-6 md:mb-36 leading-snug md:leading-tight" style={{fontSize:"30px",textAlign:"left"}}>
-              
-              To become a global leader in creating agile and
-               secure work environments that boost productivity and 
-               promote sustainable growth, contributing to a more resilient and 
-               equitable global economy 
-              </h2>
-            </div>
-            <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
-              <h3 className="text-black-600 font-semibold font-spartan text-lg sm:text-xl mb-4 border-animation p-10 rounded" id="ani" >
-              <span style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">Mission</span>
+              Vision
+            </p>
+            <h2
+              className="text-black font-bold font-spartan mx-auto mb-6 md:mb-36 leading-snug md:leading-tight"
+              style={{ fontSize: "30px", textAlign: "left" }}
+            >
+              To become a global leader in creating agile and secure work
+              environments that boost productivity and promote sustainable growth,
+              contributing to a more resilient and equitable global economy
+            </h2>
+          </div>
+          <div className="w-full md:w-[40%] bg-white bg-opacity-80 p-4 sm:p-6 rounded-md shadow-md">
+            <h3 className="text-black-600 font-semibold font-spartan text-lg sm:text-xl mb-4 border-animation p-10 rounded">
+              <span
+                style={{
+                  fontWeight: "bold",
+                  textAlign: "left",
+                  color: "red",
+                  fontSize: "30px",
+                }}
+                className="font-spartan"
+              >
+                Mission
+              </span>
               <br />
-              To be the transformative force that shapes an agile, purposeful future of work on a global scale 
-              </h3>
-              <p style={{fontWeight:"bold",textAlign:"left",color:"red",fontSize:"30px"}} className="font-spartan">
-                Value
-              </p>
+              To be the transformative force that shapes an agile, purposeful
+              future of work on a global scale
+            </h3>
+            <p
+              style={{
+                fontWeight: "bold",
+                textAlign: "left",
+                color: "red",
+                fontSize: "30px",
+              }}
+              className="font-spartan"
+            >
+              Value
+            </p>
 
-              <ul className="list-none space-y-2  font-spartan">
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <FaCheck size="25px" color="red" />
-                  </span>
-                  <span><b>Relentless curiosity & agility</b> </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <FaCheck size="25px" color="red" />
-                  </span>
-                  <span><b>Bold experimentation</b></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <FaCheck size="25px" color="red" />
-                  </span>
-                  <span>
+            <ul className="list-none space-y-2 font-spartan">
+              <li className="flex items-start">
+                <span className="text-red-500 text-xl mr-2">
+                  <FaCheck size="25px" color="red" />
+                </span>
+                <span>
+                  <b>Relentless curiosity & agility</b>
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 text-xl mr-2">
+                  <FaCheck size="25px" color="red" />
+                </span>
+                <span>
+                  <b>Bold experimentation</b>
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 text-xl mr-2">
+                  <FaCheck size="25px" color="red" />
+                </span>
+                <span>
                   <b>Multidisciplinary Innovation</b>
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <FaCheck size="25px" color="red" />
-                  </span>
-                  <span><b>Wisdom in Action</b></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 text-xl mr-2">
-                    <FaCheck size="25px" color="red" />
-                  </span>
-                  <span>
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 text-xl mr-2">
+                  <FaCheck size="25px" color="red" />
+                </span>
+                <span>
+                  <b>Wisdom in Action</b>
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-500 text-xl mr-2">
+                  <FaCheck size="25px" color="red" />
+                </span>
+                <span>
                   <b>Data and Future Obsessed</b>
-                  </span>
-                </li>
-              </ul>
-            </div>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       {/* ---------------------------SECTION 2 END--------------------------------- */}
 
 
