@@ -88,7 +88,9 @@ const sendEmail = (e) => {
 
 <header className="fixed w-100 top-0 h-20 z-50 bg-white " id="topnav" >
   <div className="flex items-center justify-between">
-    <img src={logo} alt="Logo" className="h-20 w-20" />
+    <a href="/">
+    <img src={logo} alt="Logo" className="h-20 w-20 pl-2" />
+    </a>
     <nav className="hidden md:flex">
       <ul className="flex items-center space-x-20">
         <li className="relative group">

@@ -361,57 +361,50 @@ function Homepage(){
 
 
       {/* ---------------------------SECTION 3 START--------------------------------- */}
-      <section >
-        <div className="relative w-full h-screen overflow-hidden">
-          <video autoPlay muted loop playsInline className="absolute ">
-            <source src={Home9} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <section className="relative w-full h-screen bg-gradient-to-r from-blue-500 to-teal-400 overflow-hidden">
+  <div className="relative z-10 flex items-center justify-center w-full h-full px-4 sm:px-8 md:px-16">
+    <div className="bg-white bg-opacity-80 p-8 sm:p-12 md:p-16 rounded-xl shadow-lg max-w-4xl mx-auto">
+      <p className="text-lg md:text-2xl font-spartan font-semibold text-gray-800 leading-relaxed mb-4">
+        In the modern workplace,
+        <span className="text-red-500 font-bold">
+          repetitive tasks like data entry and information retrieval
+        </span>
+      </p>
+      <p className="text-lg md:text-2xl font-spartan font-semibold text-gray-800 leading-relaxed">
+        hinder employees from engaging in strategic and creative aspects of their roles.
+      </p>
+    </div>
+  </div>
+</section>
 
-          <div className="relative z-10 flex items-center justify-between w-full h-full px-1">
-            <div className=" bg-white bg-opacity-70 p-8 rounded-lg ">
-              <p className="text-lg font-spartan md:text-2xl font-bold text-black leading-relaxed">
-                In the modern workplace,
-                <span className="text-red-500">
-                  repetitive tasks like data entry and information retrieval
-                </span>{" "}
-              </p>
-              <p  className="text-lg md:text-2xl font-bold text-black leading-relaxed font-spartan">
-                hinder employees from engaging in strategic and creative aspects
-                of their roles
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ---------------------------SECTION 3 END--------------------------------- */}
 
 
       {/* ---------------------------SECTION 4 START--------------------------------- */}
 
-<section className="relative w-full h-screen">
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center ">
-        {/* Large heading */}
-        <div className="text-white text-3xl  font-spartan">
-           The problem is not that computer will begin to think like men, it's that men will begin to think like computers
-        </div>
+      <section className="relative w-full h-screen bg-gradient-to-r from-teal-500 to-blue-500">
+  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-8 md:px-16">
+    {/* Large heading */}
+    <div className="text-white text-3xl font-spartan font-semibold mb-6">
+      The problem is not that computers will begin to think like men, it's that men will begin to think like computers.
+    </div>
 
-        {/* Centered red box with large text */}
-        <div className="font-spartan text-white  px-10 py-4 mt-6 text-5xl md:text-6xl">
-          <h1 className="text-red-600 text-3xl">Empower with Data, Accelerate with Agility</h1>
-          <h3 className="">Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.</h3>
-        </div>
-      </div>
+    {/* Centered red box with large text */}
+    <div className="text-white px-10 py-6 mt-6 text-5xl md:text-6xl bg-opacity-70 rounded-lg shadow-lg">
+      <h1 className="text-red-600 text-3xl md:text-4xl font-bold mb-4">
+        Empower with Data, Accelerate with Agility
+      </h1>
+      <h3 className="text-lg md:text-2xl font-light">
+        Data drives informed decisions and operational efficiency, while an agile workforce fosters flexibility and speed, together propelling business growth and success.
+      </h3>
+    </div>
+  </div>
 
-      {/* Background video */}
-      <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-        <source src={Home6} type="video/mp4" />
-      </video>
+  {/* Overlay to darken the background */}
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+</section>
 
-      {/* Overlay to darken the video */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-    </section>
       {/* ---------------------------SECTION 4 END--------------------------------- */}
 
 
@@ -528,21 +521,30 @@ function Homepage(){
 
       {/* ---------------------------SECTION 7 START--------------------------------- */}
 
-<section className="mx-3 bg-gray-200" style={{height:"450px"}}> 
-    <div className="flex flex-col justify-center items-center text-center px-4 py-10">
-        <h2 className="text-4xl md:text-6xl font-bold mb-8 font-spartan" >
-            Our Partner Ecosystem
-        </h2>
-        <div className="flex flex-col md:flex-row justify-center items-center space-x-10">
-            <div className="flex-shrink-0 mb-5 md:mb-0"> 
-                <img src={redhat} alt="Red Hat" className="object-contain w-3/4 md:w-[450px] h-auto" />
-            </div>
-            <div className="flex-shrink-0">
-                <img src={ibm} alt="IBM" className="object-contain w-3/4 md:w-[300px] h-auto mb-5" />
-            </div>
-        </div>
+<section id="parternsecosystem" className="mx-4 bg-gray-100" style={{ height: "450px" }}>
+  <div className="flex flex-col justify-center items-center text-center px-6 py-12">
+    <h2 className="text-3xl md:text-5xl font-semibold text-gray-800 mb-6 font-spartan">
+      Our Partner Ecosystem
+    </h2>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="flex-shrink-0 w-full md:w-[400px]">
+        <img
+          src={redhat}
+          alt="Red Hat"
+          className="object-contain w-full h-auto"
+        />
+      </div>
+      <div className="flex-shrink-0 w-full md:w-[300px]">
+        <img
+          src={ibm}
+          alt="IBM"
+          className="object-contain w-full h-auto"
+        />
+      </div>
     </div>
+  </div>
 </section>
+
 
       
       {/* ---------------------------SECTION 7 END--------------------------------- */}
