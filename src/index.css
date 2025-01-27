@@ -153,6 +153,11 @@ body, html {
         
     }
 
+    #poweredbytitle{
+
+        font-size: xx-large !important;
+
+    }
     #parternsecosystem img{
 
         width: 200px;
