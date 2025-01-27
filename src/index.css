@@ -165,6 +165,15 @@ body, html {
         
     }
 
+
+    #industriescontent{
+
+       transform: translateY(0px) !important;
+       transform: translateY(-0px) !important;
+       transition: none;
+    }
+
+
     #youtubevideo1{
 
         display: none;

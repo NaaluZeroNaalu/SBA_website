@@ -354,12 +354,12 @@ const [activeIndex, setActiveIndex] = useState(null);
   <h1 className="display-4 text-center mb-4" style={{ fontFamily: "league spartan", fontWeight: "bold" }} id="inds">
     Industries We Serve
   </h1>
-  br*3
-
+ 
   <div className="container mx-auto">
     <div className="flex flex-wrap justify-center -mx-2"> {/* Use justify-center to center the items */}
       {industriesforcloud.map((industry, index) => (
         <div
+        id="industriescontent"
           key={index}
           className="w-full md:w-1/5 px-2 mb-4 position-relative" // Ensure each card has horizontal padding
           onMouseEnter={() => setHoveredIndex(index)}
@@ -377,7 +377,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <img src={industry.img} loading='eager' className="card-img-top" alt={industry.title} />
             <div className="card-img-overlay d-flex flex-column justify-content-end">
               <h5 className="card-title text-white">{industry.title}</h5>
-              <FaLongArrowAltRight className="text-white" />
+            
             </div>
             <div
               className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}

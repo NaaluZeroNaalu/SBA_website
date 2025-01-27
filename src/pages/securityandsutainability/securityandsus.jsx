@@ -295,6 +295,7 @@ function Securityandsus() {
     <div className="flex flex-wrap -mx-2"> {/* Negative margin to offset padding */}
       {industriesforsands.map((industry, index) => (
         <div
+        id="industriescontent"
           key={index}
           className="w-full md:w-1/5 px-2 mb-4 position-relative" // Added horizontal padding
           onMouseEnter={() => setHoveredIndex(index)}
@@ -312,7 +313,7 @@ function Securityandsus() {
             <img src={industry.img} loading='eager' className="card-img-top" alt={industry.title} />
             <div className="card-img-overlay d-flex flex-column justify-content-end">
               <h5 className="card-title text-white">{industry.title}</h5>
-              <FaLongArrowAltRight className="text-white" />
+              
             </div>
             <div
               className={`card-body text-white opacity-${hoveredIndex === index ? '100' : '0'} position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-content-center align-items-center transition-opacity duration-300`}

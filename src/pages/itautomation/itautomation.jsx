@@ -456,6 +456,7 @@ function Itautomation() {
     <div className="row justify-content-between">
       {industriesforitautomation.map((industry, index) => (
         <div
+        id="industriescontent"
           key={index}
           className="col-12 col-md-3 mb-4 position-relative"
           onMouseEnter={() => setHoveredIndex(index)}
