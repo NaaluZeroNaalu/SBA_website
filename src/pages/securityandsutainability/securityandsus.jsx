@@ -339,6 +339,10 @@ function Securityandsus() {
             Powered By
           </h1>
 
+
+        </div>
+
+      <div id="products">
           {
   [
     {
@@ -356,63 +360,26 @@ function Securityandsus() {
       anim: "animation-border2",
     },
   ].map((val, id) => (
-    <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-      {id % 2 === 0 ? (
-        <>
-          <div className="md:w-1/2 w-full md:pr-10">
-            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
-            <p className="text-2xl pl-5">{val.description}</p>
-          </div>
-          <div className="md:w-1/2 w-full flex justify-center">
-            <div className={val.anim} style={{ height: "410px" }}>
-              <img
-                src={val.img}
-                alt={val.title}
-                className="rounded-lg w-full object-cover"
-                style={{
-                  width: "500px",
-                  height: "400px",
-                  borderTopLeftRadius: id === 0 ? "100px" : "0px",
-                  borderBottomRightRadius: id === 0 ? "100px" : "0px",
-                  borderTopRightRadius: id === 0 ? "0px" : "100px",
-                  borderBottomLeftRadius: id === 0 ? "0px" : "100px",
-                  border: "12px solid #EEEEEE",
-                }}
-              />
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="md:w-1/2 w-full flex justify-center">
-            <div className={val.anim} style={{ height: "410px" }}>
-              <img
-                src={val.img}
-                alt={val.title}
-                className="rounded-lg w-full object-cover"
-                style={{
-                  width: "500px",
-                  height: "400px",
-                  borderTopLeftRadius: "0px",
-                  borderBottomRightRadius: "0px",
-                  borderTopRightRadius: "100px",
-                  borderBottomLeftRadius: "100px",
-                  border: "12px solid #EEEEEE",
-                }}
-              />
-            </div>
-          </div>
-          <div className="md:w-1/2 w-full md:pl-10">
-            <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
-            <p className="text-2xl pl-4">{val.description}</p>
-          </div>
-        </>
-      )}
+    <div key={id} className={`p-6 md:p-10 mb-5 rounded-lg ${id % 2 === 0 ? 'bg-white' : 'bg-gray-200'}`}>
+    <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+      <div className="md:w-1/2 w-full md:pr-10">
+        <h2 className="text-2xl font-bold mb-4">{val.title}</h2>
+        <p className="text-lg md:text-2xl">{val.description}</p>
+      </div>
+      <div className="md:w-1/2 w-full flex justify-center">
+        <img
+          src={val.img}
+          alt={val.title}
+          style={{width:"300px"}}
+          className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
+        />
+      </div>
     </div>
+  </div>
   ))
 }
 
-        </div>
+      </div>
       </section>
       <br /><br /><br />
 
@@ -434,15 +401,17 @@ function Securityandsus() {
     
   ].map((val,i)=>(
     <>
+
    <a href={val.link} className="no-underline text-black font-bold text-2xl relative p-2" target="_blank" key={i}>
         <div className="relative">
-          <img src={val.img} loading='eager' alt={val.name} className="w-full h-auto rounded-lg" />
+          <img src={val.img} loading='eager' alt={val.name} className="w-full h-auto rounded-lg" style={{height:"500px"}} />
           <div className="absolute inset-0 flex items-center justify-center" style={{marginTop:"190px"}}>
             <p className="p-5  rounded text-center">{val.name}</p>
             <p className="text-center"><FaArrowRightLong /></p>
           </div>
         </div>
       </a>
+      
     </>
   ))
 }

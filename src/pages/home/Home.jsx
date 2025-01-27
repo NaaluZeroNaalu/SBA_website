@@ -8,6 +8,7 @@ import Home1 from "../../assets/videos/wait1.webm";
 import Home6 from "../../assets/videos/Home6.mp4";
 import Home9 from "../../assets/videos/Home9.mp4";
 import Home13 from "../../assets/videos/Home13.mp4";
+import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import com1 from "../../assets/images/partners/company1.png";
 import com2 from "../../assets/images/partners/company2.png";
 import com3 from "../../assets/images/partners/company3.png";
@@ -220,34 +221,39 @@ function Homepage(){
     
     return(
         <>
-     
-<Sidecontent />
 {/* ----------------------------SECTION 1 VIDEO SECTION START---------------------- */}
-<section className=" relative w-full h-screen overflow-visible" id="topvideo">
+<div style={{ paddingTop: '80px' }}> {/* Adjust according to your header height */}
+        <section className="relative w-full h-screen overflow-visible" id="topvideo">
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+            {/* Large heading */}
+            <div className="text-white text-8xl font-extrabold font-spartan" id="toptext">
+              Automate the Mundane
+            </div>
 
+            {/* Centered red box with large text */}
+            <div className="bg-red-600 font-spartan text-white font-extrabold px-6 py-3 mt-6 text-6xl" id="bottomtext">
+              Elevate Human Potential
+            </div>
+          </div>
 
-  <div className="absolute  inset-0 z-10 flex flex-col items-center justify-center text-center" >
-    {/* Large heading */}
-    <div className="text-white text-8xl font-extrabold font-spartan" id="toptext">
-      Automate the Mundane
-    </div>
+          {/* Background video */}
+          <LazyLoad height={720} offset={100}>
+            <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
+              <source src={Home1} type="video/mp4" />
+            </video>
+          </LazyLoad>
 
-    {/* Centered red box with large text */}
-    <div className="bg-red-600 font-spartan text-white font-extrabold px-6 py-3 mt-6 text-6xl " id="bottomtext">
-      Elevate Human Potential
-    </div>
-  </div>
+          {/* Overlay to darken the video */}
+          <div className="absolute inset-0 bg-black opacity-60"></div>
 
-  {/* Background video */}
-  <LazyLoad height={720} offset={100}>
-        <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-          <source src={Home1} type="video/mp4" />
-        </video>
-      </LazyLoad>
+          
+        </section>
+    
 
-  {/* Overlay to darken the video */}
-  <div className="absolute inset-0 bg-black opacity-60"></div>
-</section>
+      </div>
+
+   <Sidecontent />
+     
 
 {/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
 

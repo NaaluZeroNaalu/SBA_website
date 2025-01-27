@@ -313,70 +313,68 @@ function Dataai(){
    <br /><br />
       <Certifications />
       <br /><br />
+
       <section className="py-8">
-        <div className="container mx-auto max-w-7xl px-4" id="products">
+        <div className="container mx-auto max-w-7xl px-4" >
           <h1 className="text-5xl font-bold text-center mb-12">
             Powered by <span className="text-red-600">watsonX</span>
           </h1>
-
-          {
-            [
-              {
-                title:"watson Assistant",
-                description:"IBM Watson Assistant is a conversation AI platform that helps you provide customers fast, straightforward, and accurate answers to their questions, across any application, device, or channel.",
-                img:wat1,
-                anim:"animation-border"
-              },
-              {
-                title:"watson Discovery",
-                description:"IIBM Watson Discovery is an award-winning enterprise search and AI search technology that breaks open data silos and retrieves specific answers to your questions while analyzing trends and relationships buried in enterprise data.",
-                img:wat2,
-                anim:"animation-border2"
-              },
-              {
-                title:"Instana",
-                description:"Instana Observability is a fully-automated application performance management solution designed for the challenges of managing microservice and cloud-native applications. It makes your applications visible and enables intelligent actions based on observed information.",
-                img:wat3,
-                anim:"animation-border"
-              },
-              {
-                title:"Cognos",
-                description:"Unleash the power of your data through AI-driven automation and insights in Cognos Analytics. Simply pose a question or hypothesis, and let AI provide the insights you require.",
-                img:wat4,
-                anim:"animation-border2"
-              },
-              {
-                title:"Turbonomic",
-                description:"Turbonomic is a software platform that helps organizations optimize the performance and cost of their IT infrastructure, including public, private, and hybrid cloud environments, by automating optimization actions in real-time.",
-                img:wat5,
-                anim:"animation-border"
-              },
-            ].map((val,id)=>(
-              <> 
-              
-              <div key={id} className="p-6 md:p-10 mb-5 bg-white rounded-lg  shadow-md">
-                <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`} >
-                  <div className="md:w-1/2 w-full md:pr-10">
-                  <h2 className="text-2xl  font-bold mb-4">{val.title}</h2>
-                  <p className="text-lg md:text-2xl">
-                    {val.description}
-                    </p>
-                </div>
-                <div className="md:w-1/2 w-full flex justify-center">
-                <img
-                src={val.img}
-                alt="Watson Assistant"
-                className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
-                />
-                </div>
-                </div>
-                </div>
-              </>
-            ))
-          }
-
       </div>
+      <div id="products">
+  {
+    [
+      {
+        title: "Watson Assistant",
+        description: "IBM Watson Assistant is a conversation AI platform that helps you provide customers fast, straightforward, and accurate answers to their questions, across any application, device, or channel.",
+        img: wat1,
+        anim: "animation-border"
+      },
+      {
+        title: "Watson Discovery",
+        description: "IBM Watson Discovery is an award-winning enterprise search and AI search technology that breaks open data silos and retrieves specific answers to your questions while analyzing trends and relationships buried in enterprise data.",
+        img: wat2,
+        anim: "animation-border2"
+      },
+      {
+        title: "Instana",
+        description: "Instana Observability is a fully-automated application performance management solution designed for the challenges of managing microservice and cloud-native applications. It makes your applications visible and enables intelligent actions based on observed information.",
+        img: wat3,
+        anim: "animation-border"
+      },
+      {
+        title: "Cognos",
+        description: "Unleash the power of your data through AI-driven automation and insights in Cognos Analytics. Simply pose a question or hypothesis, and let AI provide the insights you require.",
+        img: wat4,
+        anim: "animation-border2"
+      },
+      {
+        title: "Turbonomic",
+        description: "Turbonomic is a software platform that helps organizations optimize the performance and cost of their IT infrastructure, including public, private, and hybrid cloud environments, by automating optimization actions in real-time.",
+        img: wat5,
+        anim: "animation-border"
+      },
+    ].map((val, id) => (
+      <div key={id} className={`p-6 md:p-10 mb-5 rounded-lg ${id % 2 === 0 ? 'bg-white' : 'bg-gray-200'}`}>
+        <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+          <div className="md:w-1/2 w-full md:pr-10">
+            <h2 className="text-2xl font-bold mb-4">{val.title}</h2>
+            <p className="text-lg md:text-2xl">{val.description}</p>
+          </div>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <img
+              src={val.img}
+              alt={val.title}
+              className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
+            />
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
       </section>
+
 
      <Watsons />
 

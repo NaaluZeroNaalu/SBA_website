@@ -7,18 +7,10 @@ function Footer(){
     return(
         <>
 
-<section className="relative h-80 mx-3" id="footer">
-    <video
-        autoPlay
-        muted
-        loop
-        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
-    >
-        <source src={trusted} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
 
-    <div className="absolute inset-0 flex flex-col z-10 px-4">
+<section className="relative h-80 mx-3" id="footer">
+   
+    <div className="absolute inset-0 flex flex-col z-10 px-4" >
         <br />
         <div className="nav-container">
             <div className="">
@@ -56,8 +48,10 @@ function Footer(){
             <hr />
             <div className="">
                 <nav className="nav flex-column">
-                    <h5 className="ms-3">Industries</h5>
-                   
+                    
+                    <li className="nav-item">
+                        <a href="/Industries" className="nav-link">Industries</a>
+                    </li>
                     <li className="nav-item">
                         <a href="/Industries" className="nav-link">BFSI</a>
                     </li>

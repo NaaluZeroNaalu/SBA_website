@@ -406,6 +406,10 @@ const [activeIndex, setActiveIndex] = useState(null);
 
     <br />
 
+  </div>
+
+  <div id="products">
+
     {
       [
         {
@@ -432,29 +436,21 @@ const [activeIndex, setActiveIndex] = useState(null);
       ].map((val, id) => (
         
         <>
-        <div key={id} className="mb-10 flex flex-wrap md:flex-nowrap items-center justify-between">
-          <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} w-full`} style={{backgroundColor:""}}>
-            {/* Content Section */}
-            <div className={`md:w-1/2 w-full ${id % 2 === 0 ? 'md:pr-10' : 'md:pl-10'}`}>
-              <h2 className="text-3xl font-bold mb-4">{val.title}</h2>
-              <p className="text-2xl ">{val.description}</p>
-            </div>
-            {/* Image Section */}
-            <br /><br />
-            <div className={`md:w-1/2 w-full flex justify-center`}>
-              <div className={val.anim}>
-                <div style={{ height: "390px"}}>
-                  <img
-                    src={val.img}
-                    alt={val.title}
-                    loading='eager'
-                    className="rounded-lg object-cover img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
+          <div key={id} className={`p-6 md:p-10 mb-5 rounded-lg ${id % 2 === 0 ? 'bg-white' : 'bg-gray-200'}`}>
+        <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+          <div className="md:w-1/2 w-full md:pr-10">
+            <h2 className="text-2xl font-bold mb-4">{val.title}</h2>
+            <p className="text-lg md:text-2xl">{val.description}</p>
+          </div>
+          <div className="md:w-1/2 w-full flex justify-center">
+            <img
+              src={val.img}
+              alt={val.title}
+              className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
+            />
           </div>
         </div>
+      </div>
         <hr />
         </>
       ))
