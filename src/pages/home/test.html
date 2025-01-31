@@ -3,103 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expandable Social Media Buttons</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
 <body>
-  <div class="social-buttons">
-    <div class="social-button" id="facebook" onclick="toggleExpand('facebook')">
-      <img src="facebook-icon.png" alt="Facebook">
-      <span>Facebook</span>
-    </div>
-    <div class="social-button" id="twitter" onclick="toggleExpand('twitter')">
-      <img src="twitter-icon.png" alt="Twitter">
-      <span>Twitter</span>
-    </div>
-    <div class="social-button" id="instagram" onclick="toggleExpand('instagram')">
-      <img src="instagram-icon.png" alt="Instagram">
-      <span>Instagram</span>
-    </div>
-    <!-- Add more buttons as needed -->
-  </div>
 
-  <style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-.social-buttons {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-}
-
-.social-button {
-  background-color: #333;
-  color: white;
-  margin: 5px 0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: width 0.3s;
-  width: 80px; /* Initial width */
-  height: 40px; /* Height for rectangle shape */
-  overflow: hidden;
-}
-
-.social-button img {
-  width: 20px;
-  height: 20px;
-}
-
-.social-button span {
-  display: none;
-  margin-left: 10px;
-}
-
-.social-button.expanded {
-  width: 200px; /* Expanded width */
-}
-
-.social-button.expanded span {
-  display: inline-block;
-}
-
-  </style>
-
-  <script>
-    
-    function toggleExpand(buttonId) {
-  const button = document.getElementById(buttonId);
   
-  if (button.classList.contains('expanded')) {
-    button.classList.remove('expanded');
-  } else {
-    // Collapse all buttons first
-    const allButtons = document.querySelectorAll('.social-button');
-    allButtons.forEach((btn) => btn.classList.remove('expanded'));
-    
-    // Then expand the clicked button
-    button.classList.add('expanded');
-  }
-}
 
-
-  </script>
-
-  <script src="script.js"></script>
 </body>
 </html>

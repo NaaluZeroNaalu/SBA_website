@@ -212,8 +212,6 @@ function Itautomation() {
     </div>
      
     </div> */}
-    <br /><br />
-
     <section className="custom-container ai-section">
   <div className="relative px-6 md:px-12 lg:px-24">
     <div className="flex flex-wrap justify-between mt-10">
