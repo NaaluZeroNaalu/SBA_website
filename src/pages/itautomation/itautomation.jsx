@@ -11,10 +11,10 @@ import ind3 from "../../assets/images/healthcare.png";
 import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import its from "../../assets/images/itautomation/its.png"
-import wat3 from "../../assets/images/wat_3.svg";
-import wat5 from "../../assets/images/wat_5.svg";
-import wat2 from "../../assets/images/wat_2.svg";
-import seven1 from "../../assets/images/itautomation/sev1.png"
+import wat3 from "../../assets/images/itautomation/instana.png";
+import wat5 from "../../assets/images/itautomation/turbonomic.png";
+import wat2 from "../../assets/images/itautomation/watsonaiops.png";
+import seven1 from "../../assets/images/itautomation/sevone.png"
 import p1 from "../../assets/images/itautomation/powerdby/1.png"
 import p2 from "../../assets/images/itautomation/powerdby/2.png"
 import p3 from "../../assets/images/itautomation/powerdby/3.png"
@@ -537,20 +537,22 @@ function Itautomation() {
             ].map((val,id)=>(
               <>
         <div key={id} className={`p-6 md:p-10 mb-5 rounded-lg ${id % 2 === 0 ? 'bg-white' : 'bg-gray-200'}`}>
-        <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-          <div className="md:w-1/2 w-full md:pr-10">
-            <h2 className="text-2xl font-bold mb-4" id="poweredbytitle">{val.title}</h2>
-            <p className="text-lg md:text-2xl" id="poweredbydescription">{val.description}</p>
-          </div>
-          <div className="md:w-1/2 w-full flex justify-center">
-            <img
-              src={val.img}
-              alt={val.title}
-              className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
-            />
+          <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+            <div className="md:w-1/2 w-full md:pr-10">
+            <br /><br /><br /><br /><br />
+              <h2 className="text-2xl font-bold mb-4">{val.title}</h2>
+              <p className="text-lg md:text-2xl">{val.description}</p>
+            </div>
+            <div className="md:w-1/2 w-full flex justify-center items-center">
+              <img
+                src={val.img}
+                alt={val.title}
+                className={`img-fluid rounded-lg h-auto w-full max-w-xs md:max-w-md object-cover ${val.anim}`}
+                
+              />
+            </div>
           </div>
         </div>
-      </div>
               </>
             ))
           }

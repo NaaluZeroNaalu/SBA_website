@@ -91,7 +91,7 @@ const sendEmail = (e) => {
     <a href="/">
     <img src={logo} alt="Logo" className="h-20 w-20 pl-2" />
     </a>
-    <nav className="hidden md:flex">
+    <nav className="container hidden md:flex">
       <ul className="flex items-center space-x-20">
         <li className="relative group">
         <a href="#" className="no-underline text-black flex items-center mr-10">
@@ -147,8 +147,6 @@ const sendEmail = (e) => {
     </button>
   </div>
 </header>    
-
-
 
       <div className="offcanvas offcanvas-start" id="demo">
         <div className="offcanvas-header">

@@ -252,7 +252,7 @@ function Homepage(){
 
       </div>
 
-   <Sidecontent />
+   <Sidecontent  />
      
 
 {/* ----------------------------SECTION 1 VIDEO SECTION END---------------------- */}
