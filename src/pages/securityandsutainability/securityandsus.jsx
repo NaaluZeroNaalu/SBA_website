@@ -363,6 +363,7 @@ function Securityandsus() {
     <div key={id} className={`p-6 md:p-10 mb-5 rounded-lg ${id % 2 === 0 ? 'bg-white' : 'bg-gray-200'}`}>
     <div className={`flex flex-col md:flex-row gap-6 md:gap-10 ${id % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       <div className="md:w-1/2 w-full md:pr-10">
+      <br />
         <h2 className="text-2xl font-bold mb-4" id="poweredbytitle">{val.title}</h2>
         <p className="text-lg md:text-2xl" id="poweredbydescription">{val.description}</p>
       </div>

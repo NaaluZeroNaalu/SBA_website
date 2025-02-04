@@ -102,7 +102,7 @@ function Industries(){
     {
       title: "BFSI",
       description: [
-        "SBA offers end-to-end services for the BFSI industry, including digital transformation, IT consulting, cybersecurity, data analytics, and regulatory compliance. These solutions enhance operational efficiency, ensure data security, and support seamless integration of advanced technologies, helping financial institutions stay competitive and compliant.",
+        "SBA provides a comprehensive range of end-to-end services tailored specifically for the BFSI (Banking, Financial Services, and Insurance) industry, addressing the unique challenges and demands of this sector. Our offerings include digital transformation strategies that help financial institutions adopt cutting-edge technologies and streamline their operations. In addition, our IT consulting services provide expert guidance on optimizing IT infrastructure, ensuring scalability, and enhancing overall business agility. We also specialize in cybersecurity, helping organizations safeguard sensitive financial data from evolving threats, ensuring that systems and transactions remain secure and reliable.  ",
       ],
       image: Industries1,
       list:"none",
@@ -116,7 +116,9 @@ function Industries(){
         "Cloudera Workload Optimization",
         "SAP Observability",
         "High Performance Analytics",
-        "AI Assistants"
+        "AI Assistants",
+        "Smart Factory Integration",
+        "Edge Computing for Real-time Analytics"
       ],
       image: Industries2,
       list:"",
@@ -129,7 +131,10 @@ function Industries(){
         "<strong>Summarization:</strong> Condensing complex information.",
         "<strong>Entity Extraction:</strong> Identifying key entities.",
         "<strong>Classification:</strong> Organizing data for better insights.",
-        "<strong>Efficiency Gains:</strong> Boosting productivity, reducing costs."
+        "<strong>Efficiency Gains:</strong> Boosting productivity, reducing costs.",
+        "<strong>Sentiment Analysis:</strong> Understanding audience feelings.",
+        "<strong>Personalized Recommendations:</strong> Suggesting content based on user preferences.",
+
       ],
       image: Industries3,
       list:"",
@@ -138,7 +143,7 @@ function Industries(){
     {
       title: "IT/ITES",
       description: [
-        "To optimize IT operations, enhance productivity, and ensure robust security measures tailored to business needs, we provide a comprehensive suite of IT services for the IT/ITES sector, including cloud solutions, managed security services, data center infrastructure, disaster recovery, and remote infrastructure management."
+        "To optimize IT operations, improve efficiency, and maintain strong security protocols aligned with business objectives, we offer a full range of IT services for the IT/ITES sector. Our solutions include cloud computing, managed security services, and data center infrastructure to ensure seamless operations. Additionally, we provide disaster recovery services to minimize downtime and remote infrastructure management to support businesses with scalable, cost-effective solutions. Our services are designed to meet the unique demands of the IT/ITES industry, ensuring smooth, secure, and reliable operations across all levels."
       ],
       image: Industries4,
       list:"none",
@@ -148,9 +153,10 @@ function Industries(){
       title: "Telecom/BPO KPO",
       description: [
         "<strong>Speech Transcription:</strong> Accurate voice-to-text transcription.",
-        "<strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.",
         "<strong>Agent Assist:</strong> Real-time assistance for boosted productivity and morale.",
-        "<strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement."
+        "<strong>Voice Agent - Speech Synthesis:</strong> AI-powered voice synthesis.",
+        "<strong>Sentiment and Call Center Analytics:</strong> Insights for continuous improvement.",
+        "<strong>Predictive Dialing:</strong> AI-driven systems that optimize call center operations by predicting the best times to contact customers.",
       ],
       image: Industries5,
       list:"",
@@ -163,7 +169,9 @@ function Industries(){
         "Intelligent Data-as-a-Service (iDaaS)",
         "AI-Enhanced Data Analysis",
         "Data Protection",
-        "Automated Security"
+        "Automated Security",
+        "AI-Driven Patient Insights",
+        "Automated Compliance and Risk Management"
       ],
       image: Industries6,
       list:"",
@@ -183,6 +191,7 @@ function Industries(){
           </div>
         </div>
         <div className="w-full md:pl-6 mt-6 md:mt-0">
+          <br />
           <h2 className="text-4xl font-bold mb-4 md:mb-16 text-left">
             {item.title}
           </h2>
