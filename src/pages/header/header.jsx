@@ -100,6 +100,7 @@ const sendEmail = (e) => {
           <div className="hidden absolute left-0  w-48 bg-white border-1 group-hover:block">
             <a href="/Aboutus" className="block px-4 py-2 no-underline text-black">About Us </a>
             <a href="/Careers" className="block px-4 py-2 no-underline text-black">Careers</a>
+            <a href="/Leadership-team" className="block px-4 py-2 no-underline text-black">Leadership Team</a>
           </div>
         </li>
         <li className="relative group">

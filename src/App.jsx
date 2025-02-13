@@ -29,6 +29,7 @@ import Book from './pages/book/book'
 import Pagenotfound from './pages/notfoundpage/pagenotfound'
 import ContactUs from './pages/contactus/contact'
 import Test from './pages/home/test'
+import Leadership from './leadership/leadership'
 
 
 
@@ -68,6 +69,7 @@ function App() {
     <Route path="/Casestudies/Efficient-Data-Management-and-Enhanced-Security:Leading-TN-Bank's-Success-with-SBA&IBM-FS7300" element={<Casestudiesfive />} />
     <Route path="/Casestudies/Boosting-Performance-and-Security:Chennai-based-Bank's-Successful-Migration-to-AIX-with-IBM-Power-9" element={<Casestudiessix />} />
     <Route path='/request-a-demo' element={<Book />} />
+    <Route path='/Leadership-Team' element={<Leadership />} />
    </Routes>
    </BrowserRouter>
     </>

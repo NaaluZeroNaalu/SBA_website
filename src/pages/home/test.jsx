@@ -3,7 +3,7 @@ import ind2 from "../../assets/images/ind_2.png";
 import ind3 from "../../assets/images/healthcare.png";
 import ind4 from "../../assets/images/ind_4.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { useState, useEffect, React, useRef } from "react";
+import { useState, useEffect, React, useRef, createContext, useContext, useReducer } from "react";
 import Home1 from "../../assets/videos/wait1.webm";
 import Home6 from "../../assets/videos/Home6.mp4";
 import Home9 from "../../assets/videos/Home9.mp4";
@@ -64,33 +64,151 @@ import Sidecontent from "../sidecontact/side";
 
 
 
-
 function Test(){
 
-
-//usecontext = share data between components
-
-
-function Havename(){
+//leadership team
+  const [items, Getitems] = useState([])
+  const [product, Getproduct] = useState("")
   
-  let name = "ajith"
-}
-
-function Displayname(){
-  
-  return(
+   return(
     <>
-    <h1>{name}</h1>
+    <div class="blog-author">
+    <div class="p-3">
+        <div class="row p-0 m-0">
+            <div class="col-3 col-lg-2">
+                <img class="author_image" src="https://www.sbainfo.in/images/team/venkatesh.jpg" alt="Venkatesh" />
+            </div>
+            <div class="col-9 col-lg-10 ps-3 author_name">
+                <div>Written by</div>
+                <div class="author-name">Venkatesh A</div>
+                <div class="mt-2 gist-author">
+                    Venkatesh works with global change makers IBM to specialize in implementing generative AI, LLMs, and cutting-edge data technologies to address complex business problems. A certified
+                    expert on watsonx, He's passionate about exploring uncharted territories to find innovate solutions. By leveraging the technical intricacies of AI, he's responsible for driving data-driven strategies
+                    and creating tangible value for India's CXO's and IT teams"
+                </div>
+                <div class="mt-1 gist-author">
+                    Contributors: <a href="https://www.linkedin.com/in/divya-s-15a947245/" target="_blank">Divya S</a>, <a href="https://www.linkedin.com/in/reshma-rao-8011798/" target="_blank">Reshma Rao</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-author">
+    <div class="p-3">
+        <div class="row p-0 m-0">
+            <div class="col-3 col-lg-2">
+                <img class="author_image" src="https://www.sbainfo.in/images/team/venkatesh.jpg" alt="Venkatesh" />
+            </div>
+            <div class="col-9 col-lg-10 ps-3 author_name">
+                <div>Written by</div>
+                <div class="author-name">Venkatesh A</div>
+                <div class="mt-2 gist-author">
+                    Venkatesh works with global change makers IBM to specialize in implementing generative AI, LLMs, and cutting-edge data technologies to address complex business problems. A certified
+                    expert on watsonx, He's passionate about exploring uncharted territories to find innovate solutions. By leveraging the technical intricacies of AI, he's responsible for driving data-driven strategies
+                    and creating tangible value for India's CXO's and IT teams"
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-author">
+    <div class="p-3">
+        <div class="row p-0 m-0">
+            <div class="col-3 col-lg-2">
+                <img class="author_image" src="https://www.sbainfo.in/images/team/kanthan.jpg" alt="Kanthanathan" />
+            </div>
+            <div class="col-9 col-lg-10 ps-3 author_name">
+                <div>Written by</div>
+                <div class="author-name">Kanthanathan S</div>
+                <div class="mt-2 gist-author">
+                    Kanthanathan is an experienced thought leader and technologist with over 20 years in the IT Industry, he is associated with SBA since its inception and is responsible for technology acquisitions and propelling the business transformation of SBA from a system integrator to a technology services firm.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-author">
+    <div class="p-3">
+        <div class="row p-0 m-0">
+            <div class="col-3 col-lg-2">
+                <img class="author_image" src="https://www.sbainfo.in/images/team/sadeesh-g.jpg" alt="Sadeeshkumar G" />
+            </div>
+            <div class="col-9 col-lg-10 ps-3 author_name">
+                <div>Written by</div>
+                <div class="author-name">Sadeeshkumar G</div>
+                <div class="mt-2 gist-author">
+                    Sadeesh is the Manager, Service and Delivery, at SBA Info solutions and has been the organization for more than 15+ years. Having started his career as a trainee Engineer at SBA, he could later realize his growth from a Trainee Engineer to Manager - Service Delivery. Besides handling projects on Datacenters and consulting on the network & Security requirements, Sadeesh currently Leads the Service Team and Guides them inhouse & at Customer sites and is a certified professional.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="blog-author">
+    <div class="p-3">
+        <div class="row p-0 m-0">
+            <div class="col-3 col-lg-2">
+                <img class="author_image" src="https://www.sbainfo.in/images/team/viswanathan.jpg" alt="Viswanathan" />
+            </div>
+            <div class="col-9 col-lg-10 ps-3 author_name">
+                <div>Written by</div>
+                <div class="author-name">Viswanathan N</div>
+                <div class="mt-2 gist-author">
+                    Viswa is the head of Service and delivery and is responsible for Managing and growing the practice and delivery functions at SBA. With over 20+ years of experience as IT technical, service delivery & solution architect, Viswa’s primary focus is creating a good customer experience by increasing their perceived value in terms of products or services availed from SBA.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<h1>CRUD</h1>
+
+
+
+<h1>ITEMS</h1>
+
+<input type="text" onInput={(e)=>{
+  Getproduct(e.target.value)
+}} />
+<button className="btn btn-dark" onClick={()=>{
+
+  Getitems(a => [...a,product])
+}}>ADD</button>
+<table className="table">
+<tr>
+  <th>ITEM</th>
+  <th>ACTION</th>
+</tr>
+{
+  items.length == 0 ? (
+    <>
+    <tr>
+      <td><h3>EMPTY</h3></td>
+      <td><h3>Add an item</h3></td>
+    </tr>
+    </>
+  ):(
+    <>
+    {
+      items.map((val,i)=>(
+        <>
+    <tr>
+      <td><h5>{val}</h5></td>
+      <td><button className="btn btn-danger" onClick={()=>{
+
+      }}>DELETE</button></td>
+    </tr>
+        </>
+      ))
+    }
     </>
   )
 }
-
-   return(
-
-    <>
-
-    <Displayname />
- 
+</table>
     </>
    )
 
